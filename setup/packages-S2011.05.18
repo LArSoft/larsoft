@@ -1,0 +1,36 @@
+#
+# Packages external to LAR
+#
+SoftRelTools       : HEAD
+#
+# LAR packages go here
+
+Calorimetry        : S2011.05.18
+CalData            : S2011.05.18
+ClusterFinder      : S2011.05.18
+DetSim             : S2011.05.18
+DriftElectrons	   : S2011.05.18
+EventDisplayBase   : S11-05-02
+EventDisplay       : S2011.05.18
+EventGeneratorBase : S11-05-02
+EventGenerator     : S2011.05.18
+Filters            : S2011.05.18
+Genfit             : S2011.05.18
+Geometry           : S2011.05.18
+HitFinder          : S2011.05.18
+LArG4              : S2011.05.18
+PhotonPropagation  : S2011.05.18
+RawData            : S2011.05.18
+RecoBase           : S2011.05.18
+setup              : S2011.05.18
+ShowerFinder       : S2011.05.18
+SimulationBase     : S11-05-02
+Simulation         : S2011.05.18
+SRT_LAR            : S2011.05.18
+SummaryData        : S2011.05.18
+T962               : S2011.05.18
+T962_MergeData     : S2011.05.18
+TrackFinder	   : S2011.05.18
+Utilities          : S2011.05.18
+VertexFinder       : S2011.05.18
+

@@ -1,0 +1,48 @@
+#
+# Packages external to LAR
+#
+SoftRelTools            : HEAD
+#
+# NuSoft NuTools packages go here
+#
+EventDisplayBase        : S2012-11-16
+EventGeneratorBase     	: S2012-11-16
+G4Base                 	: S2012-11-16
+MagneticField          	: S2012-11-16
+NuReweight             	: S2012-11-16
+SimulationBase         	: S2012-11-16
+#			             
+# LAR packages go here	             
+#			             
+AnalysisBase           	: S2012.11.16
+CalData                	: S2012.11.16
+Calorimetry            	: S2012.11.16
+ClusterFinder          	: S2012.11.16
+DetSim                 	: S2012.11.16
+EventDisplay           	: S2012.11.16
+EventFinder            	: S2012.11.16
+EventGenerator         	: S2012.11.16
+Filters                	: S2012.11.16
+Genfit                 	: S2012.11.16
+Geometry               	: S2012.11.16
+HitFinder              	: S2012.11.16
+LArG4                  	: S2012.11.16
+MCCheater              	: S2012.11.16
+OpticalDetector        	: S2012.11.16
+ParticleIdentification 	: S2012.11.16
+PhotonPropagation      	: S2012.11.16
+RawData                	: S2012.11.16
+RecoBase               	: S2012.11.16
+setup                  	: S2012.11.16
+ShowerFinder           	: S2012.11.16
+SimpleTypesAndConstants	: S2012.11.16
+Simulation             	: S2012.11.16
+SRT_LAR                	: S2012.11.16
+SummaryData            	: S2012.11.16
+TrackFinder	       	: S2012.11.16
+Utilities              	: S2012.11.16
+VertexFinder           	: S2012.11.16
+#			             
+# Tutorial package	             
+#			             
+AnalysisExample         : S2012.11.16 

@@ -1,0 +1,44 @@
+#
+# Packages external to LAR
+#
+SoftRelTools            : HEAD
+#
+#			      
+# LAR packages go here	      
+#			      
+AnalysisAlg             : S2013.06.25
+AnalysisBase           	: S2013.06.25
+CalData                	: S2013.06.25
+Calorimetry            	: S2013.06.25
+ClusterFinder          	: S2013.06.25
+DetSim                 	: S2013.06.25
+EventDisplay           	: S2013.06.25
+EventFinder            	: S2013.06.25
+EventGenerator         	: S2013.06.25
+Filters                	: S2013.06.25
+Genfit                 	: S2013.06.25
+Geometry               	: S2013.06.25
+HitFinder              	: S2013.06.25
+LArG4                  	: S2013.06.25
+MCCheater              	: S2013.06.25
+OpticalDetector        	: S2013.06.25
+OpticalDetectorData    	: S2013.06.25
+ParticleIdentification 	: S2013.06.25
+PhotonPropagation      	: S2013.06.25
+RawData                	: S2013.06.25
+RecoAlg                 : S2013.06.25
+RecoBase               	: S2013.06.25
+RecoObjects             : S2013.06.25
+setup                  	: S2013.06.25
+ShowerFinder           	: S2013.06.25
+SimpleTypesAndConstants	: S2013.06.25
+Simulation             	: S2013.06.25
+SRT_LAR                	: S2013.06.25
+SummaryData            	: S2013.06.25
+TrackFinder	       	: S2013.06.25
+Utilities              	: S2013.06.25
+VertexFinder           	: S2013.06.25
+#			      
+# Tutorial package	      
+#			      
+AnalysisExample         : S2013.06.25 
