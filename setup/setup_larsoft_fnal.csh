@@ -35,7 +35,7 @@ if ( ! $?LARSOFT_SETUP ) then
 
     echo experiment is ${EXPERIMENT}
 
-    set SETUP_LOCATION=/uboone/app/users/brebel/larsoft/releases/development
+    set SETUP_LOCATION=/grid/fermiapp/lbne/lar/code/larsoft/setup/
 
     echo $SETUP_LOCATION
 
