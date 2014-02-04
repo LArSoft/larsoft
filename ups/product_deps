@@ -1,6 +1,6 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v1_00_01
+parent	larsoft	v1_00_02
 defaultqual	e4
 
 # larsoft itself has no bin, inc, or fcl directories
@@ -11,18 +11,18 @@ bindir      -
 
 #
 product         version
-lareventdisplay	v1_00_01
-larexamples	v1_00_01
-larana		v1_00_01
-larreco		v1_00_01
-larpandora	v1_00_01
+lareventdisplay	v1_00_02
+larexamples	v1_00_02
+larana		v1_00_02
+larreco		v1_00_02
+larpandora	v1_00_02
 larsoft_data	v0_00_04
 ifdh_art	v1_2_10
 gcc		v4_8_1
 
 # list products required ONLY for the build
 # any products here must NOT have qualifiers
-only_for_build  cetbuildtools   v3_07_04
+only_for_build  cetbuildtools   v3_07_07
   
 # e4  - with gcc 4.8.1 and -std=c++11
 qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	gcc	ifdh_art	larsoft_data	notes

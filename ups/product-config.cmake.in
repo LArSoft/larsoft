@@ -1,6 +1,6 @@
 
-set( @product@_VERSION @VERSION_MAJOR@.@VERSION_MINOR@.@VERSION_PATCH@ )
-set( @product@_UPS_VERSION v@VERSION_MAJOR@_@VERSION_MINOR@_@VERSION_PATCH@ )
+set( @product@_VERSION @cet_dot_version@ )
+set( @product@_UPS_VERSION @version@ )
 
 @PACKAGE_INIT@
 
