@@ -29,6 +29,9 @@ qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	gcc	ifdh_art	l
 e4:debug	e4:debug	e4:debug	e4:debug	e4:debug	e4:debug	-nq-	e4:debug	-nq-
 e4:opt		e4:opt		e4:opt		e4:opt		e4:opt		e4:opt		-nq-	e4:opt		-nq-
 e4:prof		e4:prof		e4:prof		e4:prof		e4:prof		e4:prof		-nq-	e4:prof		-nq-
+e4:noifdh:debug	e4:debug	e4:debug	e4:debug	e4:debug	e4:debug	-nq-	-		-nq-
+e4:noifdh:opt	e4:opt		e4:opt		e4:opt		e4:opt		e4:opt		-nq-	-		-nq-
+e4:noifdh:prof	e4:prof		e4:prof		e4:prof		e4:prof		e4:prof		-nq-	-		-nq-
 
 # table file fragment to set FW_DATA
 table_fragment_begin
