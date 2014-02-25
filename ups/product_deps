@@ -1,34 +1,37 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v1_00_02
+parent	larsoft	v1_00_03
 defaultqual	e4
 
-# larsoft itself has no bin, inc, or fcl directories
+# larsoft itself has no inc, or fcl directories
 # the lib directory just contains larsoftConfig.cmake and larsoftConfigVersion.cmake
 incdir      -
 fcldir      -
-bindir      -
+bindir      product_dir
 
 #
 product         version
-lareventdisplay	v1_00_02
-larexamples	v1_00_02
-larana		v1_00_02
-larreco		v1_00_02
-larpandora	v1_00_02
+lareventdisplay	v1_00_03
+larexamples	v1_00_03
+larana		v1_00_03
+larreco		v1_00_03
+larpandora	v1_00_03
 larsoft_data	v0_00_04
 ifdh_art	v1_2_10
 gcc		v4_8_1
 
 # list products required ONLY for the build
 # any products here must NOT have qualifiers
-only_for_build  cetbuildtools   v3_07_07
+only_for_build  cetbuildtools   v3_07_10
   
 # e4  - with gcc 4.8.1 and -std=c++11
 qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	gcc	ifdh_art	larsoft_data	notes
 e4:debug	e4:debug	e4:debug	e4:debug	e4:debug	e4:debug	-nq-	e4:debug	-nq-
 e4:opt		e4:opt		e4:opt		e4:opt		e4:opt		e4:opt		-nq-	e4:opt		-nq-
 e4:prof		e4:prof		e4:prof		e4:prof		e4:prof		e4:prof		-nq-	e4:prof		-nq-
+e4:noifdh:debug	e4:debug	e4:debug	e4:debug	e4:debug	e4:debug	-nq-	-		-nq-
+e4:noifdh:opt	e4:opt		e4:opt		e4:opt		e4:opt		e4:opt		-nq-	-		-nq-
+e4:noifdh:prof	e4:prof		e4:prof		e4:prof		e4:prof		e4:prof		-nq-	-		-nq-
 
 # table file fragment to set FW_DATA
 table_fragment_begin

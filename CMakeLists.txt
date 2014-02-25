@@ -36,6 +36,9 @@ cet_cmake_env()
 
 set_install_root()
 
+# useful scripts
+add_subdirectory(bin)
+
 # ups - table and config files
 add_subdirectory(ups)
 
