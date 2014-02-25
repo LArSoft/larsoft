@@ -109,6 +109,7 @@ fi
 if [ "${bad_build}" == "true" ]
 then
    echo "FAILURE: ${project} ${check_date} nightly update failed"
+   echo "         log files are available in ${nightly_build_dir}/${nightly_subdir}/logs"
 else
    echo "SUCCESS: ${project} ${check_date} nightly update succeeded"
 fi
