@@ -3,11 +3,11 @@
 parent	larsoft	v1_00_02
 defaultqual	e4
 
-# larsoft itself has no bin, inc, or fcl directories
+# larsoft itself has no inc, or fcl directories
 # the lib directory just contains larsoftConfig.cmake and larsoftConfigVersion.cmake
 incdir      -
 fcldir      -
-bindir      -
+bindir      product_dir
 
 #
 product         version
