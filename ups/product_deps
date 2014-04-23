@@ -17,7 +17,7 @@ larana		v1_00_08
 larreco		v1_00_08
 larpandora	v1_00_08
 larsoft_data	v0_00_04
-ifdh_art	v1_2_10
+ifdh_art	v1_4_1
 gcc		v4_8_1
 
 # list products required ONLY for the build
