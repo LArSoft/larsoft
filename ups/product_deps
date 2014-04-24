@@ -26,9 +26,9 @@ only_for_build  cetbuildtools   v3_07_11
   
 # e4  - with gcc 4.8.1 and -std=c++11
 qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	gcc	ifdh_art	larsoft_data	notes
-e4:debug	e4:debug	e4:debug	e4:debug	e4:debug	e4:debug	-nq-	e4:debug	-nq-
-e4:opt		e4:opt		e4:opt		e4:opt		e4:opt		e4:opt		-nq-	e4:opt		-nq-
-e4:prof		e4:prof		e4:prof		e4:prof		e4:prof		e4:prof		-nq-	e4:prof		-nq-
+e4:debug	e4:debug	e4:debug	e4:debug	e4:debug	e4:debug	-nq-	nu:e4:debug	-nq-
+e4:opt		e4:opt		e4:opt		e4:opt		e4:opt		e4:opt		-nq-	nu:e4:opt	-nq-
+e4:prof		e4:prof		e4:prof		e4:prof		e4:prof		e4:prof		-nq-	nu:e4:prof	-nq-
 e4:noifdh:debug	e4:debug	e4:debug	e4:debug	e4:debug	e4:debug	-nq-	-		-nq-
 e4:noifdh:opt	e4:opt		e4:opt		e4:opt		e4:opt		e4:opt		-nq-	-		-nq-
 e4:noifdh:prof	e4:prof		e4:prof		e4:prof		e4:prof		e4:prof		-nq-	-		-nq-
