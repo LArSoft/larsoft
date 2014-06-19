@@ -39,6 +39,9 @@ set_install_root()
 # useful scripts
 add_subdirectory(bin)
 
+# release database
+add_subdirectory(releaseDB)
+
 # ups - table and config files
 add_subdirectory(ups)
 
