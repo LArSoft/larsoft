@@ -27,6 +27,7 @@ larana : lardata : AnalysisBase/ParticleID.h
 larana : lardata : OpticalDetectorData/ChannelData.h
 larana : lardata : OpticalDetectorData/ChannelDataGroup.h
 larana : lardata : OpticalDetectorData/FIFOChannel.h
+larana : lardata : OpticalDetectorData/OpticalRawDigit.h
 larana : lardata : OpticalDetectorData/OpticalTypes.h
 larana : lardata : OpticalDetectorData/PMTTrigger.h
 larana : lardata : RawData/OpDetPulse.h
@@ -111,6 +112,13 @@ lardata : lardata : AnalysisBase/CosmicTag.h
 lardata : lardata : AnalysisBase/FlashMatch.h
 lardata : lardata : AnalysisBase/ParticleID.h
 lardata : lardata : AnalysisBase/classes.h
+lardata : lardata : MCBase/MCBaseException.h
+lardata : lardata : MCBase/MCHit.h
+lardata : lardata : MCBase/MCHitCollection.h
+lardata : lardata : MCBase/MCLimits.h
+lardata : lardata : MCBase/MCWire.h
+lardata : lardata : MCBase/MCWireCollection.h
+lardata : lardata : MCBase/classes.h
 lardata : lardata : OpticalDetectorData/ChannelData.h
 lardata : lardata : OpticalDetectorData/ChannelDataGroup.h
 lardata : lardata : OpticalDetectorData/FIFOChannel.h
@@ -438,6 +446,13 @@ larreco : larcore : SimpleTypesAndConstants/geo_types.h
 larreco : lardata : AnalysisAlg/CalorimetryAlg.h
 larreco : lardata : AnalysisBase/Calorimetry.h
 larreco : lardata : AnalysisBase/CosmicTag.h
+larreco : lardata : MCBase/MCBaseException.h
+larreco : lardata : MCBase/MCDataHolder.h
+larreco : lardata : MCBase/MCHit.h
+larreco : lardata : MCBase/MCHitCollection.h
+larreco : lardata : MCBase/MCLimits.h
+larreco : lardata : MCBase/MCWire.h
+larreco : lardata : MCBase/MCWireCollection.h
 larreco : lardata : RawData/RawDigit.h
 larreco : lardata : RawData/TriggerData.h
 larreco : lardata : RawData/raw.h
@@ -526,6 +541,7 @@ larreco : larreco : Genfit/PointHit.h
 larreco : larreco : Genfit/RKTrackRep.h
 larreco : larreco : Genfit/SlTrackRep.h
 larreco : larreco : Genfit/TGeant3/TGeant3.h
+larreco : larreco : HitFinder/HitAnaAlg.h
 larreco : larreco : RecoAlg/APAGeometryAlg.h
 larreco : larreco : RecoAlg/BezierTrackerAlgorithm.h
 larreco : larreco : RecoAlg/CCHitFinderAlg.h
