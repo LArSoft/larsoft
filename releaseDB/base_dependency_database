@@ -433,6 +433,7 @@ larpandora : larpandora : LArPandoraAlgorithms/LArUtility/ListDissolutionAlgorit
 larpandora : larpandora : LArPandoraAlgorithms/LArUtility/ListMergingAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArUtility/ListPreparationAlgorithm.h
 larpandora : larpandora : LArPandoraInterface/LArPandoraBase.h
+larpandora : larpandora : LArPandoraInterface/LArPandoraHelper.h
 larpandora : larpandora : LArPandoraInterface/MicroBooNEPseudoLayerCalculator.h
 larpandora : larpandora : LArPandoraInterface/MicroBooNETransformationCalculator.h
 larpandora : larsim : MCCheater/BackTracker.h
@@ -572,6 +573,7 @@ larreco : larreco : RecoAlg/SmallClusterFinderAlg.h
 larreco : larreco : RecoAlg/SpacePointAlg.h
 larreco : larreco : RecoAlg/SpacePointAlg_TimeSort.h
 larreco : larreco : RecoAlg/StitchAlg.h
+larreco : larreco : RecoAlg/TrackMomentumCalculator.h
 larreco : larreco : RecoAlg/fuzzyClusterAlg.h
 larreco : larsim : MCCheater/BackTracker.h
 larreco : larsim : Simulation/EmEveIdCalculator.h
