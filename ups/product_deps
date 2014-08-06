@@ -17,7 +17,7 @@ larana		v02_04_00
 larreco		v02_04_00
 larpandora	v02_04_00
 larsoft_data	v0_01_00
-ifdh_art	v1_4_2b
+ifdh_art	v1_4_3a
 gcc		v4_8_2
 
 # list products required ONLY for the build
@@ -26,9 +26,9 @@ only_for_build  cetbuildtools   v3_11_00
   
 # e5  - with gcc 4.8.2 and -std=c++11
 qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	gcc	ifdh_art	larsoft_data	notes
-e5:debug	e5:debug	e5:debug	e5:debug	e5:debug	e5:debug	-nq-	nu:e5:debug	-nq-
-e5:opt		e5:opt		e5:opt		e5:opt		e5:opt		e5:opt		-nq-	nu:e5:opt	-nq-
-e5:prof		e5:prof		e5:prof		e5:prof		e5:prof		e5:prof		-nq-	nu:e5:prof	-nq-
+e5:debug	e5:debug	e5:debug	e5:debug	e5:debug	e5:debug	-nq-	s2:nu:e5:debug	-nq-
+e5:opt		e5:opt		e5:opt		e5:opt		e5:opt		e5:opt		-nq-	s2:nu:e5:opt	-nq-
+e5:prof		e5:prof		e5:prof		e5:prof		e5:prof		e5:prof		-nq-	s2:nu:e5:prof	-nq-
 e5:noifdh:debug	e5:debug	e5:debug	e5:debug	e5:debug	e5:debug	-nq-	-		-nq-
 e5:noifdh:opt	e5:opt		e5:opt		e5:opt		e5:opt		e5:opt		-nq-	-		-nq-
 e5:noifdh:prof	e5:prof		e5:prof		e5:prof		e5:prof		e5:prof		-nq-	-		-nq-
