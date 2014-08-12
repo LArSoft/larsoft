@@ -15,6 +15,7 @@ larana : larcore : Geometry/OpDetGeo.h
 larana : larcore : Geometry/PlaneGeo.h
 larana : larcore : Geometry/TPCGeo.h
 larana : larcore : Geometry/WireGeo.h
+larana : larcore : Geometry/geo.h
 larana : larcore : SimpleTypesAndConstants/PhysicalConstants.h
 larana : larcore : SimpleTypesAndConstants/RawTypes.h
 larana : larcore : SimpleTypesAndConstants/geo_types.h
@@ -38,6 +39,7 @@ larana : lardata : RecoBase/Hit.h
 larana : lardata : RecoBase/OpFlash.h
 larana : lardata : RecoBase/OpHit.h
 larana : lardata : RecoBase/Seed.h
+larana : lardata : RecoBase/Shower.h
 larana : lardata : RecoBase/SpacePoint.h
 larana : lardata : RecoBase/Track.h
 larana : lardata : RecoBase/Wire.h
@@ -327,9 +329,8 @@ larpandora : lardata : RawData/RawDigit.h
 larpandora : lardata : RawData/TriggerData.h
 larpandora : lardata : RecoBase/Cluster.h
 larpandora : lardata : RecoBase/Hit.h
-larpandora : lardata : RecoBase/Shower.h
+larpandora : lardata : RecoBase/PFParticle.h
 larpandora : lardata : RecoBase/SpacePoint.h
-larpandora : lardata : RecoBase/Track.h
 larpandora : lardata : RecoBase/Wire.h
 larpandora : lardata : Utilities/AssociationUtil.h
 larpandora : lardata : Utilities/ClockConstants.h
@@ -338,10 +339,8 @@ larpandora : lardata : Utilities/DetectorProperties.h
 larpandora : lardata : Utilities/ElecClock.h
 larpandora : lardata : Utilities/LArProperties.h
 larpandora : lardata : Utilities/SimpleTimeService.h
-larpandora : lardata : Utilities/SumSecondFunction.h
 larpandora : lardata : Utilities/TimeService.h
 larpandora : lardata : Utilities/TimeServiceException.h
-larpandora : lardata : Utilities/VectorMap.h
 larpandora : lardata : Utilities/sparse_vector.h
 larpandora : larpandora : LArPandoraAlgorithms/LArCalculators/LArPseudoLayerCalculator.h
 larpandora : larpandora : LArPandoraAlgorithms/LArCalculators/LArTransformationCalculator.h
@@ -454,12 +453,6 @@ larpandora : larpandora : LArPandoraInterface/LArPandoraBase.h
 larpandora : larpandora : LArPandoraInterface/LArPandoraHelper.h
 larpandora : larpandora : LArPandoraInterface/MicroBooNEPseudoLayerCalculator.h
 larpandora : larpandora : LArPandoraInterface/MicroBooNETransformationCalculator.h
-larpandora : larsim : MCCheater/BackTracker.h
-larpandora : larsim : Simulation/EveIdCalculator.h
-larpandora : larsim : Simulation/LArVoxelData.h
-larpandora : larsim : Simulation/LArVoxelID.h
-larpandora : larsim : Simulation/LArVoxelList.h
-larpandora : larsim : Simulation/ParticleList.h
 larpandora : larsim : Simulation/SimChannel.h
 larreco : larcore : Geometry/ChannelMapAlg.h
 larreco : larcore : Geometry/CryostatGeo.h
@@ -475,7 +468,6 @@ larreco : larcore : SimpleTypesAndConstants/RawTypes.h
 larreco : larcore : SimpleTypesAndConstants/geo_types.h
 larreco : lardata : AnalysisAlg/CalorimetryAlg.h
 larreco : lardata : AnalysisBase/Calorimetry.h
-larreco : lardata : AnalysisBase/CosmicTag.h
 larreco : lardata : MCBase/MCBaseException.h
 larreco : lardata : MCBase/MCDataHolder.h
 larreco : lardata : MCBase/MCHit.h
