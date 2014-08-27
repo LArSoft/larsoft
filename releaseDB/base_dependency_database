@@ -1,3 +1,5 @@
+larana : larana : CosmicRemoval/BeamFlashTrackMatchTaggerAlg.h
+larana : larana : CosmicRemoval/HitTagAssociatorAlg.h
 larana : larana : OpticalDetector/AlgoFixedWindow.h
 larana : larana : OpticalDetector/AlgoPedestal.h
 larana : larana : OpticalDetector/AlgoThreshold.h
@@ -25,6 +27,10 @@ larana : lardata : AnalysisBase/Calorimetry.h
 larana : lardata : AnalysisBase/CosmicTag.h
 larana : lardata : AnalysisBase/FlashMatch.h
 larana : lardata : AnalysisBase/ParticleID.h
+larana : lardata : MCBase/MCBaseException.h
+larana : lardata : MCBase/MCHit.h
+larana : lardata : MCBase/MCHitCollection.h
+larana : lardata : MCBase/MCLimits.h
 larana : lardata : OpticalDetectorData/ChannelData.h
 larana : lardata : OpticalDetectorData/ChannelDataGroup.h
 larana : lardata : OpticalDetectorData/FIFOChannel.h
@@ -482,6 +488,7 @@ larreco : lardata : RecoBase/Cluster.h
 larreco : lardata : RecoBase/EndPoint2D.h
 larreco : lardata : RecoBase/Event.h
 larreco : lardata : RecoBase/Hit.h
+larreco : lardata : RecoBase/PFParticle.h
 larreco : lardata : RecoBase/Seed.h
 larreco : lardata : RecoBase/Shower.h
 larreco : lardata : RecoBase/SpacePoint.h
@@ -641,7 +648,6 @@ larsim : lardata : Utilities/TimeService.h
 larsim : lardata : Utilities/TimeServiceException.h
 larsim : lardata : Utilities/VectorMap.h
 larsim : lardata : Utilities/sparse_vector.h
-larsim : larevt : Filters/ChannelFilter.h
 larsim : larsim : LArG4/AuxDetReadout.h
 larsim : larsim : LArG4/AuxDetReadoutGeometry.h
 larsim : larsim : LArG4/ConfigurablePhysicsList.hh
