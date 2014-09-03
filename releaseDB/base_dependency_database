@@ -188,7 +188,9 @@ lardata : lardata : RecoObjects/SurfXYZPlane.h
 lardata : lardata : RecoObjects/SurfYZPlane.h
 lardata : lardata : RecoObjects/Surface.h
 lardata : lardata : Utilities/AssociationUtil.h
+lardata : lardata : Utilities/BulkAllocator.h
 lardata : lardata : Utilities/ClockConstants.h
+lardata : lardata : Utilities/CountersMap.h
 lardata : lardata : Utilities/DatabaseUtil.h
 lardata : lardata : Utilities/DetectorProperties.h
 lardata : lardata : Utilities/ElecClock.h
@@ -196,6 +198,7 @@ lardata : lardata : Utilities/FileCatalogMetadataExtras.h
 lardata : lardata : Utilities/GeometryUtilities.h
 lardata : lardata : Utilities/LArFFT.h
 lardata : lardata : Utilities/LArProperties.h
+lardata : lardata : Utilities/NestedIterator.h
 lardata : lardata : Utilities/SignalShaping.h
 lardata : lardata : Utilities/SimpleTimeService.h
 lardata : lardata : Utilities/TimeService.h
