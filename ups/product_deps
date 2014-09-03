@@ -1,6 +1,6 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v02_05_02
+parent	larsoft	v02_05_03
 defaultqual	e5
 
 # larsoft itself has no inc, or fcl directories
@@ -11,11 +11,11 @@ bindir      product_dir
 
 #
 product         version
-lareventdisplay	v02_05_02
-larexamples	v02_05_02
-larana		v02_05_02
-larreco		v02_05_02
-larpandora	v02_05_02
+lareventdisplay	v02_05_03
+larexamples	v02_05_03
+larana		v02_05_03
+larreco		v02_05_03
+larpandora	v02_05_03
 larsoft_data	v0_02_00
 ifdh_art	v1_4_3a
 gcc		v4_8_2
