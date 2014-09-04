@@ -1,6 +1,6 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v02_05_03
+parent	larsoft	v02_06_00
 defaultqual	e5
 
 # larsoft itself has no inc, or fcl directories
@@ -11,24 +11,24 @@ bindir      product_dir
 
 #
 product         version
-lareventdisplay	v02_05_03
-larexamples	v02_05_03
-larana		v02_05_03
-larreco		v02_05_03
-larpandora	v02_05_03
+lareventdisplay	v02_06_00
+larexamples	v02_06_00
+larana		v02_06_00
+larreco		v02_06_00
+larpandora	v02_06_00
 larsoft_data	v0_02_00
 ifdh_art	v1_4_3a
 gcc		v4_8_2
 
 # list products required ONLY for the build
 # any products here must NOT have qualifiers
-only_for_build  cetbuildtools   v3_11_00
+only_for_build  cetbuildtools   v3_13_00
   
 # e5  - with gcc 4.8.2 and -std=c++11
 qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	gcc	ifdh_art	larsoft_data	notes
-e5:debug	e5:debug	e5:debug	e5:debug	e5:debug	e5:debug	-nq-	s2:nu:e5:debug	-nq-
-e5:opt		e5:opt		e5:opt		e5:opt		e5:opt		e5:opt		-nq-	s2:nu:e5:opt	-nq-
-e5:prof		e5:prof		e5:prof		e5:prof		e5:prof		e5:prof		-nq-	s2:nu:e5:prof	-nq-
+e5:debug	e5:debug	e5:debug	e5:debug	e5:debug	e5:debug	-nq-	s3:nu:e5:debug	-nq-
+e5:opt		e5:opt		e5:opt		e5:opt		e5:opt		e5:opt		-nq-	s3:nu:e5:opt	-nq-
+e5:prof		e5:prof		e5:prof		e5:prof		e5:prof		e5:prof		-nq-	s3:nu:e5:prof	-nq-
 e5:noifdh:debug	e5:debug	e5:debug	e5:debug	e5:debug	e5:debug	-nq-	-		-nq-
 e5:noifdh:opt	e5:opt		e5:opt		e5:opt		e5:opt		e5:opt		-nq-	-		-nq-
 e5:noifdh:prof	e5:prof		e5:prof		e5:prof		e5:prof		e5:prof		-nq-	-		-nq-
