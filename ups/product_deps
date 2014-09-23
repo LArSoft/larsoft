@@ -1,7 +1,7 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v02_06_02
-defaultqual	e5
+parent	larsoft	v03_00_00
+defaultqual	e6
 
 # larsoft itself has no inc, or fcl directories
 # the lib directory just contains larsoftConfig.cmake and larsoftConfigVersion.cmake
@@ -11,27 +11,28 @@ bindir      product_dir
 
 #
 product         version
-lareventdisplay	v02_06_02
-larexamples	v02_06_02
-larana		v02_06_02
-larreco		v02_06_02
-larpandora	v02_06_02
-larsoft_data	v0_02_00
-ifdh_art	v1_4_3a
-gcc		v4_8_2
+lareventdisplay	v03_00_00
+larexamples	v03_00_00
+larana		v03_00_00
+larreco		v03_00_00
+larpandora	v03_00_00
+larsoft_data	v0_03_00
+ifdh_art	v1_5_2
+gcc		v4_9_1
 
-# list products required ONLY for the build
-# any products here must NOT have qualifiers
-only_for_build  cetbuildtools   v3_13_01
+cetbuildtools	v4_02_02	-	only_for_build
+end_product_list
+
   
-# e5  - with gcc 4.8.2 and -std=c++11
+# e6  - with gcc 4.9.1 and -std=c++1y
 qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	gcc	ifdh_art	larsoft_data	notes
-e5:debug	e5:debug	e5:debug	e5:debug	e5:debug	e5:debug	-nq-	s3:nu:e5:debug	-nq-
-e5:opt		e5:opt		e5:opt		e5:opt		e5:opt		e5:opt		-nq-	s3:nu:e5:opt	-nq-
-e5:prof		e5:prof		e5:prof		e5:prof		e5:prof		e5:prof		-nq-	s3:nu:e5:prof	-nq-
-e5:noifdh:debug	e5:debug	e5:debug	e5:debug	e5:debug	e5:debug	-nq-	-		-nq-
-e5:noifdh:opt	e5:opt		e5:opt		e5:opt		e5:opt		e5:opt		-nq-	-		-nq-
-e5:noifdh:prof	e5:prof		e5:prof		e5:prof		e5:prof		e5:prof		-nq-	-		-nq-
+e6:debug	e6:debug	e6:debug	e6:debug	e6:debug	e6:debug	-nq-	s5:nu:e6:debug	-nq-
+e6:opt		e6:opt		e6:opt		e6:opt		e6:opt		e6:opt		-nq-	s5:nu:e6:opt	-nq-
+e6:prof		e6:prof		e6:prof		e6:prof		e6:prof		e6:prof		-nq-	s5:nu:e6:prof	-nq-
+e6:noifdh:debug	e6:debug	e6:debug	e6:debug	e6:debug	e6:debug	-nq-	-		-nq-
+e6:noifdh:opt	e6:opt		e6:opt		e6:opt		e6:opt		e6:opt		-nq-	-		-nq-
+e6:noifdh:prof	e6:prof		e6:prof		e6:prof		e6:prof		e6:prof		-nq-	-		-nq-
+end_qualifier_list
 
 # table file fragment to set FW_DATA
 table_fragment_begin
