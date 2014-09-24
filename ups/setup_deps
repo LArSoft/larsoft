@@ -59,8 +59,8 @@ set_ msg5='ERROR: setup of required products has failed'
 
 echo ----------- check this block for errors -----------------------
 set_ setup_fail="false"
-set_ cetb=` grep only_for_build $CETPKG_SOURCE/ups/product_deps | grep cetbuildtools | awk '{ print $2 }' `
-set_ cetv=` grep only_for_build $CETPKG_SOURCE/ups/product_deps | grep cetbuildtools | awk '{ print $3 }' `
+set_ cetb=` grep -e '^[ \t]*cetbuildtools' $CETPKG_SOURCE/ups/product_deps | grep  only_for_build| awk '{ print $1 }' `
+set_ cetv=` grep -e '^[ \t]*cetbuildtools' $CETPKG_SOURCE/ups/product_deps | grep  only_for_build| awk '{ print $2 }' `
 #echo Found $cetb $cetv
 setup -B $cetb $cetv
 test "$?" = 0 || set_ setup_fail="true"
