@@ -521,7 +521,9 @@ larreco : lardata : RecoObjects/SurfXYZPlane.h
 larreco : lardata : RecoObjects/SurfYZPlane.h
 larreco : lardata : RecoObjects/Surface.h
 larreco : lardata : Utilities/AssociationUtil.h
+larreco : lardata : Utilities/BulkAllocator.h
 larreco : lardata : Utilities/ClockConstants.h
+larreco : lardata : Utilities/CountersMap.h
 larreco : lardata : Utilities/DatabaseUtil.h
 larreco : lardata : Utilities/DetectorProperties.h
 larreco : lardata : Utilities/ElecClock.h
