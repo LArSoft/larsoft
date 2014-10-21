@@ -44,6 +44,7 @@ larana : lardata : RecoBase/Cluster.h
 larana : lardata : RecoBase/Hit.h
 larana : lardata : RecoBase/OpFlash.h
 larana : lardata : RecoBase/OpHit.h
+larana : lardata : RecoBase/PFParticle.h
 larana : lardata : RecoBase/Seed.h
 larana : lardata : RecoBase/Shower.h
 larana : lardata : RecoBase/SpacePoint.h
