@@ -1,3 +1,4 @@
+larana : larana : Calorimetry/TrackCalorimetryAlg.h
 larana : larana : CosmicRemoval/BeamFlashTrackMatchTaggerAlg.h
 larana : larana : CosmicRemoval/HitTagAssociatorAlg.h
 larana : larana : OpticalDetector/AlgoFixedWindow.h
