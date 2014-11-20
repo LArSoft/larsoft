@@ -1,0 +1,26 @@
+# build larsoft
+
+  basequal=${1}
+  
+  build_bundle nu-@NUTOOLS_DOT_VERSION@ ${basequal}
+
+  build_cet larcore @LARCORE_VERSION@ ${basequal}
+  build_cet lardata @LARDATA_VERSION@ ${basequal}
+  build_cet larevt @LAREVT_VERSION@ ${basequal}
+  build_cet larsim @LARSIM_VERSION@ ${basequal}
+  build_cet larreco @LARRECO_VERSION@ ${basequal}
+  build_cet larana @LARANA_VERSION@ ${basequal}
+  build_cet larpandora @LARPANDORA_VERSION@ ${basequal}
+  build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}
+  build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}
+  build_cet larsoft @LARSOFT_VERSION@ ${basequal}:noifdh
+  if ! (( ${darwin:-0} )); then # No git or ifdh for Darwin
+     do_build git @GIT_VERSION@ 
+     build_cet larsoft @LARSOFT_VERSION@ ${basequal}
+  fi
+  # add to manifest if no build - larsoft_data, gitflow, mrb
+  prep_build larsoft_data @LARSOFT_DATA_VERSION@; add_to_manifest
+  prep_build gitflow @GITFLOW_VERSION@; add_to_manifest
+  prep_build mrb @MRB_VERSION@; add_to_manifest
+
+return 0
