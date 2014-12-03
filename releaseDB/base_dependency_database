@@ -341,12 +341,15 @@ larpandora : larcore : Geometry/WireGeo.h
 larpandora : larcore : SimpleTypesAndConstants/PhysicalConstants.h
 larpandora : larcore : SimpleTypesAndConstants/RawTypes.h
 larpandora : larcore : SimpleTypesAndConstants/geo_types.h
+larpandora : lardata : AnalysisBase/CosmicTag.h
 larpandora : lardata : RawData/RawDigit.h
 larpandora : lardata : RawData/TriggerData.h
 larpandora : lardata : RecoBase/Cluster.h
 larpandora : lardata : RecoBase/Hit.h
 larpandora : lardata : RecoBase/PFParticle.h
+larpandora : lardata : RecoBase/Seed.h
 larpandora : lardata : RecoBase/SpacePoint.h
+larpandora : lardata : RecoBase/Track.h
 larpandora : lardata : RecoBase/Wire.h
 larpandora : lardata : Utilities/AssociationUtil.h
 larpandora : lardata : Utilities/ClockConstants.h
