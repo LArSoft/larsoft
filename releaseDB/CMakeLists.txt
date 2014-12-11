@@ -2,7 +2,7 @@
 set( LARSOFT_DATA_VERSION    "v0_03_01" )
 set( GIT_VERSION             "v1_8_5_3" )
 set( GITFLOW_VERSION         "v0_4_2_pre" )
-set( MRB_VERSION             "v1_03_00" )
+set( MRB_VERSION             "v1_03_02" )
 
 set( LARCORE_VERSION         "v03_03_04" )
 set( LARDATA_VERSION         "v03_04_01" )
