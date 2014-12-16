@@ -128,6 +128,8 @@ lardata : lardata : MCBase/MCHit.h
 lardata : lardata : MCBase/MCHitCollection.h
 lardata : lardata : MCBase/MCLimits.h
 lardata : lardata : MCBase/MCShower.h
+lardata : lardata : MCBase/MCStep.h
+lardata : lardata : MCBase/MCTrack.h
 lardata : lardata : MCBase/MCWire.h
 lardata : lardata : MCBase/MCWireCollection.h
 lardata : lardata : MCBase/classes.h
@@ -361,6 +363,7 @@ larpandora : lardata : Utilities/SimpleTimeService.h
 larpandora : lardata : Utilities/TimeService.h
 larpandora : lardata : Utilities/TimeServiceException.h
 larpandora : lardata : Utilities/sparse_vector.h
+larpandora : larpandora : LArPandoraAlgorithms/LArCheating/CheatingClusterCharacterisationAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArCheating/CheatingClusterCreationAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArCheating/CheatingCosmicRayIdentificationAlg.h
 larpandora : larpandora : LArPandoraAlgorithms/LArCheating/CheatingCosmicRayShowerMatchingAlg.h
@@ -407,6 +410,7 @@ larpandora : larpandora : LArPandoraAlgorithms/LArThreeDReco/LArHitCreation/TwoV
 larpandora : larpandora : LArPandoraAlgorithms/LArThreeDReco/LArLongitudinalTrackMatching/ClearLongitudinalTracksTool.h
 larpandora : larpandora : LArPandoraAlgorithms/LArThreeDReco/LArLongitudinalTrackMatching/MatchedEndPointsTool.h
 larpandora : larpandora : LArPandoraAlgorithms/LArThreeDReco/LArLongitudinalTrackMatching/ThreeDLongitudinalTracksAlgorithm.h
+larpandora : larpandora : LArPandoraAlgorithms/LArThreeDReco/LArPfoMopUp/ParticleRecoveryAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArThreeDReco/LArPfoMopUp/VertexBasedPfoMergingAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArThreeDReco/LArShowerFragments/ClearRemnantsTool.h
 larpandora : larpandora : LArPandoraAlgorithms/LArThreeDReco/LArShowerFragments/ThreeDRemnantsAlgorithm.h
@@ -445,6 +449,7 @@ larpandora : larpandora : LArPandoraAlgorithms/LArTwoDReco/LArClusterMopUp/Bound
 larpandora : larpandora : LArPandoraAlgorithms/LArTwoDReco/LArClusterMopUp/ClusterMopUpAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArTwoDReco/LArClusterMopUp/ConeBasedMergingAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArTwoDReco/LArClusterMopUp/IsolatedHitMergingAlgorithm.h
+larpandora : larpandora : LArPandoraAlgorithms/LArTwoDReco/LArClusterMopUp/ProximityBasedMergingAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArTwoDReco/LArClusterSplitting/BranchSplittingAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArTwoDReco/LArClusterSplitting/ClusterSplittingAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArTwoDReco/LArClusterSplitting/CrossedTrackSplittingAlgorithm.h
@@ -463,6 +468,7 @@ larpandora : larpandora : LArPandoraAlgorithms/LArTwoDReco/LArCosmicRay/DeltaRay
 larpandora : larpandora : LArPandoraAlgorithms/LArTwoDReco/LArCosmicRay/DeltaRayGrowingAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArTwoDReco/LArSeedFinding/ClusterCharacterisationAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArTwoDReco/LArSeedFinding/SeedGrowingAlgorithm.h
+larpandora : larpandora : LArPandoraAlgorithms/LArTwoDReco/LArSeedFinding/ShowerGrowingAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArTwoDReco/TwoDParticleCreationAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArUtility/ListChangingAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArUtility/ListDissolutionAlgorithm.h

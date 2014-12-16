@@ -20,6 +20,7 @@
   fi
   # add to manifest if no build - larsoft_data, gitflow, mrb
   prep_build larsoft_data @LARSOFT_DATA_VERSION@; add_to_manifest
+  prep_build larbatch @LARBATCH_VERSION@; add_to_manifest
   prep_build gitflow @GITFLOW_VERSION@; add_to_manifest
   prep_build mrb @MRB_VERSION@; add_to_manifest
 
