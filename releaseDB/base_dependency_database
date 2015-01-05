@@ -205,10 +205,12 @@ lardata : lardata : Utilities/GeometryUtilities.h
 lardata : lardata : Utilities/LArFFT.h
 lardata : lardata : Utilities/LArProperties.h
 lardata : lardata : Utilities/NestedIterator.h
+lardata : lardata : Utilities/Range.h
 lardata : lardata : Utilities/SignalShaping.h
 lardata : lardata : Utilities/SimpleTimeService.h
 lardata : lardata : Utilities/TimeService.h
 lardata : lardata : Utilities/TimeServiceException.h
+lardata : lardata : Utilities/UniqueRangeSet.h
 lardata : lardata : Utilities/sparse_vector.h
 lareventdisplay : larcore : Geometry/ChannelMapAlg.h
 lareventdisplay : larcore : Geometry/CryostatGeo.h
