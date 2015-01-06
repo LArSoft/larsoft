@@ -3,8 +3,11 @@
   basequal=${1}
   
   build_bundle nu-@NUTOOLS_DOT_VERSION@ ${basequal}
+  
+  # this is temporary
+  ensure_cetbuildtools v4_04_03
 
-  build_cet larcore @LARCORE_VERSION@ ${basequal}
+  build_cet -n larcore @LARCORE_VERSION@ ${basequal}
   build_cet lardata @LARDATA_VERSION@ ${basequal}
   build_cet larevt @LAREVT_VERSION@ ${basequal}
   build_cet larsim @LARSIM_VERSION@ ${basequal}
@@ -18,9 +21,9 @@
      do_build git @GIT_VERSION@ 
      build_cet larsoft @LARSOFT_VERSION@ ${basequal}
   fi
+  build_cet_null larbatch @LARBATCH_VERSION@
   # add to manifest if no build - larsoft_data, gitflow, mrb
   prep_build larsoft_data @LARSOFT_DATA_VERSION@; add_to_manifest
-  prep_build larbatch @LARBATCH_VERSION@; add_to_manifest
   prep_build gitflow @GITFLOW_VERSION@; add_to_manifest
   prep_build mrb @MRB_VERSION@; add_to_manifest
 
