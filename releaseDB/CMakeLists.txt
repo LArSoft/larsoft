@@ -7,7 +7,7 @@ set( GIT_VERSION             "v1_8_5_6" )
 set( GITFLOW_VERSION         "v0_4_2_pre" )
 set( MRB_VERSION             "v1_03_04" )
 
-set( ARTEXTERNALS_VERSION "v1_00_01" )
+set( ARTEXTENSIONS_VERSION   "v1_00_01" )
 
 set( LARCORE_VERSION         "v03_05_00" )
 set( LARDATA_VERSION         "v03_07_00" )
