@@ -8,6 +8,7 @@
   
   # this is temporary
   ensure_cetbuildtools v4_04_03
+  ensure_cetbuildtools v4_05_00
 
   # add to manifest if no build - larsoft_data, gitflow, mrb
   prep_build larsoft_data @LARSOFT_DATA_VERSION@; add_to_manifest
