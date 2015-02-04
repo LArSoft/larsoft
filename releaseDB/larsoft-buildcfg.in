@@ -3,7 +3,8 @@
   basequal=${1}
   
   build_bundle nu-@NUTOOLS_DOT_VERSION@ ${basequal}
-  
+  do_build psycopg2 @PSYCOPG2_VERSION@ ${basequal}
+
   # this is temporary
   ensure_cetbuildtools v4_04_03
   ensure_cetbuildtools v4_05_00

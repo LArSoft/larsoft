@@ -8,6 +8,7 @@ set( GITFLOW_VERSION         "v0_4_2_pre" )
 set( MRB_VERSION             "v1_03_05" )
 
 set( ARTEXTENSIONS_VERSION   "v1_00_01" )
+set( PSYCOPG2_VERSION        "v2_5_4" )
 
 set( LARCORE_VERSION         "v03_05_00" )
 set( LARDATA_VERSION         "v03_08_00" )
