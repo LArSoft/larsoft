@@ -1,4 +1,5 @@
 
+set( ART_VERSION   "v1_12_05" )
 set( ARTEXTENSIONS_VERSION   "v1_00_01" )
 set( LARUTILS_VERSION        "v1_00_02" )
 set( LARBATCH_VERSION        "v01_04_00" )
@@ -33,10 +34,7 @@ set( PSYCOPG2_DOT_VERSION        "2.5.4" )
 STRING( REGEX REPLACE "_" "." VDOT "${LARSOFT_VERSION}"  )
 STRING( REGEX REPLACE "^[v]" "" LARSOFT_DOT_VERSION "${VDOT}" )
 
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/product_list.in
-  ${CMAKE_CURRENT_BINARY_DIR}/product_list
-  @ONLY
-  )
+# these files should be copied to scisoft for each release
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-buildcfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-buildcfg-${LARSOFT_DOT_VERSION}
   @ONLY
@@ -45,11 +43,16 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt
   @ONLY
   )
+CONFIGURE_FILE ( ${CMAKE_CURRENT_SOURCE_DIR}/larsoft.html.in
+  ${CMAKE_CURRENT_BINARY_DIR}/larsoft-${LARSOFT_VERSION}.html @ONLY )
 
 
+# install the product list
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/product_list.in
+  ${CMAKE_CURRENT_BINARY_DIR}/product_list
+  @ONLY
+  ) 
 INSTALL( FILES base_dependency_database
                ${CMAKE_CURRENT_BINARY_DIR}/product_list
-	       ${CMAKE_CURRENT_BINARY_DIR}/larsoft-buildcfg-${LARSOFT_DOT_VERSION}
-               ${CMAKE_CURRENT_BINARY_DIR}/larsoft-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt
                README
          DESTINATION "${product}/${version}/releaseDB" )
