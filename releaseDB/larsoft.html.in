@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4. Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>larsoft @LARSOFT_VERSION@</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" topmargin="6" leftmargin="6" marginheight="6" marginwidth
+="6">
+
+<p>
+<center>
+[&nbsp;<a href="http://scisoft.fnal.gov/">Distribution Home</a>&nbsp;]&nbsp;
+<br>
+[&nbsp;<a href="http://scisoft.fnal.gov/scisoft/bundles/">Distribution Scripts and Manifests</a>&nbsp;]&nbsp;
+[&nbsp;<a href="http://scisoft.fnal.gov/scisoft/packages/">Individual Package Distribution</a>&nbsp;]&nbsp;
+<br>
+</center>
+</p>
+
+<h1>Download materials for larsoft @LARSOFT_VERSION@ and dependencies</h1>
+
+<h2>Known Issues</h2>
+
+<ul>
+<li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArSoft_release_list">Release Notes</a></li>
+<li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/issues">all issues</a></li>
+<li>There is a Mavericks built for this release.</li>
+<li>Yosemite is not yet supported.</li>
+</ul>
+
+<h2 id="scripts-binary">Download scripts for binary distributions.</h2>
+<ul>
+  <li><a type="application/x-sh" download href="http://scisoft.fnal.gov/scisoft/bundles/tools/pullProducts">pullProducts</a>
+  <ul>
+    <li>Will pull all products listed in the bundle manifest.</li>
+    <li>This script will first check to see if a package is installed and will download the product only if not installed.</li>
+    <li>Supported bundles: larsoft, nu, art</li>
+    <li>USAGE: 
+    <ul>
+      <li>Download the script.</li>
+      <li>chmod +x pullProducts</li>
+      <li><pre>./pullProducts &lt;product-directory&gt; &lt;slf5|slf6|d12|d13&gt; &lt;bundle-version&gt;
+&lt;e6&gt; &lt;debug|opt|prof&gt;</pre></li>
+      <li>For instance: <pre>./pullProducts &lt;product_topdir&gt; slf5 larsoft-@LARSOFT_VERSION@ @version_set@-e6  prof</pre></li>
+      <li><pre>
+Usage: pullProducts [-h]
+       pullProducts <options> <product_topdir> <OS> <bundle-spec> <qual_set> <build-spec>
+
+Options:
+
+  -f    Force pull of tarball if it already exists
+  -h    This help.
+
+Arguments:
+
+  product_topdir   Top directory for relocatable-UPS products area.
+  
+  OS               Supported os distributions: slf5, slf6, d13, source
+ 
+  bundle-spec      Bundle name and version, e.g., larsoft-@LARSOFT_VERSION@
+ 
+  qual_set         Supported qualifier sets: 
+                   e5
+                   e6
+                   s3-e5
+                   s4-e5
+                   s4-e6
+                   s5-e5
+                   s5-e6
+
+  build-spec       debug, opt or prof.
+      </pre></li>
+    </ul></li>
+  </ul></li>
+  <li>We recommend downloading the prebuilt binaries whenever possible.</li>
+</ul>
+
+<h2 id="scripts-source">Source code distributions.</h2>
+
+<ul>
+  <li><a type="application/x-sh" download href="http://scisoft.fnal.gov/scisoft/bundles/art/@ART_VERSION@/checkPrerequisites-@ART_VERSION@">checkPrerequisites-@ART_VERSION@</a>
+  <ul>
+    <li>Will examine the system for the presence of known OS-level
+    prerequisites (on RedHat derivatives, these will be RPMs) and list
+    any deficiencies with remediation instructions. The script does not
+    require admin privilege to run, but it is likely that any
+    remediation will.</li>
+    <li>USAGE:
+    <ul>
+      <li>Download the script.</li>
+      <li><pre>chmod +x checkPrerequisites-@ART_VERSION@
+./checkPrerequisites</li>
+    </ul></li>
+  </ul></li>
+  <li><a type="application/x-sh" download href="http://scisoft.fnal.gov/scisoft/bundles/tools/pullProducts">pullProducts</a>
+  <ul>
+    <li>Will pull and expand source code tarballs and the build script preparatory to a build.</li>
+    <li>Note that there are no source code tarballs for art or larsoft.  
+        Instead, the build script pulls the art source code directly from the repository.</li>
+    <li>USAGE:
+    <ul>
+      <li>Download the script.</li>
+      <li><pre>chmod +x pullProducts
+./pullProducts &lt;product_topdir&gt; source larsoft-@LARSOFT_VERSION@</pre></li>
+    </ul></li>
+  </ul></li>
+  <li><a type="application/x-sh" download
+  href="http://scisoft.fnal.gov/scisoft/bundles/tools/buildFW">buildFW</a>
+  <ul>
+    <li>Build all packages from source. </li>
+    <li>BuildFW uses buildcfg scriptlets which are downloaded as needed from scisoft</li>
+    <li>BuildFW will pull source living in Fermi redmine (cpp0x, art, etc.) direct from the repository.</li>
+    <li>USAGE:
+    <ul>
+      <li><pre>Usage: buildFW [-h]
+       buildFW <options> <product_topdir> <build-spec> <bundle-spec>
+
+Options:
+
+  -b    Specify basequal (REQUIRED: no default).
+  -f    Force already-built packages to be rebuilt.
+  -h    This help.
+  -s    Specify version set for those packages requiring it
+  -t    Make package tarfiles.
+  -U    Force packaged version of UPS to be built and/or made current.
+
+Arguments:
+
+  product_topdir   Top directory for relocatable-UPS products area.
+
+  build-spec    debug, opt or prof.
+
+  bundle-spec   Bundle identifier: 
+                artdev-1.12.00 (e.g.)</pre></li>
+      <li><pre>./buildFW [-ft] -b e6 -s s6 &lt;product-directory&gt; &lt;debug|prof|opt&gt; larsoft-@LARSOFT_VERSION@</pre></li>
+    </ul></li>
+  </ul></li>
+
+</ul>
+
+<p>
+
+<h2 id="tarballs-contents">Packages</h2>
+<center>
+<table width="80%">
+<tr><td colspan="3">
+The following products are part of the full larsoft suite:
+</td></tr>
+<tr><td colspan="3"><b>Code:</b></td></tr>
+<tr><td>&nbsp;&nbsp;  art     </td>  <td> @ART_VERSION@ </td>  <td>nu:e6</td></tr>
+<tr><td>&nbsp;&nbsp;  nutools      </td>  <td> @NUTOOLS_VERSION@	</td>  <td>e6</td></tr>
+<tr><td>&nbsp;&nbsp;  larsoft_data </td>  <td> @LARSOFT_DATA_VERSION@	</td>  <td>&nbsp;</td></tr>	
+<tr><td>&nbsp;&nbsp;  larbatch     </td>  <td> @LARBATCH_VERSION@ </td>  <td>&nbsp;</td></tr>
+<tr><td>&nbsp;&nbsp;  larutils     </td>  <td> @LARUTILS_VERSION@ </td>  <td>&nbsp;</td></tr>
+<tr><td>&nbsp;&nbsp;  larcore     </td>  <td> @LARCORE_VERSION@ </td>  <td>e6</td></tr>
+<tr><td>&nbsp;&nbsp;  lardata     </td>  <td> @LARDATA_VERSION@ </td>  <td>e6</td></tr>
+<tr><td>&nbsp;&nbsp;  larevt     </td>  <td> @LAREVT_VERSION@ </td>  <td>e6</td></tr>
+<tr><td>&nbsp;&nbsp;  larsim     </td>  <td> @LARSIM_VERSION@ </td>  <td>e6</td></tr>
+<tr><td>&nbsp;&nbsp;  larreco     </td>  <td> @LARRECO_VERSION@ </td>  <td>e6</td></tr>
+<tr><td>&nbsp;&nbsp;  larana     </td>  <td> @LARANA_VERSION@ </td>  <td>e6</td></tr>
+<tr><td>&nbsp;&nbsp;  larpandora     </td>  <td> @LARPANDORA_VERSION@ </td>  <td>e6</td></tr>
+<tr><td>&nbsp;&nbsp;  larexamples     </td>  <td> @LAREXAMPLES_VERSION@ </td>  <td>e6</td></tr>
+<tr><td>&nbsp;&nbsp;  lareventdisplay     </td>  <td> @LAREVENTDISPLAY_VERSION@ </td>  <td>e6</td></tr>
+<tr><td>&nbsp;&nbsp;  larsoft     </td>  <td> @LARSOFT_VERSION@ </td>  <td>e6[:noifdh]</td></tr>
+<tr><td colspan="3"><b>Utilities:</b></td></tr>
+<tr><td>&nbsp;&nbsp;  git          </td>  <td> @GIT_VERSION@	  </td>  <td>&nbsp;</td></tr>
+<tr><td>&nbsp;&nbsp;  gitflow      </td>  <td> @GITFLOW_VERSION@ </td>  <td>&nbsp;</td></tr>
+<tr><td>&nbsp;&nbsp;  mrb          </td>  <td> @MRB_VERSION@ </td>  <td>&nbsp;</td></tr>
+</table>
+</center>
+
+<p>
+
+<center>
+[&nbsp;<a href="http://scisoft.fnal.gov/">Distribution Home</a>&nbsp;]&nbsp;
+</center>
+</p>
+</body>
+</html>
+
