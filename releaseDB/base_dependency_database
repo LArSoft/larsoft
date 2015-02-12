@@ -357,6 +357,7 @@ larevt : lardata : Utilities/TimeServiceException.h
 larevt : lardata : Utilities/UtilException.h
 larevt : lardata : Utilities/sparse_vector.h
 larevt : larevt : Filters/ChannelFilter.h
+larevt : larevt : SpaceCharge/SpaceCharge.h
 larexamples : larcore : Geometry/AuxDetGeo.h
 larexamples : larcore : Geometry/ChannelMapAlg.h
 larexamples : larcore : Geometry/CryostatGeo.h
@@ -839,6 +840,7 @@ larsim : lardata : Utilities/TimeServiceException.h
 larsim : lardata : Utilities/VectorMap.h
 larsim : lardata : Utilities/sparse_vector.h
 larsim : larevt : Filters/ChannelFilter.h
+larsim : larevt : SpaceCharge/SpaceCharge.h
 larsim : larsim : LArG4/AuxDetReadout.h
 larsim : larsim : LArG4/AuxDetReadoutGeometry.h
 larsim : larsim : LArG4/ConfigurablePhysicsList.hh
