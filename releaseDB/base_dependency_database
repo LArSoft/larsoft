@@ -65,7 +65,6 @@ larana : lardata : RecoBase/Seed.h
 larana : lardata : RecoBase/Shower.h
 larana : lardata : RecoBase/SpacePoint.h
 larana : lardata : RecoBase/Track.h
-larana : lardata : RecoBase/Wire.h
 larana : lardata : RecoObjects/BezierTrack.h
 larana : lardata : Utilities/AssociationUtil.h
 larana : lardata : Utilities/ClockConstants.h
@@ -78,7 +77,6 @@ larana : lardata : Utilities/SumSecondFunction.h
 larana : lardata : Utilities/TimeService.h
 larana : lardata : Utilities/TimeServiceException.h
 larana : lardata : Utilities/VectorMap.h
-larana : lardata : Utilities/sparse_vector.h
 larana : larevt : Filters/ChannelFilter.h
 larana : larreco : RecoAlg/SpacePointAlg.h
 larana : larsim : MCCheater/BackTracker.h
@@ -114,6 +112,7 @@ larcore : larcore : Geometry/TPCGeo.h
 larcore : larcore : Geometry/WireGeo.h
 larcore : larcore : Geometry/geo.h
 larcore : larcore : SimpleTypesAndConstants/PhysicalConstants.h
+larcore : larcore : SimpleTypesAndConstants/RawTypes.h
 larcore : larcore : SimpleTypesAndConstants/geo_types.h
 larcore : larcore : SummaryData/POTSummary.h
 larcore : larcore : SummaryData/RunData.h
@@ -183,6 +182,10 @@ lardata : lardata : RecoBase/Track.h
 lardata : lardata : RecoBase/Vertex.h
 lardata : lardata : RecoBase/Wire.h
 lardata : lardata : RecoBase/classes.h
+lardata : lardata : RecoBaseArt/FindAllP.h
+lardata : lardata : RecoBaseArt/HitCreator.h
+lardata : lardata : RecoBaseArt/HitUtils.h
+lardata : lardata : RecoBaseArt/WireCreator.h
 lardata : lardata : RecoObjects/BezierCurveHelper.h
 lardata : lardata : RecoObjects/BezierTrack.h
 lardata : lardata : RecoObjects/Cluster3D.h
@@ -215,6 +218,7 @@ lardata : lardata : Utilities/BulkAllocator.h
 lardata : lardata : Utilities/ClockConstants.h
 lardata : lardata : Utilities/CountersMap.h
 lardata : lardata : Utilities/DatabaseUtil.h
+lardata : lardata : Utilities/Dereference.h
 lardata : lardata : Utilities/DetectorProperties.h
 lardata : lardata : Utilities/ElecClock.h
 lardata : lardata : Utilities/FileCatalogMetadataExtras.h
@@ -227,6 +231,7 @@ lardata : lardata : Utilities/PxUtils.h
 lardata : lardata : Utilities/Range.h
 lardata : lardata : Utilities/SignalShaping.h
 lardata : lardata : Utilities/SimpleTimeService.h
+lardata : lardata : Utilities/StatCollector.h
 lardata : lardata : Utilities/TimeService.h
 lardata : lardata : Utilities/TimeServiceException.h
 lardata : lardata : Utilities/UniqueRangeSet.h
@@ -267,6 +272,7 @@ lareventdisplay : lardata : RecoObjects/BezierTrack.h
 lareventdisplay : lardata : Utilities/AssociationUtil.h
 lareventdisplay : lardata : Utilities/ClockConstants.h
 lareventdisplay : lardata : Utilities/DatabaseUtil.h
+lareventdisplay : lardata : Utilities/Dereference.h
 lareventdisplay : lardata : Utilities/DetectorProperties.h
 lareventdisplay : lardata : Utilities/ElecClock.h
 lareventdisplay : lardata : Utilities/GeometryUtilities.h
@@ -274,6 +280,7 @@ lareventdisplay : lardata : Utilities/LArProperties.h
 lareventdisplay : lardata : Utilities/PxHitConverter.h
 lareventdisplay : lardata : Utilities/PxUtils.h
 lareventdisplay : lardata : Utilities/SimpleTimeService.h
+lareventdisplay : lardata : Utilities/StatCollector.h
 lareventdisplay : lardata : Utilities/SumSecondFunction.h
 lareventdisplay : lardata : Utilities/TimeService.h
 lareventdisplay : lardata : Utilities/TimeServiceException.h
@@ -334,6 +341,7 @@ larevt : lardata : RawData/raw.h
 larevt : lardata : RecoBase/Cluster.h
 larevt : lardata : RecoBase/Hit.h
 larevt : lardata : RecoBase/Wire.h
+larevt : lardata : RecoBaseArt/WireCreator.h
 larevt : lardata : Utilities/AssociationUtil.h
 larevt : lardata : Utilities/ClockConstants.h
 larevt : lardata : Utilities/DatabaseUtil.h
@@ -349,6 +357,7 @@ larevt : lardata : Utilities/TimeServiceException.h
 larevt : lardata : Utilities/UtilException.h
 larevt : lardata : Utilities/sparse_vector.h
 larevt : larevt : Filters/ChannelFilter.h
+larevt : larevt : SpaceCharge/SpaceCharge.h
 larexamples : larcore : Geometry/AuxDetGeo.h
 larexamples : larcore : Geometry/ChannelMapAlg.h
 larexamples : larcore : Geometry/CryostatGeo.h
@@ -358,11 +367,8 @@ larexamples : larcore : Geometry/Geometry.h
 larexamples : larcore : SimpleTypesAndConstants/PhysicalConstants.h
 larexamples : larcore : SimpleTypesAndConstants/RawTypes.h
 larexamples : larcore : SimpleTypesAndConstants/geo_types.h
-larexamples : lardata : RawData/RawDigit.h
 larexamples : lardata : RecoBase/Cluster.h
 larexamples : lardata : RecoBase/Hit.h
-larexamples : lardata : RecoBase/Wire.h
-larexamples : lardata : Utilities/sparse_vector.h
 larexamples : larsim : Simulation/LArG4Parameters.h
 larexamples : larsim : Simulation/SimChannel.h
 larpandora : larcore : Geometry/AuxDetGeo.h
@@ -378,7 +384,6 @@ larpandora : larcore : SimpleTypesAndConstants/PhysicalConstants.h
 larpandora : larcore : SimpleTypesAndConstants/RawTypes.h
 larpandora : larcore : SimpleTypesAndConstants/geo_types.h
 larpandora : lardata : AnalysisBase/CosmicTag.h
-larpandora : lardata : RawData/RawDigit.h
 larpandora : lardata : RawData/TriggerData.h
 larpandora : lardata : RecoBase/Cluster.h
 larpandora : lardata : RecoBase/Hit.h
@@ -392,12 +397,16 @@ larpandora : lardata : RecoBase/Wire.h
 larpandora : lardata : Utilities/AssociationUtil.h
 larpandora : lardata : Utilities/ClockConstants.h
 larpandora : lardata : Utilities/DatabaseUtil.h
+larpandora : lardata : Utilities/Dereference.h
 larpandora : lardata : Utilities/DetectorProperties.h
 larpandora : lardata : Utilities/ElecClock.h
+larpandora : lardata : Utilities/GeometryUtilities.h
 larpandora : lardata : Utilities/LArProperties.h
+larpandora : lardata : Utilities/PxUtils.h
 larpandora : lardata : Utilities/SimpleTimeService.h
 larpandora : lardata : Utilities/TimeService.h
 larpandora : lardata : Utilities/TimeServiceException.h
+larpandora : lardata : Utilities/UtilException.h
 larpandora : lardata : Utilities/sparse_vector.h
 larpandora : larpandora : LArPandoraAlgorithms/LArCheating/CheatingClusterCharacterisationAlgorithm.h
 larpandora : larpandora : LArPandoraAlgorithms/LArCheating/CheatingClusterCreationAlgorithm.h
@@ -534,6 +543,14 @@ larpandora : larpandora : LArPandoraInterface/MicroBooNEPseudoLayerPlugin.h
 larpandora : larpandora : LArPandoraInterface/MicroBooNETransformationPlugin.h
 larpandora : larpandora : LArPandoraInterface/PFParticleSeed.h
 larpandora : larpandora : LArPandoraInterface/PFParticleStitcher.h
+larpandora : larreco : ClusterFinder/ClusterCreator.h
+larpandora : larreco : RecoAlg/ClusterParamsImportWrapper.h
+larpandora : larreco : RecoAlg/ClusterRecoUtil/CRUException.h
+larpandora : larreco : RecoAlg/ClusterRecoUtil/ClusterParams.h
+larpandora : larreco : RecoAlg/ClusterRecoUtil/ClusterParamsAlg.h
+larpandora : larreco : RecoAlg/ClusterRecoUtil/ClusterParamsAlgBase.h
+larpandora : larreco : RecoAlg/ClusterRecoUtil/Polygon2D.h
+larpandora : larreco : RecoAlg/ClusterRecoUtil/StandardClusterParamsAlg.h
 larpandora : larsim : Simulation/SimChannel.h
 larreco : larcore : Geometry/AuxDetGeo.h
 larreco : larcore : Geometry/ChannelMapAlg.h
@@ -574,6 +591,7 @@ larreco : lardata : RecoBase/SpacePoint.h
 larreco : lardata : RecoBase/Track.h
 larreco : lardata : RecoBase/Vertex.h
 larreco : lardata : RecoBase/Wire.h
+larreco : lardata : RecoBaseArt/HitCreator.h
 larreco : lardata : RecoObjects/BezierCurveHelper.h
 larreco : lardata : RecoObjects/BezierTrack.h
 larreco : lardata : RecoObjects/Cluster3D.h
@@ -602,6 +620,7 @@ larreco : lardata : Utilities/BulkAllocator.h
 larreco : lardata : Utilities/ClockConstants.h
 larreco : lardata : Utilities/CountersMap.h
 larreco : lardata : Utilities/DatabaseUtil.h
+larreco : lardata : Utilities/Dereference.h
 larreco : lardata : Utilities/DetectorProperties.h
 larreco : lardata : Utilities/ElecClock.h
 larreco : lardata : Utilities/GeometryUtilities.h
@@ -611,6 +630,7 @@ larreco : lardata : Utilities/PxHitConverter.h
 larreco : lardata : Utilities/PxUtils.h
 larreco : lardata : Utilities/SeedCreator.h
 larreco : lardata : Utilities/SimpleTimeService.h
+larreco : lardata : Utilities/StatCollector.h
 larreco : lardata : Utilities/SumSecondFunction.h
 larreco : lardata : Utilities/TimeService.h
 larreco : lardata : Utilities/TimeServiceException.h
@@ -618,6 +638,7 @@ larreco : lardata : Utilities/UtilException.h
 larreco : lardata : Utilities/VectorMap.h
 larreco : lardata : Utilities/sparse_vector.h
 larreco : larevt : Filters/ChannelFilter.h
+larreco : larreco : ClusterFinder/ClusterCreator.h
 larreco : larreco : ClusterFinder/RStarTree/RStarBoundingBox.h
 larreco : larreco : ClusterFinder/RStarTree/RStarTree.h
 larreco : larreco : ClusterFinder/RStarTree/RStarVisitor.h
@@ -655,7 +676,11 @@ larreco : larreco : Genfit/PointHit.h
 larreco : larreco : Genfit/RKTrackRep.h
 larreco : larreco : Genfit/SlTrackRep.h
 larreco : larreco : Genfit/TGeant3/TGeant3.h
+larreco : larreco : HitFinder/GaussianEliminationAlg.h
 larreco : larreco : HitFinder/HitAnaAlg.h
+larreco : larreco : HitFinder/RFFHitFinderAlg.h
+larreco : larreco : HitFinder/RFFHitFitter.h
+larreco : larreco : HitFinder/RegionAboveThresholdFinder.h
 larreco : larreco : RecoAlg/APAGeometryAlg.h
 larreco : larreco : RecoAlg/BezierTrackerAlgorithm.h
 larreco : larreco : RecoAlg/CCHitFinderAlg.h
@@ -723,10 +748,15 @@ larreco : larreco : RecoAlg/Cluster3DAlgs/SkeletonAlg.h
 larreco : larreco : RecoAlg/ClusterCrawlerAlg.h
 larreco : larreco : RecoAlg/ClusterMatchAlg.h
 larreco : larreco : RecoAlg/ClusterMergeHelper.h
+larreco : larreco : RecoAlg/ClusterParamsImportWrapper.h
 larreco : larreco : RecoAlg/ClusterRecoUtil/CRUException.h
 larreco : larreco : RecoAlg/ClusterRecoUtil/ClusterParams.h
 larreco : larreco : RecoAlg/ClusterRecoUtil/ClusterParamsAlg.h
+larreco : larreco : RecoAlg/ClusterRecoUtil/ClusterParamsAlgBase.h
+larreco : larreco : RecoAlg/ClusterRecoUtil/LazyClusterParamsAlg.h
+larreco : larreco : RecoAlg/ClusterRecoUtil/OverriddenClusterParamsAlg.h
 larreco : larreco : RecoAlg/ClusterRecoUtil/Polygon2D.h
+larreco : larreco : RecoAlg/ClusterRecoUtil/StandardClusterParamsAlg.h
 larreco : larreco : RecoAlg/CornerFinderAlg.h
 larreco : larreco : RecoAlg/DBScanAlg.h
 larreco : larreco : RecoAlg/DisambigAlg.h
@@ -810,6 +840,7 @@ larsim : lardata : Utilities/TimeServiceException.h
 larsim : lardata : Utilities/VectorMap.h
 larsim : lardata : Utilities/sparse_vector.h
 larsim : larevt : Filters/ChannelFilter.h
+larsim : larevt : SpaceCharge/SpaceCharge.h
 larsim : larsim : LArG4/AuxDetReadout.h
 larsim : larsim : LArG4/AuxDetReadoutGeometry.h
 larsim : larsim : LArG4/ConfigurablePhysicsList.hh
