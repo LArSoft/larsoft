@@ -62,13 +62,7 @@ Arguments:
   bundle-spec      Bundle name and version, e.g., larsoft-@LARSOFT_VERSION@
  
   qual_set         Supported qualifier sets: 
-                   e5
-                   e6
-                   s3-e5
-                   s4-e5
-                   s4-e6
-                   s5-e5
-                   s5-e6
+                   s6-e6
 
   build-spec       debug, opt or prof.
       </pre></li>
