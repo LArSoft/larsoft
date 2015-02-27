@@ -80,6 +80,7 @@ larana : lardata : Utilities/VectorMap.h
 larana : larevt : Filters/ChannelFilter.h
 larana : larreco : RecoAlg/SpacePointAlg.h
 larana : larsim : MCCheater/BackTracker.h
+larana : larsim : MCSTReco/MCTrackCollectionAnaAlg.h
 larana : larsim : PhotonPropagation/PhotonVisibilityService.h
 larana : larsim : Simulation/BeamGateInfo.h
 larana : larsim : Simulation/BeamTypes.h
@@ -628,7 +629,6 @@ larreco : lardata : Utilities/LArFFT.h
 larreco : lardata : Utilities/LArProperties.h
 larreco : lardata : Utilities/PxHitConverter.h
 larreco : lardata : Utilities/PxUtils.h
-larreco : lardata : Utilities/SeedCreator.h
 larreco : lardata : Utilities/SimpleTimeService.h
 larreco : lardata : Utilities/StatCollector.h
 larreco : lardata : Utilities/SumSecondFunction.h
@@ -880,6 +880,7 @@ larsim : larsim : MCSTReco/MCRecoEdep.h
 larsim : larsim : MCSTReco/MCRecoPart.h
 larsim : larsim : MCSTReco/MCShowerRecoAlg.h
 larsim : larsim : MCSTReco/MCShowerRecoPart.h
+larsim : larsim : MCSTReco/MCTrackCollectionAnaAlg.h
 larsim : larsim : MCSTReco/MCTrackRecoAlg.h
 larsim : larsim : PhotonPropagation/PhotonLibrary.h
 larsim : larsim : PhotonPropagation/PhotonVisibilityService.h
