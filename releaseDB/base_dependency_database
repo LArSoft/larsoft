@@ -534,12 +534,6 @@ larpandora : larpandora : LArPandoraInterface/LArPandoraBase.h
 larpandora : larpandora : LArPandoraInterface/LArPandoraCollector.h
 larpandora : larpandora : LArPandoraInterface/LArPandoraHelper.h
 larpandora : larpandora : LArPandoraInterface/LArPandoraParticleCreator.h
-larpandora : larpandora : LArPandoraInterface/LBNE35tGeometryHelper.h
-larpandora : larpandora : LArPandoraInterface/LBNE35tPseudoLayerPlugin.h
-larpandora : larpandora : LArPandoraInterface/LBNE35tTransformationPlugin.h
-larpandora : larpandora : LArPandoraInterface/LBNE4APAGeometryHelper.h
-larpandora : larpandora : LArPandoraInterface/LBNE4APAPseudoLayerPlugin.h
-larpandora : larpandora : LArPandoraInterface/LBNE4APATransformationPlugin.h
 larpandora : larpandora : LArPandoraInterface/MicroBooNEPseudoLayerPlugin.h
 larpandora : larpandora : LArPandoraInterface/MicroBooNETransformationPlugin.h
 larpandora : larpandora : LArPandoraInterface/PFParticleSeed.h
