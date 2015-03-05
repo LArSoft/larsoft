@@ -8,7 +8,6 @@ defaultqual	e6
 incdir      -
 fcldir      -
 bindir      product_dir
-
 #
 product         version
 lareventdisplay	v04_01_01
