@@ -1,6 +1,7 @@
 ups          v5_1_3		ups-5.1.3-source.tar.bz2
 upd          v5_0_1		upd-5.0.1-noarch.tar.bz2
 cmake        v3_0_1		cmake-3.0.1-source.tar.bz2
+cmake        v3_1_2		cmake-3.1.2-source.tar.bz2
 gcc          v4_9_1		gcc-4.9.1-source.tar.bz2
 gdb          v7_8		gdb-7.8-source.tar.bz2
 boost        v1_56_0		boost-1.56.0-source.tar.bz2
