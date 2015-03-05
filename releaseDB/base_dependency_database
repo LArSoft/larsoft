@@ -860,6 +860,7 @@ larsim : larsim : LArG4/LArStackingAction.h
 larsim : larsim : LArG4/LArVoxelReadout.h
 larsim : larsim : LArG4/LArVoxelReadoutGeometry.h
 larsim : larsim : LArG4/MaterialPropertyLoader.h
+larsim : larsim : LArG4/MergeSimSources.h
 larsim : larsim : LArG4/MuNuclearSplittingProcess.h
 larsim : larsim : LArG4/MuNuclearSplittingProcessXSecBias.h
 larsim : larsim : LArG4/NestAlg.h
