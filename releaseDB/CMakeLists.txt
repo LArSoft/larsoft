@@ -15,6 +15,8 @@ macro( create_product_variables productname productversion )
    message(STATUS "${PRODUCTNAME_UC} version is ${${PRODUCTNAME_UC}_VERSION}")
 endmacro( create_product_variables)
 
+create_product_variables( larsoft ${version} )
+
 set( LARUTILS_VERSION        "v1_00_03" )
 set( LARBATCH_VERSION        "v01_04_03" )
 
@@ -27,7 +29,6 @@ set( LARANA_VERSION          "v04_01_01" )
 set( LARPANDORA_VERSION      "v04_01_00" )
 set( LAREXAMPLES_VERSION     "v04_00_03" )
 set( LAREVENTDISPLAY_VERSION "v04_01_01" )
-create_product_variables( larsoft v04_02_00 )
 
 create_product_variables( art           v1_12_05 )
 create_product_variables( artextensions v1_01_01 )
