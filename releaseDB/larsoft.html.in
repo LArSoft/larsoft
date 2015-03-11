@@ -41,31 +41,9 @@
     <ul>
       <li>Download the script.</li>
       <li>chmod +x pullProducts</li>
-      <li><pre>./pullProducts &lt;product-directory&gt; &lt;slf5|slf6|d12|d13&gt; &lt;bundle-version&gt;
-&lt;e6&gt; &lt;debug|opt|prof&gt;</pre></li>
-      <li>For instance: <pre>./pullProducts &lt;product_topdir&gt; slf5 larsoft-@LARSOFT_VERSION@ @version_set@-e6  prof</pre></li>
-      <li><pre>
-Usage: pullProducts [-h]
-       pullProducts <options> <product_topdir> <OS> <bundle-spec> <qual_set> <build-spec>
-
-Options:
-
-  -f    Force pull of tarball if it already exists
-  -h    This help.
-
-Arguments:
-
-  product_topdir   Top directory for relocatable-UPS products area.
-  
-  OS               Supported os distributions: slf5, slf6, d13, source
- 
-  bundle-spec      Bundle name and version, e.g., larsoft-@LARSOFT_VERSION@
- 
-  qual_set         Supported qualifier sets: 
-                   s6-e6
-
-  build-spec       debug, opt or prof.
-      </pre></li>
+      <li>Scientific Linux 5.x: <pre>./pullProducts &lt;product-directory&gt; slf5 larsoft-@version@ s6-e6 &lt;prof|debug&gt;</pre></li>
+      <li>Scientific Linux 6.x: <pre>./pullProducts &lt;product-directory&gt; slf6 larsoft-@version@ s6-e6 &lt;prof|debug&gt;</pre></li>
+      <li>Mavericks: <pre>./pullProducts &lt;product-directory&gt; d13 larsoft-@version@ s6-e6 &lt;prof|debug&gt;</pre></li>
     </ul></li>
   </ul></li>
   <li>We recommend downloading the prebuilt binaries whenever possible.</li>
