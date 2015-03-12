@@ -9,7 +9,7 @@ clhep        v2_2_0_3		clhep-2.2.0.3-source.tar.bz2
 cppunit      v1_12_1a		cppunit-1.12.1a-source.tar.bz2
 fftw         v3_3_4		fftw-3.3.4-source.tar.bz2
 gccxml       v0_9_20140718	gccxml-0.9.20140718-source.tar.bz2
-getopt       v1_1_5		getopt-1.1.5-source.tar.bz2
+getopt       v1_1_6		getopt-1.1.6-source.tar.bz2
 libxml2      v2_9_1a		libxml2-2.9.1a-source.tar.bz2
 sqlite       v3_08_05_00	sqlite-3.08.05.00-source.tar.bz2
 python       v2_7_8		python-2.7.8-source.tar.bz2
