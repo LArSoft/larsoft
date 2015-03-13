@@ -3,12 +3,6 @@
   basequal=${1}
   
   build_bundle nu-@NUTOOLS_DOT_VERSION@ ${basequal}
-  do_build psycopg2 @PSYCOPG2_VERSION@
-
-  # this is temporary
-  do_build cmake v3_1_2
-  (( ${darwin:-0} )) && { do_build getopt v1_1_6; }
-  ensure_cetbuildtools v4_04_03 v4_05_00 v4_07_02 v4_07_03
 
   build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
 
