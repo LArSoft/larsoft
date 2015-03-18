@@ -3,6 +3,9 @@
   basequal=${1}
   
   build_bundle nu-@NUTOOLS_DOT_VERSION@ ${basequal}
+  build_cet -p artdaq-core artdaq_core @ARTDAQ_CORE_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
+
+  ensure_cetbuildtools v4_05_00 v4_07_03 v4_08_01
 
   build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
 
@@ -11,18 +14,28 @@
   prep_build gitflow @GITFLOW_VERSION@; add_to_manifest
   prep_build mrb @MRB_VERSION@; add_to_manifest
 
-  build_cet -n larcore @LARCORE_VERSION@ ${basequal}
-  build_cet lardata @LARDATA_VERSION@ ${basequal}
-  build_cet larevt @LAREVT_VERSION@ ${basequal}
-  build_cet larsim @LARSIM_VERSION@ ${basequal}
-  build_cet larreco @LARRECO_VERSION@ ${basequal}
-  build_cet larana @LARANA_VERSION@ ${basequal}
-  build_cet larpandora @LARPANDORA_VERSION@ ${basequal}
-  build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}
-  build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}
-  build_cet larsoft @LARSOFT_VERSION@ ${basequal}:noifdh
+  build_cet -n larcore @LARCORE_VERSION@ ${basequal}:noifdh
+  build_cet lardata @LARDATA_VERSION@ ${basequal}:noifdh
+  build_cet larevt @LAREVT_VERSION@ ${basequal}:noifdh
+  build_cet larsim @LARSIM_VERSION@ ${basequal}:noifdh
+  build_cet larreco @LARRECO_VERSION@ ${basequal}:noifdh
+  build_cet larana @LARANA_VERSION@ ${basequal}:noifdh
+  build_cet larpandora @LARPANDORA_VERSION@ ${basequal}:noifdh
+  build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}:noifdh
+  build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}:noifdh
+  build_cet larsoft @LARSOFT_VERSION@ ${basequal}:noifdh:noifdh
   if ! (( ${darwin:-0} )); then # No git or ifdh for Darwin
      do_build git @GIT_VERSION@ 
+     build_cet -n larcore @LARCORE_VERSION@ ${basequal}
+     build_cet lardata @LARDATA_VERSION@ ${basequal}
+     build_cet larevt @LAREVT_VERSION@ ${basequal}
+     build_cet larsim @LARSIM_VERSION@ ${basequal}
+     build_cet larreco @LARRECO_VERSION@ ${basequal}
+     build_cet larana @LARANA_VERSION@ ${basequal}
+     build_cet larpandora @LARPANDORA_VERSION@ ${basequal}
+     build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}
+     build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}
+     build_cet larsoft @LARSOFT_VERSION@ ${basequal}:noifdh
      build_cet larsoft @LARSOFT_VERSION@ ${basequal}
   fi
   build_cet_null larbatch @LARBATCH_VERSION@
