@@ -23,7 +23,7 @@
   build_cet larpandora @LARPANDORA_VERSION@ ${basequal}:noifdh
   build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}:noifdh
   build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}:noifdh
-  build_cet larsoft @LARSOFT_VERSION@ ${basequal}:noifdh:noifdh
+  build_cet larsoft @LARSOFT_VERSION@ ${basequal}:noifdh
   if ! (( ${darwin:-0} )); then # No git or ifdh for Darwin
      do_build git @GIT_VERSION@ 
      build_cet -n larcore @LARCORE_VERSION@ ${basequal}
@@ -35,7 +35,6 @@
      build_cet larpandora @LARPANDORA_VERSION@ ${basequal}
      build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}
      build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}
-     build_cet larsoft @LARSOFT_VERSION@ ${basequal}:noifdh
      build_cet larsoft @LARSOFT_VERSION@ ${basequal}
   fi
   build_cet_null larbatch @LARBATCH_VERSION@
