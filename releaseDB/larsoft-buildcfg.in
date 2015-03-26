@@ -1,11 +1,14 @@
 # build larsoft
 
   basequal=${1}
-  
+
   build_bundle nu-@NUTOOLS_DOT_VERSION@ ${basequal}
   build_cet -p artdaq-core artdaq_core @ARTDAQ_CORE_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
 
-  ensure_cetbuildtools v4_05_00 v4_07_03 v4_08_01
+  do_build cmake v3_2_1
+  do_build ninja v1_5_3a
+  ensure_cetpkgsupport v1_08_05
+  ensure_cetbuildtools v4_05_00 v4_07_03 v4_08_01 v4_09_00 v4_09_01
 
   build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
 
@@ -23,7 +26,7 @@
   build_cet larpandora @LARPANDORA_VERSION@ ${basequal}:noifdh
   build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}:noifdh
   build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}:noifdh
-  build_cet larsoft @LARSOFT_VERSION@ ${basequal}:noifdh:noifdh
+  build_cet larsoft @LARSOFT_VERSION@ ${basequal}:noifdh
   if ! (( ${darwin:-0} )); then # No git or ifdh for Darwin
      do_build git @GIT_VERSION@ 
      build_cet -n larcore @LARCORE_VERSION@ ${basequal}
@@ -35,7 +38,6 @@
      build_cet larpandora @LARPANDORA_VERSION@ ${basequal}
      build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}
      build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}
-     build_cet larsoft @LARSOFT_VERSION@ ${basequal}:noifdh
      build_cet larsoft @LARSOFT_VERSION@ ${basequal}
   fi
   build_cet_null larbatch @LARBATCH_VERSION@
