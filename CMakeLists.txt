@@ -34,7 +34,8 @@ set(CMAKE_MODULE_PATH $ENV{ART_DIR}/Modules
 include(CetCMakeEnv)
 cet_cmake_env()
 
-set_install_root()
+# these are minimum required versions, not the actual product versions
+find_ups_product( cetbuildtools v4_09_00 )
 
 # useful scripts
 add_subdirectory(bin)
