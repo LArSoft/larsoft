@@ -8,7 +8,7 @@
   do_build cmake v3_2_1
   do_build ninja v1_5_3a
   ensure_cetpkgsupport v1_08_05
-  ensure_cetbuildtools v4_05_00 v4_07_03 v4_08_01 v4_09_00 v4_09_01
+  ensure_cetbuildtools v4_05_00 v4_07_03 v4_08_01 v4_09_00 v4_09_01 v4_09_02
 
   build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
 
