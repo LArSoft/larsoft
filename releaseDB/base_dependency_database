@@ -60,12 +60,14 @@ larana : lardata : RecoBase/Cluster.h
 larana : lardata : RecoBase/Hit.h
 larana : lardata : RecoBase/OpFlash.h
 larana : lardata : RecoBase/OpHit.h
+larana : lardata : RecoBase/PCAxis.h
 larana : lardata : RecoBase/PFParticle.h
 larana : lardata : RecoBase/Seed.h
 larana : lardata : RecoBase/Shower.h
 larana : lardata : RecoBase/SpacePoint.h
 larana : lardata : RecoBase/Track.h
 larana : lardata : RecoObjects/BezierTrack.h
+larana : lardata : RecoObjects/Cluster3D.h
 larana : lardata : Utilities/AssociationUtil.h
 larana : lardata : Utilities/ClockConstants.h
 larana : lardata : Utilities/DatabaseUtil.h
@@ -78,6 +80,7 @@ larana : lardata : Utilities/TimeService.h
 larana : lardata : Utilities/TimeServiceException.h
 larana : lardata : Utilities/VectorMap.h
 larana : larevt : Filters/ChannelFilter.h
+larana : larreco : RecoAlg/Cluster3DAlgs/PrincipalComponentsAlg.h
 larana : larreco : RecoAlg/SpacePointAlg.h
 larana : larsim : MCCheater/BackTracker.h
 larana : larsim : MCSTReco/MCTrackCollectionAnaAlg.h
@@ -137,6 +140,7 @@ lardata : lardata : AnalysisBase/Calorimetry.h
 lardata : lardata : AnalysisBase/CosmicTag.h
 lardata : lardata : AnalysisBase/FlashMatch.h
 lardata : lardata : AnalysisBase/ParticleID.h
+lardata : lardata : AnalysisBase/T0.h
 lardata : lardata : AnalysisBase/classes.h
 lardata : lardata : MCBase/MCBaseException.h
 lardata : lardata : MCBase/MCHit.h
@@ -567,6 +571,7 @@ larreco : lardata : MCBase/MCDataHolder.h
 larreco : lardata : MCBase/MCHit.h
 larreco : lardata : MCBase/MCHitCollection.h
 larreco : lardata : MCBase/MCLimits.h
+larreco : lardata : MCBase/MCShower.h
 larreco : lardata : MCBase/MCStep.h
 larreco : lardata : MCBase/MCTrack.h
 larreco : lardata : MCBase/MCWire.h
@@ -675,6 +680,10 @@ larreco : larreco : HitFinder/HitAnaAlg.h
 larreco : larreco : HitFinder/RFFHitFinderAlg.h
 larreco : larreco : HitFinder/RFFHitFitter.h
 larreco : larreco : HitFinder/RegionAboveThresholdFinder.h
+larreco : larreco : MCComp/MCBTAlg.h
+larreco : larreco : MCComp/MCBTAlgConstants.h
+larreco : larreco : MCComp/MCBTException.h
+larreco : larreco : MCComp/MCMatchAlg.h
 larreco : larreco : RecoAlg/APAGeometryAlg.h
 larreco : larreco : RecoAlg/BezierTrackerAlgorithm.h
 larreco : larreco : RecoAlg/CCHitFinderAlg.h
@@ -683,6 +692,7 @@ larreco : larreco : RecoAlg/CMTool/CMTAlgMatch/CFAlgo3DAngle.h
 larreco : larreco : RecoAlg/CMTool/CMTAlgMatch/CFAlgoArray.h
 larreco : larreco : RecoAlg/CMTool/CMTAlgMatch/CFAlgoChargeDistrib.h
 larreco : larreco : RecoAlg/CMTool/CMTAlgMatch/CFAlgoQRatio.h
+larreco : larreco : RecoAlg/CMTool/CMTAlgMatch/CFAlgoShowerCompat.h
 larreco : larreco : RecoAlg/CMTool/CMTAlgMatch/CFAlgoStartPointCompat.h
 larreco : larreco : RecoAlg/CMTool/CMTAlgMatch/CFAlgoStartPointMatch.h
 larreco : larreco : RecoAlg/CMTool/CMTAlgMatch/CFAlgoStartTimeCompat.h
