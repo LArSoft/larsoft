@@ -361,6 +361,17 @@ larevt : lardata : Utilities/TimeService.h
 larevt : lardata : Utilities/TimeServiceException.h
 larevt : lardata : Utilities/UtilException.h
 larevt : lardata : Utilities/sparse_vector.h
+larevt : larevt : CalibrationDBI/IOVData/ChData.h
+larevt : larevt : CalibrationDBI/IOVData/DetPedestal.h
+larevt : larevt : CalibrationDBI/IOVData/IOVDataConstants.h
+larevt : larevt : CalibrationDBI/IOVData/IOVDataError.h
+larevt : larevt : CalibrationDBI/IOVData/IOVTimeStamp.h
+larevt : larevt : CalibrationDBI/IOVData/Snapshot.h
+larevt : larevt : CalibrationDBI/WebDBI/DBFolder.h
+larevt : larevt : CalibrationDBI/WebDBI/DatabaseRetrievalAlg.h
+larevt : larevt : CalibrationDBI/WebDBI/DetPedestalRetrievalAlg.h
+larevt : larevt : CalibrationDBI/WebDBI/WebDBIConstants.h
+larevt : larevt : CalibrationDBI/WebDBI/WebError.h
 larevt : larevt : Filters/ChannelFilter.h
 larevt : larevt : SpaceCharge/SpaceCharge.h
 larexamples : larcore : Geometry/AuxDetGeo.h
