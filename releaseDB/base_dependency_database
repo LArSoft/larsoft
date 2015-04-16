@@ -2,6 +2,7 @@ larana : larana : Calorimetry/TrackCalorimetryAlg.h
 larana : larana : CosmicRemoval/BeamFlashTrackMatchTaggerAlg.h
 larana : larana : CosmicRemoval/HitTagAssociatorAlg.h
 larana : larana : OpticalDetector/AlgoFixedWindow.h
+larana : larana : OpticalDetector/AlgoLBNE.h
 larana : larana : OpticalDetector/AlgoPedestal.h
 larana : larana : OpticalDetector/AlgoThreshold.h
 larana : larana : OpticalDetector/DefaultOpDetResponse.h
@@ -54,6 +55,7 @@ larana : lardata : OpticalDetectorData/OpticalRawDigit.h
 larana : lardata : OpticalDetectorData/OpticalTypes.h
 larana : lardata : OpticalDetectorData/PMTTrigger.h
 larana : lardata : RawData/OpDetPulse.h
+larana : lardata : RawData/OpDetWaveform.h
 larana : lardata : RawData/RawDigit.h
 larana : lardata : RawData/TriggerData.h
 larana : lardata : RecoBase/Cluster.h
@@ -84,6 +86,7 @@ larana : larreco : RecoAlg/Cluster3DAlgs/PrincipalComponentsAlg.h
 larana : larreco : RecoAlg/SpacePointAlg.h
 larana : larsim : MCCheater/BackTracker.h
 larana : larsim : MCSTReco/MCTrackCollectionAnaAlg.h
+larana : larsim : PhotonPropagation/PhotonLibrary.h
 larana : larsim : PhotonPropagation/PhotonVisibilityService.h
 larana : larsim : Simulation/BeamGateInfo.h
 larana : larsim : Simulation/BeamTypes.h
@@ -164,6 +167,7 @@ lardata : lardata : RawData/BeamInfo.h
 lardata : lardata : RawData/DAQHeader.h
 lardata : lardata : RawData/ExternalTrigger.h
 lardata : lardata : RawData/OpDetPulse.h
+lardata : lardata : RawData/OpDetWaveform.h
 lardata : lardata : RawData/RawDigit.h
 lardata : lardata : RawData/TriggerData.h
 lardata : lardata : RawData/classes.h
@@ -361,17 +365,6 @@ larevt : lardata : Utilities/TimeService.h
 larevt : lardata : Utilities/TimeServiceException.h
 larevt : lardata : Utilities/UtilException.h
 larevt : lardata : Utilities/sparse_vector.h
-larevt : larevt : CalibrationDBI/IOVData/ChData.h
-larevt : larevt : CalibrationDBI/IOVData/DetPedestal.h
-larevt : larevt : CalibrationDBI/IOVData/IOVDataConstants.h
-larevt : larevt : CalibrationDBI/IOVData/IOVDataError.h
-larevt : larevt : CalibrationDBI/IOVData/IOVTimeStamp.h
-larevt : larevt : CalibrationDBI/IOVData/Snapshot.h
-larevt : larevt : CalibrationDBI/WebDBI/DBFolder.h
-larevt : larevt : CalibrationDBI/WebDBI/DatabaseRetrievalAlg.h
-larevt : larevt : CalibrationDBI/WebDBI/DetPedestalRetrievalAlg.h
-larevt : larevt : CalibrationDBI/WebDBI/WebDBIConstants.h
-larevt : larevt : CalibrationDBI/WebDBI/WebError.h
 larevt : larevt : Filters/ChannelFilter.h
 larevt : larevt : SpaceCharge/SpaceCharge.h
 larexamples : larcore : Geometry/AuxDetGeo.h
@@ -806,6 +799,7 @@ larreco : larsim : Simulation/SimChannel.h
 larreco : larsim : Simulation/SimListUtils.h
 larreco : larsim : Simulation/SimPhotons.h
 larreco : larsim : Simulation/sim.h
+larsim : larana : OpticalDetector/OpDetResponseInterface.h
 larsim : larcore : Geometry/AuxDetGeo.h
 larsim : larcore : Geometry/ChannelMapAlg.h
 larsim : larcore : Geometry/CryostatGeo.h
