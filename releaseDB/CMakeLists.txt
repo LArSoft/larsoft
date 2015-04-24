@@ -17,7 +17,7 @@ endmacro( create_product_variables)
 
 create_product_variables( larsoft ${version} )
 
-set( LARUTILS_VERSION        "v1_00_07" )
+set( LARUTILS_VERSION        "v1_00_08" )
 set( LARBATCH_VERSION        "v01_06_00" )
 
 set( LARCORE_VERSION         "v04_05_00" )
