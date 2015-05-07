@@ -24,6 +24,7 @@ larana : larana : OpticalDetector/SimPhotonCounter.h
 larana : larana : OpticalDetector/SimPhotonCounterAlg.h
 larana : larana : ParticleIdentification/PIDAAlg.h
 larana : larcore : Geometry/AuxDetGeo.h
+larana : larcore : Geometry/BoxBoundedGeo.h
 larana : larcore : Geometry/ChannelMapAlg.h
 larana : larcore : Geometry/CryostatGeo.h
 larana : larcore : Geometry/ExptGeoHelperInterface.h
@@ -43,6 +44,7 @@ larana : lardata : AnalysisBase/Calorimetry.h
 larana : lardata : AnalysisBase/CosmicTag.h
 larana : lardata : AnalysisBase/FlashMatch.h
 larana : lardata : AnalysisBase/ParticleID.h
+larana : lardata : AnalysisBase/T0.h
 larana : lardata : MCBase/MCBaseException.h
 larana : lardata : MCBase/MCHit.h
 larana : lardata : MCBase/MCHitCollection.h
@@ -106,6 +108,7 @@ larana : larsim : TriggerAlgo/TriggerAlgoBase.h
 larana : larsim : TriggerAlgo/TriggerAlgoMicroBoone.h
 larana : larsim : TriggerAlgo/TriggerTypes.hh
 larcore : larcore : Geometry/AuxDetGeo.h
+larcore : larcore : Geometry/BoxBoundedGeo.h
 larcore : larcore : Geometry/ChannelMapAlg.h
 larcore : larcore : Geometry/ChannelMapStandardAlg.h
 larcore : larcore : Geometry/CryostatGeo.h
@@ -126,6 +129,7 @@ larcore : larcore : SummaryData/POTSummary.h
 larcore : larcore : SummaryData/RunData.h
 larcore : larcore : SummaryData/classes.h
 lardata : larcore : Geometry/AuxDetGeo.h
+lardata : larcore : Geometry/BoxBoundedGeo.h
 lardata : larcore : Geometry/ChannelMapAlg.h
 lardata : larcore : Geometry/CryostatGeo.h
 lardata : larcore : Geometry/ExptGeoHelperInterface.h
@@ -231,15 +235,18 @@ lardata : lardata : Utilities/DatabaseUtil.h
 lardata : lardata : Utilities/Dereference.h
 lardata : lardata : Utilities/DetectorProperties.h
 lardata : lardata : Utilities/ElecClock.h
+lardata : lardata : Utilities/FastMatrixMathHelper.h
 lardata : lardata : Utilities/FileCatalogMetadataExtras.h
 lardata : lardata : Utilities/GeometryUtilities.h
 lardata : lardata : Utilities/LArFFT.h
 lardata : lardata : Utilities/LArProperties.h
+lardata : lardata : Utilities/MakeIndex.h
 lardata : lardata : Utilities/NestedIterator.h
 lardata : lardata : Utilities/PxHitConverter.h
 lardata : lardata : Utilities/PxUtils.h
 lardata : lardata : Utilities/Range.h
 lardata : lardata : Utilities/SignalShaping.h
+lardata : lardata : Utilities/SimpleFits.h
 lardata : lardata : Utilities/SimpleTimeService.h
 lardata : lardata : Utilities/StatCollector.h
 lardata : lardata : Utilities/TimeService.h
@@ -248,6 +255,7 @@ lardata : lardata : Utilities/UniqueRangeSet.h
 lardata : lardata : Utilities/UtilException.h
 lardata : lardata : Utilities/sparse_vector.h
 lareventdisplay : larcore : Geometry/AuxDetGeo.h
+lareventdisplay : larcore : Geometry/BoxBoundedGeo.h
 lareventdisplay : larcore : Geometry/ChannelMapAlg.h
 lareventdisplay : larcore : Geometry/CryostatGeo.h
 lareventdisplay : larcore : Geometry/ExptGeoHelperInterface.h
@@ -335,6 +343,7 @@ lareventdisplay : larsim : Simulation/LArVoxelList.h
 lareventdisplay : larsim : Simulation/SimListUtils.h
 lareventdisplay : larsim : Simulation/SimPhotons.h
 larevt : larcore : Geometry/AuxDetGeo.h
+larevt : larcore : Geometry/BoxBoundedGeo.h
 larevt : larcore : Geometry/ChannelMapAlg.h
 larevt : larcore : Geometry/CryostatGeo.h
 larevt : larcore : Geometry/ExptGeoHelperInterface.h
@@ -393,6 +402,7 @@ larexamples : lardata : RecoBase/Hit.h
 larexamples : larsim : Simulation/LArG4Parameters.h
 larexamples : larsim : Simulation/SimChannel.h
 larpandora : larcore : Geometry/AuxDetGeo.h
+larpandora : larcore : Geometry/BoxBoundedGeo.h
 larpandora : larcore : Geometry/ChannelMapAlg.h
 larpandora : larcore : Geometry/CryostatGeo.h
 larpandora : larcore : Geometry/ExptGeoHelperInterface.h
@@ -447,6 +457,7 @@ larpandora : larreco : RecoAlg/ClusterRecoUtil/Polygon2D.h
 larpandora : larreco : RecoAlg/ClusterRecoUtil/StandardClusterParamsAlg.h
 larpandora : larsim : Simulation/SimChannel.h
 larreco : larcore : Geometry/AuxDetGeo.h
+larreco : larcore : Geometry/BoxBoundedGeo.h
 larreco : larcore : Geometry/ChannelMapAlg.h
 larreco : larcore : Geometry/CryostatGeo.h
 larreco : larcore : Geometry/ExptGeoHelperInterface.h
@@ -518,11 +529,14 @@ larreco : lardata : Utilities/DatabaseUtil.h
 larreco : lardata : Utilities/Dereference.h
 larreco : lardata : Utilities/DetectorProperties.h
 larreco : lardata : Utilities/ElecClock.h
+larreco : lardata : Utilities/FastMatrixMathHelper.h
 larreco : lardata : Utilities/GeometryUtilities.h
 larreco : lardata : Utilities/LArFFT.h
 larreco : lardata : Utilities/LArProperties.h
+larreco : lardata : Utilities/MakeIndex.h
 larreco : lardata : Utilities/PxHitConverter.h
 larreco : lardata : Utilities/PxUtils.h
+larreco : lardata : Utilities/SimpleFits.h
 larreco : lardata : Utilities/SimpleTimeService.h
 larreco : lardata : Utilities/StatCollector.h
 larreco : lardata : Utilities/SumSecondFunction.h
@@ -660,6 +674,7 @@ larreco : larreco : RecoAlg/CornerFinderAlg.h
 larreco : larreco : RecoAlg/DBScanAlg.h
 larreco : larreco : RecoAlg/DisambigAlg.h
 larreco : larreco : RecoAlg/EndPointAlg.h
+larreco : larreco : RecoAlg/GausFitCache.h
 larreco : larreco : RecoAlg/HoughBaseAlg.h
 larreco : larreco : RecoAlg/KalmanFilterAlg.h
 larreco : larreco : RecoAlg/LinFitAlg.h
@@ -691,6 +706,7 @@ larreco : larsim : Simulation/SimListUtils.h
 larreco : larsim : Simulation/SimPhotons.h
 larreco : larsim : Simulation/sim.h
 larsim : larcore : Geometry/AuxDetGeo.h
+larsim : larcore : Geometry/BoxBoundedGeo.h
 larsim : larcore : Geometry/ChannelMapAlg.h
 larsim : larcore : Geometry/CryostatGeo.h
 larsim : larcore : Geometry/ExptGeoHelperInterface.h
