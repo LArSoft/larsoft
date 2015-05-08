@@ -41,9 +41,9 @@
     <ul>
       <li>Download the script.</li>
       <li>chmod +x pullProducts</li>
-      <li>Scientific Linux 6.x: <pre>./pullProducts &lt;product-directory&gt; slf6 larsoft-@version@ s7-e7 &lt;prof|debug&gt;</pre></li>
-      <li>Mavericks: <pre>./pullProducts &lt;product-directory&gt; d13 larsoft-@version@ s7-e7 &lt;prof|debug&gt;</pre></li>
-      <li>Yosemite: <pre>./pullProducts &lt;product-directory&gt; d14 larsoft-@version@ s7-e7 &lt;prof|debug&gt;</pre></li>
+      <li>Scientific Linux 6.x: <pre>./pullProducts &lt;product-directory&gt; slf6 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
+      <li>Mavericks: <pre>./pullProducts &lt;product-directory&gt; d13 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
+      <li>Yosemite: <pre>./pullProducts &lt;product-directory&gt; d14 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
     </ul></li>
   </ul></li>
   <li>We recommend downloading the prebuilt binaries whenever possible.</li>
@@ -106,7 +106,7 @@ Arguments:
 
   bundle-spec   Bundle identifier: 
                 artdev-1.12.00 (e.g.)</pre></li>
-      <li><pre>./buildFW [-ft] -b e7 -s s7 &lt;product-directory&gt; &lt;debug|prof|opt&gt; larsoft-@LARSOFT_VERSION@</pre></li>
+      <li><pre>./buildFW [-ft] -b @BASEQUAL@ -s @SQUAL@ &lt;product-directory&gt; &lt;debug|prof|opt&gt; larsoft-@LARSOFT_VERSION@</pre></li>
     </ul></li>
   </ul></li>
 
@@ -121,21 +121,21 @@ Arguments:
 The following products are part of the full larsoft suite:
 </td></tr>
 <tr><td colspan="3"><b>Code:</b></td></tr>
-<tr><td>&nbsp;&nbsp;  art     </td>  <td> @ART_VERSION@ </td>  <td>nu:e7</td></tr>
-<tr><td>&nbsp;&nbsp;  nutools      </td>  <td> @NUTOOLS_VERSION@	</td>  <td>e7[:noifdh]</td></tr>
+<tr><td>&nbsp;&nbsp;  art     </td>  <td> @ART_VERSION@ </td>  <td>nu:@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  nutools      </td>  <td> @NUTOOLS_VERSION@	</td>  <td>@BASEQUAL@[:noifdh]</td></tr>
 <tr><td>&nbsp;&nbsp;  larsoft_data </td>  <td> @LARSOFT_DATA_VERSION@	</td>  <td>&nbsp;</td></tr>	
 <tr><td>&nbsp;&nbsp;  larbatch     </td>  <td> @LARBATCH_VERSION@ </td>  <td>&nbsp;</td></tr>
 <tr><td>&nbsp;&nbsp;  larutils     </td>  <td> @LARUTILS_VERSION@ </td>  <td>&nbsp;</td></tr>
-<tr><td>&nbsp;&nbsp;  larcore     </td>  <td> @LARCORE_VERSION@ </td>  <td>e7[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  lardata     </td>  <td> @LARDATA_VERSION@ </td>  <td>e7[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  larevt     </td>  <td> @LAREVT_VERSION@ </td>  <td>e7[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  larsim     </td>  <td> @LARSIM_VERSION@ </td>  <td>e7[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  larreco     </td>  <td> @LARRECO_VERSION@ </td>  <td>e7[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  larana     </td>  <td> @LARANA_VERSION@ </td>  <td>e7[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  larpandora     </td>  <td> @LARPANDORA_VERSION@ </td>  <td>e7[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  larexamples     </td>  <td> @LAREXAMPLES_VERSION@ </td>  <td>e7[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  lareventdisplay     </td>  <td> @LAREVENTDISPLAY_VERSION@ </td>  <td>e7[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  larsoft     </td>  <td> @LARSOFT_VERSION@ </td>  <td>e7[:noifdh]</td></tr>
+<tr><td>&nbsp;&nbsp;  larcore     </td>  <td> @LARCORE_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
+<tr><td>&nbsp;&nbsp;  lardata     </td>  <td> @LARDATA_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
+<tr><td>&nbsp;&nbsp;  larevt     </td>  <td> @LAREVT_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
+<tr><td>&nbsp;&nbsp;  larsim     </td>  <td> @LARSIM_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
+<tr><td>&nbsp;&nbsp;  larreco     </td>  <td> @LARRECO_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
+<tr><td>&nbsp;&nbsp;  larana     </td>  <td> @LARANA_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
+<tr><td>&nbsp;&nbsp;  larpandora     </td>  <td> @LARPANDORA_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
+<tr><td>&nbsp;&nbsp;  larexamples     </td>  <td> @LAREXAMPLES_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
+<tr><td>&nbsp;&nbsp;  lareventdisplay     </td>  <td> @LAREVENTDISPLAY_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
+<tr><td>&nbsp;&nbsp;  larsoft     </td>  <td> @LARSOFT_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
 <tr><td colspan="3"><b>Utilities:</b></td></tr>
 <tr><td>&nbsp;&nbsp;  git          </td>  <td> @GIT_VERSION@	  </td>  <td>&nbsp;</td></tr>
 <tr><td>&nbsp;&nbsp;  gitflow      </td>  <td> @GITFLOW_VERSION@ </td>  <td>&nbsp;</td></tr>

@@ -17,6 +17,10 @@ endmacro( create_product_variables)
 
 create_product_variables( larsoft ${version} )
 
+# define qualifiers
+set( BASEQUAL e7 )
+set( SQUAL s8 )
+
 set( LARUTILS_VERSION        "v1_00_09" )
 set( LARBATCH_VERSION        "v01_06_01" )
 
