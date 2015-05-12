@@ -24,6 +24,7 @@ larana : larana : OpticalDetector/SimPhotonCounter.h
 larana : larana : OpticalDetector/SimPhotonCounterAlg.h
 larana : larana : ParticleIdentification/PIDAAlg.h
 larana : larcore : Geometry/AuxDetGeo.h
+larana : larcore : Geometry/AuxDetSensitiveGeo.h
 larana : larcore : Geometry/BoxBoundedGeo.h
 larana : larcore : Geometry/ChannelMapAlg.h
 larana : larcore : Geometry/CryostatGeo.h
@@ -108,6 +109,7 @@ larana : larsim : TriggerAlgo/TriggerAlgoBase.h
 larana : larsim : TriggerAlgo/TriggerAlgoMicroBoone.h
 larana : larsim : TriggerAlgo/TriggerTypes.hh
 larcore : larcore : Geometry/AuxDetGeo.h
+larcore : larcore : Geometry/AuxDetSensitiveGeo.h
 larcore : larcore : Geometry/BoxBoundedGeo.h
 larcore : larcore : Geometry/ChannelMapAlg.h
 larcore : larcore : Geometry/ChannelMapStandardAlg.h
@@ -129,6 +131,7 @@ larcore : larcore : SummaryData/POTSummary.h
 larcore : larcore : SummaryData/RunData.h
 larcore : larcore : SummaryData/classes.h
 lardata : larcore : Geometry/AuxDetGeo.h
+lardata : larcore : Geometry/AuxDetSensitiveGeo.h
 lardata : larcore : Geometry/BoxBoundedGeo.h
 lardata : larcore : Geometry/ChannelMapAlg.h
 lardata : larcore : Geometry/CryostatGeo.h
@@ -255,6 +258,7 @@ lardata : lardata : Utilities/UniqueRangeSet.h
 lardata : lardata : Utilities/UtilException.h
 lardata : lardata : Utilities/sparse_vector.h
 lareventdisplay : larcore : Geometry/AuxDetGeo.h
+lareventdisplay : larcore : Geometry/AuxDetSensitiveGeo.h
 lareventdisplay : larcore : Geometry/BoxBoundedGeo.h
 lareventdisplay : larcore : Geometry/ChannelMapAlg.h
 lareventdisplay : larcore : Geometry/CryostatGeo.h
@@ -343,6 +347,7 @@ lareventdisplay : larsim : Simulation/LArVoxelList.h
 lareventdisplay : larsim : Simulation/SimListUtils.h
 lareventdisplay : larsim : Simulation/SimPhotons.h
 larevt : larcore : Geometry/AuxDetGeo.h
+larevt : larcore : Geometry/AuxDetSensitiveGeo.h
 larevt : larcore : Geometry/BoxBoundedGeo.h
 larevt : larcore : Geometry/ChannelMapAlg.h
 larevt : larcore : Geometry/CryostatGeo.h
@@ -389,6 +394,7 @@ larevt : larevt : CalibrationDBI/WebDBI/WebError.h
 larevt : larevt : Filters/ChannelFilter.h
 larevt : larevt : SpaceCharge/SpaceCharge.h
 larexamples : larcore : Geometry/AuxDetGeo.h
+larexamples : larcore : Geometry/AuxDetSensitiveGeo.h
 larexamples : larcore : Geometry/ChannelMapAlg.h
 larexamples : larcore : Geometry/CryostatGeo.h
 larexamples : larcore : Geometry/ExptGeoHelperInterface.h
@@ -402,6 +408,7 @@ larexamples : lardata : RecoBase/Hit.h
 larexamples : larsim : Simulation/LArG4Parameters.h
 larexamples : larsim : Simulation/SimChannel.h
 larpandora : larcore : Geometry/AuxDetGeo.h
+larpandora : larcore : Geometry/AuxDetSensitiveGeo.h
 larpandora : larcore : Geometry/BoxBoundedGeo.h
 larpandora : larcore : Geometry/ChannelMapAlg.h
 larpandora : larcore : Geometry/CryostatGeo.h
@@ -457,6 +464,7 @@ larpandora : larreco : RecoAlg/ClusterRecoUtil/Polygon2D.h
 larpandora : larreco : RecoAlg/ClusterRecoUtil/StandardClusterParamsAlg.h
 larpandora : larsim : Simulation/SimChannel.h
 larreco : larcore : Geometry/AuxDetGeo.h
+larreco : larcore : Geometry/AuxDetSensitiveGeo.h
 larreco : larcore : Geometry/BoxBoundedGeo.h
 larreco : larcore : Geometry/ChannelMapAlg.h
 larreco : larcore : Geometry/CryostatGeo.h
@@ -706,6 +714,7 @@ larreco : larsim : Simulation/SimListUtils.h
 larreco : larsim : Simulation/SimPhotons.h
 larreco : larsim : Simulation/sim.h
 larsim : larcore : Geometry/AuxDetGeo.h
+larsim : larcore : Geometry/AuxDetSensitiveGeo.h
 larsim : larcore : Geometry/BoxBoundedGeo.h
 larsim : larcore : Geometry/ChannelMapAlg.h
 larsim : larcore : Geometry/CryostatGeo.h
