@@ -603,6 +603,7 @@ larreco : larreco : MCComp/MCBTException.h
 larreco : larreco : MCComp/MCMatchAlg.h
 larreco : larreco : RecoAlg/APAGeometryAlg.h
 larreco : larreco : RecoAlg/BezierTrackerAlgorithm.h
+larreco : larreco : RecoAlg/BlurredClusteringAlg.h
 larreco : larreco : RecoAlg/CCHitFinderAlg.h
 larreco : larreco : RecoAlg/CCHitRefinerAlg.h
 larreco : larreco : RecoAlg/CMTool/CMTAlgMatch/CFAlgo3DAngle.h
@@ -668,6 +669,7 @@ larreco : larreco : RecoAlg/Cluster3DAlgs/SeedFinderAlgBase.h
 larreco : larreco : RecoAlg/Cluster3DAlgs/SkeletonAlg.h
 larreco : larreco : RecoAlg/ClusterCrawlerAlg.h
 larreco : larreco : RecoAlg/ClusterMatchAlg.h
+larreco : larreco : RecoAlg/ClusterMatchTQ.h
 larreco : larreco : RecoAlg/ClusterMergeHelper.h
 larreco : larreco : RecoAlg/ClusterParamsImportWrapper.h
 larreco : larreco : RecoAlg/ClusterRecoUtil/CRUException.h
