@@ -5,15 +5,10 @@
   build_bundle nu-@NUTOOLS_DOT_VERSION@ ${basequal}
   build_cet -p artdaq-core artdaq_core @ARTDAQ_CORE_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
 
-  do_build cmake v3_2_1
-  ensure_cetpkgsupport v1_08_05
-  ensure_cetbuildtools v4_05_00 v4_07_03 v4_08_01 v4_09_01 v4_09_02
-
   build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
 
-  # add to manifest if no build - larsoft_data, gitflow, mrb
+  # add to manifest if no build - larsoft_data, mrb
   prep_build larsoft_data @LARSOFT_DATA_VERSION@; add_to_manifest
-  prep_build gitflow @GITFLOW_VERSION@; add_to_manifest
   prep_build mrb @MRB_VERSION@; add_to_manifest
 
   build_cet -n larcore @LARCORE_VERSION@ ${basequal}:noifdh
@@ -28,8 +23,7 @@
   build_cet larsoft @LARSOFT_VERSION@ ${basequal}:noifdh
   if (( ${build_slf_extras:-0} )); then # only build for SL
      do_build ninja v1_5_3a
-     do_build git @GIT_VERSION@ 
-     build_cet -n larcore @LARCORE_VERSION@ ${basequal}
+     build_cet larcore @LARCORE_VERSION@ ${basequal}
      build_cet lardata @LARDATA_VERSION@ ${basequal}
      build_cet larevt @LAREVT_VERSION@ ${basequal}
      build_cet larsim @LARSIM_VERSION@ ${basequal}
