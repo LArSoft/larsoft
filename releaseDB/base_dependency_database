@@ -348,6 +348,15 @@ lareventdisplay : lareventdisplay : EventDisplay/TWQMultiTPCProjection.h
 lareventdisplay : lareventdisplay : EventDisplay/TWQProjectionView.h
 lareventdisplay : lareventdisplay : EventDisplay/TWireProjPad.h
 lareventdisplay : lareventdisplay : EventDisplay/eventdisplay.h
+lareventdisplay : larevt : CalibrationDBI/IOVData/ChData.h
+lareventdisplay : larevt : CalibrationDBI/IOVData/DetPedestal.h
+lareventdisplay : larevt : CalibrationDBI/IOVData/IOVDataConstants.h
+lareventdisplay : larevt : CalibrationDBI/IOVData/IOVDataError.h
+lareventdisplay : larevt : CalibrationDBI/IOVData/IOVTimeStamp.h
+lareventdisplay : larevt : CalibrationDBI/IOVData/Snapshot.h
+lareventdisplay : larevt : CalibrationDBI/WebDBI/DBFolder.h
+lareventdisplay : larevt : CalibrationDBI/WebDBI/DatabaseRetrievalAlg.h
+lareventdisplay : larevt : CalibrationDBI/WebDBI/DetPedestalRetrievalAlg.h
 lareventdisplay : larevt : Filters/ChannelFilter.h
 lareventdisplay : larsim : Simulation/LArVoxelData.h
 lareventdisplay : larsim : Simulation/LArVoxelID.h
@@ -496,6 +505,7 @@ larreco : larcore : SimpleTypesAndConstants/RawTypes.h
 larreco : larcore : SimpleTypesAndConstants/geo_types.h
 larreco : lardata : AnalysisAlg/CalorimetryAlg.h
 larreco : lardata : AnalysisBase/Calorimetry.h
+larreco : lardata : AnalysisBase/ParticleID.h
 larreco : lardata : MCBase/MCBaseException.h
 larreco : lardata : MCBase/MCDataHolder.h
 larreco : lardata : MCBase/MCHit.h
@@ -506,6 +516,7 @@ larreco : lardata : MCBase/MCStep.h
 larreco : lardata : MCBase/MCTrack.h
 larreco : lardata : MCBase/MCWire.h
 larreco : lardata : MCBase/MCWireCollection.h
+larreco : lardata : RawData/ExternalTrigger.h
 larreco : lardata : RawData/RawDigit.h
 larreco : lardata : RawData/TriggerData.h
 larreco : lardata : RawData/raw.h
@@ -697,6 +708,7 @@ larreco : larreco : RecoAlg/ClusterRecoUtil/OverriddenClusterParamsAlg.h
 larreco : larreco : RecoAlg/ClusterRecoUtil/Polygon2D.h
 larreco : larreco : RecoAlg/ClusterRecoUtil/StandardClusterParamsAlg.h
 larreco : larreco : RecoAlg/CornerFinderAlg.h
+larreco : larreco : RecoAlg/CosmicTrackerAlg.h
 larreco : larreco : RecoAlg/DBScanAlg.h
 larreco : larreco : RecoAlg/DisambigAlg.h
 larreco : larreco : RecoAlg/EndPointAlg.h
