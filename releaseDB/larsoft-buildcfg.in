@@ -25,7 +25,7 @@
   build_cet larsoft @LARSOFT_VERSION@ ${basequal}:noifdh
   if (( ${build_slf_extras:-0} )); then # only build for SL
      do_build ninja v1_5_3a
-     build_cet larcore @LARCORE_VERSION@ ${basequal}
+     build_cet -n larcore @LARCORE_VERSION@ ${basequal}
      build_cet lardata @LARDATA_VERSION@ ${basequal}
      build_cet larevt @LAREVT_VERSION@ ${basequal}
      build_cet larsim @LARSIM_VERSION@ ${basequal}
