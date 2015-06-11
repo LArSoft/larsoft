@@ -86,27 +86,8 @@
     <li>BuildFW will pull source living in Fermi redmine (cpp0x, art, etc.) direct from the repository.</li>
     <li>USAGE:
     <ul>
-      <li><pre>Usage: buildFW [-h]
-       buildFW <options> <product_topdir> <build-spec> <bundle-spec>
-
-Options:
-
-  -b    Specify basequal (REQUIRED: no default).
-  -f    Force already-built packages to be rebuilt.
-  -h    This help.
-  -s    Specify version set for those packages requiring it
-  -t    Make package tarfiles.
-  -U    Force packaged version of UPS to be built and/or made current.
-
-Arguments:
-
-  product_topdir   Top directory for relocatable-UPS products area.
-
-  build-spec    debug, opt or prof.
-
-  bundle-spec   Bundle identifier: 
-                artdev-1.12.00 (e.g.)</pre></li>
       <li><pre>./buildFW [-ft] -b @BASEQUAL@ -s @SQUAL@ &lt;product-directory&gt; &lt;debug|prof|opt&gt; larsoft-@LARSOFT_VERSION@</pre></li>
+      <li>See buildFW -h for more info.</li>
     </ul></li>
   </ul></li>
 
