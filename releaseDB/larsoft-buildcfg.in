@@ -5,7 +5,9 @@
   build_bundle nu-@NUTOOLS_DOT_VERSION@ ${basequal}
   build_cet -p artdaq-core artdaq_core @ARTDAQ_CORE_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
   
+  ensure_cetpkgsupport v1_08_06
   ensure_cetbuildtools v4_11_01
+  ensure_cetbuildtools v4_11_03
 
   build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
 
