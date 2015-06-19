@@ -35,7 +35,13 @@ include(CetCMakeEnv)
 cet_cmake_env()
 
 # these are minimum required versions, not the actual product versions
-find_ups_product( cetbuildtools v4_09_00 )
+find_ups_product( cetbuildtools v4_11_00 )
+
+find_ups_product( lareventdisplay v4_00_00 )
+find_ups_product( larexamples     v4_00_00 )
+find_ups_product( larana          v4_00_00 )
+find_ups_product( larreco         v4_00_00 )
+find_ups_product( larpandora      v4_00_00 )
 
 # useful scripts
 add_subdirectory(bin)
