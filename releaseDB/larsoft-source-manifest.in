@@ -43,7 +43,7 @@ pandora      v01_01_00b 		pandora-01.01.00b-source.tar.bz2
 genie        v2_8_6b		genie-2.8.6b-source.tar.bz2
 genie_phyopt v2_8_6		genie_phyopt-2.8.6-noarch-dkcharm.tar.bz2
 genie_phyopt v2_8_6		genie_phyopt-2.8.6-noarch-dkcharmtau.tar.bz2
-genie_xsec   v2_8_6		genie_xsec-2.8.6-noarch-default.tar.bz2
+genie_xsec   v2_8_6a		genie_xsec-2.8.6a-noarch-default.tar.bz2
 cstxsd       v4_0_0b		cstxsd-4.0.0b-source.tar.bz2
 nutools      @NUTOOLS_VERSION@		nutools-@NUTOOLS_DOT_VERSION@-source.tar.bz2
 larsoft_data @LARSOFT_DATA_VERSION@		larsoft_data-@LARSOFT_DATA_DOT_VERSION@-noarch.tar.bz2
