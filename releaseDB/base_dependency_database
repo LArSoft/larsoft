@@ -716,6 +716,14 @@ larreco : larreco : RecoAlg/GausFitCache.h
 larreco : larreco : RecoAlg/HoughBaseAlg.h
 larreco : larreco : RecoAlg/KalmanFilterAlg.h
 larreco : larreco : RecoAlg/LinFitAlg.h
+larreco : larreco : RecoAlg/PMAlg/PmaElement3D.h
+larreco : larreco : RecoAlg/PMAlg/PmaHit3D.h
+larreco : larreco : RecoAlg/PMAlg/PmaNode3D.h
+larreco : larreco : RecoAlg/PMAlg/PmaSegment3D.h
+larreco : larreco : RecoAlg/PMAlg/PmaTrack3D.h
+larreco : larreco : RecoAlg/PMAlg/SortedObjects.h
+larreco : larreco : RecoAlg/PMAlg/Utilities.h
+larreco : larreco : RecoAlg/ProjectionMatchingAlg.h
 larreco : larreco : RecoAlg/RootMathFunctor.h
 larreco : larreco : RecoAlg/SeedFinderAlgorithm.h
 larreco : larreco : RecoAlg/SmallClusterFinderAlg.h
