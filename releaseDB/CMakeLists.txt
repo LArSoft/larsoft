@@ -21,7 +21,7 @@ create_product_variables( larsoft ${version} )
 set( BASEQUAL e7 )
 set( SQUAL s12 )
 
-set( LARUTILS_VERSION        "v1_00_12" )
+set( LARUTILS_VERSION        "v1_00_13" )
 set( LARBATCH_VERSION        "v01_11_01" )
 
 set( LARCORE_VERSION         "v04_12_00" )
