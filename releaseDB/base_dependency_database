@@ -281,6 +281,7 @@ lareventdisplay : larcore : SimpleTypesAndConstants/RawTypes.h
 lareventdisplay : larcore : SimpleTypesAndConstants/geo_types.h
 lareventdisplay : lardata : AnalysisAlg/CalorimetryAlg.h
 lareventdisplay : lardata : AnalysisBase/Calorimetry.h
+lareventdisplay : lardata : AnalysisBase/CosmicTag.h
 lareventdisplay : lardata : AnalysisBase/ParticleID.h
 lareventdisplay : lardata : RawData/RawDigit.h
 lareventdisplay : lardata : RawData/TriggerData.h
@@ -632,7 +633,6 @@ larreco : larreco : RecoAlg/APAGeometryAlg.h
 larreco : larreco : RecoAlg/BezierTrackerAlgorithm.h
 larreco : larreco : RecoAlg/BlurredClusteringAlg.h
 larreco : larreco : RecoAlg/CCHitFinderAlg.h
-larreco : larreco : RecoAlg/CCHitRefinerAlg.h
 larreco : larreco : RecoAlg/CMTool/CMTAlgMatch/CFAlgo3DAngle.h
 larreco : larreco : RecoAlg/CMTool/CMTAlgMatch/CFAlgoArray.h
 larreco : larreco : RecoAlg/CMTool/CMTAlgMatch/CFAlgoChargeDistrib.h
@@ -733,6 +733,8 @@ larreco : larreco : RecoAlg/StitchAlg.h
 larreco : larreco : RecoAlg/TrackLineFitAlg.h
 larreco : larreco : RecoAlg/TrackMomentumCalculator.h
 larreco : larreco : RecoAlg/TrackTrajectoryAlg.h
+larreco : larreco : RecoAlg/VertexFitAlg.h
+larreco : larreco : RecoAlg/VertexFitMinuitStruct.h
 larreco : larreco : RecoAlg/fuzzyClusterAlg.h
 larreco : larreco : ShowerFinder/ShowerReco3D/ShowerCalo.h
 larreco : larreco : ShowerFinder/ShowerReco3D/ShowerRecoAlg.h
