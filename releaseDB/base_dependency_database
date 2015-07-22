@@ -716,6 +716,7 @@ larreco : larreco : RecoAlg/GausFitCache.h
 larreco : larreco : RecoAlg/HoughBaseAlg.h
 larreco : larreco : RecoAlg/KalmanFilterAlg.h
 larreco : larreco : RecoAlg/LinFitAlg.h
+larreco : larreco : RecoAlg/MergeClusterAlg.h
 larreco : larreco : RecoAlg/PMAlg/PmaElement3D.h
 larreco : larreco : RecoAlg/PMAlg/PmaHit3D.h
 larreco : larreco : RecoAlg/PMAlg/PmaNode3D.h
