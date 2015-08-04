@@ -58,6 +58,7 @@ larana : lardata : OpticalDetectorData/FIFOChannel.h
 larana : lardata : OpticalDetectorData/OpticalRawDigit.h
 larana : lardata : OpticalDetectorData/OpticalTypes.h
 larana : lardata : OpticalDetectorData/PMTTrigger.h
+larana : lardata : RawData/ExternalTrigger.h
 larana : lardata : RawData/OpDetPulse.h
 larana : lardata : RawData/OpDetWaveform.h
 larana : lardata : RawData/RawDigit.h
@@ -134,6 +135,7 @@ larcore : larcore : SummaryData/classes.h
 larcore : larcore : test/Geometry/GeometryIteratorLoopTestAlg.h
 larcore : larcore : test/Geometry/GeometryIteratorTestAlg.h
 larcore : larcore : test/Geometry/GeometryTestAlg.h
+larcore : larcore : test/Geometry/NameSelector.h
 larcore : larcore : test/Geometry/geometry_boost_unit_test_base.h
 larcore : larcore : test/Geometry/geometry_unit_test_base.h
 lardata : larcore : Geometry/AuxDetGeo.h
