@@ -6,7 +6,7 @@ cmake        v3_2_1		cmake-3.2.1-source.tar.bz2
 ninja        v1_6_0            ninja-1.6.0-source.tar.bz2
 gcc          v4_9_2		gcc-4.9.2-source.tar.bz2
 gdb          v7_9		gdb-7.9-source.tar.bz2
-git          v2_3_0		git-2.3.0-source.tar.bz2
+git          v2_4_6		git-2.4.6-source.tar.bz2
 gitflow      v1_8_0		gitflow-1.8.0-noarch.tar.bz2
 boost        v1_57_0		boost-1.57.0-source.tar.bz2
 clhep        v2_2_0_5		clhep-2.2.0.5-source.tar.bz2
@@ -45,10 +45,10 @@ genie_phyopt v2_8_6		genie_phyopt-2.8.6-noarch-dkcharm.tar.bz2
 genie_phyopt v2_8_6		genie_phyopt-2.8.6-noarch-dkcharmtau.tar.bz2
 genie_xsec   v2_8_6a		genie_xsec-2.8.6a-noarch-default.tar.bz2
 cstxsd       v4_0_0c		cstxsd-4.0.0c-source.tar.bz2
-ifdhc        v1_8_4		ifdhc-1.8.4-source.tar.bz2
+ifdhc        v1_8_5		ifdhc-1.8.5-source.tar.bz2
 libwda       v2_21_1		libwda-2.21.1-source.tar.bz2
-ifbeam       v1_4_11		ifbeam-1.4.11-source.tar.bz2
-nucondb      v1_4_11		nucondb-1.4.11-source.tar.bz2
+ifbeam       v1_4_12		ifbeam-1.4.12-source.tar.bz2
+nucondb      v1_4_12		nucondb-1.4.12-source.tar.bz2
 dk2nu        v01_01_03c		dk2nu-01.01.03c-source.tar.bz2
 nutools      @NUTOOLS_VERSION@		nutools-@NUTOOLS_DOT_VERSION@-source.tar.bz2
 larsoft_data @LARSOFT_DATA_VERSION@		larsoft_data-@LARSOFT_DATA_DOT_VERSION@-noarch.tar.bz2
