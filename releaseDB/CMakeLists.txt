@@ -19,7 +19,7 @@ create_product_variables( larsoft ${version} )
 
 # define qualifiers
 set( BASEQUAL e7 )
-set( SQUAL s14 )
+set( SQUAL s15 )
 
 set( LARUTILS_VERSION        "v1_03_00" )
 set( LARBATCH_VERSION        "v01_13_00" )
