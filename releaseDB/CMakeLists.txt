@@ -39,7 +39,7 @@ create_product_variables( artdaq_core   v1_04_17 )
 create_product_variables( artextensions v1_01_08 )
 create_product_variables( nutools       v1_14_02 )
 create_product_variables( larsoft_data  v0_04_00  )
-create_product_variables( git           v2_3_0  )
+create_product_variables( git           v2_4_6  )
 create_product_variables( gitflow       v1_8_0  )
 create_product_variables( mrb           v1_05_00 )
 
