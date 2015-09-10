@@ -1,4 +1,4 @@
-ups          v5_1_5		ups-5.1.5-source.tar.bz2
+ups          v5_1_6		ups-5.1.6-source.tar.bz2
 upd          v5_0_1		upd-5.0.1-noarch.tar.bz2
 cmake        v3_0_1             cmake-3.0.1-source.tar.bz2
 cmake        v3_1_2		cmake-3.1.2-source.tar.bz2
@@ -39,7 +39,7 @@ g4radiative  v4_0		g4radiative-4.0-noarch.tar.bz2
 g4surface    v1_0		g4surface-1.0-noarch.tar.bz2
 gsl          v1_16		gsl-1.16-source.tar.bz2
 root         v5_34_30 		root-5.34.30-source.tar.bz2
-pandora      v01_01_00b 		pandora-01.01.00b-source.tar.bz2
+pandora      @PANDORA_VERSION@ 		pandora-@PANDORA_DOT_VERSION@-source.tar.bz2
 genie        v2_8_6c		genie-2.8.6c-source.tar.bz2
 genie_phyopt v2_8_6		genie_phyopt-2.8.6-noarch-dkcharm.tar.bz2
 genie_phyopt v2_8_6		genie_phyopt-2.8.6-noarch-dkcharmtau.tar.bz2

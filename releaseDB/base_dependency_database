@@ -488,7 +488,6 @@ larpandora : larpandora : LArPandoraInterface/LArPandoraHelper.h
 larpandora : larpandora : LArPandoraInterface/LArPandoraParticleCreator.h
 larpandora : larpandora : LArPandoraInterface/MicroBooNEPseudoLayerPlugin.h
 larpandora : larpandora : LArPandoraInterface/MicroBooNETransformationPlugin.h
-larpandora : larpandora : LArPandoraInterface/PFParticleSeed.h
 larpandora : larpandora : LArPandoraInterface/PFParticleStitcher.h
 larpandora : larreco : ClusterFinder/ClusterCreator.h
 larpandora : larreco : RecoAlg/ClusterParamsImportWrapper.h
