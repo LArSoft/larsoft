@@ -1,19 +1,50 @@
 # build larsoft
+# because the nu distribution has a different pandora, we start with artbase
 
   basequal=${1}
 
-  build_bundle nu-@NUTOOLS_DOT_VERSION@ ${basequal}
-  build_cet -p artdaq-core artdaq_core @ARTDAQ_CORE_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
-  
-  build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
+  build_bundle artbase-1.15.02 ${basequal}
+
+  if (( ${ifdh_version_set:-0} )); then
+     echo "ERROR: ifdh version set must be specified for the postgresql build"
+     return 1
+  else
+     do_build postgresql v9_3_6 ${ifdh_version_set}
+  fi
+
+  do_build ninja v1_6_0
+  do_build xerces_c v3_1_1d ${basequal}
+  do_build cry v1_7d ${basequal}
+  do_build lhapdf v5_9_1c ${basequal}
+  do_build log4cpp v1_1_1c ${basequal}
+  do_build mysql_client v5_5_42 ${basequal}
+  do_build pythia v6_4_28c ${gccqual}
+  do_build geant4 v4_9_6_p04b ${basequal}
+  do_build gsl v1_16
+  do_build root v5_34_30 ${basequal}:nu
+  do_build genie v2_8_6c ${basequal}
+  do_build dk2nu v01_01_03c ${basequal}
+  do_build libwda v2_21_1
+  # special build of xerces_c for cstxsd
+  build_type=prof do_build xerces_c v3_1_1d ${bqual}
+  build_type=prof do_build cstxsd v4_0_0c ${bqual}
+  # the QT build of geant4 is only supported for slf6 at this time
+  if [ "${flvr}" = "Linux64bit+2.6-2.12" ]; then
+    do_build qt v5_4_2 ${basequal}
+    do_build geant4 v4_9_6_p04b ${basequal}:qt
+  fi
+
+  build_cet art @ART_VERSION@ ${basequal}:nu
   ensure_cetbuildtools v4_13_00
 
-  do_build pandora @PANDORA_VERSION@ nu:${basequal}
   if (( ${ifdh_version_set:-0} )); then
      echo "ERROR: ifdh version set must be specified for ifdh"
      return 1
   else
     if (( ${build_slf_extras:-0} )); then # only build for SL
+       do_build ifdhc v1_8_5  ${ifdh_version_set}:${basequal}
+       do_build ifbeam v1_4_12  ${ifdh_version_set}:${basequal}
+       do_build nucondb v1_4_12  ${ifdh_version_set}:${basequal}
        if (( ${version_set:-0} )); then
           echo "ERROR: version set must be specified for ifdh_art"
 	  return 1
@@ -22,6 +53,31 @@
        fi
     fi
   fi
+
+  if (( ${build_slf_extras:-0} )); then # only build for SL
+    do_build nutools @NUTOOLS_VERSION@ ${basequal}
+  fi
+  do_build nutools @NUTOOLS_VERSION@ ${basequal}:noifdh
+
+  # add to manifest if no build - pdfsets, genie_phyopt, genie_xsec, g4 datasets
+  prep_build pdfsets v5_9_1b; add_to_manifest
+  prep_build g4emlow      v6_32; add_to_manifest
+  prep_build g4neutron    v4_2; add_to_manifest
+  prep_build g4neutronxs  v1_2; add_to_manifest
+  prep_build g4nucleonxs  v1_1; add_to_manifest
+  prep_build g4photon     v3_0; add_to_manifest
+  prep_build g4pii        v1_3; add_to_manifest
+  prep_build g4radiative  v4_0; add_to_manifest
+  prep_build g4surface    v1_0; add_to_manifest
+  prep_build genie_phyopt v2_8_6 dkcharm; add_to_manifest
+  prep_build genie_phyopt v2_8_6 dkcharmtau; add_to_manifest
+  prep_build genie_xsec v2_8_6a default; add_to_manifest
+
+  build_cet -p artdaq-core artdaq_core @ARTDAQ_CORE_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
+  
+  build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
+
+  do_build pandora @PANDORA_VERSION@ nu:${basequal}
 
   # add to manifest if no build - larsoft_data, mrb
   prep_build larsoft_data @LARSOFT_DATA_VERSION@; add_to_manifest
