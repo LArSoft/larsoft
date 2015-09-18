@@ -52,7 +52,7 @@
 <h2 id="scripts-source">Source code distributions.</h2>
 
 <ul>
-  <li><a type="application/x-sh" download href="http://scisoft.fnal.gov/scisoft/bundles/art/@ART_VERSION@/checkPrerequisites-@ART_VERSION@">checkPrerequisites-@ART_VERSION@</a>
+  <li><a type="application/x-sh" download href="http://scisoft.fnal.gov/scisoft/bundles/tools/checkPrerequisites">checkPrerequisites</a>
   <ul>
     <li>Will examine the system for the presence of known OS-level
     prerequisites (on RedHat derivatives, these will be RPMs) and list
@@ -62,7 +62,7 @@
     <li>USAGE:
     <ul>
       <li>Download the script.</li>
-      <li><pre>chmod +x checkPrerequisites-@ART_VERSION@
+      <li><pre>chmod +x checkPrerequisites
 ./checkPrerequisites</li>
     </ul></li>
   </ul></li>
