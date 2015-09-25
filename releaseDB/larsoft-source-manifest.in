@@ -45,11 +45,10 @@ genie_phyopt v2_8_6		genie_phyopt-2.8.6-noarch-dkcharm.tar.bz2
 genie_phyopt v2_8_6		genie_phyopt-2.8.6-noarch-dkcharmtau.tar.bz2
 genie_xsec   v2_8_6a		genie_xsec-2.8.6a-noarch-default.tar.bz2
 cstxsd       v4_0_0c		cstxsd-4.0.0c-source.tar.bz2
-ifdhc        v1_8_5		ifdhc-1.8.5-source.tar.bz2
+ifdhc        v1_8_6		ifdhc-1.8.6-source.tar.bz2
 libwda       v2_21_1		libwda-2.21.1-source.tar.bz2
-ifbeam       v1_4_12		ifbeam-1.4.12-source.tar.bz2
-nucondb      v1_4_12		nucondb-1.4.12-source.tar.bz2
+ifbeam       v1_4_13		ifbeam-1.4.13-source.tar.bz2
+nucondb      v1_4_13		nucondb-1.4.13-source.tar.bz2
 dk2nu        v01_01_03c		dk2nu-01.01.03c-source.tar.bz2
-nutools      @NUTOOLS_VERSION@		nutools-@NUTOOLS_DOT_VERSION@-source.tar.bz2
 larsoft_data @LARSOFT_DATA_VERSION@		larsoft_data-@LARSOFT_DATA_DOT_VERSION@-noarch.tar.bz2
 mrb          @MRB_VERSION@		mrb-@MRB_DOT_VERSION@-noarch.tar.bz2
