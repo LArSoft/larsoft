@@ -40,6 +40,7 @@ g4surface    v1_0		g4surface-1.0-noarch.tar.bz2
 gsl          v1_16		gsl-1.16-source.tar.bz2
 root         v5_34_30 		root-5.34.30-source.tar.bz2
 pandora      @PANDORA_VERSION@ 		pandora-@PANDORA_DOT_VERSION@-source.tar.bz2
+larpandoracontent @LARPANDORACONTENT_VERSION@	larpandoracontent-@LARPANDORACONTENT_DOT_VERSION@-source.tar.bz2
 genie        v2_8_6c		genie-2.8.6c-source.tar.bz2
 genie_phyopt v2_8_6		genie_phyopt-2.8.6-noarch-dkcharm.tar.bz2
 genie_phyopt v2_8_6		genie_phyopt-2.8.6-noarch-dkcharmtau.tar.bz2
