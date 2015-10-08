@@ -3,7 +3,8 @@ upd          v5_0_1		upd-5.0.1-noarch.tar.bz2
 cmake        v3_0_1             cmake-3.0.1-source.tar.bz2
 cmake        v3_1_2		cmake-3.1.2-source.tar.bz2
 cmake        v3_2_1		cmake-3.2.1-source.tar.bz2
-ninja        v1_6_0            ninja-1.6.0-source.tar.bz2
+cmake        v3_3_2		cmake-3.3.2-source.tar.bz2
+ninja        v1_6_0             ninja-1.6.0-source.tar.bz2
 gcc          v4_9_2		gcc-4.9.2-source.tar.bz2
 gdb          v7_9		gdb-7.9-source.tar.bz2
 git          v2_4_6		git-2.4.6-source.tar.bz2

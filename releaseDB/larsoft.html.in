@@ -26,8 +26,10 @@
 <ul>
 <li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArSoft_release_list">Release Notes</a></li>
 <li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/issues">all issues</a></li>
-<li>SLF5 builds have been dropped</li>
-<li>Yosemite builds are now supported</li>
+<li>Be aware that problems have been seen with gcc v4_9_2 (e7) builds and XCode 7.x<br>
+   The problems are fixed with gcc v4_9_3, available when LArSoft moves to art v1_16_02.
+</li>
+<li>Official Fermilab support for El Capitan is expected in December</li>
 </ul>
 
 <h2 id="scripts-binary">Download scripts for binary distributions.</h2>
