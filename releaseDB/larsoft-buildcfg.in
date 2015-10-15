@@ -1,54 +1,39 @@
 # build larsoft
 
-  basequal=${1}
+basequal=${1}
 
-  build_bundle nu-@NUTOOLS_DOT_VERSION@ ${basequal}
-  status=$?
-  if (( ${status} != 0)); then
-    cat 1>&2 <<EOF
-Build of nu-@NUTOOLS_DOT_VERSION@ bundle failed with status ${status}
+build_bundle larbase-@LARSOFT_DOT_VERSION@ ${basequal}
+status=$?
+if (( ${status} != 0)); then
+  cat 1>&2 <<EOF
+Build of larbase-@LARSOFT_DOT_VERSION@ bundle failed with status ${status}
 EOF
-    return ${status}
-  fi
-  
-  # cmake 3.3.2 and cetbuildtools v4_14_01
-  do_build cmake v3_3_2
-  ensure_cetbuildtools v4_14_01
+  return ${status}
+fi
 
-  build_cet -p artdaq-core artdaq_core @ARTDAQ_CORE_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
-  
-  build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
-
-  do_build pandora @PANDORA_VERSION@ nu:${basequal}
-  do_build larpandoracontent @LARPANDORACONTENT_VERSION@ nu:${basequal}
-
-  # add to manifest if no build - larsoft_data, mrb
-  prep_build larsoft_data @LARSOFT_DATA_VERSION@; add_to_manifest
-  prep_build mrb @MRB_VERSION@; add_to_manifest
-
-  build_cet -n larcore @LARCORE_VERSION@ ${basequal}:noifdh
-  build_cet lardata @LARDATA_VERSION@ ${basequal}:noifdh
-  build_cet larevt @LAREVT_VERSION@ ${basequal}:noifdh
-  build_cet larsim @LARSIM_VERSION@ ${basequal}:noifdh
-  build_cet larreco @LARRECO_VERSION@ ${basequal}:noifdh
-  build_cet larana @LARANA_VERSION@ ${basequal}:noifdh
-  build_cet larpandora @LARPANDORA_VERSION@ ${basequal}:noifdh
-  build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}:noifdh
-  build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}:noifdh
-  build_cet larsoft @LARSOFT_VERSION@ ${basequal}:noifdh
-  if (( ${build_slf_extras:-0} )); then # only build for SL
-     build_cet -n larcore @LARCORE_VERSION@ ${basequal}
-     build_cet lardata @LARDATA_VERSION@ ${basequal}
-     build_cet larevt @LAREVT_VERSION@ ${basequal}
-     build_cet larsim @LARSIM_VERSION@ ${basequal}
-     build_cet larreco @LARRECO_VERSION@ ${basequal}
-     build_cet larana @LARANA_VERSION@ ${basequal}
-     build_cet larpandora @LARPANDORA_VERSION@ ${basequal}
-     build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}
-     build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}
-     build_cet larsoft @LARSOFT_VERSION@ ${basequal}
-  fi
-  build_cet_null larbatch @LARBATCH_VERSION@
-  build_cet_null larutils @LARUTILS_VERSION@
+build_cet -n larcore @LARCORE_VERSION@ ${basequal}:noifdh
+build_cet lardata @LARDATA_VERSION@ ${basequal}:noifdh
+build_cet larevt @LAREVT_VERSION@ ${basequal}:noifdh
+build_cet larsim @LARSIM_VERSION@ ${basequal}:noifdh
+build_cet larreco @LARRECO_VERSION@ ${basequal}:noifdh
+build_cet larana @LARANA_VERSION@ ${basequal}:noifdh
+build_cet larpandora @LARPANDORA_VERSION@ ${basequal}:noifdh
+build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}:noifdh
+build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}:noifdh
+build_cet larsoft @LARSOFT_VERSION@ ${basequal}:noifdh
+if (( ${build_slf_extras:-0} )); then # only build for SL
+   build_cet -n larcore @LARCORE_VERSION@ ${basequal}
+   build_cet lardata @LARDATA_VERSION@ ${basequal}
+   build_cet larevt @LAREVT_VERSION@ ${basequal}
+   build_cet larsim @LARSIM_VERSION@ ${basequal}
+   build_cet larreco @LARRECO_VERSION@ ${basequal}
+   build_cet larana @LARANA_VERSION@ ${basequal}
+   build_cet larpandora @LARPANDORA_VERSION@ ${basequal}
+   build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}
+   build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}
+   build_cet larsoft @LARSOFT_VERSION@ ${basequal}
+fi
+build_cet_null larbatch @LARBATCH_VERSION@
+build_cet_null larutils @LARUTILS_VERSION@
 
 return 0

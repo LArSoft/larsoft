@@ -1,0 +1,23 @@
+# build everything except larsoft itself
+
+basequal=${1}
+
+build_bundle nu-@NUTOOLS_DOT_VERSION@ ${basequal}
+status=$?
+if (( ${status} != 0)); then
+  cat 1>&2 <<EOF
+Build of nu-@NUTOOLS_DOT_VERSION@ bundle failed with status ${status}
+EOF
+  return ${status}
+fi
+
+build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
+
+do_build pandora @PANDORA_VERSION@ nu:${basequal}
+do_build larpandoracontent @LARPANDORACONTENT_VERSION@ nu:${basequal}
+
+# add to manifest if no build - larsoft_data, mrb
+prep_build larsoft_data @LARSOFT_DATA_VERSION@; add_to_manifest
+prep_build mrb @MRB_VERSION@; add_to_manifest
+
+return 0
