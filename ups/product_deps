@@ -1,7 +1,7 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v04_26_02
-defaultqual	e7
+parent	larsoft	v04_27_00
+defaultqual	e9
 
 # larsoft itself has no inc, or fcl directories
 # the lib directory just contains larsoftConfig.cmake and larsoftConfigVersion.cmake
@@ -10,26 +10,26 @@ fcldir      -
 bindir      product_dir
 #
 product         version
-lareventdisplay v04_10_01
-larexamples     v04_05_08
-larana          v04_14_00
-larreco         v04_19_01
-larpandora      v04_07_02
+lareventdisplay v04_11_00
+larexamples     v04_06_00
+larana          v04_15_00
+larreco         v04_20_00
+larpandora      v04_08_00
 larsoft_data    v0_05_00
-ifdh_art        v1_12_06
-gcc             v4_9_2
+ifdh_art        v1_13_02
+gcc             v4_9_3
 
 cetbuildtools	v4_14_02	-	only_for_build
 end_product_list
   
-# e7  - with gcc 4.9.1 and -std=c++1y
+# e9 - with gcc 4.9.3 and -std=c++14
 qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	gcc	ifdh_art	larsoft_data	notes
-e7:debug	e7:debug	e7:debug	e7:debug	e7:debug	e7:debug	-nq-	s15:nu:e7:debug	-nq-
-e7:opt		e7:opt		e7:opt		e7:opt		e7:opt		e7:opt		-nq-	s15:nu:e7:opt	-nq-
-e7:prof		e7:prof		e7:prof		e7:prof		e7:prof		e7:prof		-nq-	s15:nu:e7:prof	-nq-
-e7:noifdh:debug	e7:noifdh:debug	e7:noifdh:debug	e7:noifdh:debug	e7:noifdh:debug	e7:noifdh:debug	-nq-	-		-nq-
-e7:noifdh:opt	e7:noifdh:opt	e7:noifdh:opt	e7:noifdh:opt	e7:noifdh:opt	e7:noifdh:opt	-nq-	-		-nq-
-e7:noifdh:prof	e7:noifdh:prof	e7:noifdh:prof	e7:noifdh:prof	e7:noifdh:prof	e7:noifdh:prof	-nq-	-		-nq-
+e9:debug	e9:debug	e9:debug	e9:debug	e9:debug	e9:debug	-nq-	s18:nu:e9:debug	-nq-
+e9:opt		e9:opt		e9:opt		e9:opt		e9:opt		e9:opt		-nq-	s18:nu:e9:opt	-nq-
+e9:prof		e9:prof		e9:prof		e9:prof		e9:prof		e9:prof		-nq-	s18:nu:e9:prof	-nq-
+e9:noifdh:debug	e9:noifdh:debug	e9:noifdh:debug	e9:noifdh:debug	e9:noifdh:debug	e9:noifdh:debug	-nq-	-		-nq-
+e9:noifdh:opt	e9:noifdh:opt	e9:noifdh:opt	e9:noifdh:opt	e9:noifdh:opt	e9:noifdh:opt	-nq-	-		-nq-
+e9:noifdh:prof	e9:noifdh:prof	e9:noifdh:prof	e9:noifdh:prof	e9:noifdh:prof	e9:noifdh:prof	-nq-	-		-nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA

@@ -4,6 +4,7 @@ larana : larana : CosmicRemoval/HitTagAssociatorAlg.h
 larana : larana : OpticalDetector/AlgoFixedWindow.h
 larana : larana : OpticalDetector/AlgoPedestal.h
 larana : larana : OpticalDetector/AlgoSiPM.h
+larana : larana : OpticalDetector/AlgoSlidingWindow.h
 larana : larana : OpticalDetector/AlgoThreshold.h
 larana : larana : OpticalDetector/DefaultOpDetResponse.h
 larana : larana : OpticalDetector/FlashHypothesis.h
