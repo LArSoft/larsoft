@@ -13,7 +13,7 @@ EOF
   
   # cmake 3.3.2 and cetbuildtools v4_14_01
   do_build cmake v3_3_2
-  ensure_cetbuildtools v4_14_01
+  ensure_cetbuildtools v4_14_01 v4_14_02
 
   build_cet -p artdaq-core artdaq_core @ARTDAQ_CORE_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
   
