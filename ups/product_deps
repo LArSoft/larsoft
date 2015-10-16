@@ -19,7 +19,7 @@ larsoft_data    v0_05_00
 ifdh_art        v1_13_02
 gcc             v4_9_3
 
-cetbuildtools	v4_14_02	-	only_for_build
+cetbuildtools	v4_14_02   -   only_for_build
 end_product_list
   
 # e9 - with gcc 4.9.3 and -std=c++14
