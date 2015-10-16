@@ -22,7 +22,7 @@ gcc             v4_9_3
 cetbuildtools	v4_14_02	-	only_for_build
 end_product_list
   
-# e9  - with gcc 4.9.3 and -std=c++14
+# e9 - with gcc 4.9.3 and -std=c++14
 qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	gcc	ifdh_art	larsoft_data	notes
 e9:debug	e9:debug	e9:debug	e9:debug	e9:debug	e9:debug	-nq-	s18:nu:e9:debug	-nq-
 e9:opt		e9:opt		e9:opt		e9:opt		e9:opt		e9:opt		-nq-	s18:nu:e9:opt	-nq-
