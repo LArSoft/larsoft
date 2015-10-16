@@ -46,6 +46,10 @@ create_product_variables( gitflow       v1_8_0  )
 create_product_variables( mrb           v1_05_03 )
 
 # these files should be copied to scisoft for each release
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larbase-buildcfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/larbase-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
+  ${CMAKE_CURRENT_BINARY_DIR}/larbase-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-buildcfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
