@@ -212,6 +212,7 @@ lardata : lardata : RecoBase/Seed.h
 lardata : lardata : RecoBase/Shower.h
 lardata : lardata : RecoBase/SpacePoint.h
 lardata : lardata : RecoBase/Track.h
+lardata : lardata : RecoBase/TrackHitMeta.h
 lardata : lardata : RecoBase/Vertex.h
 lardata : lardata : RecoBase/Wire.h
 lardata : lardata : RecoBase/classes.h
@@ -553,6 +554,7 @@ larreco : lardata : RecoBase/Seed.h
 larreco : lardata : RecoBase/Shower.h
 larreco : lardata : RecoBase/SpacePoint.h
 larreco : lardata : RecoBase/Track.h
+larreco : lardata : RecoBase/TrackHitMeta.h
 larreco : lardata : RecoBase/Vertex.h
 larreco : lardata : RecoBase/Wire.h
 larreco : lardata : RecoBaseArt/HitCreator.h
