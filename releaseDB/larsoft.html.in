@@ -26,9 +26,7 @@
 <ul>
 <li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArSoft_release_list">Release Notes</a></li>
 <li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/issues">all issues</a></li>
-<li>Be aware that problems have been seen with gcc v4_9_2 (e7) builds and XCode 7.x<br>
-   The problems are fixed with gcc v4_9_3, available when LArSoft moves to art v1_16_02.
-</li>
+<li> There is no Mavericks build available at this time.</li>
 <li>Official Fermilab support for El Capitan is expected in December</li>
 </ul>
 
