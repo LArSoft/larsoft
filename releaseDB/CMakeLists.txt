@@ -19,7 +19,7 @@ create_product_variables( larsoft ${version} )
 
 # define qualifiers
 set( BASEQUAL e9 )
-set( SQUAL s20 )
+set( SQUAL s21 )
 
 set( LARUTILS_VERSION        "v1_04_00" )
 set( LARBATCH_VERSION        "v01_18_00" )
@@ -34,18 +34,22 @@ set( LARPANDORA_VERSION      "v04_08_02" )
 set( LAREXAMPLES_VERSION     "v04_06_02" )
 set( LAREVENTDISPLAY_VERSION "v04_12_01" )
 
-create_product_variables( art           v1_17_02 )
-create_product_variables( artdaq_core   v1_04_20 )
-create_product_variables( artextensions v1_02_01 )
-create_product_variables( nutools       v1_16_00 )
+create_product_variables( art           v1_17_03 )
+create_product_variables( artdaq_core   v1_04_21 )
+create_product_variables( artextensions v1_02_02 )
+create_product_variables( nutools       v1_16_01 )
 create_product_variables( pandora       v02_03_00a )
 create_product_variables( larpandoracontent v02_03_00a )
 create_product_variables( larsoft_data  v0_05_00  )
-create_product_variables( git           v2_4_6  )
-create_product_variables( gitflow       v1_8_0  )
-create_product_variables( mrb           v1_05_03 )
+create_product_variables( git           v2_5_0  )
+create_product_variables( gitflow       v1_8_0a  )
+create_product_variables( mrb           v1_05_04 )
 
 # these files should be copied to scisoft for each release
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-buildcfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
+  ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larbase-buildcfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larbase-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
