@@ -617,6 +617,7 @@ larreco : larreco : ClusterFinder/ClusterCreator.h
 larreco : larreco : ClusterFinder/RStarTree/RStarBoundingBox.h
 larreco : larreco : ClusterFinder/RStarTree/RStarTree.h
 larreco : larreco : ClusterFinder/RStarTree/RStarVisitor.h
+larreco : larreco : DirOfGamma/DirOfGamma.h
 larreco : larreco : Genfit/GFAbsBField.h
 larreco : larreco : Genfit/GFAbsEnergyLoss.h
 larreco : larreco : Genfit/GFAbsFinitePlane.h
