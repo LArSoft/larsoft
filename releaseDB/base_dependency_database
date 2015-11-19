@@ -169,6 +169,14 @@ lardata : lardata : AnalysisBase/FlashMatch.h
 lardata : lardata : AnalysisBase/ParticleID.h
 lardata : lardata : AnalysisBase/T0.h
 lardata : lardata : AnalysisBase/classes.h
+lardata : lardata : DetectorInfo/DetectorClocks.h
+lardata : lardata : DetectorInfo/DetectorClocksStandard.h
+lardata : lardata : DetectorInfo/DetectorProperties.h
+lardata : lardata : DetectorInfo/DetectorPropertiesStandard.h
+lardata : lardata : DetectorInfo/LArProperties.h
+lardata : lardata : DetectorInfo/LArPropertiesStandard.h
+lardata : lardata : DetectorInfo/RunHistory.h
+lardata : lardata : DetectorInfo/RunHistoryStandard.h
 lardata : lardata : MCBase/MCBaseException.h
 lardata : lardata : MCBase/MCHit.h
 lardata : lardata : MCBase/MCHitCollection.h
@@ -617,6 +625,9 @@ larreco : larreco : ClusterFinder/ClusterCreator.h
 larreco : larreco : ClusterFinder/RStarTree/RStarBoundingBox.h
 larreco : larreco : ClusterFinder/RStarTree/RStarTree.h
 larreco : larreco : ClusterFinder/RStarTree/RStarVisitor.h
+larreco : larreco : ClusterFinder/TrackShowerSplitter/Segmentation2D/Segmentation2D.h
+larreco : larreco : ClusterFinder/TrackShowerSplitter/Segmentation2D/SimpleClustering.h
+larreco : larreco : ClusterFinder/TrackShowerSplitter/Segmentation2D/TssHit2D.h
 larreco : larreco : DirOfGamma/DirOfGamma.h
 larreco : larreco : Genfit/GFAbsBField.h
 larreco : larreco : Genfit/GFAbsEnergyLoss.h
@@ -762,12 +773,14 @@ larreco : larreco : RecoAlg/PMAlgVertexing.h
 larreco : larreco : RecoAlg/ProjectionMatchingAlg.h
 larreco : larreco : RecoAlg/RootMathFunctor.h
 larreco : larreco : RecoAlg/SeedFinderAlgorithm.h
+larreco : larreco : RecoAlg/ShowerEnergyAlg.h
 larreco : larreco : RecoAlg/SmallClusterFinderAlg.h
 larreco : larreco : RecoAlg/SpacePointAlg.h
 larreco : larreco : RecoAlg/SpacePointAlg_TimeSort.h
 larreco : larreco : RecoAlg/StitchAlg.h
 larreco : larreco : RecoAlg/TrackLineFitAlg.h
 larreco : larreco : RecoAlg/TrackMomentumCalculator.h
+larreco : larreco : RecoAlg/TrackShowerSeparationAlg.h
 larreco : larreco : RecoAlg/TrackTrajectoryAlg.h
 larreco : larreco : RecoAlg/VertexFitAlg.h
 larreco : larreco : RecoAlg/VertexFitMinuitStruct.h
@@ -842,6 +855,7 @@ larsim : lardata : Utilities/sparse_vector.h
 larsim : larevt : CalibrationDBI/Interface/IChannelStatusProvider.h
 larsim : larevt : CalibrationDBI/Interface/IChannelStatusService.h
 larsim : larevt : SpaceCharge/SpaceCharge.h
+larsim : larsim : EventGenerator/NueAr40CCGenerator.h
 larsim : larsim : LArG4/AuxDetReadout.h
 larsim : larsim : LArG4/AuxDetReadoutGeometry.h
 larsim : larsim : LArG4/ConfigurablePhysicsList.hh
