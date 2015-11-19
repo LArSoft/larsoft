@@ -26,6 +26,7 @@
 <ul>
 <li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArSoft_release_list">Release Notes</a></li>
 <li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/issues">all issues</a></li>
+<li>Although SLF7 is not yet officially supported, builds are available.</li>
 <li>Official Fermilab support for El Capitan is expected in December</li>
 </ul>
 
@@ -41,6 +42,7 @@
       <li>Download the script.</li>
       <li>chmod +x pullProducts</li>
       <li>Scientific Linux 6.x: <pre>./pullProducts &lt;product-directory&gt; slf6 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
+      <li>Scientific Linux 7.x: <pre>./pullProducts &lt;product-directory&gt; slf7 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>Mavericks: <pre>./pullProducts &lt;product-directory&gt; d13 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>Yosemite: <pre>./pullProducts &lt;product-directory&gt; d14 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
     </ul></li>

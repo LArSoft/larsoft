@@ -11,8 +11,9 @@ EOF
   return ${status}
 fi
 
-# cetbuildtools v4_14_02
-ensure_cetbuildtools v4_14_02
+# cetbuildtools and cetpkgsupport
+ensure_cetpkgsupport v1_10_01
+ensure_cetbuildtools v4_17_03
 
 build_cet -p artdaq-core artdaq_core @ARTDAQ_CORE_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
 
