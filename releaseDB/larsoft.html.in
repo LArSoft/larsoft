@@ -27,7 +27,7 @@
 <li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArSoft_release_list">Release Notes</a></li>
 <li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/issues">all issues</a></li>
 <li>Although SLF7 is not yet officially supported, builds are available.</li>
-<li>Official Fermilab support for El Capitan is expected in December</li>
+<li>Official Fermilab support for El Capitan is expected in mid December</li>
 </ul>
 
 <h2 id="scripts-binary">Download scripts for binary distributions.</h2>
