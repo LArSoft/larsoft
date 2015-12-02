@@ -10,7 +10,7 @@ fcldir      -
 bindir      product_dir
 #
 product         version
-lareventdisplay v04_12_05
+lareventdisplay v04_12_06
 larexamples     v04_06_06
 larana          v04_16_04
 larreco         v04_24_02
