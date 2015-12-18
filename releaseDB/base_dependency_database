@@ -348,6 +348,7 @@ lareventdisplay : lareventdisplay : EventDisplay/AnalysisBaseDrawer.h
 lareventdisplay : lareventdisplay : EventDisplay/AnalysisDrawingOptions.h
 lareventdisplay : lareventdisplay : EventDisplay/CalorPad.h
 lareventdisplay : lareventdisplay : EventDisplay/CalorView.h
+lareventdisplay : lareventdisplay : EventDisplay/ChangeTrackers.h
 lareventdisplay : lareventdisplay : EventDisplay/ColorDrawingOptions.h
 lareventdisplay : lareventdisplay : EventDisplay/Display3DPad.h
 lareventdisplay : lareventdisplay : EventDisplay/Display3DView.h
@@ -766,6 +767,7 @@ larreco : larreco : RecoAlg/PMAlg/PmaHit3D.h
 larreco : larreco : RecoAlg/PMAlg/PmaNode3D.h
 larreco : larreco : RecoAlg/PMAlg/PmaSegment3D.h
 larreco : larreco : RecoAlg/PMAlg/PmaTrack3D.h
+larreco : larreco : RecoAlg/PMAlg/PmaTrkCandidate.h
 larreco : larreco : RecoAlg/PMAlg/PmaVtxCandidate.h
 larreco : larreco : RecoAlg/PMAlg/SortedObjects.h
 larreco : larreco : RecoAlg/PMAlg/Utilities.h
