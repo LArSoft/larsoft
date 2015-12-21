@@ -87,7 +87,7 @@ if [[ -n "${file}" ]]; then
     one_file "$file"
   fi
 else
-  for F in `find $TOP \( -type d \( -name .git -o -name .svn -o -name CVS -o -name ups -o -path '*/tools/migration' -o -path '*/art/ParameterSet' \) \
+  for F in `find $TOP \( -type d \( -name .git -o -name .svn -o -name CVS -o -name ups -o -path '*/tools/migration' -o -path '*/art/ParameterSet' -o -path '*/paper' \) \
                        -prune \) -o -type f \! \( -name '*~' -o -name '*.bak' -o -name '*.orig' -o -name '*.new' -o -name '*.gdml' -o -name '*.py' -o -name '*.sh' -o -name '*.o' -o -name '*.so' -o -name '*.os' -o -name '*.root' -o -name '*.txt'  -o -name '*.tex' -o -name 'SConscript' \) -print`; do
     one_file "$F"
   done
