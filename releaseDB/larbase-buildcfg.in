@@ -11,12 +11,6 @@ EOF
   return ${status}
 fi
 
-# cetbuildtools and cetpkgsupport
-ensure_cetpkgsupport v1_10_01
-ensure_cetbuildtools v4_17_03
-
-build_cet -p artdaq-core artdaq_core @ARTDAQ_CORE_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
-
 build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
 
 do_build pandora @PANDORA_VERSION@ nu:${basequal}
