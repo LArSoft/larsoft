@@ -33,13 +33,10 @@ e9:noifdh:prof	e9:noifdh:prof	e9:noifdh:prof	e9:noifdh:prof	e9:noifdh:prof	e9:no
 end_qualifier_list
 
 # table file fragment to set FW_DATA
-table_fragment_begin
-    pathPrepend(FW_DATA, /nusoft/data/flux/)
-table_fragment_end
-
-# Need to be able to pick up fcl file includes in the current
+# Also need to be able to pick up fcl file includes in the current
 # directory and in ./job
 table_fragment_begin
+    pathPrepend(FW_DATA, /nusoft/data/flux/)
     pathPrepend(FHICL_FILE_PATH, .:./job)
 table_fragment_end
 
