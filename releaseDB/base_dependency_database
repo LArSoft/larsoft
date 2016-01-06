@@ -507,9 +507,9 @@ larpandora : larpandora : LArPandoraInterface/LArPandoraBase.h
 larpandora : larpandora : LArPandoraInterface/LArPandoraCollector.h
 larpandora : larpandora : LArPandoraInterface/LArPandoraHelper.h
 larpandora : larpandora : LArPandoraInterface/LArPandoraParticleCreator.h
-larpandora : larpandora : LArPandoraInterface/MicroBooNEPseudoLayerPlugin.h
-larpandora : larpandora : LArPandoraInterface/MicroBooNETransformationPlugin.h
 larpandora : larpandora : LArPandoraInterface/PFParticleStitcher.h
+larpandora : larpandora : MicroBooNEPandora/MicroBooNEPseudoLayerPlugin.h
+larpandora : larpandora : MicroBooNEPandora/MicroBooNETransformationPlugin.h
 larpandora : larreco : ClusterFinder/ClusterCreator.h
 larpandora : larreco : RecoAlg/ClusterParamsImportWrapper.h
 larpandora : larreco : RecoAlg/ClusterRecoUtil/CRUException.h
