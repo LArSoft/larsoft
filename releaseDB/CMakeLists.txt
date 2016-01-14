@@ -36,7 +36,7 @@ set( LAREVENTDISPLAY_VERSION "v04_14_00" )
 
 create_product_variables( art           v1_17_06 )
 create_product_variables( artdaq_core   v1_04_27 )
-create_product_variables( artextensions v1_02_05 )
+create_product_variables( artextensions v1_02_06 )
 create_product_variables( nutools       v1_20_01 )
 create_product_variables( pandora       v02_03_00a )
 create_product_variables( larpandoracontent v02_03_00a )
