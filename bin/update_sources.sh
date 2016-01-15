@@ -35,7 +35,7 @@ function cmake_file() {
   # Optionally fix whitespace
   (( ${fix_whitespace:-0} )) && ed "$F" < fix-whitespace.ed > /dev/null 2>&1
   # Fix CMakeLists.txt 
-  perl -wapi\~ -f ${thisdir}/fix_plugin_refs.pl "${F}" >/dev/null 2>&1 && rm -f "${F}~"
+  perl -wapi\~ -f ${thisdir}/fix_cmake.pl "${F}" >/dev/null 2>&1 && rm -f "${F}~"
 }
 
 # ======================================================================
