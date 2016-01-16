@@ -62,7 +62,7 @@ BEGIN { %dir_list = (
 			"SpaceCharge_service" => "larevt_SpaceCharge_SpaceCharge_service",
                         "DetSim" => "larsim_DetSim",
                         "EventGenerator" => "larsim_EventGenerator",
-		        "MergeSimSources" => "larsim_LArG4_MergeSimSources",
+		        "MergeSimSources" => "larsim_LArG4",
                         "LArG4" => "larsim_LArG4",
                         "MCCheater" => "larsim_MCCheater",
                         "MCSTReco" => "larsim_MCSTReco",
@@ -87,7 +87,7 @@ BEGIN { %dir_list = (
                         "DirOfGamma" => "larreco_DirOfGamma",
                         "EventFinder" => "larreco_EventFinder",
                         "Genfit" => "larreco_Genfit",
-		        "RFFHitFitter" => "larreco_HitFinder_RFFHitFitter",
+		        "RFFHitFitter" => "larreco_HitFinder",
                         "HitFinder" => "larreco_HitFinder",
                         "MCComp" => "larreco_MCComp",
                         "RecoAlg" => "larreco_RecoAlg",
@@ -113,10 +113,10 @@ BEGIN { %dir_list = (
                         "LArPandoraInterface" => "larpandora_LArPandoraInterface",
                         "Calorimetry" => "larana_Calorimetry",
                         "CosmicRemoval" => "larana_CosmicRemoval",
-		        "FlashHypothesis" => "larana_OpticalDetector_FlashHypothesis",
-			"SimPhotonCounter" => "larana_OpticalDetector_SimPhotonCounter",
-			"FlashHypothesisComparison" => "larana_OpticalDetector_FlashHypothesisComparison",
-			"OpFlashAnaAlg" => "larana_OpticalDetector_OpFlashAnaAlg",
+		        "FlashHypothesis" => "larana_OpticalDetector",
+			"SimPhotonCounter" => "larana_OpticalDetector",
+			"FlashHypothesisComparison" => "larana_OpticalDetector",
+			"OpFlashAnaAlg" => "larana_OpticalDetector",
                         "OpticalDetector" => "larana_OpticalDetector",
                         "ParticleIdentification" => "larana_ParticleIdentification",
 			"DefaultOpDetResponse_service" => "larana_OpticalDetector_DefaultOpDetResponse_service",
@@ -176,6 +176,7 @@ BEGIN { %dir_list = (
 foreach my $lib (sort keys %dir_list) {
    next if m&add_subdirectory&i;
    next if m&simple_plugin&i;
+   next if m&SUBDIRNAME&i;
   #s&\b\Q${lib}\E([^\.\s]*\b)([^\.]|$)&$dir_list{$lib}${1}${2}&g and last;
   s&\b\Q${lib}\E\b([^\.]|$)&$dir_list{$lib}${1}${2}&g and last;
 }
