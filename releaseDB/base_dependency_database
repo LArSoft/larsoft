@@ -23,6 +23,7 @@ larana : larana : OpticalDetector/PMTPulseRecoBase.h
 larana : larana : OpticalDetector/PulseRecoManager.h
 larana : larana : OpticalDetector/SimPhotonCounter.h
 larana : larana : OpticalDetector/SimPhotonCounterAlg.h
+larana : larana : ParticleIdentification/MVAAlg.h
 larana : larana : ParticleIdentification/PIDAAlg.h
 larana : larcore : Geometry/AuxDetGeo.h
 larana : larcore : Geometry/AuxDetSensitiveGeo.h
@@ -45,6 +46,7 @@ larana : lardata : AnalysisAlg/Chi2PIDAlg.h
 larana : lardata : AnalysisBase/Calorimetry.h
 larana : lardata : AnalysisBase/CosmicTag.h
 larana : lardata : AnalysisBase/FlashMatch.h
+larana : lardata : AnalysisBase/MVAPIDResult.h
 larana : lardata : AnalysisBase/ParticleID.h
 larana : lardata : AnalysisBase/T0.h
 larana : lardata : MCBase/MCBaseException.h
@@ -166,6 +168,7 @@ lardata : lardata : AnalysisAlg/Chi2PIDAlg.h
 lardata : lardata : AnalysisBase/Calorimetry.h
 lardata : lardata : AnalysisBase/CosmicTag.h
 lardata : lardata : AnalysisBase/FlashMatch.h
+lardata : lardata : AnalysisBase/MVAPIDResult.h
 lardata : lardata : AnalysisBase/ParticleID.h
 lardata : lardata : AnalysisBase/T0.h
 lardata : lardata : AnalysisBase/classes.h
