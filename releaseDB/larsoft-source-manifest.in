@@ -28,7 +28,7 @@ log4cpp      v1_1_1d		log4cpp-1.1.1d-source.tar.bz2
 mysql_client v5_5_45		mysql_client-5.5.45-source.tar.bz2
 postgresql   v9_3_9		postgresql-9.3.9-source.tar.bz2
 pythia       v6_4_28d		pythia-6.4.28d-source.tar.bz2
-geant4       v4_9_6_p04c	geant4-4.9.6.p04c-source.tar.bz2
+geant4       v4_9_6_p04d	geant4-4.9.6.p04d-source.tar.bz2
 g4emlow      v6_32		g4emlow-6.32-noarch.tar.bz2
 g4neutron    v4_2		g4neutron-4.2-noarch.tar.bz2
 g4neutronxs  v1_2		g4neutronxs-1.2-noarch.tar.bz2
