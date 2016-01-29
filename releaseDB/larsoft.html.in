@@ -106,22 +106,22 @@ The following products are part of the full larsoft suite:
 </td></tr>
 <tr><td colspan="3"><b>Code:</b></td></tr>
 <tr><td>&nbsp;&nbsp;  art     </td>  <td> @ART_VERSION@ </td>  <td>nu:@BASEQUAL@</td></tr>
-<tr><td>&nbsp;&nbsp;  nutools      </td>  <td> @NUTOOLS_VERSION@	</td>  <td>@BASEQUAL@[:noifdh]</td></tr>
+<tr><td>&nbsp;&nbsp;  nutools      </td>  <td> @NUTOOLS_VERSION@	</td>  <td>@BASEQUAL@:gn286</td></tr>
 <tr><td>&nbsp;&nbsp;  pandora     </td>  <td> @PANDORA_VERSION@ </td>  <td>@BASEQUAL@:nu</td></tr>
 <tr><td>&nbsp;&nbsp;  larpandoracontent     </td>  <td> @LARPANDORACONTENT_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larsoft_data </td>  <td> @LARSOFT_DATA_VERSION@	</td>  <td>&nbsp;</td></tr>	
 <tr><td>&nbsp;&nbsp;  larbatch     </td>  <td> @LARBATCH_VERSION@ </td>  <td>&nbsp;</td></tr>
 <tr><td>&nbsp;&nbsp;  larutils     </td>  <td> @LARUTILS_VERSION@ </td>  <td>&nbsp;</td></tr>
-<tr><td>&nbsp;&nbsp;  larcore     </td>  <td> @LARCORE_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  lardata     </td>  <td> @LARDATA_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  larevt     </td>  <td> @LAREVT_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  larsim     </td>  <td> @LARSIM_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  larreco     </td>  <td> @LARRECO_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  larana     </td>  <td> @LARANA_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  larpandora     </td>  <td> @LARPANDORA_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  larexamples     </td>  <td> @LAREXAMPLES_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  lareventdisplay     </td>  <td> @LAREVENTDISPLAY_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
-<tr><td>&nbsp;&nbsp;  larsoft     </td>  <td> @LARSOFT_VERSION@ </td>  <td>@BASEQUAL@[:noifdh]</td></tr>
+<tr><td>&nbsp;&nbsp;  larcore     </td>  <td> @LARCORE_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  lardata     </td>  <td> @LARDATA_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  larevt     </td>  <td> @LAREVT_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  larsim     </td>  <td> @LARSIM_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  larreco     </td>  <td> @LARRECO_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  larana     </td>  <td> @LARANA_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  larpandora     </td>  <td> @LARPANDORA_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  larexamples     </td>  <td> @LAREXAMPLES_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  lareventdisplay     </td>  <td> @LAREVENTDISPLAY_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  larsoft     </td>  <td> @LARSOFT_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td colspan="3"><b>Utilities:</b></td></tr>
 <tr><td>&nbsp;&nbsp;  git          </td>  <td> @GIT_VERSION@	  </td>  <td>&nbsp;</td></tr>
 <tr><td>&nbsp;&nbsp;  gitflow      </td>  <td> @GITFLOW_VERSION@ </td>  <td>&nbsp;</td></tr>
