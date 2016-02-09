@@ -513,10 +513,11 @@ larpandora : lardata : Utilities/TimeService.h
 larpandora : lardata : Utilities/TimeServiceException.h
 larpandora : lardata : Utilities/UtilException.h
 larpandora : lardata : Utilities/sparse_vector.h
-larpandora : larpandora : LArPandoraInterface/LArPandoraBase.h
-larpandora : larpandora : LArPandoraInterface/LArPandoraCollector.h
+larpandora : larpandora : LArPandoraInterface/ILArPandora.h
+larpandora : larpandora : LArPandoraInterface/LArPandora.h
 larpandora : larpandora : LArPandoraInterface/LArPandoraHelper.h
-larpandora : larpandora : LArPandoraInterface/LArPandoraParticleCreator.h
+larpandora : larpandora : LArPandoraInterface/LArPandoraInput.h
+larpandora : larpandora : LArPandoraInterface/LArPandoraOutput.h
 larpandora : larpandora : LArPandoraInterface/PFParticleStitcher.h
 larpandora : larpandora : MicroBooNEPandora/MicroBooNEPseudoLayerPlugin.h
 larpandora : larpandora : MicroBooNEPandora/MicroBooNETransformationPlugin.h
