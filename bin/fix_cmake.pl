@@ -110,7 +110,9 @@ BEGIN { %dir_list = (
 			"EventMaker_module" => "larreco_EventFinder_EventMaker_module",
 			"DumpTracks_module" => "larreco_TrackFinder_DumpTracks_module",
 			"HarrisVertexFinder_module" => "larreco_VertexFinder_HarrisVertexFinder_module",
-                        "LArPandoraInterface" => "larpandora_LArPandoraInterface",
+			"LArPandoraAnalysis" => "larpandora_LArPandoraAnalysis",
+			"LArPandoraInterface" => "larpandora_LArPandoraInterface",
+			"MicroBooNEPandora" => "larpandora_MicroBooNEPandora",
                         "Calorimetry" => "larana_Calorimetry",
                         "CosmicRemoval" => "larana_CosmicRemoval",
 		        "FlashHypothesis" => "larana_OpticalDetector",
@@ -158,6 +160,7 @@ BEGIN { %dir_list = (
 			"FlashHypothesisAna_module" => "larana_OpticalDetector_FlashHypothesisAna_module",
 			"FlashPurityCheckAna_module" => "larana_OpticalDetector_FlashPurityCheckAna_module",
 			"TrackTimeAssoc_module" => "larana_OpticalDetector_TrackTimeAssoc_module",
+                        "OpHitFinder" => "larana_OpticalDetector_OpHitFinder",
 			"PhotonCounterT0Matching_module" => "larana_T0Finder_PhotonCounterT0Matching_module",
 			"MCTruthT0Matching_module" => "larana_T0Finder_MCTruthT0Matching_module",
                         "T0Finder" => "larana_T0Finder",
@@ -177,6 +180,7 @@ foreach my $lib (sort keys %dir_list) {
    next if m&add_subdirectory&i;
    next if m&simple_plugin&i;
    next if m&SUBDIRNAME&i;
+   next if m&SUBDIRS&i;
   #s&\b\Q${lib}\E([^\.\s]*\b)([^\.]|$)&$dir_list{$lib}${1}${2}&g and last;
   s&\b\Q${lib}\E\b([^\.]|$)&$dir_list{$lib}${1}${2}&g and last;
 }
