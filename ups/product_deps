@@ -27,9 +27,6 @@ qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	gcc	ifdh_art	l
 e9:debug	e9:debug	e9:debug	e9:debug	e9:debug	e9:debug	-nq-	s30:nu:e9:debug	-nq-
 e9:opt		e9:opt		e9:opt		e9:opt		e9:opt		e9:opt		-nq-	s30:nu:e9:opt	-nq-
 e9:prof		e9:prof		e9:prof		e9:prof		e9:prof		e9:prof		-nq-	s30:nu:e9:prof	-nq-
-e9:noifdh:debug	e9:noifdh:debug	e9:noifdh:debug	e9:noifdh:debug	e9:noifdh:debug	e9:noifdh:debug	-nq-	-		-nq-
-e9:noifdh:opt	e9:noifdh:opt	e9:noifdh:opt	e9:noifdh:opt	e9:noifdh:opt	e9:noifdh:opt	-nq-	-		-nq-
-e9:noifdh:prof	e9:noifdh:prof	e9:noifdh:prof	e9:noifdh:prof	e9:noifdh:prof	e9:noifdh:prof	-nq-	-		-nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA

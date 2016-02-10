@@ -152,7 +152,7 @@ larcore : larcore : test/Geometry/GeometryIteratorLoopTestAlg.h
 larcore : larcore : test/Geometry/GeometryIteratorTestAlg.h
 larcore : larcore : test/Geometry/GeometryTestAlg.h
 larcore : larcore : test/Geometry/NameSelector.h
-larcore : larcore : test/Geometry/geometry_boost_unit_test_base.h
+larcore : larcore : test/Geometry/boost_unit_test_base.h
 larcore : larcore : test/Geometry/geometry_unit_test_base.h
 lardata : larcore : Geometry/AuxDetGeo.h
 lardata : larcore : Geometry/AuxDetSensitiveGeo.h

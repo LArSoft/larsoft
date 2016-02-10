@@ -26,8 +26,6 @@
 <ul>
 <li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArSoft_release_list">Release Notes</a></li>
 <li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/issues">all issues</a></li>
-<li>Although SLF7 is not yet officially supported, builds are available.</li>
-<li>Although Ubuntu is not officially supported, we are making builds available on a best effort basis.</li>
 <li><a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/_Supported_platforms_">Supported Platforms</a></li>
 </ul>
 
