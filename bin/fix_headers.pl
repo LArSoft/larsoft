@@ -90,6 +90,10 @@ BEGIN { %header_list = (
                         "Utilities/UniqueRangeSet.h" => "lardata/Utilities/UniqueRangeSet.h",
                         "Utilities/UtilException.h" => "lardata/Utilities/UtilException.h",
                         "Utilities/VectorMap.h" => "lardata/Utilities/VectorMap.h",
+			"DetectorInfo/DetectorProperties.h" => "lardata/DetectorInfoServices/DetectorPropertiesService.h",
+			"lardata/DetectorInfo/DetectorProperties.h" => "lardata/DetectorInfoServices/DetectorPropertiesService.h",
+			"DetectorInfo/LArProperties.h" => "lardata/DetectorInfoServices/LArPropertiesService.h",
+			"lardata/DetectorInfo/LArProperties.h" => "lardata/DetectorInfoServices/LArPropertiesService.h"
 		       ); }
 
 foreach my $inc (sort keys %subdir_list) {
