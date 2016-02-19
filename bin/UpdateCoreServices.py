@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-import sys
+import sys, re
 
 import SerialSubstitution
 from SerialSubstitution import AddProcessor, RunSubstitutor
@@ -139,8 +139,23 @@ if __name__ == "__main__":
 	Subst.AddWord         ("IDetPedestalProvider",        "DetPedestalProvider")
 	
 	# functions moved
-	Subst.AddWarningPattern(r"(\.|->)(Efield|ElectronLifetime|DriftVelocity|BirksCorrection|ModBoxCorrection|Temperature|Density|Eloss|ElossVar)\s*\(",
-	  r"Note: LArProperties::\2() has moved to DetectorProperties/DetectorPropertiesService")
+	class WarningMoveMembers:
+		# adds heuristics to suppress warning if the code has already been changed
+		def __init__(self):
+			self.pattern = r"(\w*)(\.|->)(Efield|ElectronLifetime|DriftVelocity|BirksCorrection|ModBoxCorrection|Temperature|Density|Eloss|ElossVar)\s*\("
+			self.regex = re.compile(self.pattern)
+		def search(self, s):
+			match = self.regex.search(s)
+			if not match: return None
+			varname = match.group(1).lower()
+			if 'detp' in varname:
+				return None
+			return match
+		# search()
+	# class WarningMoveMembers
+	
+	Subst.AddWarningPattern(WarningMoveMembers(),
+	  r"Note: LArProperties::\3() has moved to DetectorProperties/DetectorPropertiesService")
 	
 	
 	# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #

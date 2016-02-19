@@ -144,7 +144,12 @@ class ReplacementClass(SubstitutionClass):
 class WarningClass(SubstitutionClass):
 	def __init__(self, match, message, exceptions = []):
 		SubstitutionClass.__init__(self)
-		self.regex = re.compile(match)
+		if hasattr(match, 'search'):
+			self.pattern = match.pattern
+			self.regex = match
+		else:
+			self.pattern = match
+			self.regex = re.compile(match)
 		self.msg = message
 		self.exceptions = map(re.compile, exceptions)
 	# __init__()
