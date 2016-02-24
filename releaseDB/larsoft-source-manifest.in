@@ -39,7 +39,7 @@ g4radiative  v4_0		g4radiative-4.0-noarch.tar.bz2
 g4surface    v1_0		g4surface-1.0-noarch.tar.bz2
 gsl          v1_16a		gsl-1.16a-source.tar.bz2
 root         v5_34_32 		root-5.34.32-source.tar.bz2
-genie        v2_10_4		genie-2.10.4-source.tar.bz2
+genie        v2_10_4a		genie-2.10.4a-source.tar.bz2
 genie_phyopt v2_10_2		genie_phyopt-2.10.2-noarch-dkcharm.tar.bz2
 genie_phyopt v2_10_2		genie_phyopt-2.10.2-noarch-dkcharmtau.tar.bz2
 genie_xsec   v2_10_2		genie_xsec-2.10.2-noarch-default.tar.bz2
@@ -49,7 +49,7 @@ ifdhc        v1_8_9		ifdhc-1.8.9-source.tar.bz2
 libwda       v2_22_2		libwda-2.22.2-source.tar.bz2
 ifbeam       v1_4_19		ifbeam-1.4.19-source.tar.bz2
 nucondb      v1_4_19		nucondb-1.4.19-source.tar.bz2
-dk2nu        v01_03_00a		dk2nu-01.03.00a-source.tar.bz2
+dk2nu        v01_03_00b		dk2nu-01.03.00b-source.tar.bz2
 pandora      @PANDORA_VERSION@ 		pandora-@PANDORA_DOT_VERSION@-source.tar.bz2
 larpandoracontent @LARPANDORACONTENT_VERSION@	larpandoracontent-@LARPANDORACONTENT_DOT_VERSION@-source.tar.bz2
 larsoft_data @LARSOFT_DATA_VERSION@		larsoft_data-@LARSOFT_DATA_DOT_VERSION@-noarch.tar.bz2
