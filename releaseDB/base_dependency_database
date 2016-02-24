@@ -94,11 +94,14 @@ larana : lardata : lardata/RecoBase/Seed.h
 larana : lardata : lardata/RecoBase/Shower.h
 larana : lardata : lardata/RecoBase/SpacePoint.h
 larana : lardata : lardata/RecoBase/Track.h
+larana : lardata : lardata/RecoBase/Wire.h
+larana : lardata : lardata/RecoBaseArt/HitCreator.h
 larana : lardata : lardata/RecoObjects/BezierTrack.h
 larana : lardata : lardata/RecoObjects/Cluster3D.h
 larana : lardata : lardata/Utilities/AssociationUtil.h
 larana : lardata : lardata/Utilities/SumSecondFunction.h
 larana : lardata : lardata/Utilities/VectorMap.h
+larana : lardata : lardata/Utilities/sparse_vector.h
 larana : larevt : larevt/CalibrationDBI/Interface/ChannelStatusProvider.h
 larana : larevt : larevt/CalibrationDBI/Interface/ChannelStatusService.h
 larana : larreco : larreco/RecoAlg/Cluster3DAlgs/PrincipalComponentsAlg.h
