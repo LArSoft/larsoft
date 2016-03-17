@@ -13,7 +13,7 @@ fi
 
 build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
 
-do_build pandora @PANDORA_VERSION@ nu:${basequal}
+do_build pandora @PANDORA_VERSION@ ${basequal}:nu
 do_build larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}:nu
 
 # add to manifest if no build - larsoft_data, mrb
