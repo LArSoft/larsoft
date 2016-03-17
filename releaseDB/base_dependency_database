@@ -18,6 +18,7 @@ larana : larana : larana/OpticalDetector/OpHitFinder/AlgoFixedWindow.h
 larana : larana : larana/OpticalDetector/OpHitFinder/AlgoSiPM.h
 larana : larana : larana/OpticalDetector/OpHitFinder/AlgoSlidingWindow.h
 larana : larana : larana/OpticalDetector/OpHitFinder/AlgoThreshold.h
+larana : larana : larana/OpticalDetector/OpHitFinder/OpHitAlg.h
 larana : larana : larana/OpticalDetector/OpHitFinder/OpticalRecoException.h
 larana : larana : larana/OpticalDetector/OpHitFinder/OpticalRecoTypes.h
 larana : larana : larana/OpticalDetector/OpHitFinder/PMTPedestalBase.h
@@ -79,7 +80,6 @@ larana : lardata : lardata/OpticalDetectorData/ChannelDataGroup.h
 larana : lardata : lardata/OpticalDetectorData/FIFOChannel.h
 larana : lardata : lardata/OpticalDetectorData/OpticalRawDigit.h
 larana : lardata : lardata/OpticalDetectorData/OpticalTypes.h
-larana : lardata : lardata/OpticalDetectorData/PMTTrigger.h
 larana : lardata : lardata/RawData/ExternalTrigger.h
 larana : lardata : lardata/RawData/OpDetPulse.h
 larana : lardata : lardata/RawData/OpDetWaveform.h
@@ -96,6 +96,7 @@ larana : lardata : lardata/RecoBase/SpacePoint.h
 larana : lardata : lardata/RecoBase/Track.h
 larana : lardata : lardata/RecoBase/Wire.h
 larana : lardata : lardata/RecoBaseArt/HitCreator.h
+larana : lardata : lardata/RecoBaseArt/TrackUtils.h
 larana : lardata : lardata/RecoObjects/BezierTrack.h
 larana : lardata : lardata/RecoObjects/Cluster3D.h
 larana : lardata : lardata/Utilities/AssociationUtil.h
@@ -123,9 +124,6 @@ larana : larsim : larsim/Simulation/SimChannel.h
 larana : larsim : larsim/Simulation/SimListUtils.h
 larana : larsim : larsim/Simulation/SimPhotons.h
 larana : larsim : larsim/Simulation/sim.h
-larana : larsim : larsim/TriggerAlgo/TriggerAlgoBase.h
-larana : larsim : larsim/TriggerAlgo/TriggerAlgoMicroBoone.h
-larana : larsim : larsim/TriggerAlgo/TriggerTypes.hh
 larcore : larcore : larcore/CoreUtils/ServiceUtil.h
 larcore : larcore : larcore/Geometry/AuxDetChannelMapAlg.h
 larcore : larcore : larcore/Geometry/AuxDetExptGeoHelperInterface.h
@@ -259,6 +257,7 @@ lardata : lardata : lardata/RecoBase/classes.h
 lardata : lardata : lardata/RecoBaseArt/FindAllP.h
 lardata : lardata : lardata/RecoBaseArt/HitCreator.h
 lardata : lardata : lardata/RecoBaseArt/HitUtils.h
+lardata : lardata : lardata/RecoBaseArt/TrackUtils.h
 lardata : lardata : lardata/RecoBaseArt/WireCreator.h
 lardata : lardata : lardata/RecoObjects/BezierCurveHelper.h
 lardata : lardata : lardata/RecoObjects/BezierTrack.h
@@ -538,6 +537,7 @@ larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraOutput.h
 larpandora : larpandora : larpandora/LArPandoraInterface/PFParticleStitcher.h
 larpandora : larpandora : larpandora/MicroBooNEPandora/MicroBooNEPseudoLayerPlugin.h
 larpandora : larpandora : larpandora/MicroBooNEPandora/MicroBooNETransformationPlugin.h
+larpandora : larpandora : larpandora/RootGraphics/RootGraphicsEnablingService.h
 larpandora : larreco : larreco/ClusterFinder/ClusterCreator.h
 larpandora : larreco : larreco/RecoAlg/ClusterParamsImportWrapper.h
 larpandora : larreco : larreco/RecoAlg/ClusterRecoUtil/CRUException.h
@@ -604,6 +604,7 @@ larreco : lardata : lardata/RecoBase/TrackHitMeta.h
 larreco : lardata : lardata/RecoBase/Vertex.h
 larreco : lardata : lardata/RecoBase/Wire.h
 larreco : lardata : lardata/RecoBaseArt/HitCreator.h
+larreco : lardata : lardata/RecoBaseArt/TrackUtils.h
 larreco : lardata : lardata/RecoObjects/BezierCurveHelper.h
 larreco : lardata : lardata/RecoObjects/BezierTrack.h
 larreco : lardata : lardata/RecoObjects/Cluster3D.h
