@@ -1,6 +1,7 @@
 larana : larana : larana/Calorimetry/TrackCalorimetryAlg.h
 larana : larana : larana/CosmicRemoval/BeamFlashTrackMatchTaggerAlg.h
 larana : larana : larana/CosmicRemoval/HitTagAssociatorAlg.h
+larana : larana : larana/CosmicRemoval/TrackContainment/TrackContainmentAlg.hh
 larana : larana : larana/OpticalDetector/DefaultOpDetResponse.h
 larana : larana : larana/OpticalDetector/FlashHypothesis.h
 larana : larana : larana/OpticalDetector/FlashHypothesisAnaAlg.h
@@ -810,6 +811,8 @@ larreco : larreco : larreco/RecoAlg/SmallClusterFinderAlg.h
 larreco : larreco : larreco/RecoAlg/SpacePointAlg.h
 larreco : larreco : larreco/RecoAlg/SpacePointAlg_TimeSort.h
 larreco : larreco : larreco/RecoAlg/StitchAlg.h
+larreco : larreco : larreco/RecoAlg/Track3DKalmanHit.h
+larreco : larreco : larreco/RecoAlg/Track3DKalmanHitAlg.h
 larreco : larreco : larreco/RecoAlg/TrackLineFitAlg.h
 larreco : larreco : larreco/RecoAlg/TrackMomentumCalculator.h
 larreco : larreco : larreco/RecoAlg/TrackShowerSeparationAlg.h
