@@ -11,9 +11,6 @@ EOF
   return ${status}
 fi
 
-ensure_cetbuildtools v4_18_03
-ensure_cetbuildtools v4_18_04
-
 build_cet -n larcore @LARCORE_VERSION@ ${basequal}
 build_cet lardata @LARDATA_VERSION@ ${basequal}
 build_cet larevt @LAREVT_VERSION@ ${basequal}
