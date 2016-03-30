@@ -11,8 +11,8 @@ EOF
   return ${status}
 fi
 
-do_build pandora @PANDORA_VERSION@ ${basequal}:nu
-do_build larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}:nu
+do_build pandora @PANDORA_VERSION@ ${basequal}:nu:r5
+do_build larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}:nu:r5
 
 # add to manifest if no build - larsoft_data, mrb
 prep_build larsoft_data @LARSOFT_DATA_VERSION@; add_to_manifest
