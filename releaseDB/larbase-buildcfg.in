@@ -11,6 +11,11 @@ EOF
   return ${status}
 fi
 
+# the latest gdb is not yet in the nu distribution
+if ! (( ${darwin:-0} )); then # No gdb for Darwin
+  do_build gdb v7_10_1
+fi
+
 build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
 
 do_build pandora @PANDORA_VERSION@ ${basequal}:nu
