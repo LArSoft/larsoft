@@ -1,10 +1,27 @@
 #!/usr/bin/env python
 #
+# Run with '--help' for usage instructions
+# 
 # Author: Gianluca Petrillo (petrillo@fnal.gov)
 # Date:   April 1, 2016
 #
+# Change log:
+# 20160401 [v1.0]  (petrillo@fnal.gov)
+#   original version
+# 20160401 [v1.1]  (petrillo@fnal.gov)
+#   switched default to direct parser;
+#   survive with warnings if XML is not available
+#   changed the default mode to backup the input and then replace the file;
+#   added a single output mode
+#
 
 __doc__     = """Evaluates and replaces mathematical expressions from a GDML file.
+
+By default, each of the input file is renamed into a .bak file, and the output
+replaces the old file. If no input file is specified, the file is read from standard
+input and output to standard output, or to the value of the '--output' option.
+The output option can also be specified to set the output file name, in which case
+the input file is not renamed. If empty, output will be to standard output.
 
 This scripts supports two modes:
 - direct parser: a simple parser that looks for patterns '="xxx"' in a line
@@ -16,12 +33,15 @@ This scripts supports two modes:
 The XML parser is easy to extend to include "define" GDML lines, that are not
 currently supported.
 """
-__version__ = "1.0"
+__version__ = "1.1"
 
-import sys
+import sys, os
 import logging
 
-import xml.dom.minidom
+try:
+   import xml.dom.minidom
+   hasXML = True
+except ImportError: hasXML = False
 
 
 ###############################################################################
@@ -230,6 +250,7 @@ def RemoveMathFromXMLfile(InputFileName, OutputFileName = None):
    OutputFile = open(OutputFileName, 'w') if OutputFileName else sys.stdout
    
    OutputFile.write(GDML.toxml())
+   OutputFile.write("\n")
    
    if OutputFileName:
       logging.debug("GDML written to file '%s'", OutputFileName)
@@ -249,20 +270,71 @@ def LoggingSetup(LoggingLevel = logging.INFO):
 # def LoggingSetup()
 
 
+def RunParserOn(parser, InputFileName):
+   """Renames the input file into '.bak', then runs the parser"""
+   
+   OldInputFileName = InputFileName
+   InputFileName += ".bak"
+   OutputFileName = OldInputFileName
+   
+   # rename the input file
+   if os.path.exists(InputFileName):
+      raise RuntimeError(
+        "Backup file '%s' is on the way. Please remove it first."
+        % InputFileName
+        )
+   # if exists
+   logging.debug("Renaming the input file into '%s'", InputFileName)
+   os.rename(OldInputFileName, InputFileName)
+
+   # run the parser
+   try:
+      parser(InputFileName, OutputFileName)
+   except Exception, e:
+      # if no output file was produced, rename back the input
+      if not os.path.exists(OutputFileName):
+         logging.debug("Restoring the input file name after a fatal error.")
+         os.rename(InputFileName, OldInputFileName) 
+      raise e
+   # try ... except
+   
+   logging.info("File '%s' rewritten (old file in '%s')",
+     OutputFileName, InputFileName
+     )
+   
+# RunParserOn()
+
+
 ################################################################################
 def RemoveMathFromGDML():
    import argparse
-
+   
+   LoggingSetup(logging.WARN)
+   
+   # the first parser is the default one
+   SupportedParsers = [ 'direct', 'xml', 'list' ]
+   if not hasXML:
+      logging.warn("XML parser is not supported (cam't find python XML module)")
+      SupportedParsers.remove('xml')
+   # if
+   
    parser = argparse.ArgumentParser(description=__doc__)
 
-   parser.add_argument("InputFile", nargs="?", default=None,
-     help="input GDML file [default: stdin]")
+   parser.add_argument("InputFiles", nargs="*", default=None,
+     help="input GDML files [default: stdin]")
 
-   parser.add_argument("OutputFile", nargs="?", default=None,
-     help="output GDML file (will be overwritten) [stdout]")
+   parser.add_argument("--parser", choices=SupportedParsers,
+     dest="Parser", default=SupportedParsers[0],
+     help="choose which parser to use ('list' for a list) [%(default)s]")
    
-   parser.add_argument("--direct", action="store_true", default=False,
-     dest="UseSimpleParser", help="use simple internal parser [%(default)s]")
+   parser.add_argument("--direct", action="store_const", const="direct",
+     dest="Parser", help="use simple internal parser [%(default)s]")
+   
+   parser.add_argument("--xml", action="store_const", const="xml",
+     dest="Parser", help="use complete XML parser [%(default)s]")
+
+   parser.add_argument("--output", dest="OutputFile", default=None,
+     help="for a single input, use this as output file")
    
    parser.add_argument('--verbose', '-v', dest="DoVerbose", action='store_true',
      help="shows all the changes on screen [%(default)s]")
@@ -273,18 +345,41 @@ def RemoveMathFromGDML():
      version='%(prog)s ' + __version__)
 
    arguments = parser.parse_args()
-
+   
    # set up the logging system
-   LoggingSetup(logging.DEBUG if arguments.DoDebug else logging.INFO)
+   logging.getLogger().setLevel \
+     (logging.DEBUG if arguments.DoDebug else logging.INFO)
 
-   if arguments.DoVerbose: arguments.LogMsg = logging.info
-   else:                   arguments.LogMsg = logging.debug
+   arguments.LogMsg = logging.info if arguments.DoVerbose else logging.debug
+   
 
-   if arguments.UseSimpleParser:
-      RemoveMathFromGDMLfile(arguments.InputFile, arguments.OutputFile)
+   if arguments.Parser == 'list':
+      SupportedParsers.remove('list')
+      logging.info("Supported parsers: '%s'.", "', '".join(SupportedParsers)) 
+      return 0
+   # if list parsers
+   
+   if arguments.Parser == 'direct':
+      Parser = RemoveMathFromGDMLfile
+   elif arguments.Parser == 'xml':
+      Parser = RemoveMathFromXMLfile
    else:
-      RemoveMathFromXMLfile(arguments.InputFile, arguments.OutputFile)
-
+      raise RuntimeError("Unexpected parser '%s' requested", arguments.Parser)
+   
+   if not arguments.InputFiles:
+      Parser(None)
+   elif arguments.OutputFile is not None:
+      if len(arguments.InputFiles) > 1:
+         raise RuntimeError \
+           ("Named output is supported only when a single input file is specified.")
+      # if
+      Parser(arguments.InputFiles[0], arguments.OutputFile)
+   else:
+      for InputFileName in arguments.InputFiles:
+         RunParserOn(Parser, InputFileName)
+   # if ... else
+   
+   
    return 0
 # RemoveMathFromGDML()
 
