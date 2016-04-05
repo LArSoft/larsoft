@@ -13,6 +13,11 @@
 #   survive with warnings if XML is not available
 #   changed the default mode to backup the input and then replace the file;
 #   added a single output mode
+# 20160405 [v1.2]  (petrillo@fnal.gov)
+#   added support for power operator "^" and mathematical functions in expressions
+#   added dry-run option
+# 20160405 [v1.3]  (petrillo@fnal.gov)
+#   using ROOT as expression parser (as default)
 #
 
 __doc__     = """Evaluates and replaces mathematical expressions from a GDML file.
@@ -32,11 +37,14 @@ This scripts supports two modes:
   the order of the attributes
 The XML parser is easy to extend to include "define" GDML lines, that are not
 currently supported.
+
+Expressions are evaluated by ROOT TFormula by default.
 """
-__version__ = "1.1"
+__version__ = "1.3"
 
 import sys, os
 import logging
+import math
 
 try:
    import xml.dom.minidom
@@ -48,22 +56,59 @@ except ImportError: hasXML = False
 ### Expression fixer
 ###
 class GDMLexpressionRemover:
-   def __init__(self):
+   def __init__(self, options = None):
       self.constants = {}
-   
-   def purify(self, expression):
-      # is it a single value?
-      try: 
-         float(expression)
-         return expression
+      self.environment = vars(math)
+      self.options = options
+      if self.options.NoROOTformula:
+         self.initROOT()
+         self.formula = self.ROOT.TFormula("GDMLexpressionRemoverFormula", "0");
+         self.purify = self.purify_ROOT
+      else:
+         self.purify = self.purify_native
+   # __init__()
+
+   @staticmethod
+   def sanitize(s):
+      return s.replace("^", "**")
+
+   def initROOT(self):
+      try:
+         import ROOT
+      except ImportError:
+         logging.error("Can't load ROOT module: I can't use ROOT to evaluate formulas.")
+         raise
+      ROOT.gErrorIgnoreLevel = ROOT.kFatal # do not even print errors
+      self.ROOT = ROOT # store the module for loca use
+   # initROOT()
+ 
+   def pass_floats(self, expression):
+      float(expression) # just throw an exception if not a float
+      return expression
+   # pass_floats()
+      
+   def purify_native(self, expression):
+      try: return self.pass_floats(expression)
       except ValueError: pass
       
       # is it a valid expression?
       try:
-         return eval(expression, self.constants)
+         sanitized = self.sanitize(expression)
+         return str(eval(sanitized, self.environment, self.constants))
       except:
          return expression
-   # purify()
+   # purify_native()
+   
+   def purify_ROOT(self, expression):
+      try: return self.pass_floats(expression)
+      except ValueError: pass
+      
+      # is it a valid expression?
+      if self.formula.Compile(expression) == 0:
+         return str(self.formula.Eval(0.))
+      else:
+         return expression
+   # purify_ROOT()
    
 # class GDMLexpressionRemover
 
@@ -120,20 +165,6 @@ class GDMLpurifier(GDMLexpressionRemover):
       return tokens
    # findStrings()
    
-   def purify(self, expression):
-      # is it a single value?
-      try: 
-         float(expression)
-         return expression
-      except ValueError: pass
-      
-      # is it a valid expression?
-      try:
-         return eval(expression, self.constants)
-      except:
-         return expression
-   # purify()
-   
    def apply(self, token, iLine = None):
       """Purifies the token"""
       elements = []
@@ -160,19 +191,23 @@ class GDMLpurifier(GDMLexpressionRemover):
 # class GDMLpurifier
 
 
-def RemoveMathFromGDMLfile(InputFileName, OutputFileName = None):
+def RemoveMathFromGDMLfile(InputFileName, OutputFileName = None, options = None):
    
-   if OutputFileName and (InputFileName == OutputFileName):
+   if not options.Fake and OutputFileName and (InputFileName == OutputFileName):
       raise RuntimeError \
         ("With the direct parser the input and output file must be different.")
    
    # if InputFileName is empty, use standard input
    InputFile = open(InputFileName, 'r') if InputFileName else sys.stdin
    
-   # if OutputFileName is empty, use standard output; otherwise, overwrite
-   OutputFile = open(OutputFileName, 'w') if OutputFileName else sys.stdout
+   if options.Fake:
+      logging.info("Output will not be written in dry-run mode.")
+      OutputFile = None
+   else:
+      # if OutputFileName is empty, use standard output; otherwise, overwrite
+      OutputFile = open(OutputFileName, 'w') if OutputFileName else sys.stdout
    
-   RemoveGDMLexpression = GDMLpurifier()
+   RemoveGDMLexpression = GDMLpurifier(options=options)
    
    for iLine, line in enumerate(InputFile):
       
@@ -184,12 +219,14 @@ def RemoveMathFromGDMLfile(InputFileName, OutputFileName = None):
       # we keep the words after removal in a new list
       purified = RemoveGDMLexpression.apply(beef, iLine)
       
-      # output accumulates the output line
-      output = indent + purified
-      print >>OutputFile, output
+      if OutputFile:
+         # output accumulates the output line
+         output = indent + purified
+         print >>OutputFile, output
+      # if output
    # for
    
-   if OutputFileName:
+   if OutputFileName and OutputFile:
       logging.debug("GDML written to file '%s'", OutputFileName)
    
 # RemoveMathFromGDMLfile()
@@ -233,7 +270,7 @@ def ApplyToDocument(document, func, *args, **kargs):
    ApplyToNodes(document, 0, func, *args, **kargs)
 
 
-def RemoveMathFromXMLfile(InputFileName, OutputFileName = None):
+def RemoveMathFromXMLfile(InputFileName, OutputFileName = None, options = None):
    
    # if InputFileName is empty, use standard input
    InputFile = open(InputFileName, 'r') if InputFileName else sys.stdin
@@ -246,14 +283,19 @@ def RemoveMathFromXMLfile(InputFileName, OutputFileName = None):
    
    ApplyToDocument(GDML, RemoveGDMLexpression.purifyNode)
    
-   # if OutputFileName is empty, use standard output; otherwise, overwrite
-   OutputFile = open(OutputFileName, 'w') if OutputFileName else sys.stdout
-   
-   OutputFile.write(GDML.toxml())
-   OutputFile.write("\n")
-   
-   if OutputFileName:
-      logging.debug("GDML written to file '%s'", OutputFileName)
+
+   if options.Fake:
+      logging.info("Output will not be written in dry-run mode.")
+   else:
+      # if OutputFileName is empty, use standard output; otherwise, overwrite
+      OutputFile = open(OutputFileName, 'w') if OutputFileName else sys.stdout
+      
+      OutputFile.write(GDML.toxml())
+      OutputFile.write("\n")
+      
+      if OutputFileName:
+         logging.debug("GDML written to file '%s'", OutputFileName)
+   # if output
    
 # RemoveMathFromXMLfile()
 
@@ -270,37 +312,44 @@ def LoggingSetup(LoggingLevel = logging.INFO):
 # def LoggingSetup()
 
 
-def RunParserOn(parser, InputFileName):
+def RunParserOn(parser, InputFileName, options = None):
    """Renames the input file into '.bak', then runs the parser"""
    
    OldInputFileName = InputFileName
-   InputFileName += ".bak"
    OutputFileName = OldInputFileName
    
-   # rename the input file
-   if os.path.exists(InputFileName):
-      raise RuntimeError(
-        "Backup file '%s' is on the way. Please remove it first."
-        % InputFileName
-        )
-   # if exists
-   logging.debug("Renaming the input file into '%s'", InputFileName)
-   os.rename(OldInputFileName, InputFileName)
-
+   if not options.Fake:
+      InputFileName += ".bak"
+      
+      # rename the input file
+      if os.path.exists(InputFileName):
+         raise RuntimeError(
+           "Backup file '%s' is on the way. Please remove it first."
+           % InputFileName
+           )
+      # if exists
+      logging.debug("Renaming the input file into '%s'", InputFileName)
+      os.rename(OldInputFileName, InputFileName)
+   # if not dry run
+   
    # run the parser
    try:
-      parser(InputFileName, OutputFileName)
+      parser(InputFileName, OutputFileName, options=options)
    except Exception, e:
-      # if no output file was produced, rename back the input
-      if not os.path.exists(OutputFileName):
-         logging.debug("Restoring the input file name after a fatal error.")
-         os.rename(InputFileName, OldInputFileName) 
+      if not options.Fake:
+         # if no output file was produced, rename back the input
+         if not os.path.exists(OutputFileName):
+            logging.debug("Restoring the input file name after a fatal error.")
+            os.rename(InputFileName, OldInputFileName) 
+      # if
       raise e
    # try ... except
    
-   logging.info("File '%s' rewritten (old file in '%s')",
-     OutputFileName, InputFileName
-     )
+   if not options.Fake:
+      logging.info("File '%s' rewritten (old file in '%s')",
+        OutputFileName, InputFileName
+        )
+   # if
    
 # RunParserOn()
 
@@ -311,6 +360,9 @@ def RemoveMathFromGDML():
    
    LoggingSetup(logging.WARN)
    
+   ###
+   ### argument parsing
+   ###
    # the first parser is the default one
    SupportedParsers = [ 'direct', 'xml', 'list' ]
    if not hasXML:
@@ -332,10 +384,17 @@ def RemoveMathFromGDML():
    
    parser.add_argument("--xml", action="store_const", const="xml",
      dest="Parser", help="use complete XML parser [%(default)s]")
+   
+   parser.add_argument("--noroot", action="store_true",
+     dest="NoROOTformula",
+     help="use python instead of ROOT TFormula to evaluate expressions [%(default)s]"
+     )
 
    parser.add_argument("--output", dest="OutputFile", default=None,
      help="for a single input, use this as output file")
    
+   parser.add_argument('--dryrun', '--fake', '-n', dest="Fake", action='store_true',
+     help="do not write output [%(default)s]")
    parser.add_argument('--verbose', '-v', dest="DoVerbose", action='store_true',
      help="shows all the changes on screen [%(default)s]")
    parser.add_argument('--debug', dest="DoDebug", action='store_true',
@@ -346,12 +405,14 @@ def RemoveMathFromGDML():
 
    arguments = parser.parse_args()
    
+   ###
+   ### set up and parameter check
+   ###
    # set up the logging system
    logging.getLogger().setLevel \
      (logging.DEBUG if arguments.DoDebug else logging.INFO)
 
    arguments.LogMsg = logging.info if arguments.DoVerbose else logging.debug
-   
 
    if arguments.Parser == 'list':
       SupportedParsers.remove('list')
@@ -365,21 +426,27 @@ def RemoveMathFromGDML():
       Parser = RemoveMathFromXMLfile
    else:
       raise RuntimeError("Unexpected parser '%s' requested", arguments.Parser)
-   
+    
+
+   ###
+   ### run
+   ### 
    if not arguments.InputFiles:
-      Parser(None)
+      Parser(None, options=arguments)
    elif arguments.OutputFile is not None:
       if len(arguments.InputFiles) > 1:
          raise RuntimeError \
            ("Named output is supported only when a single input file is specified.")
       # if
-      Parser(arguments.InputFiles[0], arguments.OutputFile)
+      Parser(arguments.InputFiles[0], arguments.OutputFile, options=arguments)
    else:
       for InputFileName in arguments.InputFiles:
-         RunParserOn(Parser, InputFileName)
+         RunParserOn(Parser, InputFileName, options=arguments)
    # if ... else
    
-   
+   ###
+   ### done
+   ###
    return 0
 # RemoveMathFromGDML()
 
