@@ -16,6 +16,8 @@
 # 20160405 [v1.2]  (petrillo@fnal.gov)
 #   added support for power operator "^" and mathematical functions in expressions
 #   added dry-run option
+# 20160405 [v1.3]  (petrillo@fnal.gov)
+#   using ROOT as expression parser (as default)
 #
 
 __doc__     = """Evaluates and replaces mathematical expressions from a GDML file.
@@ -35,8 +37,10 @@ This scripts supports two modes:
   the order of the attributes
 The XML parser is easy to extend to include "define" GDML lines, that are not
 currently supported.
+
+Expressions are evaluated by ROOT TFormula by default.
 """
-__version__ = "1.2"
+__version__ = "1.3"
 
 import sys, os
 import logging
@@ -56,26 +60,55 @@ class GDMLexpressionRemover:
       self.constants = {}
       self.environment = vars(math)
       self.options = options
+      if self.options.NoROOTformula:
+         self.initROOT()
+         self.formula = self.ROOT.TFormula("GDMLexpressionRemoverFormula", "0");
+         self.purify = self.purify_ROOT
+      else:
+         self.purify = self.purify_native
    # __init__()
-   
+
    @staticmethod
    def sanitize(s):
       return s.replace("^", "**")
-   
-   def purify(self, expression):
-      # is it a single value?
-      try: 
-         float(expression)
-         return expression
+
+   def initROOT(self):
+      try:
+         import ROOT
+      except ImportError:
+         logging.error("Can't load ROOT module: I can't use ROOT to evaluate formulas.")
+         raise
+      ROOT.gErrorIgnoreLevel = ROOT.kFatal # do not even print errors
+      self.ROOT = ROOT # store the module for loca use
+   # initROOT()
+ 
+   def pass_floats(self, expression):
+      float(expression) # just throw an exception if not a float
+      return expression
+   # pass_floats()
+      
+   def purify_native(self, expression):
+      try: return self.pass_floats(expression)
       except ValueError: pass
       
       # is it a valid expression?
       try:
          sanitized = self.sanitize(expression)
-         return eval(sanitized, self.environment, self.constants)
+         return str(eval(sanitized, self.environment, self.constants))
       except:
          return expression
-   # purify()
+   # purify_native()
+   
+   def purify_ROOT(self, expression):
+      try: return self.pass_floats(expression)
+      except ValueError: pass
+      
+      # is it a valid expression?
+      if self.formula.Compile(expression) == 0:
+         return str(self.formula.Eval(0.))
+      else:
+         return expression
+   # purify_ROOT()
    
 # class GDMLexpressionRemover
 
@@ -327,6 +360,9 @@ def RemoveMathFromGDML():
    
    LoggingSetup(logging.WARN)
    
+   ###
+   ### argument parsing
+   ###
    # the first parser is the default one
    SupportedParsers = [ 'direct', 'xml', 'list' ]
    if not hasXML:
@@ -348,6 +384,11 @@ def RemoveMathFromGDML():
    
    parser.add_argument("--xml", action="store_const", const="xml",
      dest="Parser", help="use complete XML parser [%(default)s]")
+   
+   parser.add_argument("--noroot", action="store_true",
+     dest="NoROOTformula",
+     help="use python instead of ROOT TFormula to evaluate expressions [%(default)s]"
+     )
 
    parser.add_argument("--output", dest="OutputFile", default=None,
      help="for a single input, use this as output file")
@@ -364,12 +405,14 @@ def RemoveMathFromGDML():
 
    arguments = parser.parse_args()
    
+   ###
+   ### set up and parameter check
+   ###
    # set up the logging system
    logging.getLogger().setLevel \
      (logging.DEBUG if arguments.DoDebug else logging.INFO)
 
    arguments.LogMsg = logging.info if arguments.DoVerbose else logging.debug
-   
 
    if arguments.Parser == 'list':
       SupportedParsers.remove('list')
@@ -383,7 +426,11 @@ def RemoveMathFromGDML():
       Parser = RemoveMathFromXMLfile
    else:
       raise RuntimeError("Unexpected parser '%s' requested", arguments.Parser)
-   
+    
+
+   ###
+   ### run
+   ### 
    if not arguments.InputFiles:
       Parser(None, options=arguments)
    elif arguments.OutputFile is not None:
@@ -397,7 +444,9 @@ def RemoveMathFromGDML():
          RunParserOn(Parser, InputFileName, options=arguments)
    # if ... else
    
-   
+   ###
+   ### done
+   ###
    return 0
 # RemoveMathFromGDML()
 
