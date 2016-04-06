@@ -17,7 +17,10 @@
 #   added support for power operator "^" and mathematical functions in expressions
 #   added dry-run option
 # 20160405 [v1.3]  (petrillo@fnal.gov)
-#   using ROOT as expression parser (as default)
+#   using ROOT as expression evaluator (as default)
+# 20160406 [v1.4]  (petrillo@fnal.gov)
+#   removed the option to use python as expression evaluator,
+#   since it may give wrong answers (example: "1/8*2.54" => 0)
 #
 
 __doc__     = """Evaluates and replaces mathematical expressions from a GDML file.
@@ -38,9 +41,9 @@ This scripts supports two modes:
 The XML parser is easy to extend to include "define" GDML lines, that are not
 currently supported.
 
-Expressions are evaluated by ROOT TFormula by default.
+Expressions are evaluated by ROOT TFormula.
 """
-__version__ = "1.3"
+__version__ = "1.4"
 
 import sys, os
 import logging
@@ -371,12 +374,12 @@ def RemoveMathFromGDML():
    # if
    
    parser = argparse.ArgumentParser(description=__doc__)
+   parser.set_defaults(NoROOTformula=False, Parser=SupportedParsers[0])
 
    parser.add_argument("InputFiles", nargs="*", default=None,
      help="input GDML files [default: stdin]")
 
-   parser.add_argument("--parser", choices=SupportedParsers,
-     dest="Parser", default=SupportedParsers[0],
+   parser.add_argument("--parser", choices=SupportedParsers, dest="Parser",
      help="choose which parser to use ('list' for a list) [%(default)s]")
    
    parser.add_argument("--direct", action="store_const", const="direct",
@@ -384,13 +387,16 @@ def RemoveMathFromGDML():
    
    parser.add_argument("--xml", action="store_const", const="xml",
      dest="Parser", help="use complete XML parser [%(default)s]")
-   
-   parser.add_argument("--noroot", action="store_true",
-     dest="NoROOTformula",
-     help="use python instead of ROOT TFormula to evaluate expressions [%(default)s]"
-     )
 
-   parser.add_argument("--output", dest="OutputFile", default=None,
+   # mode disabled because it may give wrong answers;
+   # the implementation is still available; to enable it, you have to change
+   # the hard-coded value of arguments.NoROOTformula.
+#   parser.add_argument("--noroot", action="store_true",
+#     dest="NoROOTformula",
+#     help="use python instead of ROOT TFormula to evaluate expressions [%(default)s]"
+#     )
+
+   parser.add_argument("--output", "-o", dest="OutputFile", default=None,
      help="for a single input, use this as output file")
    
    parser.add_argument('--dryrun', '--fake', '-n', dest="Fake", action='store_true',
@@ -425,7 +431,7 @@ def RemoveMathFromGDML():
    elif arguments.Parser == 'xml':
       Parser = RemoveMathFromXMLfile
    else:
-      raise RuntimeError("Unexpected parser '%s' requested", arguments.Parser)
+      raise RuntimeError("Unexpected parser '%s' requested" % arguments.Parser)
     
 
    ###
