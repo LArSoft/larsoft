@@ -21,6 +21,8 @@
 # 20160406 [v1.4]  (petrillo@fnal.gov)
 #   removed the option to use python as expression evaluator,
 #   since it may give wrong answers (example: "1/8*2.54" => 0)
+# 20160407 [v1.5]  (petrillo@fnal.gov)
+#   bug fix: expression option was swapped
 #
 
 __doc__     = """Evaluates and replaces mathematical expressions from a GDML file.
@@ -43,7 +45,7 @@ currently supported.
 
 Expressions are evaluated by ROOT TFormula.
 """
-__version__ = "1.4"
+__version__ = "1.5"
 
 import sys, os
 import logging
