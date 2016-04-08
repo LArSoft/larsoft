@@ -530,8 +530,11 @@ larpandora : lardata : lardata/Utilities/GeometryUtilities.h
 larpandora : lardata : lardata/Utilities/PxUtils.h
 larpandora : lardata : lardata/Utilities/UtilException.h
 larpandora : lardata : lardata/Utilities/sparse_vector.h
+larpandora : larevt : larevt/CalibrationDBI/Interface/ChannelStatusProvider.h
+larpandora : larevt : larevt/CalibrationDBI/Interface/ChannelStatusService.h
 larpandora : larpandora : larpandora/LArPandoraInterface/ILArPandora.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandora.h
+larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraGeometry.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraHelper.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraInput.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraOutput.h
@@ -697,6 +700,7 @@ larreco : larreco : larreco/Genfit/SlTrackRep.h
 larreco : larreco : larreco/Genfit/TGeant3/TGeant3.h
 larreco : larreco : larreco/HitFinder/GaussianEliminationAlg.h
 larreco : larreco : larreco/HitFinder/HitAnaAlg.h
+larreco : larreco : larreco/HitFinder/HitFilterAlg.h
 larreco : larreco : larreco/HitFinder/RFFHitFinderAlg.h
 larreco : larreco : larreco/HitFinder/RFFHitFitter.h
 larreco : larreco : larreco/HitFinder/RegionAboveThresholdFinder.h
