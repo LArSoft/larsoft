@@ -23,6 +23,11 @@
 #   since it may give wrong answers (example: "1/8*2.54" => 0)
 # 20160407 [v1.5]  (petrillo@fnal.gov)
 #   bug fix: expression option was swapped
+# 20160408 [v1.6]  (petrillo@fnal.gov)
+#   require explicit argument to read input from stdin;
+#   check that ROOT version is proper for the task;
+#   configuration-related exceptions do not print backtrace;
+#   option to warn when an expression evaluates to 0
 #
 
 __doc__     = """Evaluates and replaces mathematical expressions from a GDML file.
@@ -45,7 +50,7 @@ currently supported.
 
 Expressions are evaluated by ROOT TFormula.
 """
-__version__ = "1.5"
+__version__ = "1.6"
 
 import sys, os
 import logging
@@ -57,6 +62,12 @@ try:
 except ImportError: hasXML = False
 
 
+class ConfigurationError(RuntimeError):
+   def __init__(self, *args, **kargs):
+      RuntimeError.__init__(self, *args, **kargs);
+# class ConfigurationError
+
+
 ###############################################################################
 ### Expression fixer
 ###
@@ -65,7 +76,7 @@ class GDMLexpressionRemover:
       self.constants = {}
       self.environment = vars(math)
       self.options = options
-      if self.options.NoROOTformula:
+      if not self.options.NoROOTformula:
          self.initROOT()
          self.formula = self.ROOT.TFormula("GDMLexpressionRemoverFormula", "0");
          self.purify = self.purify_ROOT
@@ -81,9 +92,17 @@ class GDMLexpressionRemover:
       try:
          import ROOT
       except ImportError:
-         logging.error("Can't load ROOT module: I can't use ROOT to evaluate formulas.")
-         raise
+         raise ConfigurationError \
+           ("Can't load ROOT module: I can't use ROOT to evaluate formulas.")
       ROOT.gErrorIgnoreLevel = ROOT.kFatal # do not even print errors
+      f = ROOT.TFormula("FTest", "1/2*2");
+      if f.Eval(0.) != 1.:
+         raise ConfigurationError(
+           """This script won't work with ROOT version (%s);\n"""
+           """Please set upa recent version 5.\n"""
+           """(quick test: 'TFormula("F", "1/2*2").Eval(0.)' should return 1)"""
+           % ROOT.gROOT.GetVersion()
+           )
       self.ROOT = ROOT # store the module for loca use
    # initROOT()
  
@@ -183,8 +202,13 @@ class GDMLpurifier(GDMLexpressionRemover):
                     "Evaluated '%s' into '%s' on line %d",
                     s, purified, iLine + 1
                     )
+                  if self.options.WarnZero and (float(purified) == 0.):
+                     logging.warn("On line %d: expression '%s' evaluated to 0",
+                       iLine + 1, s)
                else:
                   logging.debug("Evaluated '%s' into '%s'", s, purified)
+                  if self.options.WarnZero and (float(purified) == 0.):
+                     logging.warn("Expression '%s' evaluated to 0", s)
             # if purified
             element += '"' + str(purified) + '"'
          # if s
@@ -199,7 +223,7 @@ class GDMLpurifier(GDMLexpressionRemover):
 def RemoveMathFromGDMLfile(InputFileName, OutputFileName = None, options = None):
    
    if not options.Fake and OutputFileName and (InputFileName == OutputFileName):
-      raise RuntimeError \
+      raise ConfigurationError \
         ("With the direct parser the input and output file must be different.")
    
    # if InputFileName is empty, use standard input
@@ -328,7 +352,7 @@ def RunParserOn(parser, InputFileName, options = None):
       
       # rename the input file
       if os.path.exists(InputFileName):
-         raise RuntimeError(
+         raise ConfigurationError(
            "Backup file '%s' is on the way. Please remove it first."
            % InputFileName
            )
@@ -378,6 +402,9 @@ def RemoveMathFromGDML():
    parser = argparse.ArgumentParser(description=__doc__)
    parser.set_defaults(NoROOTformula=False, Parser=SupportedParsers[0])
 
+   parser.add_argument('--stdin', dest="FromSTDIN", action='store_true',
+     help="read input from stdin")
+
    parser.add_argument("InputFiles", nargs="*", default=None,
      help="input GDML files [default: stdin]")
 
@@ -401,6 +428,8 @@ def RemoveMathFromGDML():
    parser.add_argument("--output", "-o", dest="OutputFile", default=None,
      help="for a single input, use this as output file")
    
+   parser.add_argument('--warnzero', '-z', dest="WarnZero", action='store_true',
+     help="emit a warning each time an expression evaluates to 0 [%(default)s]")
    parser.add_argument('--dryrun', '--fake', '-n', dest="Fake", action='store_true',
      help="do not write output [%(default)s]")
    parser.add_argument('--verbose', '-v', dest="DoVerbose", action='store_true',
@@ -433,17 +462,21 @@ def RemoveMathFromGDML():
    elif arguments.Parser == 'xml':
       Parser = RemoveMathFromXMLfile
    else:
-      raise RuntimeError("Unexpected parser '%s' requested" % arguments.Parser)
-    
+      raise ConfigurationError("Unexpected parser '%s' requested" % arguments.Parser)
+   
+   if bool(arguments.FromSTDIN) == bool(arguments.InputFiles):
+      raise ConfigurationError \
+        ("Please either specify option --stdin OR some input files.")
+   #
 
    ###
    ### run
    ### 
-   if not arguments.InputFiles:
+   if arguments.FromSTDIN:
       Parser(None, options=arguments)
    elif arguments.OutputFile is not None:
       if len(arguments.InputFiles) > 1:
-         raise RuntimeError \
+         raise ConfigurationError \
            ("Named output is supported only when a single input file is specified.")
       # if
       Parser(arguments.InputFiles[0], arguments.OutputFile, options=arguments)
@@ -461,6 +494,9 @@ def RemoveMathFromGDML():
 
 ################################################################################
 if __name__ == "__main__":
-
-   sys.exit(RemoveMathFromGDML())
+   try:
+      sys.exit(RemoveMathFromGDML())
+   except ConfigurationError, e:
+      logging.error("%s" % str(e))
+      sys.exit(1)
 # main
