@@ -900,6 +900,7 @@ larsim : larsim : LArG4/OpFastScintillation.hh
 larsim : larsim : LArG4/OpParamAction.h
 larsim : larsim : LArG4/OpParamSD.h
 larsim : larsim : LArG4/OpticalPhysics.hh
+larsim : larsim : LArG4/ParticleFilters.h
 larsim : larsim : LArG4/ParticleListAction.h
 larsim : larsim : LArG4/PhysicsList.h
 larsim : larsim : LArG4/VisualizationAction.h
