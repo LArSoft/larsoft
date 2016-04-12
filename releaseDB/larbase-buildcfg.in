@@ -16,8 +16,13 @@ build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:$
 do_build pandora @PANDORA_VERSION@ nu:${basequal}
 do_build larpandoracontent @LARPANDORACONTENT_VERSION@ nu:${basequal}
 
+if (( ${build_slf_extras:-0} )); then # only build for SL
+   do_build git @GIT_VERSION@ 
+fi
+
 # add to manifest if no build - larsoft_data, mrb
 prep_build larsoft_data @LARSOFT_DATA_VERSION@; add_to_manifest
+prep_build gitflow @GITFLOW_VERSION@; add_to_manifest
 prep_build mrb @MRB_VERSION@; add_to_manifest
 
 return 0
