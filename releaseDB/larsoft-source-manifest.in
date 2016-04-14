@@ -42,11 +42,10 @@ g4radiative  v4_2		g4radiative-4.2-noarch.tar.bz2
 g4surface    v1_0		g4surface-1.0-noarch.tar.bz2
 gsl          v1_16a		gsl-1.16a-source.tar.bz2
 root         v5_34_32 		root-5.34.32-source.tar.bz2
-genie        v2_10_4a		genie-2.10.4a-source.tar.bz2
-genie_phyopt v2_10_2		genie_phyopt-2.10.2-noarch-dkcharm.tar.bz2
-genie_phyopt v2_10_2		genie_phyopt-2.10.2-noarch-dkcharmtau.tar.bz2
-genie_xsec   v2_10_2		genie_xsec-2.10.2-noarch-default.tar.bz2
-genie_xsec   v2_10_2		genie_xsec-2.10.2-noarch-defaultplusccmec.tar.bz2
+genie        v2_10_6		genie-2.10.6-source.tar.bz2
+genie_phyopt v2_10_6		genie_phyopt-2.10.6-noarch-dkcharm.tar.bz2
+genie_phyopt v2_10_6		genie_phyopt-2.10.6-noarch-dkcharmtau.tar.bz2
+genie_xsec   v2_10_6		genie_xsec-2.10.6-noarch-defaultplusccmec.tar.bz2
 cstxsd       v4_0_0d		cstxsd-4.0.0d-source.tar.bz2
 ifdhc        v1_8_9		ifdhc-1.8.9-source.tar.bz2
 libwda       v2_22_2		libwda-2.22.2-source.tar.bz2
