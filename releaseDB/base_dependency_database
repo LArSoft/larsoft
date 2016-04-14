@@ -125,6 +125,7 @@ larana : larsim : larsim/Simulation/SimChannel.h
 larana : larsim : larsim/Simulation/SimListUtils.h
 larana : larsim : larsim/Simulation/SimPhotons.h
 larana : larsim : larsim/Simulation/sim.h
+larcore : larcore : larcore/CoreUtils/DebugUtils.h
 larcore : larcore : larcore/CoreUtils/ServiceUtil.h
 larcore : larcore : larcore/Geometry/AuxDetChannelMapAlg.h
 larcore : larcore : larcore/Geometry/AuxDetExptGeoHelperInterface.h
@@ -895,6 +896,7 @@ larsim : lardata : lardata/Utilities/sparse_vector.h
 larsim : larevt : larevt/CalibrationDBI/Interface/ChannelStatusProvider.h
 larsim : larevt : larevt/CalibrationDBI/Interface/ChannelStatusService.h
 larsim : larevt : larevt/SpaceCharge/SpaceCharge.h
+larsim : larsim : LArG4/ParticleFilters.h
 larsim : larsim : larsim/EventGenerator/NueAr40CCGenerator.h
 larsim : larsim : larsim/LArG4/AuxDetReadout.h
 larsim : larsim : larsim/LArG4/AuxDetReadoutGeometry.h
