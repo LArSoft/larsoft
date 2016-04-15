@@ -4,6 +4,7 @@ function usage() {
    echo "USAGE: `basename ${0}` [-h] <directory>"
    echo "        -h  (this help)"
    echo "        look for classes_def.xml under the specified directory"
+   echo "        If no directory is specified, search this directory"
 }
 
 case "$1" in
