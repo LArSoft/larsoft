@@ -896,7 +896,6 @@ larsim : lardata : lardata/Utilities/sparse_vector.h
 larsim : larevt : larevt/CalibrationDBI/Interface/ChannelStatusProvider.h
 larsim : larevt : larevt/CalibrationDBI/Interface/ChannelStatusService.h
 larsim : larevt : larevt/SpaceCharge/SpaceCharge.h
-larsim : larsim : LArG4/ParticleFilters.h
 larsim : larsim : larsim/EventGenerator/NueAr40CCGenerator.h
 larsim : larsim : larsim/LArG4/AuxDetReadout.h
 larsim : larsim : larsim/LArG4/AuxDetReadoutGeometry.h
@@ -930,6 +929,7 @@ larsim : larsim : larsim/LArG4/OpFastScintillation.hh
 larsim : larsim : larsim/LArG4/OpParamAction.h
 larsim : larsim : larsim/LArG4/OpParamSD.h
 larsim : larsim : larsim/LArG4/OpticalPhysics.hh
+larsim : larsim : larsim/LArG4/ParticleFilters.h
 larsim : larsim : larsim/LArG4/ParticleListAction.h
 larsim : larsim : larsim/LArG4/PhysicsList.h
 larsim : larsim : larsim/LArG4/VisualizationAction.h
