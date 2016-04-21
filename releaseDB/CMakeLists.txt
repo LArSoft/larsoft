@@ -43,7 +43,7 @@ create_product_variables( larpandoracontent v02_07_01 )
 create_product_variables( larsoft_data  v0_06_01  )
 create_product_variables( git           v2_5_0  )
 create_product_variables( gitflow       v1_9_1  )
-create_product_variables( mrb           v1_06_03 )
+create_product_variables( mrb           v1_06_04 )
 
 # these files should be copied to scisoft for each release
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-buildcfg.in
