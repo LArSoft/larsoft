@@ -2,6 +2,12 @@
 #
 # This script changes C++ code, CMake files and FHiCL configuration to use
 # sim::LArSeedService instead of artext::SeedService
+# 
+# Change log:
+# 20160426 (petrillo@fnal.gov)
+#   original version
+# 20160427 (petrillo@fnal.gov)
+#   added replacement for LARSIM_RANDOMUTILS_LARSEEDSERVICE_USExxx macros
 #
 
 import sys, re
@@ -51,6 +57,8 @@ if __name__ == "__main__":
    Subst.AddWord         ("artext::SeedMaster",                       "sim::SeedMaster")
 
    Subst.AddWord         ("SeedService",                              "LArSeedService")
+   Subst.AddWord         ("SEEDSERVICE_USECLHEP",                     "LARSIM_RANDOMUTILS_LARSEEDSERVICE_USECLHEP")
+   Subst.AddWord         ("SEEDSERVICE_USEROOT",                      "LARSIM_RANDOMUTILS_LARSEEDSERVICE_USEROOT")
 
    # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
    #############################################################################
