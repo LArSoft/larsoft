@@ -2,11 +2,11 @@
 
 basequal=${1}
 
-build_bundle nubase-@NUTOOLS_DOT_VERSION@ ${basequal}
+build_bundle nubase-@NUDIST_DOT_VERSION@ ${basequal}
 status=$?
 if (( ${status} != 0)); then
   cat 1>&2 <<EOF
-Build of nubase-@NUTOOLS_DOT_VERSION@ bundle failed with status ${status}
+Build of nubase-@NUDIST_DOT_VERSION@ bundle failed with status ${status}
 EOF
   return ${status}
 fi
