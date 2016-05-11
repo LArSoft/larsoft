@@ -45,6 +45,7 @@ genie        v2_10_6		genie-2.10.6-source.tar.bz2
 genie_phyopt v2_10_6		genie_phyopt-2.10.6-noarch-dkcharm.tar.bz2
 genie_phyopt v2_10_6		genie_phyopt-2.10.6-noarch-dkcharmtau.tar.bz2
 genie_xsec   v2_10_6a		genie_xsec-2.10.6a-noarch-defaultplusccmec.tar.bz2
+genie_xsec   v2_10_6a		genie_xsec-2.10.6a-noarch-effspec-tem.tar.bz2
 cstxsd       v4_0_0d		cstxsd-4.0.0d-source.tar.bz2
 ifdhc        v1_8_9		ifdhc-1.8.9-source.tar.bz2
 libwda       v2_22_2		libwda-2.22.2-source.tar.bz2
