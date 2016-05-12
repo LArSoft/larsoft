@@ -22,7 +22,7 @@ set( BASEQUAL e9 )
 set( SQUAL s31 )
 
 set( LARUTILS_VERSION        "v1_06_01" )
-set( LARBATCH_VERSION        "v01_21_02" )
+set( LARBATCH_VERSION        "v01_21_04" )
 
 set( LARCORE_VERSION         "v06_00_00_rc2" )
 set( LARDATA_VERSION         "v06_00_00_rc2" )
@@ -38,12 +38,14 @@ create_product_variables( art           v1_18_05 )
 create_product_variables( artdaq_core   v1_04_29 )
 create_product_variables( artextensions v1_02_07 )
 create_product_variables( nutools       v1_25_02 )
+create_product_variables( nudist        v1_24_03a )
+create_product_variables( genie_xsec    v2_10_6a )
 create_product_variables( pandora       v02_07_00 )
-create_product_variables( larpandoracontent v02_07_01 )
+create_product_variables( larpandoracontent v02_07_03 )
 create_product_variables( larsoft_data  v0_06_01  )
 create_product_variables( git           v2_5_0  )
 create_product_variables( gitflow       v1_9_1  )
-create_product_variables( mrb           v1_06_04 )
+create_product_variables( mrb           v1_07_00 )
 
 # these files should be copied to scisoft for each release
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-buildcfg.in

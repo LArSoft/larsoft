@@ -106,7 +106,7 @@ The following products are part of the full larsoft suite:
 <tr><td>&nbsp;&nbsp;  art     </td>  <td> @ART_VERSION@ </td>  <td>nu:@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  nutools      </td>  <td> @NUTOOLS_VERSION@	</td>  <td>@BASEQUAL@:gn286</td></tr>
 <tr><td>&nbsp;&nbsp;  pandora     </td>  <td> @PANDORA_VERSION@ </td>  <td>@BASEQUAL@:nu:r6</td></tr>
-<tr><td>&nbsp;&nbsp;  larpandoracontent     </td>  <td> @LARPANDORACONTENT_VERSION@ </td>  <td>@BASEQUAL@:nu:r6</td></tr>
+<tr><td>&nbsp;&nbsp;  larpandoracontent     </td>  <td> @LARPANDORACONTENT_VERSION@ </td>  <td>@BASEQUAL@:r6</td></tr>
 <tr><td>&nbsp;&nbsp;  larsoft_data </td>  <td> @LARSOFT_DATA_VERSION@	</td>  <td>&nbsp;</td></tr>	
 <tr><td>&nbsp;&nbsp;  larbatch     </td>  <td> @LARBATCH_VERSION@ </td>  <td>&nbsp;</td></tr>
 <tr><td>&nbsp;&nbsp;  larutils     </td>  <td> @LARUTILS_VERSION@ </td>  <td>&nbsp;</td></tr>
