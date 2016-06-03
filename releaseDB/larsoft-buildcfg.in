@@ -11,6 +11,9 @@ EOF
   return ${status}
 fi
 
+build_cet larcoreobj @LARCOREOBJ_VERSION@ ${basequal}
+build_cet lardataobj @LARDATAOBJ_VERSION@ ${basequal}
+build_cet larsimobj @LARSIMOBJ_VERSION@ ${basequal}
 build_cet -n larcore @LARCORE_VERSION@ ${basequal}
 build_cet lardata @LARDATA_VERSION@ ${basequal}
 build_cet larevt @LAREVT_VERSION@ ${basequal}
