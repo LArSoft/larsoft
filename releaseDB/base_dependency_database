@@ -417,14 +417,17 @@ lareventdisplay : lareventdisplay : lareventdisplay/EventDisplay/TWQMultiTPCProj
 lareventdisplay : lareventdisplay : lareventdisplay/EventDisplay/TWQProjectionView.h
 lareventdisplay : lareventdisplay : lareventdisplay/EventDisplay/TWireProjPad.h
 lareventdisplay : lareventdisplay : lareventdisplay/EventDisplay/eventdisplay.h
+lareventdisplay : lareventdisplay : lareventdisplay/Landed/LandedSocket.h
 lareventdisplay : larevt : larevt/CalibrationDBI/Interface/ChannelStatusProvider.h
 lareventdisplay : larevt : larevt/CalibrationDBI/Interface/ChannelStatusService.h
 lareventdisplay : larevt : larevt/CalibrationDBI/Interface/DetPedestalProvider.h
 lareventdisplay : larevt : larevt/CalibrationDBI/Interface/DetPedestalService.h
 lareventdisplay : larevt : larevt/Filters/ChannelFilter.h
+lareventdisplay : larsim : larsim/Simulation/AuxDetSimChannel.h
 lareventdisplay : larsim : larsim/Simulation/LArVoxelData.h
 lareventdisplay : larsim : larsim/Simulation/LArVoxelID.h
 lareventdisplay : larsim : larsim/Simulation/LArVoxelList.h
+lareventdisplay : larsim : larsim/Simulation/SimChannel.h
 lareventdisplay : larsim : larsim/Simulation/SimListUtils.h
 lareventdisplay : larsim : larsim/Simulation/SimPhotons.h
 larevt : larcore : larcore/CoreUtils/ServiceUtil.h
@@ -481,6 +484,9 @@ larevt : larevt : larevt/Filters/ChannelFilter.h
 larevt : larevt : larevt/Filters/SimpleChannelStatus.h
 larevt : larevt : larevt/Filters/SimpleChannelStatusService.h
 larevt : larevt : larevt/SpaceCharge/SpaceCharge.h
+larevt : larevt : larevt/SpaceCharge/SpaceChargeStandard.h
+larevt : larevt : larevt/SpaceChargeServices/SpaceChargeService.h
+larevt : larevt : larevt/SpaceChargeServices/SpaceChargeServiceStandard.h
 larexamples : larcore : larcore/CoreUtils/ServiceUtil.h
 larexamples : larcore : larcore/Geometry/AuxDetGeo.h
 larexamples : larcore : larcore/Geometry/AuxDetSensitiveGeo.h
@@ -1237,6 +1243,7 @@ larsim : lardata : lardata/Utilities/sparse_vector.h
 larsim : larevt : larevt/CalibrationDBI/Interface/ChannelStatusProvider.h
 larsim : larevt : larevt/CalibrationDBI/Interface/ChannelStatusService.h
 larsim : larevt : larevt/SpaceCharge/SpaceCharge.h
+larsim : larevt : larevt/SpaceChargeServices/SpaceChargeService.h
 larsim : larsim : larsim/EventGenerator/NueAr40CCGenerator.h
 larsim : larsim : larsim/LArG4/AuxDetReadout.h
 larsim : larsim : larsim/LArG4/AuxDetReadoutGeometry.h
