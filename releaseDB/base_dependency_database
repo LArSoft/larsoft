@@ -34,7 +34,9 @@ larana : larana : larana/OpticalDetector/SimPhotonCounter.h
 larana : larana : larana/OpticalDetector/SimPhotonCounterAlg.h
 larana : larana : larana/ParticleIdentification/MVAAlg.h
 larana : larana : larana/ParticleIdentification/PIDAAlg.h
+larana : larcore : larcore/CoreUtils/ProviderPack.h
 larana : larcore : larcore/CoreUtils/ServiceUtil.h
+larana : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
 larana : larcore : larcore/Geometry/AuxDetGeo.h
 larana : larcore : larcore/Geometry/AuxDetSensitiveGeo.h
 larana : larcore : larcore/Geometry/BoxBoundedGeo.h
@@ -59,7 +61,6 @@ larana : lardata : lardata/DetectorInfo/DetectorClocksException.h
 larana : lardata : lardata/DetectorInfo/DetectorProperties.h
 larana : lardata : lardata/DetectorInfo/ElecClock.h
 larana : lardata : lardata/DetectorInfo/LArProperties.h
-larana : lardata : lardata/DetectorInfo/ProviderPack.h
 larana : lardata : lardata/DetectorInfoServices/DetectorClocksService.h
 larana : lardata : lardata/DetectorInfoServices/DetectorPropertiesService.h
 larana : lardata : lardata/DetectorInfoServices/LArPropertiesService.h
@@ -137,7 +138,9 @@ larana : larsimobj : larsimobj/Simulation/SimChannel.h
 larana : larsimobj : larsimobj/Simulation/SimPhotons.h
 larana : larsimobj : larsimobj/Simulation/sim.h
 larcore : larcore : larcore/CoreUtils/DebugUtils.h
+larcore : larcore : larcore/CoreUtils/ProviderPack.h
 larcore : larcore : larcore/CoreUtils/ServiceUtil.h
+larcore : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
 larcore : larcore : larcore/Geometry/AuxDetChannelMapAlg.h
 larcore : larcore : larcore/Geometry/AuxDetExptGeoHelperInterface.h
 larcore : larcore : larcore/Geometry/AuxDetGeo.h
@@ -163,8 +166,6 @@ larcore : larcore : larcore/Geometry/geo.h
 larcore : larcore : test/Geometry/GeometryIteratorLoopTestAlg.h
 larcore : larcore : test/Geometry/GeometryIteratorTestAlg.h
 larcore : larcore : test/Geometry/GeometryTestAlg.h
-larcore : larcore : test/Geometry/NameSelector.h
-larcore : larcore : test/Geometry/boost_unit_test_base.h
 larcore : larcore : test/Geometry/geometry_unit_test_base.h
 larcore : larcore : test/Geometry/unit_test_base.h
 larcore : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
@@ -177,12 +178,15 @@ larcoreobj : larcoreobj : larcoreobj/SummaryData/POTSummary.h
 larcoreobj : larcoreobj : larcoreobj/SummaryData/RunData.h
 larcoreobj : larcoreobj : larcoreobj/SummaryData/classes.h
 lardata : larcore : larcore/CoreUtils/ServiceUtil.h
+lardata : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
 lardata : larcore : larcore/Geometry/AuxDetGeo.h
 lardata : larcore : larcore/Geometry/AuxDetSensitiveGeo.h
 lardata : larcore : larcore/Geometry/BoxBoundedGeo.h
 lardata : larcore : larcore/Geometry/ChannelMapAlg.h
+lardata : larcore : larcore/Geometry/ChannelMapStandardAlg.h
 lardata : larcore : larcore/Geometry/CryostatGeo.h
 lardata : larcore : larcore/Geometry/GeoObjectSorter.h
+lardata : larcore : larcore/Geometry/GeoObjectSorterStandard.h
 lardata : larcore : larcore/Geometry/Geometry.h
 lardata : larcore : larcore/Geometry/GeometryCore.h
 lardata : larcore : larcore/Geometry/OpDetGeo.h
@@ -200,13 +204,14 @@ lardata : lardata : lardata/DetectorInfo/ClockConstants.h
 lardata : lardata : lardata/DetectorInfo/DetectorClocks.h
 lardata : lardata : lardata/DetectorInfo/DetectorClocksException.h
 lardata : lardata : lardata/DetectorInfo/DetectorClocksStandard.h
+lardata : lardata : lardata/DetectorInfo/DetectorClocksStandardTestHelpers.h
 lardata : lardata : lardata/DetectorInfo/DetectorProperties.h
 lardata : lardata : lardata/DetectorInfo/DetectorPropertiesStandard.h
+lardata : lardata : lardata/DetectorInfo/DetectorPropertiesStandardTestHelpers.h
 lardata : lardata : lardata/DetectorInfo/ElecClock.h
 lardata : lardata : lardata/DetectorInfo/LArProperties.h
 lardata : lardata : lardata/DetectorInfo/LArPropertiesStandard.h
-lardata : lardata : lardata/DetectorInfo/ProviderPack.h
-lardata : lardata : lardata/DetectorInfo/ProviderUtil.h
+lardata : lardata : lardata/DetectorInfo/LArPropertiesStandardTestHelpers.h
 lardata : lardata : lardata/DetectorInfo/RunHistory.h
 lardata : lardata : lardata/DetectorInfo/RunHistoryStandard.h
 lardata : lardata : lardata/DetectorInfoServices/DetectorClocksService.h
@@ -349,6 +354,7 @@ lardataobj : lardataobj : lardataobj/RecoBase/Wire.h
 lardataobj : lardataobj : lardataobj/RecoBase/classes.h
 lardataobj : lardataobj : lardataobj/Utilities/sparse_vector.h
 lareventdisplay : larcore : larcore/CoreUtils/ServiceUtil.h
+lareventdisplay : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
 lareventdisplay : larcore : larcore/Geometry/AuxDetGeo.h
 lareventdisplay : larcore : larcore/Geometry/AuxDetSensitiveGeo.h
 lareventdisplay : larcore : larcore/Geometry/BoxBoundedGeo.h
@@ -441,14 +447,17 @@ lareventdisplay : larevt : larevt/CalibrationDBI/Interface/ChannelStatusService.
 lareventdisplay : larevt : larevt/CalibrationDBI/Interface/DetPedestalProvider.h
 lareventdisplay : larevt : larevt/CalibrationDBI/Interface/DetPedestalService.h
 lareventdisplay : larevt : larevt/Filters/ChannelFilter.h
+lareventdisplay : larsim : larsim/Simulation/AuxDetSimChannel.h
 lareventdisplay : larsim : larsim/Simulation/LArVoxelData.h
 lareventdisplay : larsim : larsim/Simulation/LArVoxelID.h
 lareventdisplay : larsim : larsim/Simulation/LArVoxelList.h
+lareventdisplay : larsim : larsim/Simulation/SimChannel.h
 lareventdisplay : larsim : larsim/Simulation/SimListUtils.h
 lareventdisplay : larsimobj : larsimobj/Simulation/AuxDetSimChannel.h
 lareventdisplay : larsimobj : larsimobj/Simulation/SimChannel.h
 lareventdisplay : larsimobj : larsimobj/Simulation/SimPhotons.h
 larevt : larcore : larcore/CoreUtils/ServiceUtil.h
+larevt : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
 larevt : larcore : larcore/Geometry/AuxDetGeo.h
 larevt : larcore : larcore/Geometry/AuxDetSensitiveGeo.h
 larevt : larcore : larcore/Geometry/BoxBoundedGeo.h
@@ -506,6 +515,7 @@ larevt : larevt : larevt/SpaceCharge/SpaceChargeStandard.h
 larevt : larevt : larevt/SpaceChargeServices/SpaceChargeService.h
 larevt : larevt : larevt/SpaceChargeServices/SpaceChargeServiceStandard.h
 larexamples : larcore : larcore/CoreUtils/ServiceUtil.h
+larexamples : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
 larexamples : larcore : larcore/Geometry/AuxDetGeo.h
 larexamples : larcore : larcore/Geometry/AuxDetSensitiveGeo.h
 larexamples : larcore : larcore/Geometry/BoxBoundedGeo.h
@@ -526,6 +536,7 @@ larexamples : lardataobj : lardataobj/RecoBase/Hit.h
 larexamples : larsim : larsim/Simulation/LArG4Parameters.h
 larexamples : larsimobj : larsimobj/Simulation/SimChannel.h
 larpandora : larcore : larcore/CoreUtils/ServiceUtil.h
+larpandora : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
 larpandora : larcore : larcore/Geometry/AuxDetGeo.h
 larpandora : larcore : larcore/Geometry/AuxDetSensitiveGeo.h
 larpandora : larcore : larcore/Geometry/BoxBoundedGeo.h
@@ -903,6 +914,7 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/NeutrinoPar
 larpandoracontent : larpandoracontent : larpandoracontent/LArVertex/CandidateVertexCreationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArVertex/VertexSelectionAlgorithm.h
 larreco : larcore : larcore/CoreUtils/ServiceUtil.h
+larreco : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
 larreco : larcore : larcore/Geometry/AuxDetGeo.h
 larreco : larcore : larcore/Geometry/AuxDetSensitiveGeo.h
 larreco : larcore : larcore/Geometry/BoxBoundedGeo.h
@@ -1208,6 +1220,7 @@ larreco : larsimobj : larsimobj/Simulation/SimChannel.h
 larreco : larsimobj : larsimobj/Simulation/SimPhotons.h
 larreco : larsimobj : larsimobj/Simulation/sim.h
 larsim : larcore : larcore/CoreUtils/ServiceUtil.h
+larsim : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
 larsim : larcore : larcore/Geometry/AuxDetGeo.h
 larsim : larcore : larcore/Geometry/AuxDetSensitiveGeo.h
 larsim : larcore : larcore/Geometry/BoxBoundedGeo.h
