@@ -47,10 +47,10 @@ genie_phyopt v2_10_6		genie_phyopt-2.10.6-noarch-dkcharmtau.tar.bz2
 genie_xsec   v2_10_6a		genie_xsec-2.10.6a-noarch-defaultplusccmec.tar.bz2
 genie_xsec   v2_10_6a		genie_xsec-2.10.6a-noarch-effspec-tem.tar.bz2
 cstxsd       v4_0_0d		cstxsd-4.0.0d-source.tar.bz2
-ifdhc        v1_8_9		ifdhc-1.8.9-source.tar.bz2
+ifdhc        v1_8_11		ifdhc-1.8.11-source.tar.bz2
 libwda       v2_22_2		libwda-2.22.2-source.tar.bz2
-ifbeam       v1_4_19		ifbeam-1.4.19-source.tar.bz2
-nucondb      v1_4_19		nucondb-1.4.19-source.tar.bz2
+ifbeam       v1_4_21		ifbeam-1.4.21-source.tar.bz2
+nucondb      v1_4_21		nucondb-1.4.21-source.tar.bz2
 dk2nu        v01_03_00c		dk2nu-01.03.00c-source.tar.bz2
 pandora      @PANDORA_VERSION@ 		pandora-@PANDORA_DOT_VERSION@-source.tar.bz2
 larsoft_data @LARSOFT_DATA_VERSION@		larsoft_data-@LARSOFT_DATA_DOT_VERSION@-noarch.tar.bz2
