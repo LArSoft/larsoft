@@ -22,7 +22,7 @@ set( BASEQUAL e9 )
 set( SQUAL s30 )
 
 set( LARUTILS_VERSION        "v1_06_05" )
-set( LARBATCH_VERSION        "v01_23_00" )
+set( LARBATCH_VERSION        "v01_22_01" )
 
 set( LARCORE_VERSION         "v05_08_02" )
 set( LARDATA_VERSION         "v05_09_02" )
