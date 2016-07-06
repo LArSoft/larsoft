@@ -172,6 +172,7 @@ larcore : larcore : larcore/SummaryData/classes.h
 larcore : larcore : larcore/TestUtils/NameSelector.h
 larcore : larcore : larcore/TestUtils/ProviderList.h
 larcore : larcore : larcore/TestUtils/ProviderTestHelpers.h
+larcore : larcore : larcore/TestUtils/StopWatch.h
 larcore : larcore : larcore/TestUtils/boost_unit_test_base.h
 larcore : larcore : larcore/TestUtils/unit_test_base.h
 larcore : larcore : test/Geometry/GeometryIteratorLoopTestAlg.h
@@ -331,6 +332,8 @@ lardata : lardata : lardata/Utilities/DetectorPropertiesServiceArgoNeuT.h
 lardata : lardata : lardata/Utilities/FastMatrixMathHelper.h
 lardata : lardata : lardata/Utilities/FileCatalogMetadataExtras.h
 lardata : lardata : lardata/Utilities/GeometryUtilities.h
+lardata : lardata : lardata/Utilities/GridContainerIndices.h
+lardata : lardata : lardata/Utilities/GridContainers.h
 lardata : lardata : lardata/Utilities/LArFFT.h
 lardata : lardata : lardata/Utilities/LArPropertiesServiceArgoNeuT.h
 lardata : lardata : lardata/Utilities/MakeIndex.h
@@ -341,6 +344,7 @@ lardata : lardata : lardata/Utilities/Range.h
 lardata : lardata : lardata/Utilities/SignalShaping.h
 lardata : lardata : lardata/Utilities/SimpleFits.h
 lardata : lardata : lardata/Utilities/StatCollector.h
+lardata : lardata : lardata/Utilities/TensorIndices.h
 lardata : lardata : lardata/Utilities/UniqueRangeSet.h
 lardata : lardata : lardata/Utilities/UtilException.h
 lardata : lardata : lardata/Utilities/sparse_vector.h
@@ -530,7 +534,11 @@ larexamples : lardata : lardata/RecoBase/Cluster.h
 larexamples : lardata : lardata/RecoBase/Hit.h
 larexamples : lardata : lardata/RecoBase/Shower.h
 larexamples : lardata : lardata/RecoBase/SpacePoint.h
+larexamples : lardata : lardata/Utilities/GridContainerIndices.h
+larexamples : lardata : lardata/Utilities/GridContainers.h
+larexamples : lardata : lardata/Utilities/TensorIndices.h
 larexamples : larexamples : larexamples/Algorithms/RemoveIsolatedSpacePoints/PointIsolationAlg.h
+larexamples : larexamples : larexamples/Algorithms/RemoveIsolatedSpacePoints/SpacePartition.h
 larexamples : larexamples : larexamples/Algorithms/RemoveIsolatedSpacePoints/SpacePointIsolationAlg.h
 larexamples : larexamples : larexamples/Services/AtomicNumber/Providers/AtomicNumber.h
 larexamples : larexamples : larexamples/Services/AtomicNumber/Services/AtomicNumberService.h
@@ -1015,6 +1023,7 @@ larreco : lardata : lardata/RecoObjects/Surface.h
 larreco : lardata : lardata/Utilities/AssociationUtil.h
 larreco : lardata : lardata/Utilities/BulkAllocator.h
 larreco : lardata : lardata/Utilities/CountersMap.h
+larreco : lardata : lardata/Utilities/DatabaseUtil.h
 larreco : lardata : lardata/Utilities/Dereference.h
 larreco : lardata : lardata/Utilities/FastMatrixMathHelper.h
 larreco : lardata : lardata/Utilities/GeometryUtilities.h
@@ -1169,6 +1178,9 @@ larreco : larreco : larreco/RecoAlg/EMShowerAlg.h
 larreco : larreco : larreco/RecoAlg/EndPointAlg.h
 larreco : larreco : larreco/RecoAlg/GausFitCache.h
 larreco : larreco : larreco/RecoAlg/HoughBaseAlg.h
+larreco : larreco : larreco/RecoAlg/ImagePatternAlgs/Keras/keras_model.h
+larreco : larreco : larreco/RecoAlg/ImagePatternAlgs/MLP/NNReader.h
+larreco : larreco : larreco/RecoAlg/ImagePatternAlgs/PointIdAlg/PointIdAlg.h
 larreco : larreco : larreco/RecoAlg/KalmanFilterAlg.h
 larreco : larreco : larreco/RecoAlg/LinFitAlg.h
 larreco : larreco : larreco/RecoAlg/MergeClusterAlg.h
