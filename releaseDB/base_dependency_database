@@ -528,6 +528,7 @@ larexamples : larcore : larcore/SimpleTypesAndConstants/RawTypes.h
 larexamples : larcore : larcore/SimpleTypesAndConstants/geo_types.h
 larexamples : larcore : larcore/TestUtils/ProviderList.h
 larexamples : larcore : larcore/TestUtils/ProviderTestHelpers.h
+larexamples : larcore : larcore/TestUtils/StopWatch.h
 larexamples : larcore : larcore/TestUtils/boost_unit_test_base.h
 larexamples : larcore : larcore/TestUtils/unit_test_base.h
 larexamples : lardata : lardata/RecoBase/Cluster.h
@@ -976,6 +977,7 @@ larreco : lardata : lardata/MCBase/MCWire.h
 larreco : lardata : lardata/MCBase/MCWireCollection.h
 larreco : lardata : lardata/RawData/ExternalTrigger.h
 larreco : lardata : lardata/RawData/RawDigit.h
+larreco : lardata : lardata/RawData/TriggerData.h
 larreco : lardata : lardata/RawData/raw.h
 larreco : lardata : lardata/RecoBase/Cluster.h
 larreco : lardata : lardata/RecoBase/EndPoint2D.h
