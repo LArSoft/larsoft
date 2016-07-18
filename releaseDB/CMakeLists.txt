@@ -41,13 +41,13 @@ create_product_variables( art           v2_00_03 )
 create_product_variables( artdaq_core   v1_05_01 )
 create_product_variables( nutools       v2_01_00 )
 create_product_variables( nudist        v2_01_00 )
-#create_product_variables( genie_xsec   v2_10_6a )
+create_product_variables( genie_xsec    v2_10_6a )
 create_product_variables( pandora       v02_07_00b )
 create_product_variables( larpandoracontent v02_07_05 )
 create_product_variables( larsoft_data  v1_01_00  )
 create_product_variables( git           v2_5_0  )
 create_product_variables( gitflow       v1_9_1  )
-create_product_variables( mrb           v1_07_02 )
+create_product_variables( mrb           v1_07_03 )
 
 # these files should be copied to scisoft for each release
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-buildcfg.in
