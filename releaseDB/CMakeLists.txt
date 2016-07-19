@@ -19,10 +19,10 @@ create_product_variables( larsoft ${version} )
 
 # define qualifiers
 set( BASEQUAL e10 )
-set( SQUAL s33 )
+set( SQUAL s36 )
 
-set( LARUTILS_VERSION        "v1_06_05" )
-set( LARBATCH_VERSION        "v01_23_01" )
+set( LARUTILS_VERSION        "v1_06_07" )
+set( LARBATCH_VERSION        "v01_23_03" )
 
 set( LARCOREOBJ_VERSION      "v1_04_00" )
 set( LARDATAOBJ_VERSION      "v1_04_00" )
@@ -31,11 +31,11 @@ set( LARCORE_VERSION         "v06_00_00" )
 set( LARDATA_VERSION         "v06_00_00" )
 set( LAREVT_VERSION          "v06_00_00" )
 set( LARSIM_VERSION          "v06_00_00" )
-set( LARRECO_VERSION         "v06_00_00" )
-set( LARANA_VERSION          "v06_00_00" )
-set( LARPANDORA_VERSION      "v06_00_00" )
+set( LARRECO_VERSION         "v06_00_01" )
+set( LARANA_VERSION          "v06_00_01" )
+set( LARPANDORA_VERSION      "v06_00_01" )
 set( LAREXAMPLES_VERSION     "v06_00_00" )
-set( LAREVENTDISPLAY_VERSION "v06_00_00" )
+set( LAREVENTDISPLAY_VERSION "v06_00_01" )
 
 create_product_variables( art           v2_00_03 )
 create_product_variables( artdaq_core   v1_05_01 )
@@ -47,7 +47,7 @@ create_product_variables( larpandoracontent v02_07_05 )
 create_product_variables( larsoft_data  v1_01_00  )
 create_product_variables( git           v2_5_0  )
 create_product_variables( gitflow       v1_9_1  )
-create_product_variables( mrb           v1_07_03 )
+create_product_variables( mrb           v1_07_04 )
 
 # these files should be copied to scisoft for each release
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-buildcfg.in
