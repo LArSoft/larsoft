@@ -11,6 +11,8 @@ EOF
   return ${status}
 fi
 
+ensure_cetbuildtools v5_04_02
+
 do_build pandora @PANDORA_VERSION@ ${basequal}:nu
 build_cet larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}
 
