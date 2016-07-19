@@ -27,7 +27,7 @@ IF (NOT CETBUILDTOOLS_VERSION)
     MESSAGE (FATAL_ERROR "ERROR: setup cetbuildtools to get the cmake modules")
 ENDIF()
 
-set(CMAKE_MODULE_PATH $ENV{ART_DIR}/Modules
+set(CMAKE_MODULE_PATH $ENV{CANVAS_DIR}/Modules
 		      $ENV{CETBUILDTOOLS_DIR}/Modules
 		      ${CMAKE_MODULE_PATH})
 
@@ -42,6 +42,7 @@ find_ups_product( larexamples     v4_00_00 )
 find_ups_product( larana          v4_00_00 )
 find_ups_product( larreco         v4_00_00 )
 find_ups_product( larpandora      v4_00_00 )
+find_ups_product( cetbuildtools )
 
 # useful scripts
 add_subdirectory(bin)

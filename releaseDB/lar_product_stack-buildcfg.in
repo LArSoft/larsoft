@@ -11,10 +11,10 @@ EOF
   return ${status}
 fi
 
-do_build pandora @PANDORA_VERSION@ ${basequal}:nu:r5
+do_build pandora @PANDORA_VERSION@ ${basequal}:nu
 
 # add to manifest if no build - larsoft_data, mrb
-prep_build genie_xsec @GENIE_XSEC_VERSION@ effspec-tem; add_to_manifest
+prep_build genie_xsec v2_10_6a effspec-tem; add_to_manifest
 prep_build larsoft_data @LARSOFT_DATA_VERSION@; add_to_manifest
 prep_build mrb @MRB_VERSION@; add_to_manifest
 

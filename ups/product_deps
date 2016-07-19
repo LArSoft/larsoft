@@ -1,7 +1,7 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v05_15_00
-defaultqual	e9
+parent	larsoft	v06_00_00
+defaultqual	e10
 
 # larsoft itself has no inc, or fcl directories
 # the lib directory just contains larsoftConfig.cmake and larsoftConfigVersion.cmake
@@ -10,23 +10,23 @@ fcldir      -
 bindir      product_dir
 #
 product         version
-lareventdisplay v05_08_00
-larexamples     v05_08_01
-larana          v05_09_07
-larreco         v05_14_00
-larpandora      v05_09_10
+lareventdisplay v06_00_00
+larexamples     v06_00_00
+larana          v06_00_00
+larreco         v06_00_00
+larpandora      v06_00_00
 larsoft_data    v1_01_00
 ifdh_art        v1_15_01
-gcc             v4_9_3
+gcc             v4_9_3a
 
-cetbuildtools	v4_19_04   -   only_for_build
+cetbuildtools	v5_02_02   -   only_for_build
 end_product_list
   
-# e9 - with gcc 4.9.3 and -std=c++14
-qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	gcc	ifdh_art	larsoft_data	notes
-e9:debug	e9:debug	e9:debug	e9:debug	e9:debug	e9:debug	-nq-	s30:nu:e9:debug	-nq-
-e9:opt		e9:opt		e9:opt		e9:opt		e9:opt		e9:opt		-nq-	s30:nu:e9:opt	-nq-
-e9:prof		e9:prof		e9:prof		e9:prof		e9:prof		e9:prof		-nq-	s30:nu:e9:prof	-nq-
+# e10 - with gcc 4.9.3 and -std=c++14
+qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	gcc	ifdh_art	 larsoft_data	notes
+e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	-nq-	s36:nu:e10:debug -nq-
+e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		-nq-	s36:nu:e10:opt	 -nq-
+e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	-nq-	s36:nu:e10:prof	 -nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA
