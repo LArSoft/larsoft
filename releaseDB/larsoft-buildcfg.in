@@ -11,9 +11,15 @@ EOF
   return ${status}
 fi
 
-build_cet larcoreobj @LARCOREOBJ_VERSION@ ${basequal}
-build_cet lardataobj @LARDATAOBJ_VERSION@ ${basequal}
-build_cet larsimobj @LARSIMOBJ_VERSION@ ${basequal}
+build_bundle larsoftobj-@LARSOFTOBJ_DOT_VERSION@ ${basequal}
+status=$?
+if (( ${status} != 0)); then
+  cat 1>&2 <<EOF
+Build of larsoftobj-@LARSOFTOBJ_DOT_VERSION@ bundle failed with status ${status}
+EOF
+  return ${status}
+fi
+
 build_cet -n larcore @LARCORE_VERSION@ ${basequal}
 build_cet lardata @LARDATA_VERSION@ ${basequal}
 build_cet larevt @LAREVT_VERSION@ ${basequal}

@@ -87,10 +87,10 @@ if [[ -n "${file}" ]]; then
     one_file "$file"
   fi
 else
-  for F in `find $TOP \( -name "*.c*" -o -name "*.C*" -o -name "*.icc" -o -name "*.h*" -o -name "*.H*" \) -print`; do
+  for F in `find "${TOP:-.}" \( -name "*.c*" -o -name "*.C*" -o -name "*.icc" -o -name "*.h*" -o -name "*.H*" \) -print`; do
     one_file "$F"
   done
-  for F in `find $TOP -name CMakeLists.txt -print`; do
+  for F in `find "${TOP:-.}" -name CMakeLists.txt -print`; do
     cmake_file "$F"
   done
   echo
