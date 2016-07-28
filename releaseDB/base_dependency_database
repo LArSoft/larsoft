@@ -549,6 +549,9 @@ larexamples : larcore : larcore/TestUtils/unit_test_base.h
 larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larexamples : lardata : lardata/Utilities/GridContainerIndices.h
+larexamples : lardata : lardata/Utilities/GridContainers.h
+larexamples : lardata : lardata/Utilities/TensorIndices.h
 larexamples : lardataobj : lardataobj/RecoBase/Cluster.h
 larexamples : lardataobj : lardataobj/RecoBase/Hit.h
 larexamples : lardataobj : lardataobj/RecoBase/Shower.h
@@ -1036,6 +1039,7 @@ larreco : lardataobj : lardataobj/MCBase/MCWire.h
 larreco : lardataobj : lardataobj/MCBase/MCWireCollection.h
 larreco : lardataobj : lardataobj/RawData/ExternalTrigger.h
 larreco : lardataobj : lardataobj/RawData/RawDigit.h
+larreco : lardataobj : lardataobj/RawData/TriggerData.h
 larreco : lardataobj : lardataobj/RawData/raw.h
 larreco : lardataobj : lardataobj/RecoBase/Cluster.h
 larreco : lardataobj : lardataobj/RecoBase/EndPoint2D.h
