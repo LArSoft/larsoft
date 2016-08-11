@@ -11,11 +11,6 @@ EOF
   return ${status}
 fi
 
-# profile tool
-if (( ${build_slf_extras:-0} )); then # only build for SL
-   do_build igprof @IGPROF_VERSION@ ${basequal}
-fi
-
 do_build pandora @PANDORA_VERSION@ ${basequal}:nu
 build_cet larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}
 
