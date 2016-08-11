@@ -5,7 +5,6 @@ cmake        v3_5_1		cmake-3.5.1-source.tar.bz2
 gcc          v4_9_3a		gcc-4.9.3a-source.tar.bz2
 gdb          v7_10_1		gdb-7.10.1-source.tar.bz2
 valgrind     v3_11_0		valgrind-3.11.0-source.tar.bz2
-igprof       @IGPROF_VERSION@           igprof-@IGPROF_DOT_VERSION@-source.tar.bz2
 ninja        v1_6_0b            ninja-1.6.0b-source.tar.bz2
 git          v2_8_2		git-2.8.2-source.tar.bz2
 gitflow      v1_9_1		gitflow-1.9.1-noarch.tar.bz2
