@@ -8,7 +8,7 @@ defaultqual	e10
 incdir      -
 fcldir      -
 bindir      product_dir
-#
+
 product         version
 lareventdisplay v06_00_04
 larexamples     v06_00_03
