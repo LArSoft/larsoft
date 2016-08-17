@@ -11,6 +11,7 @@ EOF
   return ${status}
 fi
 
+do_build marley @MARLEY_VERSION@ ${basequal}
 do_build pandora @PANDORA_VERSION@ ${basequal}:nu
 build_cet larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}
 

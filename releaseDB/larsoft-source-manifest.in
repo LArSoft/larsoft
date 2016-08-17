@@ -51,6 +51,7 @@ libwda       v2_22_2		libwda-2.22.2-source.tar.bz2
 ifbeam       v1_4_21		ifbeam-1.4.21-source.tar.bz2
 nucondb      v1_4_21		nucondb-1.4.21-source.tar.bz2
 dk2nu        v01_04_01		dk2nu-01.04.01-source.tar.bz2
+marley       @MARLEY_VERSION@		marley-@MARLEY_DOT_VERSION@-source.tar.bz2
 pandora      @PANDORA_VERSION@ 		pandora-@PANDORA_DOT_VERSION@-source.tar.bz2
 larsoft_data @LARSOFT_DATA_VERSION@		larsoft_data-@LARSOFT_DATA_DOT_VERSION@-noarch.tar.bz2
 mrb          @MRB_VERSION@		mrb-@MRB_DOT_VERSION@-noarch.tar.bz2
