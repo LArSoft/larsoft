@@ -19,7 +19,7 @@ python       v2_7_11		python-2.7.11-source.tar.bz2
 tbb          v4_4_3a		tbb-4.4.3a-source.tar.bz2
 xrootd       v3_3_4e		xrootd-3.3.4e-source.tar.bz2
 xerces_c     v3_1_3		xerces_c-3.1.3-source.tar.bz2
-qt           v5_4_2b		qt-5.4.2b-source.tar.bz2
+qt           v5_6_1		qt-5.6.1-source.tar.bz2
 cry          v1_7f		cry-1.7f-source.tar.bz2
 lhapdf       v5_9_1e		lhapdf-5.9.1e-source.tar.bz2
 pdfsets      v5_9_1b		pdfsets-5.9.1b-noarch.tar.bz2
@@ -27,7 +27,7 @@ log4cpp      v1_1_1e		log4cpp-1.1.1e-source.tar.bz2
 mysql_client v5_5_48a		mysql_client-5.5.48a-source.tar.bz2
 postgresql   v9_3_12		postgresql-9.3.12-source.tar.bz2
 pythia       v6_4_28e		pythia-6.4.28e-source.tar.bz2
-geant4       v4_10_1_p03a	geant4-4.10.1.p03a-source.tar.bz2
+geant4       v4_10_1_p03b	geant4-4.10.1.p03b-source.tar.bz2
 g4abla       v3_0		g4abla-3.0-noarch.tar.bz2
 g4emlow      v6_41		g4emlow-6.41-noarch.tar.bz2
 g4neutron    v4_5		g4neutron-4.5-noarch.tar.bz2
@@ -51,6 +51,7 @@ libwda       v2_22_2		libwda-2.22.2-source.tar.bz2
 ifbeam       v1_4_21		ifbeam-1.4.21-source.tar.bz2
 nucondb      v1_4_21		nucondb-1.4.21-source.tar.bz2
 dk2nu        v01_04_01		dk2nu-01.04.01-source.tar.bz2
+marley       @MARLEY_VERSION@		marley-@MARLEY_DOT_VERSION@-source.tar.bz2
 pandora      @PANDORA_VERSION@ 		pandora-@PANDORA_DOT_VERSION@-source.tar.bz2
 larsoft_data @LARSOFT_DATA_VERSION@		larsoft_data-@LARSOFT_DATA_DOT_VERSION@-noarch.tar.bz2
 mrb          @MRB_VERSION@		mrb-@MRB_DOT_VERSION@-noarch.tar.bz2
