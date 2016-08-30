@@ -65,3 +65,4 @@ s/\$\{EVENTDISPLAYBASE\}/nutools_EventDisplayBase/g;
 s/\$\{IFDATABASE\}/nutools_IFDatabase/g;
 s/\$\{NUREWEIGHT\}/nutools_NuReweight/g;
 s/\$\{MAGNETICFIELD_SERVICE\}/nutools_MagneticField_MagneticField_service/g;
+s/larsimobj_Simulation/lardataobj_Simulation/g;
