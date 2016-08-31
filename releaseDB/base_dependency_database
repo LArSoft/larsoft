@@ -37,6 +37,7 @@ larana : larana : larana/ParticleIdentification/PIDAAlg.h
 larana : larcore : larcore/CoreUtils/ProviderPack.h
 larana : larcore : larcore/CoreUtils/ServiceUtil.h
 larana : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
+larana : larcore : larcore/CoreUtils/quiet_Math_Functor.h
 larana : larcore : larcore/Geometry/AuxDetGeo.h
 larana : larcore : larcore/Geometry/AuxDetSensitiveGeo.h
 larana : larcore : larcore/Geometry/BoxBoundedGeo.h
@@ -102,6 +103,11 @@ larana : lardataobj : lardataobj/RecoBase/Shower.h
 larana : lardataobj : lardataobj/RecoBase/SpacePoint.h
 larana : lardataobj : lardataobj/RecoBase/Track.h
 larana : lardataobj : lardataobj/RecoBase/Wire.h
+larana : lardataobj : lardataobj/Simulation/BeamGateInfo.h
+larana : lardataobj : lardataobj/Simulation/BeamTypes.h
+larana : lardataobj : lardataobj/Simulation/SimChannel.h
+larana : lardataobj : lardataobj/Simulation/SimPhotons.h
+larana : lardataobj : lardataobj/Simulation/sim.h
 larana : lardataobj : lardataobj/Utilities/SumSecondFunction.h
 larana : lardataobj : lardataobj/Utilities/VectorMap.h
 larana : lardataobj : lardataobj/Utilities/sparse_vector.h
@@ -132,11 +138,6 @@ larana : larsim : larsim/Simulation/LArVoxelList.h
 larana : larsim : larsim/Simulation/ParticleList.h
 larana : larsim : larsim/Simulation/PhotonVoxels.h
 larana : larsim : larsim/Simulation/SimListUtils.h
-larana : larsimobj : larsimobj/Simulation/BeamGateInfo.h
-larana : larsimobj : larsimobj/Simulation/BeamTypes.h
-larana : larsimobj : larsimobj/Simulation/SimChannel.h
-larana : larsimobj : larsimobj/Simulation/SimPhotons.h
-larana : larsimobj : larsimobj/Simulation/sim.h
 larcore : larcore : larcore/CoreUtils/DebugUtils.h
 larcore : larcore : larcore/CoreUtils/ProviderPack.h
 larcore : larcore : larcore/CoreUtils/ServiceUtil.h
@@ -182,7 +183,6 @@ larcoreobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
 larcoreobj : larcoreobj : larcoreobj/SummaryData/POTSummary.h
 larcoreobj : larcoreobj : larcoreobj/SummaryData/RunData.h
 larcoreobj : larcoreobj : larcoreobj/SummaryData/classes.h
-lardata : larcore : larcore/CoreUtils/DebugUtils.h
 lardata : larcore : larcore/CoreUtils/ProviderPack.h
 lardata : larcore : larcore/CoreUtils/ProviderUtil.h
 lardata : larcore : larcore/CoreUtils/ServiceUtil.h
@@ -365,7 +365,15 @@ lardataobj : lardataobj : lardataobj/RecoBase/TrackHitMeta.h
 lardataobj : lardataobj : lardataobj/RecoBase/Vertex.h
 lardataobj : lardataobj : lardataobj/RecoBase/Wire.h
 lardataobj : lardataobj : lardataobj/RecoBase/classes.h
+lardataobj : lardataobj : lardataobj/Simulation/AuxDetSimChannel.h
+lardataobj : lardataobj : lardataobj/Simulation/BeamGateInfo.h
+lardataobj : lardataobj : lardataobj/Simulation/BeamTypes.h
+lardataobj : lardataobj : lardataobj/Simulation/SimChannel.h
+lardataobj : lardataobj : lardataobj/Simulation/SimPhotons.h
+lardataobj : lardataobj : lardataobj/Simulation/classes.h
+lardataobj : lardataobj : lardataobj/Simulation/sim.h
 lardataobj : lardataobj : lardataobj/Utilities/sparse_vector.h
+lareventdisplay : larcore : larcore/CoreUtils/ProviderPack.h
 lareventdisplay : larcore : larcore/CoreUtils/ServiceUtil.h
 lareventdisplay : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
 lareventdisplay : larcore : larcore/Geometry/AuxDetGeo.h
@@ -419,6 +427,9 @@ lareventdisplay : lardataobj : lardataobj/RecoBase/SpacePoint.h
 lareventdisplay : lardataobj : lardataobj/RecoBase/Track.h
 lareventdisplay : lardataobj : lardataobj/RecoBase/Vertex.h
 lareventdisplay : lardataobj : lardataobj/RecoBase/Wire.h
+lareventdisplay : lardataobj : lardataobj/Simulation/AuxDetSimChannel.h
+lareventdisplay : lardataobj : lardataobj/Simulation/SimChannel.h
+lareventdisplay : lardataobj : lardataobj/Simulation/SimPhotons.h
 lareventdisplay : lardataobj : lardataobj/Utilities/SumSecondFunction.h
 lareventdisplay : lardataobj : lardataobj/Utilities/VectorMap.h
 lareventdisplay : lardataobj : lardataobj/Utilities/sparse_vector.h
@@ -464,9 +475,7 @@ lareventdisplay : larsim : larsim/Simulation/LArVoxelData.h
 lareventdisplay : larsim : larsim/Simulation/LArVoxelID.h
 lareventdisplay : larsim : larsim/Simulation/LArVoxelList.h
 lareventdisplay : larsim : larsim/Simulation/SimListUtils.h
-lareventdisplay : larsimobj : larsimobj/Simulation/AuxDetSimChannel.h
-lareventdisplay : larsimobj : larsimobj/Simulation/SimChannel.h
-lareventdisplay : larsimobj : larsimobj/Simulation/SimPhotons.h
+larevt : larcore : larcore/CoreUtils/ProviderPack.h
 larevt : larcore : larcore/CoreUtils/ServiceUtil.h
 larevt : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
 larevt : larcore : larcore/Geometry/AuxDetGeo.h
@@ -556,6 +565,7 @@ larexamples : lardataobj : lardataobj/RecoBase/Cluster.h
 larexamples : lardataobj : lardataobj/RecoBase/Hit.h
 larexamples : lardataobj : lardataobj/RecoBase/Shower.h
 larexamples : lardataobj : lardataobj/RecoBase/SpacePoint.h
+larexamples : lardataobj : lardataobj/Simulation/SimChannel.h
 larexamples : larexamples : larexamples/Algorithms/RemoveIsolatedSpacePoints/PointIsolationAlg.h
 larexamples : larexamples : larexamples/Algorithms/RemoveIsolatedSpacePoints/SpacePartition.h
 larexamples : larexamples : larexamples/Algorithms/RemoveIsolatedSpacePoints/SpacePointIsolationAlg.h
@@ -573,7 +583,7 @@ larexamples : larexamples : test/Algorithms/RemoveIsolatedSpacePoints/SpacePoint
 larexamples : larexamples : test/Services/ShowerCalibrationGalore/Providers/CreateTestShowerCalibrationFromPID.h
 larexamples : larexamples : test/Services/ShowerCalibrationGalore/Providers/ShowerCalibrationGaloreTests.h
 larexamples : larsim : larsim/Simulation/LArG4Parameters.h
-larexamples : larsimobj : larsimobj/Simulation/SimChannel.h
+larpandora : larcore : larcore/CoreUtils/ProviderPack.h
 larpandora : larcore : larcore/CoreUtils/ServiceUtil.h
 larpandora : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
 larpandora : larcore : larcore/Geometry/AuxDetGeo.h
@@ -615,6 +625,7 @@ larpandora : lardataobj : lardataobj/RecoBase/SpacePoint.h
 larpandora : lardataobj : lardataobj/RecoBase/Track.h
 larpandora : lardataobj : lardataobj/RecoBase/Vertex.h
 larpandora : lardataobj : lardataobj/RecoBase/Wire.h
+larpandora : lardataobj : lardataobj/Simulation/SimChannel.h
 larpandora : lardataobj : lardataobj/Utilities/sparse_vector.h
 larpandora : larevt : larevt/CalibrationDBI/Interface/ChannelStatusProvider.h
 larpandora : larevt : larevt/CalibrationDBI/Interface/ChannelStatusService.h
@@ -792,7 +803,6 @@ larpandora : larreco : larreco/RecoAlg/ClusterRecoUtil/ClusterParamsAlg.h
 larpandora : larreco : larreco/RecoAlg/ClusterRecoUtil/ClusterParamsAlgBase.h
 larpandora : larreco : larreco/RecoAlg/ClusterRecoUtil/Polygon2D.h
 larpandora : larreco : larreco/RecoAlg/ClusterRecoUtil/StandardClusterParamsAlg.h
-larpandora : larsimobj : larsimobj/Simulation/SimChannel.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingClusterCharacterisationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingClusterCreationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingCosmicRayIdentificationAlg.h
@@ -952,8 +962,10 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/ListPrepara
 larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/NeutrinoParentAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArVertex/CandidateVertexCreationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArVertex/VertexSelectionAlgorithm.h
+larreco : larcore : larcore/CoreUtils/ProviderPack.h
 larreco : larcore : larcore/CoreUtils/ServiceUtil.h
 larreco : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
+larreco : larcore : larcore/CoreUtils/quiet_Math_Functor.h
 larreco : larcore : larcore/Geometry/AuxDetGeo.h
 larreco : larcore : larcore/Geometry/AuxDetSensitiveGeo.h
 larreco : larcore : larcore/Geometry/BoxBoundedGeo.h
@@ -1054,6 +1066,9 @@ larreco : lardataobj : lardataobj/RecoBase/Track.h
 larreco : lardataobj : lardataobj/RecoBase/TrackHitMeta.h
 larreco : lardataobj : lardataobj/RecoBase/Vertex.h
 larreco : lardataobj : lardataobj/RecoBase/Wire.h
+larreco : lardataobj : lardataobj/Simulation/SimChannel.h
+larreco : lardataobj : lardataobj/Simulation/SimPhotons.h
+larreco : lardataobj : lardataobj/Simulation/sim.h
 larreco : lardataobj : lardataobj/Utilities/SumSecondFunction.h
 larreco : lardataobj : lardataobj/Utilities/VectorMap.h
 larreco : lardataobj : lardataobj/Utilities/sparse_vector.h
@@ -1213,9 +1228,9 @@ larreco : larreco : larreco/RecoAlg/PMAlg/PmaTrkCandidate.h
 larreco : larreco : larreco/RecoAlg/PMAlg/PmaVtxCandidate.h
 larreco : larreco : larreco/RecoAlg/PMAlg/SortedObjects.h
 larreco : larreco : larreco/RecoAlg/PMAlg/Utilities.h
+larreco : larreco : larreco/RecoAlg/PMAlgTracking.h
 larreco : larreco : larreco/RecoAlg/PMAlgVertexing.h
 larreco : larreco : larreco/RecoAlg/ProjectionMatchingAlg.h
-larreco : larreco : larreco/RecoAlg/RootMathFunctor.h
 larreco : larreco : larreco/RecoAlg/SeedFinderAlgorithm.h
 larreco : larreco : larreco/RecoAlg/ShowerEnergyAlg.h
 larreco : larreco : larreco/RecoAlg/SmallClusterFinderAlg.h
@@ -1260,9 +1275,7 @@ larreco : larsim : larsim/Simulation/LArVoxelID.h
 larreco : larsim : larsim/Simulation/LArVoxelList.h
 larreco : larsim : larsim/Simulation/ParticleList.h
 larreco : larsim : larsim/Simulation/SimListUtils.h
-larreco : larsimobj : larsimobj/Simulation/SimChannel.h
-larreco : larsimobj : larsimobj/Simulation/SimPhotons.h
-larreco : larsimobj : larsimobj/Simulation/sim.h
+larsim : larcore : larcore/CoreUtils/ProviderPack.h
 larsim : larcore : larcore/CoreUtils/ServiceUtil.h
 larsim : larcore : larcore/CoreUtils/UncopiableAndUnmovableClass.h
 larsim : larcore : larcore/Geometry/AuxDetGeo.h
@@ -1312,6 +1325,12 @@ larsim : lardataobj : lardataobj/RecoBase/SpacePoint.h
 larsim : lardataobj : lardataobj/RecoBase/Track.h
 larsim : lardataobj : lardataobj/RecoBase/Vertex.h
 larsim : lardataobj : lardataobj/RecoBase/Wire.h
+larsim : lardataobj : lardataobj/Simulation/AuxDetSimChannel.h
+larsim : lardataobj : lardataobj/Simulation/BeamGateInfo.h
+larsim : lardataobj : lardataobj/Simulation/BeamTypes.h
+larsim : lardataobj : lardataobj/Simulation/SimChannel.h
+larsim : lardataobj : lardataobj/Simulation/SimPhotons.h
+larsim : lardataobj : lardataobj/Simulation/sim.h
 larsim : lardataobj : lardataobj/Utilities/SumSecondFunction.h
 larsim : lardataobj : lardataobj/Utilities/VectorMap.h
 larsim : lardataobj : lardataobj/Utilities/sparse_vector.h
@@ -1343,6 +1362,7 @@ larsim : larsim : larsim/LArG4/MergeSimSources.h
 larsim : larsim : larsim/LArG4/MuNuclearSplittingProcess.h
 larsim : larsim : larsim/LArG4/MuNuclearSplittingProcessXSecBias.h
 larsim : larsim : larsim/LArG4/NestAlg.h
+larsim : larsim : larsim/LArG4/NeutronHPphysics.hh
 larsim : larsim : larsim/LArG4/OpBoundaryProcessSimple.hh
 larsim : larsim : larsim/LArG4/OpDetLookup.h
 larsim : larsim : larsim/LArG4/OpDetPhotonTable.h
@@ -1392,12 +1412,6 @@ larsim : larsim : larsim/TriggerAlgo/TriggerAlgoMicroBoone.h
 larsim : larsim : larsim/TriggerAlgo/TriggerTypes.hh
 larsim : larsim : test/RandomUtils/GlobalEngineUserTestService.h
 larsim : larsim : test/RandomUtils/SeedTestUtils.h
-larsim : larsimobj : larsimobj/Simulation/AuxDetSimChannel.h
-larsim : larsimobj : larsimobj/Simulation/BeamGateInfo.h
-larsim : larsimobj : larsimobj/Simulation/BeamTypes.h
-larsim : larsimobj : larsimobj/Simulation/SimChannel.h
-larsim : larsimobj : larsimobj/Simulation/SimPhotons.h
-larsim : larsimobj : larsimobj/Simulation/sim.h
 larsimobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larsimobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larsimobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
