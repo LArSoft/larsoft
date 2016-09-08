@@ -48,6 +48,7 @@ foreach my $lib (sort keys %dir_list) {
    next if m&art_Persistency_Provenance canvas_Persistency_Provenance&i;
    next if m&art_Utilities canvas_Utilities&i;
    next if m&larsim_Simulation larsimobj_Simulation&i;
+   next if m&larsim_Simulation lardataobj_Simulation&i;
   #s&\b\Q${lib}\E([^\.\s]*\b)([^\.]|$)&$dir_list{$lib}${1}${2}&g and last;
   s&\b\Q${lib}\E\b([^\.]|$)&$dir_list{$lib}${1}${2}&g and last;
 }
