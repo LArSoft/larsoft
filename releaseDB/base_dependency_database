@@ -236,6 +236,10 @@ lardata : lardata : lardata/RawData/utils/LArRawInputDriver.h
 lardata : lardata : lardata/RawData/utils/LArRawInputDriverJP250L.h
 lardata : lardata : lardata/RawData/utils/LArRawInputDriverLongBo.h
 lardata : lardata : lardata/RawData/utils/LArRawInputDriverShortBo.h
+lardata : lardata : lardata/RecoBaseArt/Dumpers/NewLine.h
+lardata : lardata : lardata/RecoBaseArt/Dumpers/PCAxisDumpers.h
+lardata : lardata : lardata/RecoBaseArt/Dumpers/SpacePointDumpers.h
+lardata : lardata : lardata/RecoBaseArt/Dumpers/hexfloat.h
 lardata : lardata : lardata/RecoBaseArt/FindAllP.h
 lardata : lardata : lardata/RecoBaseArt/HitCreator.h
 lardata : lardata : lardata/RecoBaseArt/HitUtils.h
@@ -306,10 +310,14 @@ lardata : lardataobj : lardataobj/RawData/DAQHeader.h
 lardata : lardataobj : lardataobj/RawData/ExternalTrigger.h
 lardata : lardataobj : lardataobj/RawData/RawDigit.h
 lardata : lardataobj : lardataobj/RawData/TriggerData.h
+lardata : lardataobj : lardataobj/RecoBase/Cluster.h
 lardata : lardataobj : lardataobj/RecoBase/Hit.h
+lardata : lardataobj : lardataobj/RecoBase/PCAxis.h
+lardata : lardataobj : lardataobj/RecoBase/PFParticle.h
 lardata : lardataobj : lardataobj/RecoBase/Seed.h
 lardata : lardataobj : lardataobj/RecoBase/SpacePoint.h
 lardata : lardataobj : lardataobj/RecoBase/Track.h
+lardata : lardataobj : lardataobj/RecoBase/Vertex.h
 lardata : lardataobj : lardataobj/RecoBase/Wire.h
 lardata : lardataobj : lardataobj/Utilities/sparse_vector.h
 lardataobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
