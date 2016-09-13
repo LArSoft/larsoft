@@ -1,0 +1,56 @@
+# build larsoftobj distribution
+
+basequal=${1}
+
+# add to manifest
+prep_build upd v5_0_1; add_to_manifest
+
+do_build cmake v3_3_2
+do_build cmake v3_5_1
+do_build gcc ${gcc_version}
+if ! (( ${darwin:-0} )); then # No gdb for Darwin
+  do_build gdb v7_10_1
+fi
+(( ${darwin:-0} )) && { do_build getopt v1_1_6; }
+do_build valgrind v3_11_0
+if (( ${build_slf_extras:-0} )); then # only build for SL
+   do_build git v2_8_2 
+fi
+# add to manifest
+prep_build gitflow v1_9_1; add_to_manifest
+
+do_build boost v1_61_0 ${basequal}
+do_build fftw v3_3_4
+do_build sqlite v3_12_02_00
+do_build python v2_7_11
+do_build cppunit v1_12_1d ${basequal}
+do_build clhep v2_3_2_2 ${basequal}
+do_build libxml2 v2_9_3
+do_build tbb v4_4_3a ${basequal}
+do_build xrootd v3_3_4e ${basequal}
+do_build mysql_client v5_5_48a ${basequal}
+do_build postgresql v9_3_12 p2711
+do_build pythia v6_4_28e ${gccqual}
+do_build gsl v2_1
+do_build root v6_06_04b ${basequal}:nu
+
+# the ninja build requires a modern python
+# once built, ninja no longer depends on python
+do_build ninja v1_6_0b
+
+ensure_cetpkgsupport v1_10_02
+ensure_cetbuildtools v4_19_04 v5_01_03 v5_02_02 v5_02_04 v5_04_02 v5_04_03
+build_cet cetlib v1_19_01 ${basequal}
+build_cet -p fhicl-cpp fhiclcpp v4_00_01 ${basequal}
+build_cet messagefacility v1_17_01 ${basequal}
+build_cet canvas v1_04_06 ${basequal}:nu
+build_cet gallery v1_03_06 ${basequal}:nu
+
+prep_build mrb @MRB_VERSION@; add_to_manifest
+
+build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}
+build_cet larcoreobj @LARCOREOBJ_VERSION@ ${basequal}
+build_cet lardataobj @LARDATAOBJ_VERSION@ ${basequal}
+build_cet larsoftobj @LARSOFTOBJ_VERSION@ ${basequal}
+
+return 0

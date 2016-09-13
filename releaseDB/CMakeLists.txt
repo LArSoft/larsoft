@@ -22,20 +22,20 @@ set( BASEQUAL e10 )
 set( SQUAL s41 )
 
 create_product_variables( larutils        v1_08_04 )
-create_product_variables( larbatch        v01_23_05 )
+create_product_variables( larbatch        v01_23_06 )
 
 create_product_variables( larcoreobj      v1_04_02 )
 create_product_variables( lardataobj      v1_06_01 )
 create_product_variables( larsoftobj      v1_06_01 )
 create_product_variables( larcore         v06_02_01 )
 create_product_variables( lardata         v06_04_00 )
-create_product_variables( larevt          v06_01_02 )
-create_product_variables( larsim          v06_03_03 )
-create_product_variables( larreco         v06_04_01 )
-create_product_variables( larana          v06_01_04 )
-create_product_variables( larpandora      v06_00_08 )
-create_product_variables( larexamples     v06_00_07 )
-create_product_variables( lareventdisplay v06_01_03 )
+create_product_variables( larevt          v06_02_00 )
+create_product_variables( larsim          v06_03_04 )
+create_product_variables( larreco         v06_04_02 )
+create_product_variables( larana          v06_01_05 )
+create_product_variables( larpandora      v06_00_09 )
+create_product_variables( larexamples     v06_00_08 )
+create_product_variables( lareventdisplay v06_01_04 )
 create_product_variables( larpandoracontent v02_07_09 )
 
 create_product_variables( art           v2_03_00 )
@@ -65,6 +65,10 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-buildcfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoftobj-buildcfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/larsoftobj-buildcfg-${LARSOFTOBJ_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoftobj-source-manifest.in
+  ${CMAKE_CURRENT_BINARY_DIR}/larsoftobj-${LARSOFTOBJ_DOT_VERSION}-source_MANIFEST.txt @ONLY )
 CONFIGURE_FILE ( ${CMAKE_CURRENT_SOURCE_DIR}/larsoft.html.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-${LARSOFT_VERSION}.html @ONLY )
 
