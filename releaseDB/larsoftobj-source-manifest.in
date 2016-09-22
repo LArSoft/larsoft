@@ -9,7 +9,7 @@ gitflow      v1_9_1		gitflow-1.9.1-noarch.tar.bz2
 getopt       v1_1_6		getopt-1.1.6-source.tar.bz2
 valgrind     v3_11_0		valgrind-3.11.0-source.tar.bz2
 boost        v1_61_0		boost-1.61.0-source.tar.bz2
-clhep        v2_3_2_2		clhep-2.3.2.2-source.tar.bz2
+clhep        v2_3_3_2		clhep-2.3.3.2-source.tar.bz2
 cppunit      v1_12_1d		cppunit-1.12.1d-source.tar.bz2
 fftw         v3_3_4		fftw-3.3.4-source.tar.bz2
 libxml2      v2_9_3		libxml2-2.9.3-source.tar.bz2
@@ -22,5 +22,5 @@ mysql_client v5_5_48a		mysql_client-5.5.48a-source.tar.bz2
 postgresql   v9_3_12		postgresql-9.3.12-source.tar.bz2
 pythia       v6_4_28e		pythia-6.4.28e-source.tar.bz2
 gsl          v2_1		gsl-2.1-source.tar.bz2
-root         v6_06_04b 		root-6.06.04b-source.tar.bz2
+root         v6_06_08 		root-6.06.08-source.tar.bz2
 mrb          @MRB_VERSION@		mrb-@MRB_DOT_VERSION@-noarch.tar.bz2
