@@ -6,8 +6,8 @@ gcc          v4_9_3a		gcc-4.9.3a-source.tar.bz2
 gdb          v7_10_1		gdb-7.10.1-source.tar.bz2
 valgrind     v3_11_0		valgrind-3.11.0-source.tar.bz2
 ninja        v1_6_0b            ninja-1.6.0b-source.tar.bz2
-git          v2_8_2		git-2.8.2-source.tar.bz2
-gitflow      v1_9_1		gitflow-1.9.1-noarch.tar.bz2
+git          @GIT_VERSION@		git-@GIT_DOT_VERSION@-source.tar.bz2
+gitflow      @GITFLOW_VERSION@		gitflow-@GITFLOW_DOT_VERSION@-noarch.tar.bz2
 boost        v1_61_0		boost-1.61.0-source.tar.bz2
 clhep        v2_3_3_2		clhep-2.3.3.2-source.tar.bz2
 cppunit      v1_12_1d		cppunit-1.12.1d-source.tar.bz2
