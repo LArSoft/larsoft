@@ -54,14 +54,20 @@ create_product_variables( mrb           v1_08_02 )
 # these files should be copied to scisoft for each release
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-buildcfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-cfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-cfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
   ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larbase-buildcfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larbase-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larbase-cfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/larbase-cfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
   ${CMAKE_CURRENT_BINARY_DIR}/larbase-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-buildcfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-cfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/larsoft-cfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoftobj-buildcfg.in
