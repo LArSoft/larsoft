@@ -43,7 +43,7 @@ ensure_cetbuildtools v4_19_04 v5_01_03 v5_02_02 v5_02_04 v5_04_02 v5_04_03
 build_cet cetlib v1_20_00 ${basequal}
 build_cet -p fhicl-cpp fhiclcpp v4_01_00 ${basequal}
 build_cet messagefacility v1_17_02 ${basequal}
-build_cet canvas v1_05_00 ${basequal}
+build_cet canvas v1_05_00 ${basequal}:nu
 build_cet gallery v1_03_07 ${basequal}:nu
 
 prep_build mrb @MRB_VERSION@; add_to_manifest
