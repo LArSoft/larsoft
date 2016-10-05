@@ -102,6 +102,7 @@ larana : lardataobj : lardataobj/RecoBase/Seed.h
 larana : lardataobj : lardataobj/RecoBase/Shower.h
 larana : lardataobj : lardataobj/RecoBase/SpacePoint.h
 larana : lardataobj : lardataobj/RecoBase/Track.h
+larana : lardataobj : lardataobj/RecoBase/TrackHitMeta.h
 larana : lardataobj : lardataobj/RecoBase/Wire.h
 larana : lardataobj : lardataobj/Simulation/BeamGateInfo.h
 larana : lardataobj : lardataobj/Simulation/BeamTypes.h
