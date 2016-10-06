@@ -21,7 +21,7 @@ create_product_variables( larsoft ${version} )
 set( BASEQUAL e10 )
 set( SQUAL s42 )
 
-create_product_variables( larutils        v1_08_06 )
+create_product_variables( larutils        v1_09_00 )
 create_product_variables( larbatch        v01_23_06 )
 
 create_product_variables( larcoreobj      v1_05_00 )
@@ -29,13 +29,13 @@ create_product_variables( lardataobj      v1_07_00 )
 create_product_variables( larsoftobj      v1_07_00 )
 create_product_variables( larcore         v06_02_02 )
 create_product_variables( lardata         v06_06_00 )
-create_product_variables( larevt          v06_02_02 )
-create_product_variables( larsim          v06_03_06 )
-create_product_variables( larreco         v06_06_00 )
-create_product_variables( larana          v06_01_07 )
-create_product_variables( larpandora      v06_01_01 )
-create_product_variables( larexamples     v06_00_10 )
-create_product_variables( lareventdisplay v06_01_06 )
+create_product_variables( larevt          v06_03_00 )
+create_product_variables( larsim          v06_04_00 )
+create_product_variables( larreco         v06_07_00 )
+create_product_variables( larana          v06_02_00 )
+create_product_variables( larpandora      v06_01_02 )
+create_product_variables( larexamples     v06_00_11 )
+create_product_variables( lareventdisplay v06_01_07 )
 create_product_variables( larpandoracontent v02_08_01 )
 
 create_product_variables( art           v2_04_00 )
@@ -47,7 +47,7 @@ create_product_variables( nudist        v2_05_00 )
 create_product_variables( genie_xsec    v2_10_6a )
 create_product_variables( marley        v0_9_5a )
 create_product_variables( pandora       v02_09_02 )
-create_product_variables( larsoft_data  v1_01_00  )
+create_product_variables( larsoft_data  v1_01_01  )
 create_product_variables( git           v2_9_3  )
 create_product_variables( gitflow       v1_10_1  )
 create_product_variables( mrb           v1_08_02 )
@@ -55,18 +55,26 @@ create_product_variables( mrb           v1_08_02 )
 # these files should be copied to scisoft for each release
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-buildcfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-cfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-cfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
   ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larbase-buildcfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larbase-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larbase-cfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/larbase-cfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
   ${CMAKE_CURRENT_BINARY_DIR}/larbase-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-buildcfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-cfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/larsoft-cfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoftobj-buildcfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoftobj-buildcfg-${LARSOFTOBJ_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoftobj-cfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/larsoftobj-cfg-${LARSOFTOBJ_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoftobj-source-manifest.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoftobj-${LARSOFTOBJ_DOT_VERSION}-source_MANIFEST.txt @ONLY )
 CONFIGURE_FILE ( ${CMAKE_CURRENT_SOURCE_DIR}/larsoft.html.in

@@ -3,7 +3,7 @@
 basequal=${1}
 
 # add to manifest
-prep_build upd v5_0_1; add_to_manifest
+build_noarch upd v5_0_1
 
 do_build cmake v3_3_2
 do_build cmake v3_5_1
@@ -17,7 +17,7 @@ if (( ${build_slf_extras:-0} )); then # only build for SL
    do_build git @GIT_VERSION@ 
 fi
 # add to manifest
-prep_build gitflow @GITFLOW_VERSION@; add_to_manifest
+build_noarch gitflow @GITFLOW_VERSION@
 
 do_build boost v1_61_0 ${basequal}
 do_build fftw v3_3_4
@@ -46,7 +46,7 @@ build_cet messagefacility v1_17_02 ${basequal}
 build_cet canvas v1_05_00 ${basequal}:nu
 build_cet gallery v1_03_07 ${basequal}:nu
 
-prep_build mrb @MRB_VERSION@; add_to_manifest
+build_noarch mrb @MRB_VERSION@
 
 build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}
 build_cet larcoreobj @LARCOREOBJ_VERSION@ ${basequal}

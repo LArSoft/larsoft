@@ -1,0 +1,39 @@
+# build larsoft
+
+basequal=${1}
+
+# specify version to bootstrap and setup ups
+check_ups v5_2_0
+
+build_bundle larbase-@LARSOFT_DOT_VERSION@ ${basequal}
+status=$?
+if (( ${status} != 0)); then
+  cat 1>&2 <<EOF
+Build of larbase-@LARSOFT_DOT_VERSION@ bundle failed with status ${status}
+EOF
+  return ${status}
+fi
+
+build_bundle larsoftobj-@LARSOFTOBJ_DOT_VERSION@ ${basequal}
+status=$?
+if (( ${status} != 0)); then
+  cat 1>&2 <<EOF
+Build of larsoftobj-@LARSOFTOBJ_DOT_VERSION@ bundle failed with status ${status}
+EOF
+  return ${status}
+fi
+
+build_cet -n larcore @LARCORE_VERSION@ ${basequal}
+build_cet lardata @LARDATA_VERSION@ ${basequal}
+build_cet larevt @LAREVT_VERSION@ ${basequal}
+build_cet larsim @LARSIM_VERSION@ ${basequal}
+build_cet larreco @LARRECO_VERSION@ ${basequal}
+build_cet larana @LARANA_VERSION@ ${basequal}
+build_cet larpandora @LARPANDORA_VERSION@ ${basequal}
+build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}
+build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}
+build_cet larsoft @LARSOFT_VERSION@ ${basequal}
+build_cet_null larbatch @LARBATCH_VERSION@
+build_cet_null larutils @LARUTILS_VERSION@
+
+return 0
