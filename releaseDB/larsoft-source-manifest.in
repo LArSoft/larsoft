@@ -2,6 +2,7 @@ ups          v5_2_0		ups-5.2.0-source.tar.bz2
 upd          v5_0_1		upd-5.0.1-noarch.tar.bz2
 cmake        v3_3_2		cmake-3.3.2-source.tar.bz2
 cmake        v3_5_1		cmake-3.5.1-source.tar.bz2
+cmake        v3_6_2		cmake-3.6.2-source.tar.bz2
 gcc          v4_9_3a		gcc-4.9.3a-source.tar.bz2
 gdb          v7_10_1		gdb-7.10.1-source.tar.bz2
 valgrind     v3_11_0		valgrind-3.11.0-source.tar.bz2
@@ -45,10 +46,10 @@ genie_phyopt v2_10_6		genie_phyopt-2.10.6-noarch-dkcharmtau.tar.bz2
 genie_xsec   @GENIE_XSEC_VERSION@		genie_xsec-@GENIE_XSEC_DOT_VERSION@-noarch-defaultplusccmec.tar.bz2
 genie_xsec   @GENIE_XSEC_VERSION@		genie_xsec-@GENIE_XSEC_DOT_VERSION@-noarch-effspec-tem.tar.bz2
 cstxsd       v4_0_0e		cstxsd-4.0.0e-source.tar.bz2
-ifdhc        v1_8_11		ifdhc-1.8.11-source.tar.bz2
+ifdhc        v2_0_0		ifdhc-2.0.0-source.tar.bz2
 libwda       v2_22_2		libwda-2.22.2-source.tar.bz2
-ifbeam       v1_4_21		ifbeam-1.4.21-source.tar.bz2
-nucondb      v1_4_21		nucondb-1.4.21-source.tar.bz2
+ifbeam       v2_0_0		ifbeam-2.0.0-source.tar.bz2
+nucondb      v2_0_0		nucondb-2.0.0-source.tar.bz2
 dk2nu        v01_04_01b		dk2nu-01.04.01b-source.tar.bz2
 marley       @MARLEY_VERSION@		marley-@MARLEY_DOT_VERSION@-source.tar.bz2
 pandora      @PANDORA_VERSION@ 		pandora-@PANDORA_DOT_VERSION@-source.tar.bz2
