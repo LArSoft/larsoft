@@ -38,9 +38,15 @@ echo " current directory: ${currentdir}"
 
 patchdir=${currentdir}/${repo}patch
 mkdir -p ${patchdir}
-cd ${currentdir}/${repo}/${repo}
+cd ${currentdir}/${repo}
 reposrc=${myfile}
 git format-patch -o ${patchdir} $(git log ${reposrc}|grep ^commit|tail -1|awk '{print $2}')^..HEAD ${reposrc}
+
+echo
+echo "Patch files have been created in ${patchdir}"
+echo "cd <destination repository>"
+echo "git am  ${patchdir}/*.patch"
+echo
 
 exit 0
 
