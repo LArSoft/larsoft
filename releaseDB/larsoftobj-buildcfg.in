@@ -7,6 +7,7 @@ prep_build upd v5_0_1; add_to_manifest
 
 do_build cmake v3_3_2
 do_build cmake v3_5_1
+do_build cmake v3_6_2
 do_build gcc ${gcc_version}
 if ! (( ${darwin:-0} )); then # No gdb for Darwin
   do_build gdb v7_10_1
@@ -38,13 +39,13 @@ do_build root v6_06_08 ${basequal}:nu
 # once built, ninja no longer depends on python
 do_build ninja v1_6_0b
 
-ensure_cetpkgsupport v1_10_02
+ensure_cetpkgsupport v1_11_00
 ensure_cetbuildtools v4_19_04 v5_01_03 v5_02_02 v5_02_04 v5_04_02 v5_04_03
-build_cet cetlib v1_20_00 ${basequal}
-build_cet -p fhicl-cpp fhiclcpp v4_01_00 ${basequal}
-build_cet messagefacility v1_17_02 ${basequal}
-build_cet canvas v1_05_00 ${basequal}:nu
-build_cet gallery v1_03_07 ${basequal}:nu
+build_cet cetlib v1_21_00 ${basequal}
+build_cet -p fhicl-cpp fhiclcpp v4_02_00 ${basequal}
+build_cet messagefacility v1_18_00 ${basequal}
+build_cet canvas v1_05_01 ${basequal}:nu
+build_cet gallery v1_03_08 ${basequal}:nu
 
 prep_build mrb @MRB_VERSION@; add_to_manifest
 
