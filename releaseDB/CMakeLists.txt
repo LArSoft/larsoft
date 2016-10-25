@@ -39,6 +39,7 @@ create_product_variables( lareventdisplay v06_01_09 )
 create_product_variables( larpandoracontent v03_00_00 )
 
 create_product_variables( art           v2_05_00 )
+create_product_variables( canvas        v1_05_01 )
 create_product_variables( artdaq_core   v1_05_09 )
 create_product_variables( gallery       v1_03_08 )
 create_product_variables( nusimdata     v1_06_01 )

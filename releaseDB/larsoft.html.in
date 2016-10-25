@@ -48,6 +48,7 @@
       <li>El Capitan (SIP disabled): <pre>./pullProducts &lt;product-directory&gt; d15 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
     </ul></li>
   </ul></li>
+  <li>See <a href="https://cdcvs.fnal.gov/redmine/projects/cet-is-public/wiki/AboutQualifiers">About Qualifiers</a> for qualifier descriptions.</li>
   <li>We recommend downloading the prebuilt binaries whenever possible.</li>
 </ul>
 
