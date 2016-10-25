@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>larsoftobj @LARSOFTOBJ_VERSION@</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" topmargin="6" leftmargin="6" marginheight="6" marginwidth
+="6">
+
+<p>
+<center>
+[&nbsp;<a href="http://scisoft.fnal.gov/">Distribution Home</a>&nbsp;]&nbsp;
+<br>
+[&nbsp;<a href="http://scisoft.fnal.gov/scisoft/bundles/">Distribution Scripts and Manifests</a>&nbsp;]&nbsp;
+[&nbsp;<a href="http://scisoft.fnal.gov/scisoft/packages/">Individual Package Distribution</a>&nbsp;]&nbsp;
+</center>
+</p>
+
+<center>
+<table width="95%">
+<tr><td>
+<h1>Download materials for larsoftobj @LARSOFTOBJ_VERSION@ and dependencies</h1>
+
+<h2>Release notes.</h2>
+
+<ul>
+  <li><a href="https://cdcvs.fnal.gov/redmine/projects/cet-is/wiki/Supported_platforms">Supported Platforms</a></li>
+  <li>To check available distributions, use <a href="http://scisoft.fnal.gov/scisoft/bundles/tools/getManifestList">getManifestList</a>: <br>
+       getManifestList [bundle name] [bundle version]</li>
+</ul>
+  
+<h2 id="scripts-binary">Download scripts for binary distributions.</h2>
+<ul>
+  <li><a type="application/x-sh" download href="http://scisoft.fnal.gov/scisoft/bundles/tools/pullProducts">pullProducts</a>
+  <ul>
+    <li>Will pull all products listed in the bundle manifest.</li>
+    <li>This script will first check to see if a package is installed and will download the product only if not installed.</li>
+    <li>Supported bundle <a href="http://scisoft.fnal.gov/scisoft/bundles/">list</a></li>
+-    <li>USAGE: 
+    <ul>
+      <li>Download the script.</li>
+      <li>chmod +x pullProducts</li>
+      <li>Scientific Linux 6.x: <pre>./pullProducts &lt;product-directory&gt; slf6 larsoftobj-@LARSOFTOBJ_VERSION@ @cet_qualifier@ &lt;prof|debug&gt;</pre></li>
+      <li>Scientific Linux 7.x: <pre>./pullProducts &lt;product-directory&gt; slf7 larsoftobj-@LARSOFTOBJ_VERSION@ @cet_qualifier@ &lt;prof|debug&gt;</pre></li>
+      <li>Ubuntu 14: <pre>./pullProducts &lt;product-directory&gt; u14 larsoftobj-@LARSOFTOBJ_VERSION@ @cet_qualifier@ &lt;prof|debug&gt;</pre></li>
+      <li>Yosemite: <pre>./pullProducts &lt;product-directory&gt; d14 larsoftobj-@LARSOFTOBJ_VERSION@ @cet_qualifier@ &lt;prof|debug&gt;</pre></li>
+      <li>El Capitan (SIP disabled): <pre>./pullProducts &lt;product-directory&gt; d15 larsoftobj-@LARSOFTOBJ_VERSION@ @cet_qualifier@ &lt;prof|debug&gt;</pre></li>
+    </ul></li>
+  </ul></li>
+  <li>See <a href="https://cdcvs.fnal.gov/redmine/projects/cet-is-public/wiki/AboutQualifiers">About Qualifiers</a> for qualifier descriptions.</li>
+  <li>We recommend downloading the prebuilt binaries whenever possible.</li>
+</ul>
+
+
+<h2 id="tarballs-contents">Packages</h2>
+The following products are part of the larsoftobj suite:
+<pre>   cetpkgsupport   @CETPKGSUPPORT_VERSION@
+   cetbuildtools   @CETBUILDTOOLS_VERSION_LIST@
+   cetlib          @CETLIB_VERSION@  @cet_qualifier@
+   fhiclcpp        @FHICLCPP_VERSION@  @cet_qualifier@
+   messagefacility @MESSAGEFACILITY_VERSION@  @cet_qualifier@
+   canvas          @CANVAS_VERSION@ @cet_qualifier@:nu
+   gallery         @GALLERY_VERSION@ @cet_qualifier@:nu
+   nusimdata       @NUSIMDATA_VERSION@ @cet_qualifier@
+   larcoreobj      @LARCOREOBJ_VERSION@ @cet_qualifier@
+   lardataobj      @LARDATAOBJ_VERSION@ @cet_qualifier@
+   larsoftobj      @LARSOFTOBJ_VERSION@ @cet_qualifier@</pre>
+
+The following products are part of the basic larsoftobj bundle
+<pre>     ups             @UPS_VERSION@
+     upd             @UPD_VERSION@
+     cmake           @OLD_CMAKE_VERSION@
+     cmake           @CMAKE_VERSION@
+     gcc             @GCC_VERSION@
+     boost           @BOOST_VERSION@		@cet_qualifier@
+     clhep           @CLHEP_VERSION@		@cet_qualifier@
+     cppunit         @CPPUNIT_VERSION@		@cet_qualifier@
+     fftw            @FFTW_VERSION@		@externals_qualifier@
+     libxml2         @LIBXML2_VERSION@		@externals_qualifier@
+     python          @PYTHON_VERSION@
+     sqlite          @SQLITE_VERSION@
+     tbb             @TBB_VERSION@		@cet_qualifier@
+     root            @ROOT_VERSION@		@cet_qualifier@</pre>
+
+
+<h2 id="scripts-source">Building from Source</h2>
+  
+NOTE: We recommend building from source only if you cannot use the prebuilt binaries.
+
+<ul>
+  <li><a type="application/x-sh" download href="http://scisoft.fnal.gov/scisoft/bundles/tools/checkPrerequisites">checkPrerequisites</a>
+  <ul>
+    <li>Will examine the system for the presence of known OS-level
+    prerequisites (on RedHat derivatives, these will be RPMs) and list
+    any deficiencies with remediation instructions. The script does not
+    require admin privilege to run, but it is likely that any
+    remediation will.</li>
+    <li>USAGE:
+    <ul>
+      <li>Download the script.</li>
+      <li><pre>chmod +x checkPrerequisites
+./checkPrerequisites</li>
+    </ul></li>
+  </ul></li>
+  <li><a type="application/x-sh" download href="http://scisoft.fnal.gov/scisoft/bundles/tools/pullProducts">pullProducts</a>
+  <ul>
+    <li>Will pull and expand source code tarballs preparatory to a build.</li>
+    <li>This is the same script used to pull the binary distributions.</li>
+    <li>USAGE:
+    <ul>
+      <li>Download the script.</li>
+      <li><pre>chmod +x pullProducts
+./pullProducts &lt;product-directory&gt; source  &lt;bundle&gt;</pre></li>
+    </ul></li>
+  </ul></li>
+  <li label="buildFW"><a type="application/x-sh" download
+  href="http://scisoft.fnal.gov/scisoft/bundles/tools/buildFW">buildFW</a>
+  <ul>
+    <li>Build all packages from source (as downloaded using the script
+    above). Will obtain other source (cetlib, larsoftobj, etc.)
+    direct from the FNAL Redmine repository as required.</li>
+    <li>pullProducts downloads buildFW for you</.li>
+    <li>USAGE:
+      <pre>
+Usage: buildFW [-h]
+       buildFW &lt;options&gt; &lt;product_topdir&gt; &lt;build-spec&gt; &lt;bundle-spec&gt;
+
+Options:
+
+  -b    Specify basequal (REQUIRED: no default).
+  -f    Force already-built packages to be rebuilt.
+  -h    This help.
+  -s    Specify version set for those packages requiring it
+  -t    Make package tarfiles.
+  -U    Force packaged version of UPS to be built and/or made current.
+
+Arguments:
+
+  product_topdir   Top directory for relocatable-UPS products area.
+
+  build-spec    debug, opt or prof.
+
+  bundle-spec   Bundle name and version, e.g., larsoftobj-@LARSOFTOBJ_VERSION@
+    </pre></li>
+  </ul></li>
+</ul>
+
+</tr></td>
+</table>
+</center>
+
+<p>
+<center>
+[&nbsp;<a href="http://scisoft.fnal.gov/">Distribution Home</a>&nbsp;]&nbsp;
+</center>
+</p>
+</body>
+</html>
