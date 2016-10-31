@@ -19,7 +19,7 @@ create_product_variables( larsoft ${version} )
 
 # define qualifiers
 set( BASEQUAL e10 )
-set( SQUAL s44 )
+set( SQUAL s43 )
 
 create_product_variables( larutils        v1_10_01 )
 create_product_variables( larbatch        v01_23_07 )
