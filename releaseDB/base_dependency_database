@@ -54,6 +54,7 @@ larana : larcore : larcore/Geometry/geo.h
 larana : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larana : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larana : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larana : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larana : lardata : lardata/DetectorInfo/ClockConstants.h
 larana : lardata : lardata/DetectorInfo/DetectorClocks.h
 larana : lardata : lardata/DetectorInfo/DetectorClocksException.h
@@ -164,6 +165,7 @@ larcore : larcore : larcore/TestUtils/ProviderTestHelpers.h
 larcore : larcore : larcore/TestUtils/StopWatch.h
 larcore : larcore : larcore/TestUtils/boost_unit_test_base.h
 larcore : larcore : larcore/TestUtils/unit_test_base.h
+larcore : larcore : test/Geometry/ChannelMapStandardTestAlg.h
 larcore : larcore : test/Geometry/GeometryIteratorLoopTestAlg.h
 larcore : larcore : test/Geometry/GeometryIteratorTestAlg.h
 larcore : larcore : test/Geometry/GeometryTestAlg.h
@@ -171,9 +173,11 @@ larcore : larcore : test/Geometry/geometry_unit_test_base.h
 larcore : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larcore : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larcore : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larcore : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larcore : larcoreobj : larcoreobj/SummaryData/RunData.h
 larcoreobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larcoreobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larcoreobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larcoreobj : larcoreobj : larcoreobj/SummaryData/POTSummary.h
 larcoreobj : larcoreobj : larcoreobj/SummaryData/RunData.h
 larcoreobj : larcoreobj : larcoreobj/SummaryData/classes.h
@@ -202,6 +206,7 @@ lardata : larcore : test/Geometry/geometry_unit_test_base.h
 lardata : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 lardata : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 lardata : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+lardata : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 lardata : larcoreobj : larcoreobj/SummaryData/RunData.h
 lardata : lardata : lardata/DetectorInfo/ClockConstants.h
 lardata : lardata : lardata/DetectorInfo/DetectorClocks.h
@@ -386,6 +391,7 @@ lareventdisplay : larcore : larcore/Geometry/WireGeo.h
 lareventdisplay : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 lareventdisplay : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 lareventdisplay : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+lareventdisplay : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 lareventdisplay : lardata : lardata/DetectorInfo/ClockConstants.h
 lareventdisplay : lardata : lardata/DetectorInfo/DetectorClocks.h
 lareventdisplay : lardata : lardata/DetectorInfo/DetectorClocksException.h
@@ -487,6 +493,7 @@ larevt : larcore : larcore/Geometry/TPCGeo.h
 larevt : larcore : larcore/Geometry/WireGeo.h
 larevt : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larevt : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larevt : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larevt : lardata : lardata/DetectorInfo/DetectorProperties.h
 larevt : lardata : lardata/DetectorInfo/LArProperties.h
 larevt : lardata : lardata/DetectorInfoServices/DetectorPropertiesService.h
@@ -503,12 +510,14 @@ larevt : lardataobj : lardataobj/RecoBase/Cluster.h
 larevt : lardataobj : lardataobj/RecoBase/Hit.h
 larevt : lardataobj : lardataobj/RecoBase/Wire.h
 larevt : lardataobj : lardataobj/Utilities/sparse_vector.h
+larevt : larevt : larevt/CalibrationDBI/IOVData/CalibrationExtraInfo.h
 larevt : larevt : larevt/CalibrationDBI/IOVData/ChData.h
 larevt : larevt : larevt/CalibrationDBI/IOVData/ChannelStatus.h
 larevt : larevt : larevt/CalibrationDBI/IOVData/DetPedestal.h
 larevt : larevt : larevt/CalibrationDBI/IOVData/IOVDataConstants.h
 larevt : larevt : larevt/CalibrationDBI/IOVData/IOVDataError.h
 larevt : larevt : larevt/CalibrationDBI/IOVData/IOVTimeStamp.h
+larevt : larevt : larevt/CalibrationDBI/IOVData/PmtGain.h
 larevt : larevt : larevt/CalibrationDBI/IOVData/Snapshot.h
 larevt : larevt : larevt/CalibrationDBI/IOVData/TimeStampDecoder.h
 larevt : larevt : larevt/CalibrationDBI/Interface/CalibrationDBIFwd.h
@@ -516,10 +525,13 @@ larevt : larevt : larevt/CalibrationDBI/Interface/ChannelStatusProvider.h
 larevt : larevt : larevt/CalibrationDBI/Interface/ChannelStatusService.h
 larevt : larevt : larevt/CalibrationDBI/Interface/DetPedestalProvider.h
 larevt : larevt : larevt/CalibrationDBI/Interface/DetPedestalService.h
+larevt : larevt : larevt/CalibrationDBI/Interface/PmtGainProvider.h
+larevt : larevt : larevt/CalibrationDBI/Interface/PmtGainService.h
 larevt : larevt : larevt/CalibrationDBI/Providers/DBFolder.h
 larevt : larevt : larevt/CalibrationDBI/Providers/DatabaseRetrievalAlg.h
 larevt : larevt : larevt/CalibrationDBI/Providers/DetPedestalRetrievalAlg.h
 larevt : larevt : larevt/CalibrationDBI/Providers/SIOVChannelStatusProvider.h
+larevt : larevt : larevt/CalibrationDBI/Providers/SIOVPmtGainProvider.h
 larevt : larevt : larevt/CalibrationDBI/Providers/WebDBIConstants.h
 larevt : larevt : larevt/CalibrationDBI/Providers/WebError.h
 larevt : larevt : larevt/Filters/ChannelFilter.h
@@ -553,6 +565,7 @@ larexamples : larcore : larcore/TestUtils/unit_test_base.h
 larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larexamples : lardata : lardata/Utilities/GridContainerIndices.h
 larexamples : lardata : lardata/Utilities/GridContainers.h
 larexamples : lardata : lardata/Utilities/TensorIndices.h
@@ -596,6 +609,7 @@ larpandora : larcore : larcore/Geometry/WireGeo.h
 larpandora : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larpandora : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larpandora : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larpandora : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larpandora : lardata : lardata/DetectorInfo/ClockConstants.h
 larpandora : lardata : lardata/DetectorInfo/DetectorClocks.h
 larpandora : lardata : lardata/DetectorInfo/DetectorClocksException.h
@@ -654,10 +668,7 @@ larpandora : larpandoracontent : larpandoracontent/LArHelpers/LArMCParticleHelpe
 larpandora : larpandoracontent : larpandoracontent/LArHelpers/LArMonitoringHelper.h
 larpandora : larpandoracontent : larpandoracontent/LArHelpers/LArPfoHelper.h
 larpandora : larpandoracontent : larpandoracontent/LArHelpers/LArVertexHelper.h
-larpandora : larpandoracontent : larpandoracontent/LArMonitoring/EventDisplayAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArMonitoring/EventValidationAlgorithm.h
-larpandora : larpandoracontent : larpandoracontent/LArMonitoring/ParticleAnalysisAlgorithm.h
-larpandora : larpandoracontent : larpandoracontent/LArMonitoring/ParticleMonitoringAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArMonitoring/VisualMonitoringAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArObjects/LArMCParticle.h
 larpandora : larpandoracontent : larpandoracontent/LArObjects/LArOverlapTensor.h
@@ -683,7 +694,6 @@ larpandora : larpandoracontent : larpandoracontent/LArStitching/StitchingAlgorit
 larpandora : larpandoracontent : larpandoracontent/LArStitching/StitchingObjectCreationTool.h
 larpandora : larpandoracontent : larpandoracontent/LArStitching/StitchingPfoMergingTool.h
 larpandora : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayBaseMatchingAlgorithm.h
-larpandora : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayIdentificationAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayShowerMatchingAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayTrackMatchingAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayTrackRecoveryAlgorithm.h
@@ -826,10 +836,7 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArMonitori
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArPfoHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArPointingClusterHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArVertexHelper.h
-larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/EventDisplayAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/EventValidationAlgorithm.h
-larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/ParticleAnalysisAlgorithm.h
-larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/ParticleMonitoringAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/VisualMonitoringAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArObjects/LArMCParticle.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArObjects/LArOverlapTensor.h
@@ -856,7 +863,6 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArStitching/Stitching
 larpandoracontent : larpandoracontent : larpandoracontent/LArStitching/StitchingObjectCreationTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArStitching/StitchingPfoMergingTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayBaseMatchingAlgorithm.h
-larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayIdentificationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayShowerMatchingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayTrackMatchingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayTrackRecoveryAlgorithm.h
@@ -993,6 +999,7 @@ larreco : larcore : larcore/Geometry/geo.h
 larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larreco : lardata : lardata/DetectorInfo/ClockConstants.h
 larreco : lardata : lardata/DetectorInfo/DetectorClocks.h
 larreco : lardata : lardata/DetectorInfo/DetectorClocksException.h
@@ -1083,6 +1090,8 @@ larreco : lardataobj : lardataobj/Utilities/VectorMap.h
 larreco : lardataobj : lardataobj/Utilities/sparse_vector.h
 larreco : larevt : larevt/CalibrationDBI/Interface/ChannelStatusProvider.h
 larreco : larevt : larevt/CalibrationDBI/Interface/ChannelStatusService.h
+larreco : larevt : larevt/CalibrationDBI/Interface/ElectronLifetimeProvider.h
+larreco : larevt : larevt/CalibrationDBI/Interface/ElectronLifetimeService.h
 larreco : larevt : larevt/Filters/ChannelFilter.h
 larreco : larreco : larreco/Calorimetry/CalorimetryAlg.h
 larreco : larreco : larreco/Calorimetry/TrackCalorimetryAlg.h
@@ -1304,6 +1313,7 @@ larsim : larcore : larcore/Geometry/geo.h
 larsim : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larsim : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larsim : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larsim : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larsim : larcoreobj : larcoreobj/SummaryData/POTSummary.h
 larsim : larcoreobj : larcoreobj/SummaryData/RunData.h
 larsim : lardata : lardata/DetectorInfo/ClockConstants.h
