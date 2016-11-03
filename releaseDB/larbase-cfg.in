@@ -25,8 +25,8 @@ do_build pandora @PANDORA_VERSION@ ${basequal}:nu:r5
 do_build larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}:nu:r5
 
 # add to manifest if no build - larsoft_data, mrb
-do_build larsoft_data @LARSOFT_DATA_VERSION@
-do_build gitflow @GITFLOW_VERSION@
-do_build mrb @MRB_VERSION@
+build_noarch larsoft_data @LARSOFT_DATA_VERSION@
+build_noarch gitflow @GITFLOW_VERSION@
+build_noarch mrb @MRB_VERSION@
 
 return 0

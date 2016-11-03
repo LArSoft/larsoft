@@ -29,7 +29,7 @@ set( LARDATA_VERSION         "v05_07_01" )
 set( LAREVT_VERSION          "v05_06_02" )
 set( LARSIM_VERSION          "v05_08_00" )
 set( LARRECO_VERSION         "v05_08_00" )
-set( LARANA_VERSION          "v05_07_00" )
+set( LARANA_VERSION          "v05_07_01" )
 set( LARPANDORA_VERSION      "v05_08_00" )
 set( LAREXAMPLES_VERSION     "v05_06_02" )
 set( LAREVENTDISPLAY_VERSION "v05_06_02" )
@@ -43,19 +43,25 @@ create_product_variables( larpandoracontent v02_07_00 )
 create_product_variables( larsoft_data  v0_06_01  )
 create_product_variables( git           v2_5_0  )
 create_product_variables( gitflow       v1_9_1  )
-create_product_variables( mrb           v1_06_03 )
+create_product_variables( mrb           v1_08_03 )
 
 # these files should be copied to scisoft for each release
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-buildcfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-cfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-cfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
   ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larbase-buildcfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larbase-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larbase-cfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/larbase-cfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
   ${CMAKE_CURRENT_BINARY_DIR}/larbase-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-buildcfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-cfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/larsoft-cfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
 CONFIGURE_FILE ( ${CMAKE_CURRENT_SOURCE_DIR}/larsoft.html.in
