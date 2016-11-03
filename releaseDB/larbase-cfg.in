@@ -1,0 +1,32 @@
+# build everything except larsoft itself
+
+basequal=${1}
+
+# specify version to bootstrap and setup ups
+check_ups v5_2_0
+
+build_bundle nu-@NUTOOLS_DOT_VERSION@ ${basequal}
+status=$?
+if (( ${status} != 0)); then
+  cat 1>&2 <<EOF
+Build of nu-@NUTOOLS_DOT_VERSION@ bundle failed with status ${status}
+EOF
+  return ${status}
+fi
+
+# the latest gdb is not yet in the nu distribution
+if ! (( ${darwin:-0} )); then # No gdb for Darwin
+  do_build gdb v7_10_1
+fi
+
+build_cet artextensions @ARTEXTENSIONS_VERSION@ ${basequal}:nu${version_set:+\:${version_set}}
+
+do_build pandora @PANDORA_VERSION@ ${basequal}:nu:r5
+do_build larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}:nu:r5
+
+# add to manifest if no build - larsoft_data, mrb
+do_build larsoft_data @LARSOFT_DATA_VERSION@
+do_build gitflow @GITFLOW_VERSION@
+do_build mrb @MRB_VERSION@
+
+return 0

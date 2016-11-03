@@ -1,0 +1,24 @@
+# build everything that does not depend on art
+
+basequal=${1}
+
+# specify version to bootstrap and setup ups
+check_ups v5_2_0
+
+build_bundle nubase-@NUTOOLS_DOT_VERSION@ ${basequal}
+status=$?
+if (( ${status} != 0)); then
+  cat 1>&2 <<EOF
+Build of nubase-@NUTOOLS_DOT_VERSION@ bundle failed with status ${status}
+EOF
+  return ${status}
+fi
+
+do_build pandora @PANDORA_VERSION@ ${basequal}:nu:r5
+do_build larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}:nu:r5
+
+# add to manifest if no build - larsoft_data, mrb
+do_build larsoft_data @LARSOFT_DATA_VERSION@
+do_build mrb @MRB_VERSION@
+
+return 0
