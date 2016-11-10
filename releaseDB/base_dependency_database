@@ -166,6 +166,7 @@ larcore : larcore : larcore/TestUtils/StopWatch.h
 larcore : larcore : larcore/TestUtils/boost_unit_test_base.h
 larcore : larcore : larcore/TestUtils/unit_test_base.h
 larcore : larcore : test/Geometry/ChannelMapStandardTestAlg.h
+larcore : larcore : test/Geometry/GeometryGeoIDTestAlg.h
 larcore : larcore : test/Geometry/GeometryIteratorLoopTestAlg.h
 larcore : larcore : test/Geometry/GeometryIteratorTestAlg.h
 larcore : larcore : test/Geometry/GeometryTestAlg.h
