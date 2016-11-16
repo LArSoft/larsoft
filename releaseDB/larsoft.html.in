@@ -122,6 +122,7 @@ The following products are part of the full larsoft suite:
 <tr><td>&nbsp;&nbsp;  larreco     </td>  <td> @LARRECO_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larana     </td>  <td> @LARANA_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larpandora     </td>  <td> @LARPANDORA_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  larwirecell     </td>  <td> @LARWIRECELL_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larexamples     </td>  <td> @LAREXAMPLES_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  lareventdisplay     </td>  <td> @LAREVENTDISPLAY_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larsoft     </td>  <td> @LARSOFT_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
