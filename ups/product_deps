@@ -15,18 +15,19 @@ larexamples     v06_01_02
 larana          v06_03_04
 larreco         v06_10_00
 larpandora      v06_02_03
+larwirecell	v0_00_00
 larsoft_data    v1_01_01
 ifdh_art        v2_00_02
 gcc             v4_9_3a
 
-cetbuildtools	v5_04_03   -   only_for_build
+cetbuildtools	v5_06_00   -   only_for_build
 end_product_list
   
 # e10 - with gcc 4.9.3 and -std=c++14
-qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	gcc	ifdh_art	 larsoft_data	notes
-e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	-nq-	s43:nu:e10:debug -nq-
-e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		-nq-	s43:nu:e10:opt	 -nq-
-e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	-nq-	s43:nu:e10:prof	 -nq-
+qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	larwirecell	gcc	ifdh_art		larsoft_data	notes
+e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	-nq-	s43:nu:e10:debug	-nq-
+e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		-nq-	s43:nu:e10:opt		-nq-
+e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	-nq-	s43:nu:e10:prof		-nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA
