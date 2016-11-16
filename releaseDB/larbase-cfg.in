@@ -19,6 +19,7 @@ do_build pandora @PANDORA_VERSION@ ${basequal}:nu
 build_cet larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}
 
 # add to manifest if no build - larsoft_data, mrb
+build_noarch ifdhc_config @IFDHC_CONFIG_VERSION@
 build_noarch larsoft_data @LARSOFT_DATA_VERSION@
 build_noarch gitflow @GITFLOW_VERSION@
 build_noarch mrb @MRB_VERSION@
