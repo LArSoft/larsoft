@@ -670,6 +670,7 @@ larpandora : larpandoracontent : larpandoracontent/LArHelpers/LArMonitoringHelpe
 larpandora : larpandoracontent : larpandoracontent/LArHelpers/LArPfoHelper.h
 larpandora : larpandoracontent : larpandoracontent/LArHelpers/LArVertexHelper.h
 larpandora : larpandoracontent : larpandoracontent/LArMonitoring/EventValidationAlgorithm.h
+larpandora : larpandoracontent : larpandoracontent/LArMonitoring/MCParticleMonitoringAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArMonitoring/VisualMonitoringAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArObjects/LArMCParticle.h
 larpandora : larpandoracontent : larpandoracontent/LArObjects/LArOverlapTensor.h
@@ -752,8 +753,13 @@ larpandora : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTr
 larpandora : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/ThreeDKinkBaseTool.h
 larpandora : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/ThreeDTransverseTracksAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/TrackSplittingTool.h
+larpandora : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/TracksCrossingGapsTool.h
 larpandora : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/TransverseTensorVisualizationTool.h
 larpandora : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/UndershootTracksTool.h
+larpandora : larpandoracontent : larpandoracontent/LArTrackShowerId/BranchGrowingAlgorithm.h
+larpandora : larpandoracontent : larpandoracontent/LArTrackShowerId/ClusterCharacterisationAlgorithm.h
+larpandora : larpandoracontent : larpandoracontent/LArTrackShowerId/PfoCharacterisationAlgorithm.h
+larpandora : larpandoracontent : larpandoracontent/LArTrackShowerId/ShowerGrowingAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArTwoDReco/LArClusterAssociation/ClusterAssociationAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArTwoDReco/LArClusterAssociation/ClusterExtensionAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArTwoDReco/LArClusterAssociation/ClusterGrowingAlgorithm.h
@@ -793,9 +799,6 @@ larpandora : larpandoracontent : larpandoracontent/LArTwoDReco/LArCosmicRay/Cosm
 larpandora : larpandoracontent : larpandoracontent/LArTwoDReco/LArCosmicRay/CosmicRaySplittingAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArTwoDReco/LArCosmicRay/DeltaRayExtensionAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArTwoDReco/LArCosmicRay/DeltaRayGrowingAlgorithm.h
-larpandora : larpandoracontent : larpandoracontent/LArTwoDReco/LArSeedFinding/ClusterCharacterisationAlgorithm.h
-larpandora : larpandoracontent : larpandoracontent/LArTwoDReco/LArSeedFinding/SeedGrowingAlgorithm.h
-larpandora : larpandoracontent : larpandoracontent/LArTwoDReco/LArSeedFinding/ShowerGrowingAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArTwoDReco/TwoDParticleCreationAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArUtility/ListChangingAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArUtility/ListDeletionAlgorithm.h
@@ -838,6 +841,7 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArPfoHelpe
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArPointingClusterHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArVertexHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/EventValidationAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/MCParticleMonitoringAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/VisualMonitoringAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArObjects/LArMCParticle.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArObjects/LArOverlapTensor.h
@@ -921,8 +925,13 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArTrans
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/ThreeDKinkBaseTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/ThreeDTransverseTracksAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/TrackSplittingTool.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/TracksCrossingGapsTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/TransverseTensorVisualizationTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/UndershootTracksTool.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArTrackShowerId/BranchGrowingAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArTrackShowerId/ClusterCharacterisationAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArTrackShowerId/PfoCharacterisationAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArTrackShowerId/ShowerGrowingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArTwoDReco/LArClusterAssociation/ClusterAssociationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArTwoDReco/LArClusterAssociation/ClusterExtensionAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArTwoDReco/LArClusterAssociation/ClusterGrowingAlgorithm.h
@@ -962,9 +971,6 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArTwoDReco/LArCosmicR
 larpandoracontent : larpandoracontent : larpandoracontent/LArTwoDReco/LArCosmicRay/CosmicRaySplittingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArTwoDReco/LArCosmicRay/DeltaRayExtensionAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArTwoDReco/LArCosmicRay/DeltaRayGrowingAlgorithm.h
-larpandoracontent : larpandoracontent : larpandoracontent/LArTwoDReco/LArSeedFinding/ClusterCharacterisationAlgorithm.h
-larpandoracontent : larpandoracontent : larpandoracontent/LArTwoDReco/LArSeedFinding/SeedGrowingAlgorithm.h
-larpandoracontent : larpandoracontent : larpandoracontent/LArTwoDReco/LArSeedFinding/ShowerGrowingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArTwoDReco/TwoDParticleCreationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/KDTreeLinkerAlgoT.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/KDTreeLinkerToolsT.h
@@ -1265,6 +1271,7 @@ larreco : larreco : larreco/RecoAlg/TCAlg/DebugStruct.h
 larreco : larreco : larreco/RecoAlg/TCAlg/Utils.h
 larreco : larreco : larreco/RecoAlg/Track3DKalmanHit.h
 larreco : larreco : larreco/RecoAlg/Track3DKalmanHitAlg.h
+larreco : larreco : larreco/RecoAlg/TrackKalmanFitter.h
 larreco : larreco : larreco/RecoAlg/TrackLineFitAlg.h
 larreco : larreco : larreco/RecoAlg/TrackMomentumCalculator.h
 larreco : larreco : larreco/RecoAlg/TrackShowerSeparationAlg.h
@@ -1332,10 +1339,6 @@ larsim : lardataobj : lardataobj/MCBase/MCLimits.h
 larsim : lardataobj : lardataobj/MCBase/MCShower.h
 larsim : lardataobj : lardataobj/MCBase/MCStep.h
 larsim : lardataobj : lardataobj/MCBase/MCTrack.h
-larsim : lardataobj : lardataobj/OpticalDetectorData/ChannelData.h
-larsim : lardataobj : lardataobj/OpticalDetectorData/FIFOChannel.h
-larsim : lardataobj : lardataobj/OpticalDetectorData/OpticalTypes.h
-larsim : lardataobj : lardataobj/OpticalDetectorData/PMTTrigger.h
 larsim : lardataobj : lardataobj/RawData/RawDigit.h
 larsim : lardataobj : lardataobj/RawData/raw.h
 larsim : lardataobj : lardataobj/RecoBase/Cluster.h
@@ -1425,7 +1428,6 @@ larsim : larsim : larsim/Simulation/LArVoxelList.h
 larsim : larsim : larsim/Simulation/PhotonVoxels.h
 larsim : larsim : larsim/Simulation/SimListUtils.h
 larsim : larsim : larsim/TriggerAlgo/TriggerAlgoBase.h
-larsim : larsim : larsim/TriggerAlgo/TriggerAlgoMicroBoone.h
 larsim : larsim : larsim/TriggerAlgo/TriggerTypes.hh
 larsim : larsim : test/RandomUtils/GlobalEngineUserTestService.h
 larsim : larsim : test/RandomUtils/SeedTestUtils.h
