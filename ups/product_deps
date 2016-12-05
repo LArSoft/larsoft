@@ -36,6 +36,7 @@ end_qualifier_list
 table_fragment_begin
     pathPrepend(FW_DATA, /nusoft/data/flux/)
     pathPrepend(FHICL_FILE_PATH, .:./job)
+    pathPrepend(PYTHONPATH, ${UPS_PROD_DIR}/bin/python)
 table_fragment_end
 
 # Preserve tabs and formatting in emacs and vi / vim:
