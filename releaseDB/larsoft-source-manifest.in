@@ -1,9 +1,9 @@
 ups          v5_2_0		ups-5.2.0-source.tar.bz2
 upd          v5_0_1		upd-5.0.1-noarch.tar.bz2
-cmake        v3_3_2		cmake-3.3.2-source.tar.bz2
-cmake        v3_5_1		cmake-3.5.1-source.tar.bz2
-cmake        v3_6_2a		cmake-3.6.2a-source.tar.bz2
-cmake        v3_7_0		cmake-3.7.0-source.tar.bz2
+cmake		v3_3_2		cmake-3.3.2-source.tar.bz2
+cmake		v3_5_1		cmake-3.5.1-source.tar.bz2
+cmake		v3_6_2a		cmake-3.6.2a-source.tar.bz2
+cmake		v3_7_0		cmake-3.7.0-source.tar.bz2
 gcc          v4_9_3a		gcc-4.9.3a-source.tar.bz2
 gdb          v7_10_1		gdb-7.10.1-source.tar.bz2
 valgrind     v3_11_0		valgrind-3.11.0-source.tar.bz2
@@ -41,7 +41,7 @@ g4radiative  v4_2		g4radiative-4.2-noarch.tar.bz2
 g4surface    v1_0		g4surface-1.0-noarch.tar.bz2
 gsl          v2_1		gsl-2.1-source.tar.bz2
 root         v6_06_08 		root-6.06.08-source.tar.bz2
-genie        v2_12_0a		genie-2.12.0a-source.tar.bz2
+genie        v2_12_2		genie-2.12.2-source.tar.bz2
 genie_phyopt v2_12_0		genie_phyopt-2.12.0-noarch-dkcharm.tar.bz2
 genie_phyopt v2_12_0		genie_phyopt-2.12.0-noarch-dkcharmtau.tar.bz2
 genie_xsec   v2_12_0		genie_xsec-2.12.0-noarch-DefaultPlusMECWithNC.tar.bz2
@@ -51,7 +51,7 @@ ifdhc_config @IFDHC_CONFIG_VERSION@             ifdhc_config-@IFDHC_CONFIG_DOT_V
 libwda       v2_22_2		libwda-2.22.2-source.tar.bz2
 ifbeam       v2_0_1		ifbeam-2.0.1-source.tar.bz2
 nucondb      v2_0_1		nucondb-2.0.1-source.tar.bz2
-dk2nu        v01_04_01f		dk2nu-01.04.01f-source.tar.bz2
+dk2nu        v01_04_01g		dk2nu-01.04.01g-source.tar.bz2
 marley       @MARLEY_VERSION@		marley-@MARLEY_DOT_VERSION@-source.tar.bz2
 pandora      @PANDORA_VERSION@ 		pandora-@PANDORA_DOT_VERSION@-source.tar.bz2
 wirecell     @WIRECELL_VERSION@ 	wirecell-@WIRECELL_DOT_VERSION@-source.tar.bz2

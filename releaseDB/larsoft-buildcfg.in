@@ -20,7 +20,6 @@ EOF
   return ${status}
 fi
 
-do_build cmake v3_7_0
 ensure_cetbuildtools v5_06_01
 
 build_cet -n larcore @LARCORE_VERSION@ ${basequal}
