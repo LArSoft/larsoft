@@ -54,6 +54,7 @@ nucondb      v2_0_1		nucondb-2.0.1-source.tar.bz2
 dk2nu        v01_04_01g		dk2nu-01.04.01g-source.tar.bz2
 marley       @MARLEY_VERSION@		marley-@MARLEY_DOT_VERSION@-source.tar.bz2
 pandora      @PANDORA_VERSION@ 		pandora-@PANDORA_DOT_VERSION@-source.tar.bz2
+range        @RANGE_VERSION@ 		range-@RANGE_DOT_VERSION@-source.tar.bz2
 wirecell     @WIRECELL_VERSION@ 	wirecell-@WIRECELL_DOT_VERSION@-source.tar.bz2
 jsoncpp     @JSONCPP_VERSION@ 	jsoncpp-@JSONCPP_DOT_VERSION@-source.tar.bz2
 eigen     @EIGEN_VERSION@ 	eigen-@EIGEN_DOT_VERSION@-source.tar.bz2

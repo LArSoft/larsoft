@@ -13,6 +13,7 @@ fi
 
 do_build marley @MARLEY_VERSION@ ${basequal}
 do_build pandora @PANDORA_VERSION@ ${basequal}:nu
+do_build range @RANGE_VERSION@ ${basequal}
 prep_build eigen @EIGEN_VERSION@; add_to_manifest
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}
