@@ -272,6 +272,7 @@ lardata : lardata : lardata/Utilities/Dereference.h
 lardata : lardata : lardata/Utilities/DetectorPropertiesServiceArgoNeuT.h
 lardata : lardata : lardata/Utilities/FastMatrixMathHelper.h
 lardata : lardata : lardata/Utilities/FileCatalogMetadataExtras.h
+lardata : lardata : lardata/Utilities/ForEachAssociatedGroup.h
 lardata : lardata : lardata/Utilities/GeometryUtilities.h
 lardata : lardata : lardata/Utilities/GridContainerIndices.h
 lardata : lardata : lardata/Utilities/GridContainers.h
@@ -289,6 +290,7 @@ lardata : lardata : lardata/Utilities/StatCollector.h
 lardata : lardata : lardata/Utilities/TensorIndices.h
 lardata : lardata : lardata/Utilities/UniqueRangeSet.h
 lardata : lardata : lardata/Utilities/UtilException.h
+lardata : lardata : test/Utilities/testForEachAssociatedGroup/classes.h
 lardata : lardataobj : lardataobj/RawData/DAQHeader.h
 lardata : lardataobj : lardataobj/RawData/ExternalTrigger.h
 lardata : lardataobj : lardataobj/RawData/RawDigit.h
@@ -1036,6 +1038,7 @@ larreco : lardata : lardata/RecoObjects/PropYZPlane.h
 larreco : lardata : lardata/RecoObjects/Propagator.h
 larreco : lardata : lardata/RecoObjects/SurfLine.h
 larreco : lardata : lardata/RecoObjects/SurfPlane.h
+larreco : lardata : lardata/RecoObjects/SurfWireX.h
 larreco : lardata : lardata/RecoObjects/SurfXYZPlane.h
 larreco : lardata : lardata/RecoObjects/SurfYZLine.h
 larreco : lardata : lardata/RecoObjects/SurfYZPlane.h
