@@ -642,9 +642,6 @@ larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraGeometry.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraHelper.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraInput.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraOutput.h
-larpandora : larpandora : larpandora/LArPandoraInterface/PFParticleStitcher.h
-larpandora : larpandora : larpandora/MicroBooNEPandora/MicroBooNEPseudoLayerPlugin.h
-larpandora : larpandora : larpandora/MicroBooNEPandora/MicroBooNETransformationPlugin.h
 larpandora : larpandora : larpandora/RootGraphics/RootGraphicsEnablingService.h
 larpandora : larpandoracontent : larpandoracontent/LArCheating/CheatingClusterCharacterisationAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArCheating/CheatingClusterCreationAlgorithm.h
