@@ -284,6 +284,7 @@ lardata : lardata : lardata/Utilities/PtrMaker.h
 lardata : lardata : lardata/Utilities/PxHitConverter.h
 lardata : lardata : lardata/Utilities/PxUtils.h
 lardata : lardata : lardata/Utilities/Range.h
+lardata : lardata : lardata/Utilities/RangeForWrapper.h
 lardata : lardata : lardata/Utilities/SignalShaping.h
 lardata : lardata : lardata/Utilities/SimpleFits.h
 lardata : lardata : lardata/Utilities/StatCollector.h
