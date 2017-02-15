@@ -675,11 +675,13 @@ larpandora : lardata : lardata/DetectorInfoServices/LArPropertiesService.h
 larpandora : lardata : lardata/Utilities/AssociationUtil.h
 larpandora : lardata : lardata/Utilities/Dereference.h
 larpandora : lardata : lardata/Utilities/GeometryUtilities.h
+larpandora : lardata : lardata/Utilities/PtrMaker.h
 larpandora : lardata : lardata/Utilities/PxUtils.h
 larpandora : lardata : lardata/Utilities/UtilException.h
 larpandora : lardataobj : lardataobj/AnalysisBase/CosmicTag.h
 larpandora : lardataobj : lardataobj/RecoBase/Cluster.h
 larpandora : lardataobj : lardataobj/RecoBase/Hit.h
+larpandora : lardataobj : lardataobj/RecoBase/PCAxis.h
 larpandora : lardataobj : lardataobj/RecoBase/PFParticle.h
 larpandora : lardataobj : lardataobj/RecoBase/Seed.h
 larpandora : lardataobj : lardataobj/RecoBase/Shower.h
@@ -709,6 +711,7 @@ larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraGeometry.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraHelper.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraInput.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraOutput.h
+larpandora : larpandora : larpandora/LArPandoraShowers/PCAShowerParticleBuildingAlgorithm.h
 larpandora : larpandora : larpandora/RootGraphics/RootGraphicsEnablingService.h
 larpandora : larpandoracontent : larpandoracontent/LArCheating/CheatingClusterCharacterisationAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArCheating/CheatingClusterCreationAlgorithm.h
