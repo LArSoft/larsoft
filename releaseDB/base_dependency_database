@@ -876,6 +876,7 @@ larpandora : larpandoracontent : larpandoracontent/LArVertex/CandidateVertexCrea
 larpandora : larpandoracontent : larpandoracontent/LArVertex/EnergyKickVertexSelectionAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArVertex/HitAngleVertexSelectionAlgorithm.h
 larpandora : larpandoracontent : larpandoracontent/LArVertex/VertexSelectionBaseAlgorithm.h
+larpandora : larreco : larreco/Calorimetry/LinearEnergyAlg.h
 larpandora : larreco : larreco/ClusterFinder/ClusterCreator.h
 larpandora : larreco : larreco/RecoAlg/ClusterParamsImportWrapper.h
 larpandora : larreco : larreco/RecoAlg/ClusterRecoUtil/CRUException.h
@@ -1119,12 +1120,14 @@ larreco : lardata : lardata/Utilities/CountersMap.h
 larreco : lardata : lardata/Utilities/DatabaseUtil.h
 larreco : lardata : lardata/Utilities/Dereference.h
 larreco : lardata : lardata/Utilities/FastMatrixMathHelper.h
+larreco : lardata : lardata/Utilities/ForEachAssociatedGroup.h
 larreco : lardata : lardata/Utilities/GeometryUtilities.h
 larreco : lardata : lardata/Utilities/LArFFT.h
 larreco : lardata : lardata/Utilities/MakeIndex.h
 larreco : lardata : lardata/Utilities/PtrMaker.h
 larreco : lardata : lardata/Utilities/PxHitConverter.h
 larreco : lardata : lardata/Utilities/PxUtils.h
+larreco : lardata : lardata/Utilities/RangeForWrapper.h
 larreco : lardata : lardata/Utilities/SimpleFits.h
 larreco : lardata : lardata/Utilities/StatCollector.h
 larreco : lardata : lardata/Utilities/UtilException.h
@@ -1183,6 +1186,7 @@ larreco : larevt : larevt/CalibrationDBI/Interface/ElectronLifetimeProvider.h
 larreco : larevt : larevt/CalibrationDBI/Interface/ElectronLifetimeService.h
 larreco : larevt : larevt/Filters/ChannelFilter.h
 larreco : larreco : larreco/Calorimetry/CalorimetryAlg.h
+larreco : larreco : larreco/Calorimetry/LinearEnergyAlg.h
 larreco : larreco : larreco/Calorimetry/TrackCalorimetryAlg.h
 larreco : larreco : larreco/ClusterFinder/ClusterCreator.h
 larreco : larreco : larreco/ClusterFinder/RStarTree/RStarBoundingBox.h
@@ -1339,6 +1343,7 @@ larreco : larreco : larreco/RecoAlg/PMAlg/PmaTrkCandidate.h
 larreco : larreco : larreco/RecoAlg/PMAlg/PmaVtxCandidate.h
 larreco : larreco : larreco/RecoAlg/PMAlg/SortedObjects.h
 larreco : larreco : larreco/RecoAlg/PMAlg/Utilities.h
+larreco : larreco : larreco/RecoAlg/PMAlgStitching.h
 larreco : larreco : larreco/RecoAlg/PMAlgTracking.h
 larreco : larreco : larreco/RecoAlg/PMAlgVertexing.h
 larreco : larreco : larreco/RecoAlg/ProjectionMatchingAlg.h
