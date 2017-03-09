@@ -17,17 +17,17 @@ larreco         v06_21_00
 larpandora      v06_08_02
 larwirecell	v06_00_15
 larsoft_data    v1_01_01
-ifdh_art        v2_00_02
+ifdh_art        v2_01_00
 gcc             v4_9_3a
 
-cetbuildtools	v5_06_06   -   only_for_build
+cetbuildtools	v5_06_07   -   only_for_build
 end_product_list
   
 # e10 - with gcc 4.9.3 and -std=c++14
 qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	larwirecell	gcc	ifdh_art		larsoft_data	notes
-e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	-nq-	s43:nu:e10:debug	-nq-
-e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		-nq-	s43:nu:e10:opt		-nq-
-e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	-nq-	s43:nu:e10:prof		-nq-
+e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	-nq-	s46:nu:e10:debug	-nq-
+e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		-nq-	s46:nu:e10:opt		-nq-
+e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	-nq-	s46:nu:e10:prof		-nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA
