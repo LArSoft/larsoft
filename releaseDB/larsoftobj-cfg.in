@@ -43,7 +43,7 @@ do_build root v6_06_08 ${basequal}:nu
 do_build ninja v1_6_0b
 
 ensure_cetpkgsupport v1_11_00
-ensure_cetbuildtools v4_19_04 v5_01_03 v5_02_02 v5_02_04 v5_04_02 v5_04_03 v5_06_06
+ensure_cetbuildtools v4_19_04 v5_01_03 v5_02_02 v5_02_04 v5_04_02 v5_04_03 v5_06_06 v5_06_07
 build_cet cetlib v1_21_00 ${basequal}
 build_cet -p fhicl-cpp fhiclcpp v4_02_00 ${basequal}
 build_cet messagefacility v1_18_00 ${basequal}
