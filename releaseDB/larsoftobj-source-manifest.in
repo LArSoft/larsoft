@@ -1,12 +1,13 @@
 ups          v5_2_0		ups-5.2.0-source.tar.bz2
 upd          v5_0_1		upd-5.0.1-noarch.tar.bz2
-cmake        v3_3_2		cmake-3.3.2-source.tar.bz2
 cmake        v3_5_1		cmake-3.5.1-source.tar.bz2
-cmake        v3_6_2		cmake-3.6.2-source.tar.bz2
+cmake        v3_6_2a		cmake-3.6.2a-source.tar.bz2
+cmake        v3_7_0		cmake-3.7.0-source.tar.bz2
+cmake        v3_7_1		cmake-3.7.1-source.tar.bz2
 gcc          v4_9_3a		gcc-4.9.3a-source.tar.bz2
 gdb          v7_10_1		gdb-7.10.1-source.tar.bz2
-git          @GIT_VERSION@		git-@GIT_DOT_VERSION@-source.tar.bz2
-gitflow      @GITFLOW_VERSION@		gitflow-@GITFLOW_DOT_VERSION@-noarch.tar.bz2
+git          v2_11_0		git-2.11.0-source.tar.bz2
+gitflow      v1_10_2		gitflow-1.10.2-noarch.tar.bz2
 getopt       v1_1_6		getopt-1.1.6-source.tar.bz2
 valgrind     v3_11_0		valgrind-3.11.0-source.tar.bz2
 boost        v1_61_0		boost-1.61.0-source.tar.bz2

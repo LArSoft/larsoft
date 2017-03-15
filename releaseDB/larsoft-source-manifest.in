@@ -47,12 +47,12 @@ genie_phyopt v2_12_0		genie_phyopt-2.12.0-noarch-dkcharm.tar.bz2
 genie_phyopt v2_12_0		genie_phyopt-2.12.0-noarch-dkcharmtau.tar.bz2
 genie_xsec   v2_12_0		genie_xsec-2.12.0-noarch-DefaultPlusMECWithNC.tar.bz2
 cstxsd       v4_0_0e		cstxsd-4.0.0e-source.tar.bz2
-ifdhc        v2_0_1		ifdhc-2.0.1-source.tar.bz2
+ifdhc        v2_0_3		ifdhc-2.0.3-source.tar.bz2
 ifdhc_config @IFDHC_CONFIG_VERSION@             ifdhc_config-@IFDHC_CONFIG_DOT_VERSION@-noarch.tar.bz2
 libwda       v2_22_2		libwda-2.22.2-source.tar.bz2
-ifbeam       v2_0_1		ifbeam-2.0.1-source.tar.bz2
-nucondb      v2_0_1		nucondb-2.0.1-source.tar.bz2
-dk2nu        v01_04_01g		dk2nu-01.04.01g-source.tar.bz2
+ifbeam       v2_0_2		ifbeam-2.0.2-source.tar.bz2
+nucondb      v2_0_2		nucondb-2.0.2-source.tar.bz2
+dk2nu        v01_05_00		dk2nu-01.05.00-source.tar.bz2
 marley       @MARLEY_VERSION@		marley-@MARLEY_DOT_VERSION@-source.tar.bz2
 pandora      @PANDORA_VERSION@ 		pandora-@PANDORA_DOT_VERSION@-source.tar.bz2
 range        @RANGE_VERSION@ 		range-@RANGE_DOT_VERSION@-source.tar.bz2
