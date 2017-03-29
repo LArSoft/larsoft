@@ -42,6 +42,7 @@ do_build root v6_06_08 ${basequal}:nu
 
 ensure_cetpkgsupport v1_11_00
 ensure_cetbuildtools v5_04_03 v5_06_07
+ensure_support_package -f NULL studio v1_00_00
 build_cet cetlib v1_21_00 ${basequal}
 build_cet -p fhicl-cpp fhiclcpp v4_02_00 ${basequal}
 build_cet messagefacility v1_18_00 ${basequal}
