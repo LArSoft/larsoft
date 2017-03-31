@@ -25,9 +25,9 @@ end_product_list
   
 # e10 - with gcc 4.9.3 and -std=c++14
 qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	larwirecell	gcc	ifdh_art		larsoft_data	notes
-e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	-nq-	s43:nu:e10:debug	-nq-
-e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		-nq-	s43:nu:e10:opt		-nq-
-e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	-nq-	s43:nu:e10:prof		-nq-
+e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	-nq-	s46:nu:e10:debug	-nq-
+e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		-nq-	s46:nu:e10:opt		-nq-
+e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	-nq-	s46:nu:e10:prof		-nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA
