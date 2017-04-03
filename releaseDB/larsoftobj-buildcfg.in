@@ -5,51 +5,52 @@ basequal=${1}
 # add to manifest
 prep_build -f NULL upd v5_0_1; add_to_manifest
 
-for cv in v3_5_1 v3_6_2a v3_7_0 v3_7_1; do
+for cv in v3_5_1 v3_7_0 v3_7_1; do
   do_build cmake ${cv}
 done
 do_build gcc ${gcc_version}
 if ! (( ${darwin:-0} )); then # No gdb for Darwin
-  do_build gdb v7_10_1
+  do_build gdb v7_12
 fi
 (( ${darwin:-0} )) && { do_build getopt v1_1_6; }
-do_build valgrind v3_11_0
+do_build valgrind v3_12_0
 if (( ${build_slf_extras:-0} )); then # only build for SL
    do_build git v2_11_0 
 fi
 # add to manifest
 prep_build -f NULL gitflow v1_10_2; add_to_manifest
 
-do_build boost v1_61_0 ${basequal}
-do_build fftw v3_3_4
-do_build sqlite v3_12_02_00
-do_build python v2_7_11
-do_build cppunit v1_12_1d ${basequal}
-do_build clhep v2_3_3_2 ${basequal}
-do_build libxml2 v2_9_3
-do_build tbb v4_4_3a ${basequal}
-do_build xrootd v3_3_4e ${basequal}
+do_build boost v1_63_0a ${basequal}
+do_build fftw v3_3_6_pl1a
+do_build sqlite v3_16_02_00a
+do_build python v2_7_13d
+do_build cppunit v1_13_1c ${basequal}
+do_build clhep v2_3_4_4 ${basequal}
+do_build libxml2 v2_9_4b
+do_build tbb v2017_3c ${basequal}
+do_build xrootd v4_5_0c ${basequal}
 
 # the ninja build requires a modern python
 # once built, ninja no longer depends on python
-do_build ninja v1_6_0b
+do_build ninja v1_7_2
 
-do_build mysql_client v5_5_48a ${basequal}
-do_build postgresql v9_3_12 p2711
-do_build pythia v6_4_28e ${gccqual}
-do_build gsl v2_1
-do_build root v6_06_08 ${basequal}:nu
+do_build mysql_client v5_5_54 ${basequal}
+do_build postgresql v9_5_6 p2713d
+do_build pythia v6_4_28h ${gccqual}
+do_build gsl v2_3 ${basequal}
+do_build root v6_08_06d ${basequal}:nu
 
 ensure_cetpkgsupport v1_11_00
-ensure_cetbuildtools v5_04_03 v5_06_07
+ensure_cetbuildtools v5_04_03 v5_06_06 v5_06_07
 ensure_support_package -f NULL studio v1_00_00
-build_cet cetlib v1_21_00 ${basequal}
-build_cet -p fhicl-cpp fhiclcpp v4_02_00 ${basequal}
-build_cet messagefacility v1_18_00 ${basequal}
-build_cet canvas v1_05_01 ${basequal}:nu
-build_cet gallery v1_03_08 ${basequal}:nu
+build_cet cetlib_except v1_01_00 ${basequal}
+build_cet cetlib v2_03_00 ${basequal}
+build_cet -p fhicl-cpp fhiclcpp v4_04_00 ${basequal}
+build_cet messagefacility v1_18_04 ${basequal}
+build_cet canvas v1_06_04 ${basequal}:nu
+build_cet gallery v1_03_12 ${basequal}:nu
 
-prep_build -f NULL mrb @MRB_VERSION@; add_to_manifest
+build_noarch mrb @MRB_VERSION@
 
 build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}
 build_cet larcoreobj @LARCOREOBJ_VERSION@ ${basequal}
