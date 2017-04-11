@@ -22,6 +22,8 @@ fi
 
 ##ensure_cetbuildtools v5_06_06 v5_06_07
 
+build_cet larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}
+
 build_cet -n larcore @LARCORE_VERSION@ ${basequal}
 build_cet lardata @LARDATA_VERSION@ ${basequal}
 build_cet larevt @LAREVT_VERSION@ ${basequal}
