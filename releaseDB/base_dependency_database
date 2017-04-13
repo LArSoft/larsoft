@@ -194,6 +194,7 @@ larcore : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larcore : larcoreobj : larcoreobj/SummaryData/RunData.h
 larcoreobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larcoreobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larcoreobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 larcoreobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larcoreobj : larcoreobj : larcoreobj/SummaryData/POTSummary.h
 larcoreobj : larcoreobj : larcoreobj/SummaryData/RunData.h
@@ -339,6 +340,7 @@ lardata : lardataobj : lardataobj/RawData/ExternalTrigger.h
 lardata : lardataobj : lardataobj/RawData/OpDetWaveform.h
 lardata : lardataobj : lardataobj/RawData/RawDigit.h
 lardata : lardataobj : lardataobj/RawData/TriggerData.h
+lardata : lardataobj : lardataobj/RawData/raw.h
 lardata : lardataobj : lardataobj/RecoBase/Cluster.h
 lardata : lardataobj : lardataobj/RecoBase/Hit.h
 lardata : lardataobj : lardataobj/RecoBase/PCAxis.h
@@ -586,6 +588,7 @@ larevt : larcore : larcore/Geometry/TPCGeo.h
 larevt : larcore : larcore/Geometry/WireGeo.h
 larevt : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larevt : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larevt : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 larevt : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larevt : lardata : lardata/ArtDataHelper/WireCreator.h
 larevt : lardata : lardata/DetectorInfo/DetectorProperties.h
@@ -1416,6 +1419,7 @@ larreco : larreco : larreco/RecoAlg/PMAlg/PmaTrkCandidate.h
 larreco : larreco : larreco/RecoAlg/PMAlg/PmaVtxCandidate.h
 larreco : larreco : larreco/RecoAlg/PMAlg/SortedObjects.h
 larreco : larreco : larreco/RecoAlg/PMAlg/Utilities.h
+larreco : larreco : larreco/RecoAlg/PMAlgCosmicTagger.h
 larreco : larreco : larreco/RecoAlg/PMAlgStitching.h
 larreco : larreco : larreco/RecoAlg/PMAlgTracking.h
 larreco : larreco : larreco/RecoAlg/PMAlgVertexing.h
@@ -1477,6 +1481,7 @@ larsim : larcore : larcore/Geometry/geo.h
 larsim : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larsim : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larsim : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larsim : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 larsim : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larsim : larcoreobj : larcoreobj/SummaryData/POTSummary.h
 larsim : larcoreobj : larcoreobj/SummaryData/RunData.h
@@ -1528,8 +1533,6 @@ larsim : lardataobj : lardataobj/Utilities/FlagSet.tcc
 larsim : lardataobj : lardataobj/Utilities/SumSecondFunction.h
 larsim : lardataobj : lardataobj/Utilities/VectorMap.h
 larsim : lardataobj : lardataobj/Utilities/sparse_vector.h
-larsim : larevt : larevt/CalibrationDBI/Interface/ChannelStatusProvider.h
-larsim : larevt : larevt/CalibrationDBI/Interface/ChannelStatusService.h
 larsim : larevt : larevt/SpaceCharge/SpaceCharge.h
 larsim : larevt : larevt/SpaceChargeServices/SpaceChargeService.h
 larsim : larsim : larsim/EventGenerator/NueAr40CCGenerator.h
