@@ -42,9 +42,11 @@
       <li>chmod +x pullProducts</li>
       <li>Scientific Linux 6.x: <pre>./pullProducts &lt;product-directory&gt; slf6 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>Scientific Linux 7.x: <pre>./pullProducts &lt;product-directory&gt; slf7 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
-      <li>Ubuntu 14: <pre>./pullProducts &lt;product-directory&gt; u14 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
+      <li>Ubuntu LTS 14: <pre>./pullProducts &lt;product-directory&gt; u14 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
+      <li>Ubuntu LTS 16: <pre>./pullProducts &lt;product-directory&gt; u16 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>Yosemite: <pre>./pullProducts &lt;product-directory&gt; d14 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>El Capitan (SIP disabled): <pre>./pullProducts &lt;product-directory&gt; d15 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
+      <li>Sierra (SIP disabled): <pre>./pullProducts &lt;product-directory&gt; d16 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
     </ul></li>
   </ul></li>
   <li>See <a href="https://cdcvs.fnal.gov/redmine/projects/cet-is-public/wiki/AboutQualifiers">About Qualifiers</a> for qualifier descriptions.</li>
