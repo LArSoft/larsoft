@@ -35,6 +35,7 @@ larana : larana : larana/ParticleIdentification/Chi2PIDAlg.h
 larana : larana : larana/ParticleIdentification/MVAAlg.h
 larana : larana : larana/ParticleIdentification/PIDAAlg.h
 larana : larcore : larcore/CoreUtils/DereferenceIterator.h
+larana : larcore : larcore/CoreUtils/DumpUtils.h
 larana : larcore : larcore/CoreUtils/ProviderPack.h
 larana : larcore : larcore/CoreUtils/RealComparisons.h
 larana : larcore : larcore/CoreUtils/ServiceUtil.h
@@ -200,6 +201,7 @@ larcoreobj : larcoreobj : larcoreobj/SummaryData/POTSummary.h
 larcoreobj : larcoreobj : larcoreobj/SummaryData/RunData.h
 larcoreobj : larcoreobj : larcoreobj/SummaryData/classes.h
 lardata : larcore : larcore/CoreUtils/DereferenceIterator.h
+lardata : larcore : larcore/CoreUtils/DumpUtils.h
 lardata : larcore : larcore/CoreUtils/ProviderPack.h
 lardata : larcore : larcore/CoreUtils/ProviderUtil.h
 lardata : larcore : larcore/CoreUtils/RealComparisons.h
@@ -443,6 +445,7 @@ lardataobj : lardataobj : lardataobj/Utilities/FlagSet.h
 lardataobj : lardataobj : lardataobj/Utilities/FlagSet.tcc
 lardataobj : lardataobj : lardataobj/Utilities/sparse_vector.h
 lareventdisplay : larcore : larcore/CoreUtils/DereferenceIterator.h
+lareventdisplay : larcore : larcore/CoreUtils/DumpUtils.h
 lareventdisplay : larcore : larcore/CoreUtils/ProviderPack.h
 lareventdisplay : larcore : larcore/CoreUtils/RealComparisons.h
 lareventdisplay : larcore : larcore/CoreUtils/ServiceUtil.h
@@ -565,6 +568,7 @@ lareventdisplay : larsim : larsim/Simulation/LArVoxelID.h
 lareventdisplay : larsim : larsim/Simulation/LArVoxelList.h
 lareventdisplay : larsim : larsim/Simulation/SimListUtils.h
 larevt : larcore : larcore/CoreUtils/DereferenceIterator.h
+larevt : larcore : larcore/CoreUtils/DumpUtils.h
 larevt : larcore : larcore/CoreUtils/ProviderPack.h
 larevt : larcore : larcore/CoreUtils/RealComparisons.h
 larevt : larcore : larcore/CoreUtils/ServiceUtil.h
@@ -642,6 +646,7 @@ larevt : larevt : larevt/SpaceCharge/SpaceChargeStandard.h
 larevt : larevt : larevt/SpaceChargeServices/SpaceChargeService.h
 larevt : larevt : larevt/SpaceChargeServices/SpaceChargeServiceStandard.h
 larexamples : larcore : larcore/CoreUtils/DereferenceIterator.h
+larexamples : larcore : larcore/CoreUtils/DumpUtils.h
 larexamples : larcore : larcore/CoreUtils/ProviderPack.h
 larexamples : larcore : larcore/CoreUtils/RealComparisons.h
 larexamples : larcore : larcore/CoreUtils/ServiceProviderWrappers.h
@@ -699,6 +704,7 @@ larexamples : larexamples : test/Services/ShowerCalibrationGalore/Providers/Crea
 larexamples : larexamples : test/Services/ShowerCalibrationGalore/Providers/ShowerCalibrationGaloreTests.h
 larexamples : larsim : larsim/Simulation/LArG4Parameters.h
 larpandora : larcore : larcore/CoreUtils/DereferenceIterator.h
+larpandora : larcore : larcore/CoreUtils/DumpUtils.h
 larpandora : larcore : larcore/CoreUtils/ProviderPack.h
 larpandora : larcore : larcore/CoreUtils/RealComparisons.h
 larpandora : larcore : larcore/CoreUtils/ServiceUtil.h
@@ -1113,6 +1119,7 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArVertex/EnergyKickVe
 larpandoracontent : larpandoracontent : larpandoracontent/LArVertex/HitAngleVertexSelectionAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArVertex/VertexSelectionBaseAlgorithm.h
 larreco : larcore : larcore/CoreUtils/DereferenceIterator.h
+larreco : larcore : larcore/CoreUtils/DumpUtils.h
 larreco : larcore : larcore/CoreUtils/ProviderPack.h
 larreco : larcore : larcore/CoreUtils/RealComparisons.h
 larreco : larcore : larcore/CoreUtils/ServiceUtil.h
@@ -1456,6 +1463,7 @@ larreco : larsim : larsim/Simulation/LArVoxelID.h
 larreco : larsim : larsim/Simulation/LArVoxelList.h
 larreco : larsim : larsim/Simulation/SimListUtils.h
 larsim : larcore : larcore/CoreUtils/DereferenceIterator.h
+larsim : larcore : larcore/CoreUtils/DumpUtils.h
 larsim : larcore : larcore/CoreUtils/ProviderPack.h
 larsim : larcore : larcore/CoreUtils/RealComparisons.h
 larsim : larcore : larcore/CoreUtils/ServiceUtil.h
@@ -1603,6 +1611,7 @@ larsimobj : larsimobj : larsimobj/Simulation/SimPhotons.h
 larsimobj : larsimobj : larsimobj/Simulation/classes.h
 larsimobj : larsimobj : larsimobj/Simulation/sim.h
 larwirecell : larcore : larcore/CoreUtils/DereferenceIterator.h
+larwirecell : larcore : larcore/CoreUtils/DumpUtils.h
 larwirecell : larcore : larcore/CoreUtils/ProviderPack.h
 larwirecell : larcore : larcore/CoreUtils/RealComparisons.h
 larwirecell : larcore : larcore/CoreUtils/ServiceUtil.h
