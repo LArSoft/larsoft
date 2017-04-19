@@ -89,10 +89,3 @@ CONFIGURE_FILE ( ${CMAKE_CURRENT_SOURCE_DIR}/larsoftobj.html.in
 CONFIGURE_FILE ( ${CMAKE_CURRENT_SOURCE_DIR}/larsoft.html.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-${LARSOFT_VERSION}.html @ONLY )
 
-# install the product list
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/product_list.in
-  ${CMAKE_CURRENT_BINARY_DIR}/product_list @ONLY ) 
-INSTALL( FILES base_dependency_database
-               ${CMAKE_CURRENT_BINARY_DIR}/product_list
-               README
-         DESTINATION "${product}/${version}/releaseDB" )
