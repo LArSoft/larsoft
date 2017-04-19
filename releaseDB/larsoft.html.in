@@ -27,6 +27,7 @@
 <li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArSoft_release_list">Release Notes</a></li>
 <li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/issues">all issues</a></li>
 <li><a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/_Supported_platforms_">Supported Platforms</a></li>
+<li> Ubuntu 14 distributions will be built on request</li>
 </ul>
 
 <h2 id="scripts-binary">Download scripts for binary distributions.</h2>
