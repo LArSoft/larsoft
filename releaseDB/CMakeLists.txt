@@ -89,3 +89,7 @@ CONFIGURE_FILE ( ${CMAKE_CURRENT_SOURCE_DIR}/larsoftobj.html.in
 CONFIGURE_FILE ( ${CMAKE_CURRENT_SOURCE_DIR}/larsoft.html.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-${LARSOFT_VERSION}.html @ONLY )
 
+# install releaseDB
+INSTALL( FILES base_dependency_database
+               README
+         DESTINATION "${product}/${version}/releaseDB" )
