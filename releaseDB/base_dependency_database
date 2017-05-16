@@ -409,6 +409,7 @@ lardataobj : lardataobj : lardataobj/RecoBase/Cluster.h
 lardataobj : lardataobj : lardataobj/RecoBase/EndPoint2D.h
 lardataobj : lardataobj : lardataobj/RecoBase/Event.h
 lardataobj : lardataobj : lardataobj/RecoBase/Hit.h
+lardataobj : lardataobj : lardataobj/RecoBase/MCSFitResult.h
 lardataobj : lardataobj : lardataobj/RecoBase/OpFlash.h
 lardataobj : lardataobj : lardataobj/RecoBase/OpHit.h
 lardataobj : lardataobj : lardataobj/RecoBase/PCAxis.h
@@ -1000,6 +1001,7 @@ larreco : larcore : larcore/Geometry/geo.h
 larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larreco : lardata : lardata/ArtDataHelper/HitCreator.h
 larreco : lardata : lardata/ArtDataHelper/MVAReader.h
@@ -1087,6 +1089,7 @@ larreco : lardataobj : lardataobj/RecoBase/Cluster.h
 larreco : lardataobj : lardataobj/RecoBase/EndPoint2D.h
 larreco : lardataobj : lardataobj/RecoBase/Event.h
 larreco : lardataobj : lardataobj/RecoBase/Hit.h
+larreco : lardataobj : lardataobj/RecoBase/MCSFitResult.h
 larreco : lardataobj : lardataobj/RecoBase/OpFlash.h
 larreco : lardataobj : lardataobj/RecoBase/OpHit.h
 larreco : lardataobj : lardataobj/RecoBase/PCAxis.h
@@ -1303,6 +1306,7 @@ larreco : larreco : larreco/RecoAlg/TrackMomentumCalculator.h
 larreco : larreco : larreco/RecoAlg/TrackShowerSeparationAlg.h
 larreco : larreco : larreco/RecoAlg/TrackTrajectoryAlg.h
 larreco : larreco : larreco/RecoAlg/TrajClusterAlg.h
+larreco : larreco : larreco/RecoAlg/TrajectoryMCSFitter.h
 larreco : larreco : larreco/RecoAlg/VertexFitAlg.h
 larreco : larreco : larreco/RecoAlg/VertexFitMinuitStruct.h
 larreco : larreco : larreco/RecoAlg/fuzzyClusterAlg.h
