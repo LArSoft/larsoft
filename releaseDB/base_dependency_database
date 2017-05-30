@@ -747,6 +747,7 @@ larpandora : lardata : lardata/Utilities/PtrMaker.h
 larpandora : lardata : lardata/Utilities/PxUtils.h
 larpandora : lardata : lardata/Utilities/UtilException.h
 larpandora : lardataobj : lardataobj/AnalysisBase/CosmicTag.h
+larpandora : lardataobj : lardataobj/AnalysisBase/T0.h
 larpandora : lardataobj : lardataobj/RecoBase/Cluster.h
 larpandora : lardataobj : lardataobj/RecoBase/Hit.h
 larpandora : lardataobj : lardataobj/RecoBase/PCAxis.h
@@ -825,6 +826,7 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArMCPartic
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArMonitoringHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArPfoHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArPointingClusterHelper.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArStitchingHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArVertexHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/EventValidationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/MCParticleMonitoringAlgorithm.h
@@ -852,8 +854,8 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArPlugins/LArTransfor
 larpandoracontent : larpandoracontent : larpandoracontent/LArStitching/MultiPandoraApi.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArStitching/MultiPandoraApiImpl.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArStitching/StitchingAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArStitching/StitchingCosmicRayMergingTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArStitching/StitchingObjectCreationTool.h
-larpandoracontent : larpandoracontent : larpandoracontent/LArStitching/StitchingPfoMergingTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayBaseMatchingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayShowerMatchingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayTrackMatchingAlgorithm.h
