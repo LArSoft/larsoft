@@ -27,7 +27,6 @@
 
 <ul>
   <li><a href="https://cdcvs.fnal.gov/redmine/projects/cet-is/wiki/Supported_platforms">Supported Platforms</a></li>
-  <li> Ubuntu 14 distributions will be built on request</li>
   <li>To check available distributions, use <a href="http://scisoft.fnal.gov/scisoft/bundles/tools/getManifestList">getManifestList</a>: <br>
        getManifestList [bundle name] [bundle version]</li>
 </ul>
@@ -44,7 +43,6 @@
       <li>chmod +x pullProducts</li>
       <li>Scientific Linux 6.x: <pre>./pullProducts &lt;product-directory&gt; slf6 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>Scientific Linux 7.x: <pre>./pullProducts &lt;product-directory&gt; slf7 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
-      <li>Ubuntu LTS 14: <pre>./pullProducts &lt;product-directory&gt; u14 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>Ubuntu LTS 16: <pre>./pullProducts &lt;product-directory&gt; u16 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>Yosemite: <pre>./pullProducts &lt;product-directory&gt; d14 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>El Capitan (SIP disabled): <pre>./pullProducts &lt;product-directory&gt; d15 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
