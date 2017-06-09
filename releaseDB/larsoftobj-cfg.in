@@ -22,12 +22,13 @@ if (( ${build_slf_extras:-0} )); then # only build for SL
 fi
 # add to manifest
 build_noarch gitflow v1_10_2
+build_noarch range v3_0_2_4
 
-do_build boost v1_63_0a ${basequal}
-do_build fftw v3_3_6_pl1a
+do_build boost v1_63_0b ${basequal}
+do_build fftw v3_3_6_pl2
 do_build sqlite v3_16_02_00a
 do_build python v2_7_13d
-do_build cppunit v1_13_1c ${basequal}
+do_build cppunit v1_13_2 ${basequal}
 do_build clhep v2_3_4_4 ${basequal}
 do_build libxml2 v2_9_4b
 do_build tbb v2017_3c ${basequal}
@@ -41,17 +42,18 @@ do_build mysql_client v5_5_54 ${basequal}
 do_build postgresql v9_5_6 p2713d
 do_build pythia v6_4_28h ${gccqual}
 do_build gsl v2_3 ${basequal}
-do_build root v6_08_06d ${basequal}:nu
+do_build root v6_08_06g ${basequal}:nu
 
 ensure_cetpkgsupport v1_11_00
-ensure_cetbuildtools v5_04_03 v5_06_06 v5_06_07
+ensure_cetbuildtools v5_06_06 v5_06_07 v5_08_01 v5_08_02 v5_09_01
 ensure_support_package -f NULL studio v1_00_00
-build_cet cetlib_except v1_01_00 ${basequal}
-build_cet cetlib v2_03_00 ${basequal}
-build_cet -p fhicl-cpp fhiclcpp v4_04_00 ${basequal}
-build_cet messagefacility v1_18_04 ${basequal}
-build_cet canvas v1_06_04 ${basequal}:nu
-build_cet gallery v1_03_12 ${basequal}:nu
+build_cet cetlib_except v1_01_02 ${basequal}
+build_cet cetlib v3_00_01 ${basequal}
+build_cet -p fhicl-cpp fhiclcpp v4_05_01 ${basequal}
+build_cet messagefacility v2_00_02 ${basequal}
+
+build_cet canvas @CANVAS_VERSION@ ${basequal}:nu
+build_cet gallery @GALLERY_VERSION@ ${basequal}:nu
 
 build_noarch mrb @MRB_VERSION@
 
