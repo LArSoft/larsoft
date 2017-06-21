@@ -76,6 +76,7 @@ larana : lardata : lardata/DetectorInfoServices/LArPropertiesService.h
 larana : lardata : lardata/DetectorInfoServices/ServicePack.h
 larana : lardata : lardata/RecoObjects/Cluster3D.h
 larana : lardata : lardata/Utilities/AssociationUtil.h
+larana : lardata : lardata/Utilities/PtrMaker.h
 larana : lardataobj : lardataobj/AnalysisBase/Calorimetry.h
 larana : lardataobj : lardataobj/AnalysisBase/CosmicTag.h
 larana : lardataobj : lardataobj/AnalysisBase/FlashMatch.h
@@ -472,6 +473,8 @@ lareventdisplay : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConsta
 lareventdisplay : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 lareventdisplay : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
 lareventdisplay : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
+lareventdisplay : lardata : lardata/ArtDataHelper/MVAReader.h
+lareventdisplay : lardata : lardata/ArtDataHelper/MVAWrapperBase.h
 lareventdisplay : lardata : lardata/DetectorInfo/ClockConstants.h
 lareventdisplay : lardata : lardata/DetectorInfo/DetectorClocks.h
 lareventdisplay : lardata : lardata/DetectorInfo/DetectorClocksException.h
@@ -490,6 +493,7 @@ lareventdisplay : lardata : lardata/Utilities/StatCollector.h
 lareventdisplay : lardata : lardata/Utilities/UtilException.h
 lareventdisplay : lardataobj : lardataobj/AnalysisBase/Calorimetry.h
 lareventdisplay : lardataobj : lardataobj/AnalysisBase/CosmicTag.h
+lareventdisplay : lardataobj : lardataobj/AnalysisBase/MVAOutput.h
 lareventdisplay : lardataobj : lardataobj/AnalysisBase/ParticleID.h
 lareventdisplay : lardataobj : lardataobj/RawData/RawDigit.h
 lareventdisplay : lardataobj : lardataobj/RawData/raw.h
@@ -1313,6 +1317,8 @@ larreco : larreco : larreco/RecoAlg/SpacePointAlg_TimeSort.h
 larreco : larreco : larreco/RecoAlg/StitchAlg.h
 larreco : larreco : larreco/RecoAlg/TCAlg/DataStructs.h
 larreco : larreco : larreco/RecoAlg/TCAlg/DebugStruct.h
+larreco : larreco : larreco/RecoAlg/TCAlg/TCShower.h
+larreco : larreco : larreco/RecoAlg/TCAlg/TCVertex.h
 larreco : larreco : larreco/RecoAlg/TCAlg/Utils.h
 larreco : larreco : larreco/RecoAlg/Track3DKalmanHit.h
 larreco : larreco : larreco/RecoAlg/Track3DKalmanHitAlg.h
