@@ -6,6 +6,7 @@ cmake		v3_7_1		cmake-3.7.1-source.tar.bz2
 gcc          v6_3_0		gcc-6.3.0-source.tar.bz2
 gdb          v7_12		gdb-7.12-source.tar.bz2
 valgrind     v3_12_0		valgrind-3.12.0-source.tar.bz2
+range        @RANGE_VERSION@ 		range-@RANGE_DOT_VERSION@-source.tar.bz2
 boost        v1_63_0b		boost-1.63.0b-source.tar.bz2
 clhep        v2_3_4_4		clhep-2.3.4.4-source.tar.bz2
 cppunit      v1_13_2		cppunit-1.13.2-source.tar.bz2
