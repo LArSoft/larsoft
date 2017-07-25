@@ -1341,6 +1341,7 @@ larreco : larreco : larreco/RecoAlg/GausFitCache.h
 larreco : larreco : larreco/RecoAlg/HoughBaseAlg.h
 larreco : larreco : larreco/RecoAlg/ImagePatternAlgs/Keras/keras_model.h
 larreco : larreco : larreco/RecoAlg/ImagePatternAlgs/MLP/NNReader.h
+larreco : larreco : larreco/RecoAlg/ImagePatternAlgs/PointIdAlg/DataProviderAlg.h
 larreco : larreco : larreco/RecoAlg/ImagePatternAlgs/PointIdAlg/PointIdAlg.h
 larreco : larreco : larreco/RecoAlg/KalmanFilterAlg.h
 larreco : larreco : larreco/RecoAlg/LinFitAlg.h
