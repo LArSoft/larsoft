@@ -213,6 +213,7 @@ larcorealg : larcorealg : larcorealg/Geometry/ChannelMapAlg.h
 larcorealg : larcorealg : larcorealg/Geometry/ChannelMapStandardAlg.h
 larcorealg : larcorealg : larcorealg/Geometry/CryostatGeo.h
 larcorealg : larcorealg : larcorealg/Geometry/Decomposer.h
+larcorealg : larcorealg : larcorealg/Geometry/DriftPartitions.h
 larcorealg : larcorealg : larcorealg/Geometry/Exceptions.h
 larcorealg : larcorealg : larcorealg/Geometry/GeoObjectSorter.h
 larcorealg : larcorealg : larcorealg/Geometry/GeoObjectSorterStandard.h
@@ -220,6 +221,7 @@ larcorealg : larcorealg : larcorealg/Geometry/GeometryCore.h
 larcorealg : larcorealg : larcorealg/Geometry/LocalTransformation.h
 larcorealg : larcorealg : larcorealg/Geometry/LocalTransformation.tcc
 larcorealg : larcorealg : larcorealg/Geometry/OpDetGeo.h
+larcorealg : larcorealg : larcorealg/Geometry/Partitions.h
 larcorealg : larcorealg : larcorealg/Geometry/PlaneGeo.h
 larcorealg : larcorealg : larcorealg/Geometry/SimpleGeo.h
 larcorealg : larcorealg : larcorealg/Geometry/StandaloneBasicSetup.h
