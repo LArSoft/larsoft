@@ -18,8 +18,6 @@ prep_build -f NULL eigen @EIGEN_VERSION@; add_to_manifest
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}
 
-build_cet larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}
-
 # add to manifest if no build - larsoft_data, mrb
 prep_build -f NULL ifdhc_config @IFDHC_CONFIG_VERSION@; add_to_manifest
 prep_build -f NULL genie_xsec @GENIE_XSEC_VERSION@ effspec-tem; add_to_manifest

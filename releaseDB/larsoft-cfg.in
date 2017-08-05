@@ -31,6 +31,7 @@ build_cet larevt @LAREVT_VERSION@ ${basequal}
 build_cet larsim @LARSIM_VERSION@ ${basequal}
 build_cet larreco @LARRECO_VERSION@ ${basequal}
 build_cet larana @LARANA_VERSION@ ${basequal}
+build_cet larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}
 build_cet larpandora @LARPANDORA_VERSION@ ${basequal}
 build_cet larwirecell @LARWIRECELL_VERSION@ ${basequal}
 build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}
