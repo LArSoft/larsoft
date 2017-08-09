@@ -1158,6 +1158,7 @@ larreco : lardataobj : lardataobj/RawData/RawDigit.h
 larreco : lardataobj : lardataobj/RawData/TriggerData.h
 larreco : lardataobj : lardataobj/RawData/raw.h
 larreco : lardataobj : lardataobj/RecoBase/Cluster.h
+larreco : lardataobj : lardataobj/RecoBase/Edge.h
 larreco : lardataobj : lardataobj/RecoBase/EndPoint2D.h
 larreco : lardataobj : lardataobj/RecoBase/Event.h
 larreco : lardataobj : lardataobj/RecoBase/Hit.h
@@ -1248,6 +1249,9 @@ larreco : larreco : larreco/Genfit/TGeant3/TGeant3.h
 larreco : larreco : larreco/HitFinder/GaussianEliminationAlg.h
 larreco : larreco : larreco/HitFinder/HitAnaAlg.h
 larreco : larreco : larreco/HitFinder/HitFilterAlg.h
+larreco : larreco : larreco/HitFinder/HitFinderTools/ICandidateHitFinder.h
+larreco : larreco : larreco/HitFinder/HitFinderTools/IPeakFitter.h
+larreco : larreco : larreco/HitFinder/HitFinderTools/IWaveformAlgs.h
 larreco : larreco : larreco/HitFinder/RFFHitFinderAlg.h
 larreco : larreco : larreco/HitFinder/RFFHitFitter.h
 larreco : larreco : larreco/HitFinder/RegionAboveThresholdFinder.h
@@ -1314,7 +1318,9 @@ larreco : larreco : larreco/RecoAlg/CMTool/CMToolBase/CMergeBookKeeper.h
 larreco : larreco : larreco/RecoAlg/CMTool/CMToolBase/CMergeManager.h
 larreco : larreco : larreco/RecoAlg/CMTool/CMToolBase/CPriorityAlgoBase.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/DBScanAlg.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/Hit3DBuilderAlg.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/HoughSeedFinderAlg.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/MinSpanTreeAlg.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/PCASeedFinderAlg.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/ParallelHitsSeedFinderAlg.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/PrincipalComponentsAlg.h
