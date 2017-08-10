@@ -3,6 +3,7 @@ upd          v5_0_1		upd-5.0.1-noarch.tar.bz2
 cmake		v3_5_1		cmake-3.5.1-source.tar.bz2
 cmake		v3_7_0		cmake-3.7.0-source.tar.bz2
 cmake		v3_7_1		cmake-3.7.1-source.tar.bz2
+cmake           v3_9_0          cmake-3.9.0-source.tar.bz2
 gcc          v6_3_0		gcc-6.3.0-source.tar.bz2
 gdb          v7_12		gdb-7.12-source.tar.bz2
 valgrind     v3_12_0		valgrind-3.12.0-source.tar.bz2
