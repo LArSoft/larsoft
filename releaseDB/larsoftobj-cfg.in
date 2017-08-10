@@ -59,7 +59,7 @@ build_noarch mrb @MRB_VERSION@
 
 build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}
 build_cet larcoreobj @LARCOREOBJ_VERSION@ ${basequal}
-build_cet larcorealg @LARCOREALG_VERSION@ ${basequal}
+build_cet -n larcorealg @LARCOREALG_VERSION@ ${basequal}
 build_cet lardataobj @LARDATAOBJ_VERSION@ ${basequal}
 build_cet larsoftobj @LARSOFTOBJ_VERSION@ ${basequal}
 
