@@ -42,7 +42,7 @@ do_build gsl v2_3 ${basequal}
 do_build root v6_08_06g ${basequal}:nu
 
 ensure_cetpkgsupport v1_11_00
-ensure_cetbuildtools v5_04_03 v5_06_06 v5_06_07
+ensure_cetbuildtools v5_06_07 v5_08_01 v5_08_02 v5_09_01 v5_14_00
 ensure_support_package -f NULL studio v1_00_00
 build_cet cetlib_except v1_01_02 ${basequal}
 build_cet cetlib v3_00_01 ${basequal}
