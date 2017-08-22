@@ -24,6 +24,7 @@ larana : larana : larana/OpticalDetector/OpHitFinder/OpticalRecoTypes.h
 larana : larana : larana/OpticalDetector/OpHitFinder/PMTPedestalBase.h
 larana : larana : larana/OpticalDetector/OpHitFinder/PMTPulseRecoBase.h
 larana : larana : larana/OpticalDetector/OpHitFinder/PedAlgoEdges.h
+larana : larana : larana/OpticalDetector/OpHitFinder/PedAlgoRmsSlider.h
 larana : larana : larana/OpticalDetector/OpHitFinder/PedAlgoRollingMean.h
 larana : larana : larana/OpticalDetector/OpHitFinder/PedAlgoUB.h
 larana : larana : larana/OpticalDetector/OpHitFinder/PulseRecoManager.h
@@ -77,6 +78,7 @@ larana : lardata : lardata/DetectorInfoServices/ServicePack.h
 larana : lardata : lardata/RecoObjects/Cluster3D.h
 larana : lardata : lardata/Utilities/AssociationUtil.h
 larana : lardata : lardata/Utilities/PtrMaker.h
+larana : lardataobj : lardataobj/AnalysisBase/BackTrackerMatchingData.h
 larana : lardataobj : lardataobj/AnalysisBase/Calorimetry.h
 larana : lardataobj : lardataobj/AnalysisBase/CosmicTag.h
 larana : lardataobj : lardataobj/AnalysisBase/FlashMatch.h
@@ -422,6 +424,7 @@ lardata : lardataobj : lardataobj/Utilities/sparse_vector.h
 lardataobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 lardataobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 lardataobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+lardataobj : lardataobj : lardataobj/AnalysisBase/BackTrackerMatchingData.h
 lardataobj : lardataobj : lardataobj/AnalysisBase/Calorimetry.h
 lardataobj : lardataobj : lardataobj/AnalysisBase/CosmicTag.h
 lardataobj : lardataobj : lardataobj/AnalysisBase/FlashMatch.h
@@ -550,6 +553,7 @@ lareventdisplay : lardataobj : lardataobj/AnalysisBase/ParticleID.h
 lareventdisplay : lardataobj : lardataobj/RawData/RawDigit.h
 lareventdisplay : lardataobj : lardataobj/RawData/raw.h
 lareventdisplay : lardataobj : lardataobj/RecoBase/Cluster.h
+lareventdisplay : lardataobj : lardataobj/RecoBase/Edge.h
 lareventdisplay : lardataobj : lardataobj/RecoBase/EndPoint2D.h
 lareventdisplay : lardataobj : lardataobj/RecoBase/Event.h
 lareventdisplay : lardataobj : lardataobj/RecoBase/Hit.h
@@ -590,7 +594,7 @@ lareventdisplay : lareventdisplay : lareventdisplay/EventDisplay/Display3DPad.h
 lareventdisplay : lareventdisplay : lareventdisplay/EventDisplay/Display3DView.h
 lareventdisplay : lareventdisplay : lareventdisplay/EventDisplay/DrawingPad.h
 lareventdisplay : lareventdisplay : lareventdisplay/EventDisplay/EvdLayoutOptions.h
-lareventdisplay : lareventdisplay : lareventdisplay/EventDisplay/GeometryDrawer.h
+lareventdisplay : lareventdisplay : lareventdisplay/EventDisplay/ExptDrawers/IExperimentDrawer.h
 lareventdisplay : lareventdisplay : lareventdisplay/EventDisplay/GraphClusterAlg.h
 lareventdisplay : lareventdisplay : lareventdisplay/EventDisplay/HeaderDrawer.h
 lareventdisplay : lareventdisplay : lareventdisplay/EventDisplay/HeaderPad.h
@@ -1317,15 +1321,17 @@ larreco : larreco : larreco/RecoAlg/CMTool/CMToolBase/CMatchManager.h
 larreco : larreco : larreco/RecoAlg/CMTool/CMToolBase/CMergeBookKeeper.h
 larreco : larreco : larreco/RecoAlg/CMTool/CMToolBase/CMergeManager.h
 larreco : larreco : larreco/RecoAlg/CMTool/CMToolBase/CPriorityAlgoBase.h
-larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/DBScanAlg.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/ClusterParamsBuilder.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/Hit3DBuilderAlg.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/HoughSeedFinderAlg.h
-larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/MinSpanTreeAlg.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/IClusterAlg.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/IClusterModAlg.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/PCASeedFinderAlg.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/ParallelHitsSeedFinderAlg.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/PrincipalComponentsAlg.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/SeedFinderAlgBase.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/SkeletonAlg.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/kdTree.h
 larreco : larreco : larreco/RecoAlg/ClusterCrawlerAlg.h
 larreco : larreco : larreco/RecoAlg/ClusterMatchAlg.h
 larreco : larreco : larreco/RecoAlg/ClusterMatchTQ.h
