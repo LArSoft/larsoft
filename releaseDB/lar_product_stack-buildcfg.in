@@ -18,6 +18,7 @@ do_build pandora @PANDORA_VERSION@ ${basequal}:nu
 prep_build -f NULL range @RANGE_VERSION@; add_to_manifest
 prep_build -f NULL eigen @EIGEN_VERSION@; add_to_manifest
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
+do_build jsonnet @JSONNET_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}
 
 # add to manifest if no build - larsoft_data, mrb
