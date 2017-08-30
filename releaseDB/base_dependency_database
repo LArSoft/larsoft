@@ -493,6 +493,7 @@ lardataobj : lardataobj : lardataobj/Simulation/BeamTypes.h
 lardataobj : lardataobj : lardataobj/Simulation/OpDetBacktrackerRecord.h
 lardataobj : lardataobj : lardataobj/Simulation/SimChannel.h
 lardataobj : lardataobj : lardataobj/Simulation/SimPhotons.h
+lardataobj : lardataobj : lardataobj/Simulation/SupernovaTruth.h
 lardataobj : lardataobj : lardataobj/Simulation/classes.h
 lardataobj : lardataobj : lardataobj/Simulation/sim.h
 lardataobj : lardataobj : lardataobj/Utilities/BitMask.h
@@ -739,6 +740,13 @@ larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.
 larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
 larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
+larexamples : lardata : lardata/DetectorInfo/ClockConstants.h
+larexamples : lardata : lardata/DetectorInfo/DetectorClocks.h
+larexamples : lardata : lardata/DetectorInfo/DetectorClocksException.h
+larexamples : lardata : lardata/DetectorInfo/DetectorProperties.h
+larexamples : lardata : lardata/DetectorInfo/ElecClock.h
+larexamples : lardata : lardata/DetectorInfoServices/DetectorClocksService.h
+larexamples : lardata : lardata/DetectorInfoServices/DetectorPropertiesService.h
 larexamples : lardata : lardata/Utilities/GridContainerIndices.h
 larexamples : lardata : lardata/Utilities/GridContainers.h
 larexamples : lardata : lardata/Utilities/TensorIndices.h
@@ -850,6 +858,7 @@ larpandora : larpandoracontent : larpandoracontent/LArHelpers/LArGeometryHelper.
 larpandora : larpandoracontent : larpandoracontent/LArHelpers/LArPfoHelper.h
 larpandora : larpandoracontent : larpandoracontent/LArObjects/LArCaloHit.h
 larpandora : larpandoracontent : larpandoracontent/LArObjects/LArMCParticle.h
+larpandora : larpandoracontent : larpandoracontent/LArObjects/LArPfoObjects.h
 larpandora : larpandoracontent : larpandoracontent/LArObjects/LArShowerPfo.h
 larpandora : larpandoracontent : larpandoracontent/LArObjects/LArTrackPfo.h
 larpandora : larpandoracontent : larpandoracontent/LArPlugins/LArPseudoLayerPlugin.h
@@ -896,6 +905,7 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/VisualMo
 larpandoracontent : larpandoracontent : larpandoracontent/LArObjects/LArCaloHit.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArObjects/LArMCParticle.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArObjects/LArOverlapTensor.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArObjects/LArPfoObjects.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArObjects/LArPointingCluster.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArObjects/LArShowerOverlapResult.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArObjects/LArShowerPfo.h
@@ -1478,6 +1488,7 @@ larsim : lardataobj : lardataobj/Simulation/BeamTypes.h
 larsim : lardataobj : lardataobj/Simulation/OpDetBacktrackerRecord.h
 larsim : lardataobj : lardataobj/Simulation/SimChannel.h
 larsim : lardataobj : lardataobj/Simulation/SimPhotons.h
+larsim : lardataobj : lardataobj/Simulation/SupernovaTruth.h
 larsim : lardataobj : lardataobj/Simulation/sim.h
 larsim : lardataobj : lardataobj/Utilities/BitMask.h
 larsim : lardataobj : lardataobj/Utilities/BitMask.tcc
@@ -1489,6 +1500,8 @@ larsim : lardataobj : lardataobj/Utilities/VectorMap.h
 larsim : lardataobj : lardataobj/Utilities/sparse_vector.h
 larsim : larevt : larevt/SpaceCharge/SpaceCharge.h
 larsim : larevt : larevt/SpaceChargeServices/SpaceChargeService.h
+larsim : larsim : larsim/EventGenerator/MARLEY/ActiveVolumeVertexSampler.h
+larsim : larsim : larsim/EventGenerator/MARLEY/MARLEYHelper.h
 larsim : larsim : larsim/EventGenerator/NueAr40CCGenerator.h
 larsim : larsim : larsim/LArG4/AuxDetReadout.h
 larsim : larsim : larsim/LArG4/AuxDetReadoutGeometry.h
@@ -1586,6 +1599,8 @@ larwirecell : lardata : lardata/DetectorInfo/DetectorProperties.h
 larwirecell : lardata : lardata/DetectorInfoServices/DetectorPropertiesService.h
 larwirecell : lardataobj : lardataobj/RawData/RawDigit.h
 larwirecell : lardataobj : lardataobj/RawData/raw.h
+larwirecell : lardataobj : lardataobj/RecoBase/Wire.h
+larwirecell : lardataobj : lardataobj/Utilities/sparse_vector.h
 larwirecell : larevt : larevt/CalibrationDBI/IOVData/CalibrationExtraInfo.h
 larwirecell : larevt : larevt/CalibrationDBI/Interface/ChannelStatusProvider.h
 larwirecell : larevt : larevt/CalibrationDBI/Interface/ChannelStatusService.h
@@ -1593,3 +1608,9 @@ larwirecell : larevt : larevt/CalibrationDBI/Interface/DetPedestalProvider.h
 larwirecell : larevt : larevt/CalibrationDBI/Interface/DetPedestalService.h
 larwirecell : larevt : larevt/CalibrationDBI/Interface/ElectronicsCalibProvider.h
 larwirecell : larevt : larevt/CalibrationDBI/Interface/ElectronicsCalibService.h
+larwirecell : larwirecell : larwirecell/Components/ChannelNoiseDB.h
+larwirecell : larwirecell : larwirecell/Components/CookedFrameSink.h
+larwirecell : larwirecell : larwirecell/Components/RawFrameSource.h
+larwirecell : larwirecell : larwirecell/Components/SimDepoSource.h
+larwirecell : larwirecell : larwirecell/Interfaces/IArtEventVisitor.h
+larwirecell : larwirecell : larwirecell/Interfaces/MainTool.h
