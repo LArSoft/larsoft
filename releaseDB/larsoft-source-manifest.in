@@ -58,6 +58,7 @@ pandora      @PANDORA_VERSION@ 		pandora-@PANDORA_DOT_VERSION@-source.tar.bz2
 range        @RANGE_VERSION@ 		range-@RANGE_DOT_VERSION@-source.tar.bz2
 wirecell     @WIRECELL_VERSION@ 	wirecell-@WIRECELL_DOT_VERSION@-source.tar.bz2
 jsoncpp     @JSONCPP_VERSION@ 	jsoncpp-@JSONCPP_DOT_VERSION@-source.tar.bz2
-eigen     @EIGEN_VERSION@ 	eigen-@EIGEN_DOT_VERSION@-source.tar.bz2
+jsonnet     @JSONNET_VERSION@ 	jsonnet-@JSONNET_DOT_VERSION@-source.tar.bz2
+eigen     @EIGEN_VERSION@ 	eigen-@EIGEN_DOT_VERSION@-noarch.tar.bz2
 larsoft_data @LARSOFT_DATA_VERSION@		larsoft_data-@LARSOFT_DATA_DOT_VERSION@-noarch.tar.bz2
 mrb          @MRB_VERSION@		mrb-@MRB_DOT_VERSION@-noarch.tar.bz2

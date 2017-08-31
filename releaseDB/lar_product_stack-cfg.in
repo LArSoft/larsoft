@@ -21,6 +21,7 @@ do_build pandora @PANDORA_VERSION@ ${basequal}:nu
 build_noarch range @RANGE_VERSION@
 build_noarch eigen @EIGEN_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
+do_build jsonnet @JSONNET_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}
 
 # add to manifest if no build - larsoft_data, mrb
