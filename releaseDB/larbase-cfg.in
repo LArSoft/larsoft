@@ -14,11 +14,8 @@ EOF
   return ${status}
 fi
 
-# extra cmake for pandora build
-do_build cmake v3_9_0
 do_build marley @MARLEY_VERSION@ ${basequal}
 do_build pandora @PANDORA_VERSION@ ${basequal}:nu
-build_noarch range @RANGE_VERSION@
 build_noarch eigen @EIGEN_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build jsonnet @JSONNET_VERSION@ ${basequal}
@@ -27,7 +24,6 @@ do_build wirecell @WIRECELL_VERSION@ ${basequal}
 # add to manifest if no build - larsoft_data, mrb
 build_noarch ifdhc_config @IFDHC_CONFIG_VERSION@
 build_noarch larsoft_data @LARSOFT_DATA_VERSION@
-build_noarch gitflow @GITFLOW_VERSION@
 build_noarch mrb @MRB_VERSION@
 
 return 0

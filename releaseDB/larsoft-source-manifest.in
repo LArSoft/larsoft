@@ -6,12 +6,13 @@ cmake           v3_9_0          cmake-3.9.0-source.tar.bz2
 gcc          v6_3_0		gcc-6.3.0-source.tar.bz2
 gdb          v7_12		gdb-7.12-source.tar.bz2
 valgrind     v3_13_0		valgrind-3.13.0-source.tar.bz2
+range        v3_0_2_4 		range-3.0.2.4-source.tar.bz2
 boost        v1_64_0		boost-1.64.0-source.tar.bz2
 clhep        v2_3_4_4		clhep-2.3.4.4-source.tar.bz2
 cppunit      v1_13_2		cppunit-1.13.2-source.tar.bz2
 fftw         v3_3_6_pl2		fftw-3.3.6.pl2-source.tar.bz2
-git          @GIT_VERSION@		git-@GIT_DOT_VERSION@-source.tar.bz2
-gitflow      @GITFLOW_VERSION@		gitflow-@GITFLOW_DOT_VERSION@-noarch.tar.bz2
+git          v2_13_3		git-2.13.3-source.tar.bz2
+gitflow      v1_11_0		gitflow-1.11.0-noarch.tar.bz2
 getopt       v1_1_6		getopt-1.1.6-source.tar.bz2
 libxml2      v2_9_4b		libxml2-2.9.4b-source.tar.bz2
 sqlite       v3_16_02_00a	sqlite-3.16.02.00a-source.tar.bz2
@@ -56,7 +57,6 @@ nucondb      v2_0_8		nucondb-2.0.8-source.tar.bz2
 dk2nu        v01_05_00i	dk2nu-01.05.00i-source.tar.bz2
 marley       @MARLEY_VERSION@		marley-@MARLEY_DOT_VERSION@-source.tar.bz2
 pandora      @PANDORA_VERSION@ 		pandora-@PANDORA_DOT_VERSION@-source.tar.bz2
-range        @RANGE_VERSION@ 		range-@RANGE_DOT_VERSION@-source.tar.bz2
 wirecell     @WIRECELL_VERSION@ 	wirecell-@WIRECELL_DOT_VERSION@-source.tar.bz2
 jsoncpp     @JSONCPP_VERSION@ 	jsoncpp-@JSONCPP_DOT_VERSION@-source.tar.bz2
 jsonnet     @JSONNET_VERSION@ 	jsonnet-@JSONNET_DOT_VERSION@-source.tar.bz2

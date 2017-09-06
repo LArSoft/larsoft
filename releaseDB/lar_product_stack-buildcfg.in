@@ -11,11 +11,8 @@ EOF
   return ${status}
 fi
 
-# extra cmake for pandora build
-do_build cmake v3_9_0
 do_build marley @MARLEY_VERSION@ ${basequal}
 do_build pandora @PANDORA_VERSION@ ${basequal}:nu
-prep_build -f NULL range @RANGE_VERSION@; add_to_manifest
 prep_build -f NULL eigen @EIGEN_VERSION@; add_to_manifest
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build jsonnet @JSONNET_VERSION@ ${basequal}
