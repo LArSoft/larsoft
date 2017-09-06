@@ -77,7 +77,6 @@ larana : lardata : lardata/DetectorInfoServices/LArPropertiesService.h
 larana : lardata : lardata/DetectorInfoServices/ServicePack.h
 larana : lardata : lardata/RecoObjects/Cluster3D.h
 larana : lardata : lardata/Utilities/AssociationUtil.h
-larana : lardata : lardata/Utilities/PtrMaker.h
 larana : lardataobj : lardataobj/AnalysisBase/BackTrackerMatchingData.h
 larana : lardataobj : lardataobj/AnalysisBase/Calorimetry.h
 larana : lardataobj : lardataobj/AnalysisBase/CosmicTag.h
@@ -378,7 +377,6 @@ lardata : lardata : lardata/Utilities/LArFFT.h
 lardata : lardata : lardata/Utilities/LArPropertiesServiceArgoNeuT.h
 lardata : lardata : lardata/Utilities/MakeIndex.h
 lardata : lardata : lardata/Utilities/NestedIterator.h
-lardata : lardata : lardata/Utilities/PtrMaker.h
 lardata : lardata : lardata/Utilities/PxHitConverter.h
 lardata : lardata : lardata/Utilities/PxUtils.h
 lardata : lardata : lardata/Utilities/Range.h
@@ -813,7 +811,6 @@ larpandora : lardata : lardata/DetectorInfoServices/LArPropertiesService.h
 larpandora : lardata : lardata/Utilities/AssociationUtil.h
 larpandora : lardata : lardata/Utilities/Dereference.h
 larpandora : lardata : lardata/Utilities/GeometryUtilities.h
-larpandora : lardata : lardata/Utilities/PtrMaker.h
 larpandora : lardata : lardata/Utilities/PxUtils.h
 larpandora : lardata : lardata/Utilities/UtilException.h
 larpandora : lardataobj : lardataobj/AnalysisBase/CosmicTag.h
@@ -1145,7 +1142,6 @@ larreco : lardata : lardata/Utilities/ForEachAssociatedGroup.h
 larreco : lardata : lardata/Utilities/GeometryUtilities.h
 larreco : lardata : lardata/Utilities/LArFFT.h
 larreco : lardata : lardata/Utilities/MakeIndex.h
-larreco : lardata : lardata/Utilities/PtrMaker.h
 larreco : lardata : lardata/Utilities/PxHitConverter.h
 larreco : lardata : lardata/Utilities/PxUtils.h
 larreco : lardata : lardata/Utilities/RangeForWrapper.h
@@ -1397,11 +1393,13 @@ larreco : larreco : larreco/RecoAlg/TCAlg/TCVertex.h
 larreco : larreco : larreco/RecoAlg/TCAlg/Utils.h
 larreco : larreco : larreco/RecoAlg/Track3DKalmanHit.h
 larreco : larreco : larreco/RecoAlg/Track3DKalmanHitAlg.h
+larreco : larreco : larreco/RecoAlg/TrackCreationBookKeeper.h
 larreco : larreco : larreco/RecoAlg/TrackKalmanFitter.h
 larreco : larreco : larreco/RecoAlg/TrackLineFitAlg.h
 larreco : larreco : larreco/RecoAlg/TrackMomentumCalculator.h
 larreco : larreco : larreco/RecoAlg/TrackShowerSeparationAlg.h
 larreco : larreco : larreco/RecoAlg/TrackTrajectoryAlg.h
+larreco : larreco : larreco/RecoAlg/TrackTrajectoryCreationBookKeeper.h
 larreco : larreco : larreco/RecoAlg/TrajClusterAlg.h
 larreco : larreco : larreco/RecoAlg/TrajectoryMCSFitter.h
 larreco : larreco : larreco/RecoAlg/VertexFitAlg.h
@@ -1412,6 +1410,10 @@ larreco : larreco : larreco/ShowerFinder/ShowerReco3D/ShowerRecoAlg.h
 larreco : larreco : larreco/ShowerFinder/ShowerReco3D/ShowerRecoAlgBase.h
 larreco : larreco : larreco/ShowerFinder/ShowerReco3D/ShowerRecoException.h
 larreco : larreco : larreco/ShowerFinder/ShowerReco3D/ShowerRecoManager.h
+larreco : larreco : larreco/SpacePointSolver/HashTuple.h
+larreco : larreco : larreco/SpacePointSolver/QuadExpr.h
+larreco : larreco : larreco/SpacePointSolver/Solver.h
+larreco : larreco : larreco/TrackFinder/TrackMaker.h
 larreco : larsim : larsim/MCCheater/BackTracker.h
 larreco : larsim : larsim/Simulation/LArG4Parameters.h
 larreco : larsim : larsim/Simulation/LArVoxelData.h
