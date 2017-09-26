@@ -255,6 +255,7 @@ larcoreobj : larcoreobj : larcoreobj/SummaryData/RunData.h
 larcoreobj : larcoreobj : larcoreobj/SummaryData/classes.h
 lardata : larcore : larcore/CoreUtils/ServiceUtil.h
 lardata : larcore : larcore/Geometry/Geometry.h
+lardata : larcorealg : larcorealg/CoreUtils/DebugUtils.h
 lardata : larcorealg : larcorealg/CoreUtils/DereferenceIterator.h
 lardata : larcorealg : larcorealg/CoreUtils/DumpUtils.h
 lardata : larcorealg : larcorealg/CoreUtils/ProviderPack.h
@@ -325,6 +326,8 @@ lardata : lardata : lardata/RawData/utils/LArRawInputDriver.h
 lardata : lardata : lardata/RawData/utils/LArRawInputDriverJP250L.h
 lardata : lardata : lardata/RawData/utils/LArRawInputDriverLongBo.h
 lardata : lardata : lardata/RawData/utils/LArRawInputDriverShortBo.h
+lardata : lardata : lardata/RecoBaseProxy/ProxyBase.h
+lardata : lardata : lardata/RecoBaseProxy/Track.h
 lardata : lardata : lardata/RecoObjects/Cluster3D.h
 lardata : lardata : lardata/RecoObjects/InteractGeneral.h
 lardata : lardata : lardata/RecoObjects/InteractPlane.h
@@ -363,6 +366,7 @@ lardata : lardata : lardata/RecoObjects/TrackState.h
 lardata : lardata : lardata/RecoObjects/TrackStatePropagator.h
 lardata : lardata : lardata/RecoObjects/TrackingPlaneHelper.h
 lardata : lardata : lardata/Utilities/BulkAllocator.h
+lardata : lardata : lardata/Utilities/CollectionView.h
 lardata : lardata : lardata/Utilities/CountersMap.h
 lardata : lardata : lardata/Utilities/DatabaseUtil.h
 lardata : lardata : lardata/Utilities/Dereference.h
@@ -385,6 +389,7 @@ lardata : lardata : lardata/Utilities/SignalShaping.h
 lardata : lardata : lardata/Utilities/SimpleFits.h
 lardata : lardata : lardata/Utilities/StatCollector.h
 lardata : lardata : lardata/Utilities/TensorIndices.h
+lardata : lardata : lardata/Utilities/TupleLookupByTag.h
 lardata : lardata : lardata/Utilities/UniqueRangeSet.h
 lardata : lardata : lardata/Utilities/UtilException.h
 lardata : lardata : test/Utilities/testForEachAssociatedGroup/classes.h
@@ -402,6 +407,7 @@ lardata : lardataobj : lardataobj/RecoBase/PFParticle.h
 lardata : lardataobj : lardataobj/RecoBase/Seed.h
 lardata : lardataobj : lardataobj/RecoBase/SpacePoint.h
 lardata : lardataobj : lardataobj/RecoBase/Track.h
+lardata : lardataobj : lardataobj/RecoBase/TrackFitHitInfo.h
 lardata : lardataobj : lardataobj/RecoBase/TrackTrajectory.h
 lardata : lardataobj : lardataobj/RecoBase/TrackTrajectory.tcc
 lardata : lardataobj : lardataobj/RecoBase/TrackingPlane.h
