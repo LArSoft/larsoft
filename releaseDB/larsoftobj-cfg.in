@@ -16,6 +16,10 @@ EOF
 fi
 unset build_label
 
+do_build cmake v3_9_2
+ensure_cetpkgsupport v1_13_00
+ensure_cetbuildtools v5_14_03
+
 build_noarch mrb @MRB_VERSION@
 
 build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}

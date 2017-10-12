@@ -20,7 +20,9 @@ EOF
   return ${status}
 fi
 
-#ensure_cetbuildtools v5_14_00
+do_build cmake v3_9_2
+ensure_cetpkgsupport v1_13_00
+ensure_cetbuildtools v5_14_03
 
 build_cet larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}
 
