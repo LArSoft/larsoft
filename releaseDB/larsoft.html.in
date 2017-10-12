@@ -109,6 +109,8 @@ The following products are part of the full larsoft suite:
 <tr><td>&nbsp;&nbsp;  nutools      </td>  <td> @NUTOOLS_VERSION@	</td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  marley     </td>  <td> @MARLEY_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  pandora     </td>  <td> @PANDORA_VERSION@ </td>  <td>@BASEQUAL@:nu</td></tr>
+<tr><td>&nbsp;&nbsp;  tensorflow     </td>  <td> @TENSORFLOW_VERSION@ </td>  <td>@BASEQUAL@:@PYQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  wirecell     </td>  <td> @WIRECELL_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larpandoracontent     </td>  <td> @LARPANDORACONTENT_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larsoft_data </td>  <td> @LARSOFT_DATA_VERSION@	</td>  <td>&nbsp;</td></tr>	
 <tr><td>&nbsp;&nbsp;  larbatch     </td>  <td> @LARBATCH_VERSION@ </td>  <td>&nbsp;</td></tr>
