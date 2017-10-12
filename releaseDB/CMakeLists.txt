@@ -37,7 +37,7 @@ create_product_variables( larana      v06_10_05 )
 create_product_variables( larpandora  v06_17_01 )
 create_product_variables( larwirecell v06_07_04 )
 create_product_variables( larexamples v06_07_04 )
-create_product_variables( lareventdisplay v06_12_04 )
+create_product_variables( lareventdisplay v06_13_00 )
 create_product_variables( larpandoracontent v03_08_01 )
 
 create_product_variables( art           v2_08_03 )
