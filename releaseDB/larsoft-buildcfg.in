@@ -20,10 +20,6 @@ EOF
   return ${status}
 fi
 
-do_build cmake v3_9_2
-ensure_cetpkgsupport v1_13_00
-ensure_cetbuildtools v5_14_03
-
 build_cet larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}
 
 build_cet -n larcore @LARCORE_VERSION@ ${basequal}
