@@ -63,6 +63,7 @@ larana : larcorealg : larcorealg/Geometry/geo.h
 larana : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larana : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larana : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larana : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 larana : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larana : lardata : lardata/ArtDataHelper/HitCreator.h
 larana : lardata : lardata/DetectorInfo/ClockConstants.h
@@ -180,6 +181,7 @@ larcore : larcorealg : test/Geometry/GeometryIteratorLoopTestAlg.h
 larcore : larcorealg : test/Geometry/GeometryTestAlg.h
 larcore : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larcore : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larcore : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 larcore : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larcore : larcoreobj : larcoreobj/SummaryData/RunData.h
 larcorealg : larcorealg : larcorealg/CoreUtils/DebugUtils.h
@@ -187,6 +189,7 @@ larcorealg : larcorealg : larcorealg/CoreUtils/DereferenceIterator.h
 larcorealg : larcorealg : larcorealg/CoreUtils/DumpUtils.h
 larcorealg : larcorealg : larcorealg/CoreUtils/ProviderPack.h
 larcorealg : larcorealg : larcorealg/CoreUtils/RealComparisons.h
+larcorealg : larcorealg : larcorealg/CoreUtils/SortByPointers.h
 larcorealg : larcorealg : larcorealg/CoreUtils/UncopiableAndUnmovableClass.h
 larcorealg : larcorealg : larcorealg/GeoAlgo/GeoAABox.h
 larcorealg : larcorealg : larcorealg/GeoAlgo/GeoAlgo-TypeDef.h
@@ -245,6 +248,7 @@ larcorealg : larcorealg : test/Geometry/geometry_unit_test_base.h
 larcorealg : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larcorealg : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larcorealg : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larcorealg : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 larcorealg : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larcoreobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larcoreobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
@@ -287,6 +291,7 @@ lardata : larcorealg : test/Geometry/geometry_unit_test_base.h
 lardata : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 lardata : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 lardata : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+lardata : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 lardata : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 lardata : larcoreobj : larcoreobj/SummaryData/RunData.h
 lardata : lardata : lardata/ArtDataHelper/Dumpers/NewLine.h
@@ -532,6 +537,7 @@ lareventdisplay : larcorealg : larcorealg/Geometry/WireGeo.h
 lareventdisplay : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 lareventdisplay : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 lareventdisplay : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+lareventdisplay : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 lareventdisplay : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 lareventdisplay : lardata : lardata/ArtDataHelper/MVAReader.h
 lareventdisplay : lardata : lardata/ArtDataHelper/MVAWrapperBase.h
@@ -743,6 +749,7 @@ larexamples : larcorealg : larcorealg/TestUtils/unit_test_base.h
 larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 larexamples : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larexamples : lardata : lardata/DetectorInfo/ClockConstants.h
 larexamples : lardata : lardata/DetectorInfo/DetectorClocks.h
@@ -802,6 +809,7 @@ larpandora : larcorealg : larcorealg/Geometry/WireGeo.h
 larpandora : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larpandora : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larpandora : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larpandora : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 larpandora : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larpandora : lardata : lardata/ArtDataHelper/MVAReader.h
 larpandora : lardata : lardata/ArtDataHelper/MVAWrapperBase.h
@@ -866,8 +874,10 @@ larpandora : larpandoracontent : larpandoracontent/LArObjects/LArShowerPfo.h
 larpandora : larpandoracontent : larpandoracontent/LArObjects/LArTrackPfo.h
 larpandora : larpandoracontent : larpandoracontent/LArPlugins/LArPseudoLayerPlugin.h
 larpandora : larpandoracontent : larpandoracontent/LArPlugins/LArRotationalTransformationPlugin.h
-larpandora : larpandoracontent : larpandoracontent/LArPlugins/LArTransformationPlugin.h
 larpandora : larpandoracontent : larpandoracontent/LArStitching/MultiPandoraApi.h
+larpandora : larpandoracontent : larpandoracontent/LArUtility/ParentAlgorithm.h
+larpandora : larpandoracontent : larpandoracontent/LArUtility/ParentBaseAlgorithm.h
+larpandora : larpandoracontent : larpandoracontent/LArUtility/ParentSlicingBaseAlgorithm.h
 larpandora : larreco : larreco/Calorimetry/LinearEnergyAlg.h
 larpandora : larreco : larreco/ClusterFinder/ClusterCreator.h
 larpandora : larreco : larreco/RecoAlg/ClusterParamsImportWrapper.h
@@ -881,16 +891,17 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingCl
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingClusterCreationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingCosmicRayIdentificationAlg.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingCosmicRayShowerMatchingAlg.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingCosmicRayTaggingTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingEventSlicingTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingNeutrinoCreationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingNeutrinoDaughterVerticesAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingNeutrinoIdTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingPfoCharacterisationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingPfoCreationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingVertexCreationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArContent.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCustomParticles/CustomParticleCreationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCustomParticles/PcaShowerParticleBuildingAlgorithm.h
-larpandoracontent : larpandoracontent : larpandoracontent/LArCustomParticles/ShowerParticleBuildingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCustomParticles/TrackParticleBuildingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArClusterHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArGeometryHelper.h
@@ -926,7 +937,6 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArPersistency/EventWr
 larpandoracontent : larpandoracontent : larpandoracontent/LArPlugins/LArParticleIdPlugins.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArPlugins/LArPseudoLayerPlugin.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArPlugins/LArRotationalTransformationPlugin.h
-larpandoracontent : larpandoracontent : larpandoracontent/LArPlugins/LArTransformationPlugin.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArStitching/MultiPandoraApi.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArStitching/MultiPandoraApiImpl.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArStitching/StitchingAlgorithm.h
@@ -939,12 +949,15 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmi
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayVertexBuildingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/DeltaRayIdentificationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/DeltaRayMatchingAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArCosmicRay/UnattachedDeltaRaysAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArEventBuilding/BranchAssociatedPfosTool.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArEventBuilding/CosmicRayTaggingTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArEventBuilding/EndAssociatedPfosTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArEventBuilding/EventSlicingTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArEventBuilding/NeutrinoCreationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArEventBuilding/NeutrinoDaughterVerticesAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArEventBuilding/NeutrinoHierarchyAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArEventBuilding/NeutrinoIdTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArEventBuilding/NeutrinoPropertiesAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArEventBuilding/VertexAssociatedPfosTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArHitCreation/ClearLongitudinalTrackHitsTool.h
@@ -1046,12 +1059,14 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/KDTreeLinke
 larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/KDTreeLinkerToolsT.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/ListChangingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/ListDeletionAlgorithm.h
-larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/ListDissolutionAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/ListMergingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/ListMovingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/ListPreparationAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/ListPruningAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/MopUpBaseAlgorithm.h
-larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/NeutrinoParentAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/ParentAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/ParentBaseAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArUtility/ParentSlicingBaseAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArVertex/CandidateVertexCreationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArVertex/EnergyKickFeatureTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArVertex/EnergyKickVertexSelectionAlgorithm.h
@@ -1366,9 +1381,9 @@ larreco : larreco : larreco/RecoAlg/EndPointAlg.h
 larreco : larreco : larreco/RecoAlg/GausFitCache.h
 larreco : larreco : larreco/RecoAlg/HoughBaseAlg.h
 larreco : larreco : larreco/RecoAlg/ImagePatternAlgs/Keras/keras_model.h
-larreco : larreco : larreco/RecoAlg/ImagePatternAlgs/MLP/NNReader.h
 larreco : larreco : larreco/RecoAlg/ImagePatternAlgs/PointIdAlg/DataProviderAlg.h
 larreco : larreco : larreco/RecoAlg/ImagePatternAlgs/PointIdAlg/PointIdAlg.h
+larreco : larreco : larreco/RecoAlg/ImagePatternAlgs/TF/tf_graph.h
 larreco : larreco : larreco/RecoAlg/KalmanFilterAlg.h
 larreco : larreco : larreco/RecoAlg/LinFitAlg.h
 larreco : larreco : larreco/RecoAlg/MergeClusterAlg.h
@@ -1394,7 +1409,11 @@ larreco : larreco : larreco/RecoAlg/SpacePointAlg_TimeSort.h
 larreco : larreco : larreco/RecoAlg/StitchAlg.h
 larreco : larreco : larreco/RecoAlg/TCAlg/DataStructs.h
 larreco : larreco : larreco/RecoAlg/TCAlg/DebugStruct.h
+larreco : larreco : larreco/RecoAlg/TCAlg/TCCR.h
+larreco : larreco : larreco/RecoAlg/TCAlg/TCHist.h
+larreco : larreco : larreco/RecoAlg/TCAlg/TCShTree.h
 larreco : larreco : larreco/RecoAlg/TCAlg/TCShower.h
+larreco : larreco : larreco/RecoAlg/TCAlg/TCTruth.h
 larreco : larreco : larreco/RecoAlg/TCAlg/TCVertex.h
 larreco : larreco : larreco/RecoAlg/TCAlg/Utils.h
 larreco : larreco : larreco/RecoAlg/Track3DKalmanHit.h
@@ -1602,6 +1621,7 @@ larwirecell : larcorealg : larcorealg/Geometry/TPCGeo.h
 larwirecell : larcorealg : larcorealg/Geometry/WireGeo.h
 larwirecell : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larwirecell : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
+larwirecell : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 larwirecell : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larwirecell : lardata : lardata/DetectorInfo/DetectorProperties.h
 larwirecell : lardata : lardata/DetectorInfoServices/DetectorPropertiesService.h
@@ -1618,6 +1638,7 @@ larwirecell : larevt : larevt/CalibrationDBI/Interface/ElectronicsCalibProvider.
 larwirecell : larevt : larevt/CalibrationDBI/Interface/ElectronicsCalibService.h
 larwirecell : larwirecell : larwirecell/Components/ChannelNoiseDB.h
 larwirecell : larwirecell : larwirecell/Components/CookedFrameSink.h
+larwirecell : larwirecell : larwirecell/Components/FrameSaver.h
 larwirecell : larwirecell : larwirecell/Components/RawFrameSource.h
 larwirecell : larwirecell : larwirecell/Components/SimDepoSource.h
 larwirecell : larwirecell : larwirecell/Interfaces/IArtEventVisitor.h
