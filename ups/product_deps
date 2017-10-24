@@ -17,16 +17,16 @@ larreco         v06_43_00
 larpandora      v06_17_02
 larwirecell     v06_08_00
 larsoft_data    v1_02_00
-ifdh_art        v2_03_04
+ifdh_art        v2_03_05
 
 cetbuildtools	v5_14_03   -   only_for_build
 end_product_list
   
 # e14 - with gcc 6.3.0 and -std=c++14
 qualifier  lareventdisplay larexamples larreco   larana	   larpandora larwirecell ifdh_art         larsoft_data notes
-e14:debug  e14:debug       e14:debug   e14:debug e14:debug e14:debug  e14:debug   s54:nu:e14:debug -nq-
-e14:opt	   e14:opt         e14:opt     e14:opt   e14:opt   e14:opt    e14:opt     s54:nu:e14:opt   -nq-
-e14:prof   e14:prof        e14:prof    e14:prof  e14:prof  e14:prof   e14:prof    s54:nu:e14:prof  -nq-
+e14:debug  e14:debug       e14:debug   e14:debug e14:debug e14:debug  e14:debug   s56:nu:e14:debug -nq-
+e14:opt	   e14:opt         e14:opt     e14:opt   e14:opt   e14:opt    e14:opt     s56:nu:e14:opt   -nq-
+e14:prof   e14:prof        e14:prof    e14:prof  e14:prof  e14:prof   e14:prof    s56:nu:e14:prof  -nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA
