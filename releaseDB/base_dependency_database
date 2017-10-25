@@ -1568,6 +1568,8 @@ larsim : larsim : larsim/LArG4/ParticleListAction.h
 larsim : larsim : larsim/LArG4/PhysicsList.h
 larsim : larsim : larsim/LArG4/VisualizationAction.h
 larsim : larsim : larsim/MCCheater/BackTracker.h
+larsim : larsim : larsim/MCCheater/ParticleInventory.h
+larsim : larsim : larsim/MCCheater/ParticleInventoryService.h
 larsim : larsim : larsim/MCCheater/PhotonBackTracker.h
 larsim : larsim : larsim/MCSTReco/MCRecoEdep.h
 larsim : larsim : larsim/MCSTReco/MCRecoPart.h
