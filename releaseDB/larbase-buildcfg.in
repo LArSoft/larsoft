@@ -22,7 +22,6 @@ do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}:p2713d
 
 # add to manifest if no build - larsoft_data, mrb
 prep_build -f NULL ifdhc_config @IFDHC_CONFIG_VERSION@; add_to_manifest
-prep_build -f NULL genie_xsec @GENIE_XSEC_VERSION@ effspec-tem; add_to_manifest
 prep_build -f NULL larsoft_data @LARSOFT_DATA_VERSION@; add_to_manifest
 prep_build -f NULL mrb @MRB_VERSION@; add_to_manifest
 
