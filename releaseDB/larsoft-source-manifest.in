@@ -56,6 +56,15 @@ libwda       v2_24_0		libwda-2.24.0-source.tar.bz2
 ifbeam       v2_0_9		ifbeam-2.0.9-source.tar.bz2
 nucondb      v2_0_9		nucondb-2.0.9-source.tar.bz2
 dk2nu        v01_05_00j	dk2nu-01.05.00j-source.tar.bz2
+lapack       v3_7_1		lapack-3.7.1-source.tar.bz2
+hdf5         v1_10_1b		hdf5-1.10.1b-source.tar.bz2
+leveldb      v1_20		leveldb-1.20-source.tar.bz2
+snappy       v1_1_7		snappy-1.1.7-source.tar.bz2
+gflags       v2_2_1		gflags-2.2.1-source.tar.bz2
+glog         v0_3_5		glog-0.3.5-source.tar.bz2
+lmdb         v0_9_21		lmdb-0.9.21-source.tar.bz2
+opencv       v3_3_0a		opencv-3.3.0a-source.tar.bz2
+caffe        v1_0e		caffe-1.0e-source.tar.bz2
 marley       @MARLEY_VERSION@		marley-@MARLEY_DOT_VERSION@-source.tar.bz2
 pandora      @PANDORA_VERSION@ 		pandora-@PANDORA_DOT_VERSION@-source.tar.bz2
 protobuf     @PROTOBUF_VERSION@ 	protobuf-@PROTOBUF_DOT_VERSION@-source.tar.bz2
