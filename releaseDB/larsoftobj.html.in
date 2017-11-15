@@ -44,7 +44,6 @@
       <li>Scientific Linux 6.x: <pre>./pullProducts &lt;product-directory&gt; slf6 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>Scientific Linux 7.x: <pre>./pullProducts &lt;product-directory&gt; slf7 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>Ubuntu LTS 16: <pre>./pullProducts &lt;product-directory&gt; u16 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
-      <li>Yosemite: <pre>./pullProducts &lt;product-directory&gt; d14 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>El Capitan (SIP disabled): <pre>./pullProducts &lt;product-directory&gt; d15 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>Sierra (SIP disabled): <pre>./pullProducts &lt;product-directory&gt; d16 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
     </ul></li>
