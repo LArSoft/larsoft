@@ -209,7 +209,6 @@ larcorealg : larcorealg : larcorealg/GeoAlgo/GeoVector.h
 larcorealg : larcorealg : larcorealg/GeoAlgo/classes.h
 larcorealg : larcorealg : larcorealg/Geometry/AuxDetChannelMapAlg.h
 larcorealg : larcorealg : larcorealg/Geometry/AuxDetGeo.h
-larcorealg : larcorealg : larcorealg/Geometry/AuxDetGeoObjectSorter.h
 larcorealg : larcorealg : larcorealg/Geometry/AuxDetGeometryCore.h
 larcorealg : larcorealg : larcorealg/Geometry/AuxDetSensitiveGeo.h
 larcorealg : larcorealg : larcorealg/Geometry/BoxBoundedGeo.h
@@ -513,6 +512,7 @@ lardataobj : lardataobj : lardataobj/Utilities/FlagSet.tcc
 lardataobj : lardataobj : lardataobj/Utilities/sparse_vector.h
 lareventdisplay : larcore : larcore/CoreUtils/ServiceUtil.h
 lareventdisplay : larcore : larcore/Geometry/Geometry.h
+lareventdisplay : larcorealg : larcorealg/CoreUtils/DebugUtils.h
 lareventdisplay : larcorealg : larcorealg/CoreUtils/DereferenceIterator.h
 lareventdisplay : larcorealg : larcorealg/CoreUtils/DumpUtils.h
 lareventdisplay : larcorealg : larcorealg/CoreUtils/ProviderPack.h
@@ -550,12 +550,16 @@ lareventdisplay : lardata : lardata/DetectorInfo/LArProperties.h
 lareventdisplay : lardata : lardata/DetectorInfoServices/DetectorClocksService.h
 lareventdisplay : lardata : lardata/DetectorInfoServices/DetectorPropertiesService.h
 lareventdisplay : lardata : lardata/DetectorInfoServices/LArPropertiesService.h
+lareventdisplay : lardata : lardata/RecoBaseProxy/ProxyBase.h
+lareventdisplay : lardata : lardata/RecoBaseProxy/Track.h
 lareventdisplay : lardata : lardata/Utilities/AssociationUtil.h
+lareventdisplay : lardata : lardata/Utilities/CollectionView.h
 lareventdisplay : lardata : lardata/Utilities/Dereference.h
 lareventdisplay : lardata : lardata/Utilities/GeometryUtilities.h
 lareventdisplay : lardata : lardata/Utilities/PxHitConverter.h
 lareventdisplay : lardata : lardata/Utilities/PxUtils.h
 lareventdisplay : lardata : lardata/Utilities/StatCollector.h
+lareventdisplay : lardata : lardata/Utilities/TupleLookupByTag.h
 lareventdisplay : lardata : lardata/Utilities/UtilException.h
 lareventdisplay : lardataobj : lardataobj/AnalysisBase/Calorimetry.h
 lareventdisplay : lardataobj : lardataobj/AnalysisBase/CosmicTag.h
@@ -575,6 +579,7 @@ lareventdisplay : lardataobj : lardataobj/RecoBase/Seed.h
 lareventdisplay : lardataobj : lardataobj/RecoBase/Shower.h
 lareventdisplay : lardataobj : lardataobj/RecoBase/SpacePoint.h
 lareventdisplay : lardataobj : lardataobj/RecoBase/Track.h
+lareventdisplay : lardataobj : lardataobj/RecoBase/TrackFitHitInfo.h
 lareventdisplay : lardataobj : lardataobj/RecoBase/TrackTrajectory.h
 lareventdisplay : lardataobj : lardataobj/RecoBase/TrackTrajectory.tcc
 lareventdisplay : lardataobj : lardataobj/RecoBase/TrackingTypes.h
@@ -1568,9 +1573,9 @@ larsim : larsim : larsim/LArG4/ParticleListAction.h
 larsim : larsim : larsim/LArG4/PhysicsList.h
 larsim : larsim : larsim/LArG4/VisualizationAction.h
 larsim : larsim : larsim/MCCheater/BackTracker.h
-larsim : larsim : larsim/MCCheater/ParticleInventory.h
-larsim : larsim : larsim/MCCheater/ParticleInventoryService.h
 larsim : larsim : larsim/MCCheater/PhotonBackTracker.h
+larsim : larsim : larsim/MCDumpers/MCDumperUtils.h
+larsim : larsim : larsim/MCDumpers/MCDumpers.h
 larsim : larsim : larsim/MCSTReco/MCRecoEdep.h
 larsim : larsim : larsim/MCSTReco/MCRecoPart.h
 larsim : larsim : larsim/MCSTReco/MCShowerRecoAlg.h
