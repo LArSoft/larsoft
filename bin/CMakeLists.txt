@@ -1,5 +1,5 @@
 
-install_scripts()
+install_scripts(EXTRAS pnfsToXRootD)
 
 add_subdirectory(python)
 add_subdirectory(v05_00_00-refactor_larsoft)

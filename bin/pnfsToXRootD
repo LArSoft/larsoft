@@ -1,0 +1,269 @@
+#!/usr/bin/env bash
+#
+# Purpose: Converts URLs from dCache into XRootD.
+# Author:  Gianluca Petrillo (petrillo@fnal.gov)
+# Date:    December 8, 2017
+# Usage:   run with `--help` argument or read `help()` function for directions
+#
+
+declare -r ScriptName="$(basename "${BASH_SOURCE[0]}")"
+declare -r ScriptDir="$(dirname "${BASH_SOURCE[0]}")"
+declare -r ScriptVersion="1.0"
+
+: ${DefaultVerbosity:=1}
+
+################################################################################
+function help() {
+  cat <<EOH
+Converts FNAL dCache URLs to XRootD URLs.
+
+Usage:  ${ScriptName}  [options] [--|-] [URL ...]
+
+The converted URLs are printed on the terminal output, in the same order as in
+the input.
+If no URL is specified on the command line, the script acts as a filter, reading
+the URLs from the terminal input.
+In case an URL is detected as unsupported, the URL is printed unchanged and an
+error message is printed on the error stream. In that case, the exit status of
+the script will be 22 (EINVAL).
+
+Options:
+--nostdin
+    do not read URLs from terminal input; if no URLs are specified on command
+    line, no action will be taken
+--skip-errors , -S
+    do not print back the URLs which are not recognised as from dCache
+--verbose[=LEVEL] , -v
+    sets the verbosity level:
+      0   no message except fatal errors
+      1   warnings are printed about failed URL conversions
+      2   a summary of the conversions is also printed
+    default verbosity level is "${DefaultVerbosity}"; if LEVEL is omitted, or
+    if the short option \`-v\` is used, LEVEL is set to ${VerbosityOptionLevel}
+--quiet , -q
+    do not print warnings and information messages (equivalent to \`--verbosity=0\`)
+--version , -V
+    print the version number of this script and exit
+--help , -h , -?
+    print these usage instructions and exit
+
+EOH
+} # help()
+
+function PrintVersion() {
+  echo "${ScriptName} version ${ScriptVersion}."
+} # PrintVersion()
+
+
+################################################################################
+###
+### utility functions
+###
+function isFlagSet() {
+  local VarName="$1"
+  [[ -n "${!VarName//0}" ]]
+} # isFlagSet()
+
+function isFlagUnset() {
+  local VarName="$1"
+  [[ -z "${!VarName//0}" ]]
+} # isFlagUnset()
+
+function STDERR() { echo "$*" >&2 ; }
+
+function ERROR() { STDERR "ERROR: $*" ; }
+
+function FATAL() {
+  local Code="$1"
+  shift
+  STDERR "FATAL(${Code}): $*"
+  exit "$Code"
+} # FATAL()
+
+function LASTFATAL() {
+  local -i Code="$?"
+  [[ $Code == 0 ]] && return
+  FATAL "$Code" "$@"
+} # LASTFATAL()
+
+
+function MSGN() {
+  local Level="$1"
+  shift
+  [[ "$Level" -le "$Verbosity" ]] && STDERR "$*"
+}
+
+function MSG() { MSGN 1 "$@" ; }
+
+function WARNING() { MSGN 1 "WARNING: $@" ; }
+
+function RESULT() {
+  local URL="$1"
+  echo "$URL"
+} # RESULT()
+
+
+################################################################################
+function isPNFSURL() {
+  local URL="$1"
+  [[ "$URL" =~ ^/pnfs/ ]]
+} # isPNFSURL()
+
+
+function isXRootDURL() {
+  local URL="$1"
+  [[ "$URL" =~ ^root:// ]]
+} # isXRootDURL()
+
+
+function ConvertPNFStoXRootD() {
+  
+  local Input="$1"
+  
+  isPNFSURL "$Input" || return 1
+  
+  # this pattern was tested on 20171208 on URLs from:
+  # /pnfs/uboone
+  # /pnfs/sbnd
+  echo "root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr${URL#/pnfs}"
+  
+} # ConvertPNFStoXRootD()
+
+
+function ConvertURL() {
+  local URL="$1"
+  
+  local ConvertedURL
+  if isPNFSURL "$URL" ; then
+    ConvertedURL=$(ConvertPNFStoXRootD "$URL")
+    local -i res=$?
+    if [[ $res == 0 ]]; then
+      RESULT "$ConvertedURL"
+    else
+      WARNING "URL '${URL}' conversion failed!!" # this should not happen!
+      isFlagSet OmitNonPNFS || RESULT "$URL"
+    fi
+  elif isXRootDURL "$URL" ; then
+    WARNING "URL '${URL}' is already a XRootD URL."
+    RESULT "$URL"
+  else
+    WARNING "URL '${URL}' is not a PNFS local path."
+    isFlagSet OmitNonPNFS || RESULT "$URL"
+  fi
+  return $res
+} # ConvertURL()
+
+
+function ConvertURLs() {
+  local -a URLs=( "$@" )
+  local -i res
+  local -i nURLs=0 nErrors=0
+  local URL
+  for URL in "${URLs[@]}" ; do
+    let ++nURLs
+    ConvertURL "$URL"
+    res=$?
+    [[ $res != 0 ]] && let ++nErrors
+  done
+  PrintSummary "$nURLS" "$nErrors"
+} # ConvertURLs()
+
+
+function ConvertURLsFromSTDIN() {
+  local -i res
+  local -i nURLs=0 nErrors=0
+  local URL
+  while read URL ; do
+    let ++nURLs
+    ConvertURL "$URL"
+    res=$?
+    [[ $res != 0 ]] && let ++nErrors
+  done
+  PrintSummary "$nURLS" "$nErrors"
+} # ConvertURLsFromSTDIN()
+
+
+function PrintSummary() {
+  local -i nURLS="$1"
+  local -i nErrors="$2"
+  
+  local -ri SummaryLevel=2
+  
+  if [[ $nURLs == 0 ]]; then
+    MSGN "$SummaryLevel" "No URLs were presented in input."
+  elif [[ $nErrors == 0 ]]; then
+    MSGN "$SummaryLevel" "${nURLs} URL successfully converted."
+  else
+    MSGN "$SummaryLevel" "$((nURLs - nErrors)) URL successfully converted, FAILED ${nErrors} URL conversions."
+  fi
+  
+} # PrintSummary()
+
+
+
+################################################################################
+###
+### Argument parsing
+###
+
+declare -ir VerbosityOptionLevel=2
+
+declare -i DoHelp=0 DoVersion=0
+declare -i OmitNonPNFS=0 FromSTDIN=0 NoSTDIN=0
+declare -i Verbosity="${DefaultVerbosity}"
+declare -a URLs=( )
+declare -i NoMoreOptions=0
+for (( iParam = 1; iParam <= $# ; ++iParam )); do
+  
+  Param="${!iParam}"
+  if [[ "${Param:0:1}" != "-" ]] || isFlagSet NoMoreOptions ; then
+    URLs+=( "$Param" )
+  else
+    case "$Param" in
+      ( '--verbose' )            Verbosity="$VerbosityOptionLevel" ;;
+      ( '-v' )
+        if [[ "$Verbosity" == "$DefaultVerbosity" ]]; then
+          Verbosity="$VerbosityOptionLevel"
+        else
+          let ++Verbosity
+        fi
+        ;;
+      ( '--verbose='* )          Verbosity="${Param#--*=}" ;;
+      ( '--nostdin' )            NoSTDIN=1 ;;
+      ( '--skip-errors' | '-S' ) OmitNonPNFS=1 ;;
+      ( '--quiet' | '-q' )       Verbosity=0 ;;
+      ( '--help' | '-h' | '-?' ) DoHelp=1 ;;
+      ( '--version' | '-V' )     DoVersion=1 ;;
+      ( '--' | '-' )             NoMoreOptions=1 ;;
+      ( * )
+        FATAL 1 "Unknown option: '${Param}' (use \`--help\` for instructions.)"
+    esac
+  fi
+done
+
+
+if isFlagSet DoVersion ; then
+  PrintVersion
+  DoQuit=1
+fi
+
+if isFlagSet DoHelp ; then
+  isFlagSet DoVersion && echo
+  help
+  DoQuit=1
+fi
+
+isFlagSet DoQuit && exit
+
+declare -i NInputURLs="${#URLs[@]}"
+[[ "$NInputURLs" == 0 ]] && isFlagUnset NoSTDIN && FromSTDIN=1
+declare -i res=0
+if isFlagSet FromSTDIN ; then
+  MSG "Reading input URLs from standard input."
+  ConvertURLsFromSTDIN
+  res=$?
+else
+  ConvertURLs "${URLs[@]}"
+  res=$?
+fi
+exit $res
