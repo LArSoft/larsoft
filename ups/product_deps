@@ -1,6 +1,6 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v06_26_01_08
+parent	larsoft	v06_26_01_09
 defaultqual	e10
 
 # larsoft itself has no inc, or fcl directories
@@ -10,14 +10,14 @@ fcldir      -
 bindir      product_dir
 
 product         version
-lareventdisplay v06_02_14_08
-larexamples     v06_01_15_04
-larana          v06_03_18_08
-larreco         v06_20_00_08
-larpandora      v06_08_00_08
-larwirecell	v06_00_13_06
+lareventdisplay v06_02_14_09
+larexamples     v06_01_15_05
+larana          v06_03_18_09
+larreco         v06_20_00_09
+larpandora      v06_08_00_09
+larwirecell	v06_00_13_07
 larsoft_data    v1_01_01
-ifdh_art        v2_00_02
+ifdh_art        v2_00_03
 gcc             v4_9_3a
 
 cetbuildtools	v5_06_07   -   only_for_build
@@ -25,9 +25,9 @@ end_product_list
   
 # e10 - with gcc 4.9.3 and -std=c++14
 qualifier	lareventdisplay	larexamples	larreco		larana		larpandora	larwirecell	gcc	ifdh_art		larsoft_data	notes
-e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	-nq-	s43:nu:e10:debug	-nq-
-e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		-nq-	s43:nu:e10:opt		-nq-
-e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	-nq-	s43:nu:e10:prof		-nq-
+e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	e10:debug	-nq-	s59:nu:e10:debug	-nq-
+e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		e10:opt		-nq-	s59:nu:e10:opt		-nq-
+e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	e10:prof	-nq-	s59:nu:e10:prof		-nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA
