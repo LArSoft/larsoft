@@ -16,8 +16,8 @@ larana          v06_13_01
 larreco         v06_48_00
 larpandora      v06_17_09
 larwirecell     v06_08_06
-larsoft_data    v1_02_00
-ifdh_art        v2_04_01
+larsoft_data    v1_02_01
+ifdh_art        v2_04_02
 
 cetbuildtools	v5_14_04   -   only_for_build
 end_product_list
