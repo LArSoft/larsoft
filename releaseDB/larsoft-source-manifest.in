@@ -5,6 +5,7 @@ cmake		v3_7_1		cmake-3.7.1-source.tar.bz2
 cmake		v3_9_0		cmake-3.9.0-source.tar.bz2
 cmake		v3_9_2		cmake-3.9.2-source.tar.bz2
 cmake		v3_9_5		cmake-3.9.5-source.tar.bz2
+cmake		v3_9_6		cmake-3.9.6-source.tar.bz2
 gcc          v6_3_0		gcc-6.3.0-source.tar.bz2
 gdb          v7_12		gdb-7.12-source.tar.bz2
 valgrind     v3_13_0		valgrind-3.13.0-source.tar.bz2
@@ -51,11 +52,11 @@ genie_phyopt v2_12_8		genie_phyopt-2.12.8-noarch-dkcharm.tar.bz2
 genie_phyopt v2_12_8		genie_phyopt-2.12.8-noarch-dkcharmtau.tar.bz2
 genie_xsec   v2_12_8		genie_xsec-2.12.8-noarch-DefaultPlusMECWithNC.tar.bz2
 cstxsd       v4_0_0f		cstxsd-4.0.0f-source.tar.bz2
-ifdhc        v2_2_1		ifdhc-2.2.1-source.tar.bz2
+ifdhc        v2_2_3		ifdhc-2.2.3-source.tar.bz2
 ifdhc_config @IFDHC_CONFIG_VERSION@             ifdhc_config-@IFDHC_CONFIG_DOT_VERSION@-noarch.tar.bz2
 libwda       v2_24_0		libwda-2.24.0-source.tar.bz2
-ifbeam       v2_1_1		ifbeam-2.1.1-source.tar.bz2
-nucondb      v2_1_1		nucondb-2.1.1-source.tar.bz2
+ifbeam       v2_1_3		ifbeam-2.1.3-source.tar.bz2
+nucondb      v2_1_3		nucondb-2.1.3-source.tar.bz2
 dk2nu        v01_05_01	dk2nu-01.05.01-source.tar.bz2
 lapack       v3_7_1		lapack-3.7.1-source.tar.bz2
 hdf5         v1_10_1b		hdf5-1.10.1b-source.tar.bz2
