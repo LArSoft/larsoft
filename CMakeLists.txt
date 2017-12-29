@@ -47,6 +47,9 @@ find_ups_product( cetbuildtools )
 # useful scripts
 add_subdirectory(bin)
 
+# documentation
+add_subdirectory(doc)
+
 # release database
 add_subdirectory(releaseDB)
 
