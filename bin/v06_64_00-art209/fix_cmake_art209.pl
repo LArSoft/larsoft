@@ -1,0 +1,6 @@
+use strict;
+
+
+s/\$ENV\{CANVAS_DIR\}/\$ENV\{CANVAS_ROOT_IO_DIR\}/g;
+s/\$\{ART_PERSISTENCY_ROOTDB\}/\$\{ART_FRAMEWORK_IO_ROOT_ROOTDB\}/g;
+
