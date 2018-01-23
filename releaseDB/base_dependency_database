@@ -432,6 +432,7 @@ lardata : lardataobj : lardataobj/RecoBase/Seed.h
 lardata : lardataobj : lardataobj/RecoBase/SpacePoint.h
 lardata : lardataobj : lardataobj/RecoBase/Track.h
 lardata : lardataobj : lardataobj/RecoBase/TrackFitHitInfo.h
+lardata : lardataobj : lardataobj/RecoBase/TrackHitMeta.h
 lardata : lardataobj : lardataobj/RecoBase/TrackTrajectory.h
 lardata : lardataobj : lardataobj/RecoBase/TrackTrajectory.tcc
 lardata : lardataobj : lardataobj/RecoBase/TrackingPlane.h
