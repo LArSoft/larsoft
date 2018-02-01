@@ -1,7 +1,7 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v06_66_00
-defaultqual	e14
+parent	larsoft	v06_67_00
+defaultqual	e15
 
 # larsoft itself has no inc, or fcl directories
 # the lib directory just contains larsoftConfig.cmake and larsoftConfigVersion.cmake
@@ -10,20 +10,23 @@ fcldir      -
 bindir      product_dir
 
 product         version
-lareventdisplay v06_16_01
-larexamples     v06_09_01
-larana          v06_15_01
-larreco         v06_53_01
-larpandora      v06_21_00
-larwirecell     v06_09_01
+lareventdisplay v06_17_00
+larexamples     v06_10_00
+larana          v06_16_00
+larreco         v06_54_00
+larpandora      v06_22_00
+larwirecell     v06_10_00
 larsoft_data    v1_02_01
 ifdh_art        v2_04_05
 
 cetbuildtools	v6_01_01   -   only_for_build
 end_product_list
   
-# e14 - with gcc 6.3.0 and -std=c++14
+# e15 - with gcc 6.4.0 and -std=c++14
 qualifier  lareventdisplay larexamples larreco   larana	   larpandora larwirecell ifdh_art         larsoft_data notes
+e15:debug  e15:debug       e15:debug   e15:debug e15:debug e15:debug  e15:debug   s62:nu:e15:debug -nq-
+e15:opt	   e15:opt         e15:opt     e15:opt   e15:opt   e15:opt    e15:opt     s62:nu:e15:opt   -nq-
+e15:prof   e15:prof        e15:prof    e15:prof  e15:prof  e15:prof   e15:prof    s62:nu:e15:prof  -nq-
 e14:debug  e14:debug       e14:debug   e14:debug e14:debug e14:debug  e14:debug   s62:nu:e14:debug -nq-
 e14:opt	   e14:opt         e14:opt     e14:opt   e14:opt   e14:opt    e14:opt     s62:nu:e14:opt   -nq-
 e14:prof   e14:prof        e14:prof    e14:prof  e14:prof  e14:prof   e14:prof    s62:nu:e14:prof  -nq-
