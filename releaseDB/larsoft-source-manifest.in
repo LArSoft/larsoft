@@ -51,12 +51,13 @@ genie_phyopt v2_12_8		genie_phyopt-2.12.8-noarch-dkcharm.tar.bz2
 genie_phyopt v2_12_8		genie_phyopt-2.12.8-noarch-dkcharmtau.tar.bz2
 genie_xsec   v2_12_8		genie_xsec-2.12.8-noarch-DefaultPlusMECWithNC.tar.bz2
 cstxsd       v4_0_0g		cstxsd-4.0.0g-source.tar.bz2
-ifdhc        v2_3_1		ifdhc-2.3.1-source.tar.bz2
+ifdhc        v2_3_2		ifdhc-2.3.2-source.tar.bz2
 ifdhc_config @IFDHC_CONFIG_VERSION@             ifdhc_config-@IFDHC_CONFIG_DOT_VERSION@-noarch.tar.bz2
 libwda       v2_24_0		libwda-2.24.0-source.tar.bz2
-ifbeam       v2_2_1		ifbeam-2.2.1-source.tar.bz2
-nucondb      v2_2_1		nucondb-2.2.1-source.tar.bz2
+ifbeam       v2_2_2		ifbeam-2.2.2-source.tar.bz2
+nucondb      v2_2_2		nucondb-2.2.2-source.tar.bz2
 dk2nu        v01_05_01b	dk2nu-01.05.01b-source.tar.bz2
+pygccxml     v1_9_1		pygccxml-1.9.1-source.tar.bz2
 lapack       v3_7_1		lapack-3.7.1-source.tar.bz2
 hdf5         v1_10_1c		hdf5-1.10.1c-source.tar.bz2
 leveldb      v1_20a		leveldb-1.20a-source.tar.bz2
