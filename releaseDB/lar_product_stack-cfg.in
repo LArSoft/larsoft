@@ -36,9 +36,8 @@ if (( ${build_slf_extras:-0} )); then # only build for SL
   do_build caffe v1_0g  ${basequal}
 fi
 
-# add to manifest if no build - larsoft_data, mrb
+# add to manifest if no build - larsoft_data
 build_noarch ifdhc_config @IFDHC_CONFIG_VERSION@
 build_noarch larsoft_data @LARSOFT_DATA_VERSION@
-build_noarch mrb @MRB_VERSION@
 
 return 0
