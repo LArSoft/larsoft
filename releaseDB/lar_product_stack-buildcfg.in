@@ -18,7 +18,7 @@ do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build jsonnet @JSONNET_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}
 do_build protobuf @PROTOBUF_VERSION@ ${basequal}
-do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}:p2714
+do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}:p2714b
 
 # build caffe when appropriate
 if (( ${build_slf_extras:-0} )); then # only build for SL
