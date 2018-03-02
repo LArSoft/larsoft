@@ -2,7 +2,6 @@
 
 basequal=${1}
 
-build_label="nu"
 build_bundle gallery-@GALLERY_DOT_VERSION@ ${basequal}
 status=$?
 if (( ${status} != 0)); then

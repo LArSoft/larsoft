@@ -5,7 +5,6 @@ basequal=${1}
 # specify version to bootstrap and setup ups
 check_ups v6_0_7
 
-build_label="nu"
 build_bundle gallery-@GALLERY_DOT_VERSION@ ${basequal}
 status=$?
 if (( ${status} != 0)); then
