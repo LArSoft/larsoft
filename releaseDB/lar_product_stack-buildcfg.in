@@ -20,19 +20,6 @@ do_build wirecell @WIRECELL_VERSION@ ${basequal}
 do_build protobuf @PROTOBUF_VERSION@ ${basequal}
 do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}:p2714b
 
-# build caffe when appropriate
-if (( ${build_slf_extras:-0} )); then # only build for SL
-  build_type=prof do_build lapack v3_7_1 ${basequal}
-  do_build opencv v3_3_0b ${basequal}
-  do_build hdf5 v1_10_1c ${basequal}
-  do_build snappy v1_1_7a ${basequal}
-  do_build leveldb v1_20a ${basequal}
-  do_build gflags v2_2_1 ${basequal}
-  do_build glog v0_3_5 ${basequal}
-  do_build lmdb v0_9_21 ${basequal}
-  do_build caffe v1_0g  ${basequal}
-fi
-
 # add to manifest if no build - larsoft_data
 prep_build -f NULL ifdhc_config @IFDHC_CONFIG_VERSION@; add_to_manifest
 prep_build -f NULL larsoft_data @LARSOFT_DATA_VERSION@; add_to_manifest
