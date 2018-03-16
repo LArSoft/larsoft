@@ -15,7 +15,7 @@ unset build_label
 prep_build -f NULL mrb @MRB_VERSION@
 
 do_build cmake v3_9_5
-ensure_cetbuildtools v5_14_04 v6_01_00 v6_01_01
+ensure_cetbuildtools v5_14_04 v6_01_00 v6_01_01 v7_02_01
 
 build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}
 build_cet larcoreobj @LARCOREOBJ_VERSION@ ${basequal}
