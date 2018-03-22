@@ -1,6 +1,6 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v06_71_00
+parent	larsoft	v06_72_00_rc0
 defaultqual	e15
 
 # larsoft itself has no inc, or fcl directories
@@ -10,12 +10,12 @@ fcldir      -
 bindir      product_dir
 
 product         version
-lareventdisplay v06_18_03
-larexamples     v06_11_03
-larana          v06_18_03
-larreco         v06_56_03
-larpandora      v06_25_03
-larwirecell     v06_11_03
+lareventdisplay v06_72_00_rc0
+larexamples     v06_72_00_rc0
+larana          v06_72_00_rc0
+larreco         v06_72_00_rc0
+larpandora      v06_72_00_rc0
+larwirecell     v06_72_00_rc0
 larsoft_data    v1_02_01
 ifdh_art        v2_05_05
 
@@ -27,9 +27,9 @@ qualifier  lareventdisplay larexamples larreco   larana	   larpandora larwirecel
 e15:debug  e15:debug       e15:debug   e15:debug e15:debug e15:debug  e15:debug   s65:e15:debug -nq-
 e15:opt	   e15:opt         e15:opt     e15:opt   e15:opt   e15:opt    e15:opt     s65:e15:opt   -nq-
 e15:prof   e15:prof        e15:prof    e15:prof  e15:prof  e15:prof   e15:prof    s65:e15:prof  -nq-
-e14:debug  e14:debug       e14:debug   e14:debug e14:debug e14:debug  e14:debug   s65:e14:debug -nq-
-e14:opt	   e14:opt         e14:opt     e14:opt   e14:opt   e14:opt    e14:opt     s65:e14:opt   -nq-
-e14:prof   e14:prof        e14:prof    e14:prof  e14:prof  e14:prof   e14:prof    s65:e14:prof  -nq-
+c2:debug   c2:debug        c2:debug    c2:debug  c2:debug  c2:debug   c2:debug    s65:c2:debug  -nq-
+c2:opt	   c2:opt          c2:opt      c2:opt    c2:opt    c2:opt     c2:opt      s65:c2:opt    -nq-
+c2:prof    c2:prof         c2:prof     c2:prof   c2:prof   c2:prof    c2:prof     s65:c2:prof   -nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA
