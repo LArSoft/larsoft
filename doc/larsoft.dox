@@ -1,8 +1,8 @@
 /**
-\mainpage Liquid argon TPC simulation, reconstruction and analysis toolkit
+@mainpage Liquid argon TPC simulation, reconstruction and analysis toolkit
 
 
-\section LArSoftDocumentationSource Sources for LArSoft documentation
+@section LArSoftDocumentationSource Sources for LArSoft documentation
 
 The sources for documentation are:
 - [LArSoft collaboration home page][LArSoft.org] (http://www.larsoft.org) offers an introduction to concepts of liquid argon TPCs and LArSoft
@@ -11,11 +11,17 @@ The sources for documentation are:
 
 This page is generated from the doxygen documentation in the source code of the latest distributed LArSoft UPS products and some of their dependencies.
 
-\section LArSoftDocumentationIndex Where to go
+
+@section LArSoftDocumentationIndex Where to go
 
 - @ref larexamples "LArSoft complete code examples"
 - @subpage UsingDoxygen "some guidelines for more structured documentation of your code"
 - ... or browse the list of [doxygen groups](modules.html), or the [class list](classes.html)
+
+
+@section LArSoft topics
+
+- some *LArSoft timing documentation* is currently available from `detinfo::DetectorClocks` (that is the service provider converting between different time scales)
 
 
 [LArSoft.org]:
