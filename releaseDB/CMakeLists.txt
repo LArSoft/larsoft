@@ -62,7 +62,7 @@ create_product_variables( git           v2_15_1  )
 create_product_variables( gitflow       v1_11_0  )
 create_product_variables( mrb           v1_14_00 )
 # temporary
-create_product_variables( cetpkgsupport v1_14_00 )
+create_product_variables( cetpkgsupport v1_14_01 )
 
 # these files should be copied to scisoft for each release
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-buildcfg.in
