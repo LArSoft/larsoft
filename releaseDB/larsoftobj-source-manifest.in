@@ -1,10 +1,11 @@
-ups          v5_2_0		ups-5.2.0-source.tar.bz2
+ups          v6_0_7		ups-6.0.7-source.tar.bz2
 upd          v5_0_1		upd-5.0.1-noarch.tar.bz2
 cmake		v3_3_2		cmake-3.3.2-source.tar.bz2
 cmake		v3_5_1		cmake-3.5.1-source.tar.bz2
 cmake		v3_6_2a		cmake-3.6.2a-source.tar.bz2
 cmake		v3_7_0		cmake-3.7.0-source.tar.bz2
 cmake		v3_7_1		cmake-3.7.1-source.tar.bz2
+cmake		v3_10_1		cmake-3.10.1-source.tar.bz2
 gcc          v4_9_3a		gcc-4.9.3a-source.tar.bz2
 gdb          v7_10_1		gdb-7.10.1-source.tar.bz2
 git          @GIT_VERSION@		git-@GIT_DOT_VERSION@-source.tar.bz2

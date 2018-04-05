@@ -3,12 +3,12 @@
 basequal=${1}
 
 # specify version to bootstrap and setup ups
-check_ups v5_2_0
+check_ups v6_0_7
 
 # add to manifest
 build_noarch upd v5_0_1
 
-for cv in v3_3_2 v3_5_1 v3_6_2a v3_7_0 v3_7_1; do
+for cv in v3_3_2 v3_5_1 v3_6_2a v3_7_0 v3_7_1 v3_10_1; do
   do_build cmake ${cv}
 done
 do_build gcc ${gcc_version}
@@ -42,8 +42,8 @@ do_build root v6_06_08 ${basequal}:nu
 # once built, ninja no longer depends on python
 do_build ninja v1_6_0b
 
-ensure_cetpkgsupport v1_11_00
-ensure_cetbuildtools v4_19_04 v5_01_03 v5_02_02 v5_02_04 v5_04_02 v5_04_03 v5_06_00 v5_06_06 v5_06_07
+ensure_cetpkgsupport v1_14_01
+ensure_cetbuildtools v4_19_04 v5_01_03 v5_02_02 v5_02_04 v5_04_02 v5_04_03 v5_06_00 v5_06_06 v5_06_07 v7_02_01
 build_cet cetlib v1_21_00 ${basequal}
 build_cet -p fhicl-cpp fhiclcpp v4_02_00 ${basequal}
 build_cet messagefacility v1_18_00 ${basequal}

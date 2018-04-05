@@ -3,7 +3,7 @@
 basequal=${1}
 
 # specify version to bootstrap and setup ups
-check_ups v5_2_0
+check_ups v6_0_7
 
 build_bundle larbase-@LARSOFT_DOT_VERSION@ ${basequal}
 status=$?
@@ -23,7 +23,7 @@ EOF
   return ${status}
 fi
 
-ensure_cetbuildtools v5_06_01 v5_06_07 v5_14_04
+ensure_cetbuildtools v5_06_01 v5_06_07 v5_14_04 v7_02_01
 
 build_cet -n larcore @LARCORE_VERSION@ ${basequal}
 build_cet lardata @LARDATA_VERSION@ ${basequal}

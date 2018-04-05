@@ -3,7 +3,7 @@
 basequal=${1}
 
 # specify version to bootstrap and setup ups
-check_ups v5_2_0
+check_ups v6_0_7
 
 build_bundle nubase-@NUDIST_DOT_VERSION@ ${basequal}
 status=$?
@@ -21,9 +21,8 @@ build_noarch eigen @EIGEN_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}
 
-# add to manifest if no build - larsoft_data, mrb
+# add to manifest if no build - larsoft_data
 build_noarch ifdhc_config @IFDHC_CONFIG_VERSION@
 build_noarch larsoft_data @LARSOFT_DATA_VERSION@
-build_noarch mrb @MRB_VERSION@
 
 return 0
