@@ -57,7 +57,7 @@ create_product_variables( jsoncpp       v1_7_2 )
 create_product_variables( larsoft_data  v1_01_01 )
 create_product_variables( git           v2_13_3  )
 create_product_variables( gitflow       v1_11_0  )
-create_product_variables( mrb           v1_13_02 )
+create_product_variables( mrb           v1_14_00 )
 
 # these files should be copied to scisoft for each release
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-buildcfg.in
