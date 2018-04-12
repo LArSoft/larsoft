@@ -35,6 +35,8 @@ larana : larana : larana/OpticalDetector/SimPhotonCounterAlg.h
 larana : larana : larana/ParticleIdentification/Chi2PIDAlg.h
 larana : larana : larana/ParticleIdentification/MVAAlg.h
 larana : larana : larana/ParticleIdentification/PIDAAlg.h
+larana : larana : larana/T0Finder/AssociationsTools/IHitParticleAssociations.h
+larana : larana : larana/TruncatedMean/Algorithm/TruncMean.h
 larana : larcore : larcore/CoreUtils/ServiceUtil.h
 larana : larcore : larcore/Geometry/Geometry.h
 larana : larcorealg : larcorealg/CoreUtils/DereferenceIterator.h
@@ -196,6 +198,8 @@ larcore : larcoreobj : larcoreobj/SummaryData/RunData.h
 larcorealg : larcorealg : larcorealg/CoreUtils/DebugUtils.h
 larcorealg : larcorealg : larcorealg/CoreUtils/DereferenceIterator.h
 larcorealg : larcorealg : larcorealg/CoreUtils/DumpUtils.h
+larcorealg : larcorealg : larcorealg/CoreUtils/MetaUtils.h
+larcorealg : larcorealg : larcorealg/CoreUtils/NumericUtils.h
 larcorealg : larcorealg : larcorealg/CoreUtils/ProviderPack.h
 larcorealg : larcorealg : larcorealg/CoreUtils/RealComparisons.h
 larcorealg : larcorealg : larcorealg/CoreUtils/SortByPointers.h
@@ -328,6 +332,7 @@ lardata : lardata : lardata/DetectorInfo/DetectorClocks.h
 lardata : lardata : lardata/DetectorInfo/DetectorClocksException.h
 lardata : lardata : lardata/DetectorInfo/DetectorClocksStandard.h
 lardata : lardata : lardata/DetectorInfo/DetectorClocksStandardTestHelpers.h
+lardata : lardata : lardata/DetectorInfo/DetectorClocksStandardTriggerLoader.h
 lardata : lardata : lardata/DetectorInfo/DetectorProperties.h
 lardata : lardata : lardata/DetectorInfo/DetectorPropertiesStandard.h
 lardata : lardata : lardata/DetectorInfo/DetectorPropertiesStandardTestHelpers.h
@@ -388,7 +393,6 @@ lardata : lardata : lardata/RecoObjects/Surface.h
 lardata : lardata : lardata/RecoObjects/TrackState.h
 lardata : lardata : lardata/RecoObjects/TrackStatePropagator.h
 lardata : lardata : lardata/RecoObjects/TrackingPlaneHelper.h
-lardata : lardata : lardata/Utilities/BulkAllocator.h
 lardata : lardata : lardata/Utilities/CollectionView.h
 lardata : lardata : lardata/Utilities/CountersMap.h
 lardata : lardata : lardata/Utilities/DatabaseUtil.h
@@ -396,6 +400,8 @@ lardata : lardata : lardata/Utilities/Dereference.h
 lardata : lardata : lardata/Utilities/DetectorPropertiesServiceArgoNeuT.h
 lardata : lardata : lardata/Utilities/FastMatrixMathHelper.h
 lardata : lardata : lardata/Utilities/FileCatalogMetadataExtras.h
+lardata : lardata : lardata/Utilities/FindManyInChainP.h
+lardata : lardata : lardata/Utilities/FindManyInChainP.tcc
 lardata : lardata : lardata/Utilities/ForEachAssociatedGroup.h
 lardata : lardata : lardata/Utilities/GeometryUtilities.h
 lardata : lardata : lardata/Utilities/GridContainerIndices.h
@@ -429,6 +435,7 @@ lardata : lardataobj : lardataobj/RecoBase/PCAxis.h
 lardata : lardataobj : lardataobj/RecoBase/PFParticle.h
 lardata : lardataobj : lardataobj/RecoBase/PointCharge.h
 lardata : lardataobj : lardataobj/RecoBase/Seed.h
+lardata : lardataobj : lardataobj/RecoBase/Shower.h
 lardata : lardataobj : lardataobj/RecoBase/SpacePoint.h
 lardata : lardataobj : lardataobj/RecoBase/Track.h
 lardata : lardataobj : lardataobj/RecoBase/TrackFitHitInfo.h
@@ -522,6 +529,7 @@ lardataobj : lardataobj : lardataobj/RecoBase/classes.h
 lardataobj : lardataobj : lardataobj/Simulation/AuxDetSimChannel.h
 lardataobj : lardataobj : lardataobj/Simulation/BeamGateInfo.h
 lardataobj : lardataobj : lardataobj/Simulation/BeamTypes.h
+lardataobj : lardataobj : lardataobj/Simulation/GeneratedParticleInfo.h
 lardataobj : lardataobj : lardataobj/Simulation/OpDetBacktrackerRecord.h
 lardataobj : lardataobj : lardataobj/Simulation/SimChannel.h
 lardataobj : lardataobj : lardataobj/Simulation/SimPhotons.h
@@ -754,7 +762,9 @@ larevt : larevt : larevt/SpaceChargeServices/SpaceChargeServiceStandard.h
 larexamples : larcore : larcore/CoreUtils/ServiceProviderWrappers.h
 larexamples : larcore : larcore/CoreUtils/ServiceUtil.h
 larexamples : larcore : larcore/Geometry/Geometry.h
+larexamples : larcorealg : larcorealg/CoreUtils/DebugUtils.h
 larexamples : larcorealg : larcorealg/CoreUtils/DereferenceIterator.h
+larexamples : larcorealg : larcorealg/CoreUtils/MetaUtils.h
 larexamples : larcorealg : larcorealg/CoreUtils/ProviderPack.h
 larexamples : larcorealg : larcorealg/CoreUtils/RealComparisons.h
 larexamples : larcorealg : larcorealg/CoreUtils/UncopiableAndUnmovableClass.h
@@ -794,18 +804,35 @@ larexamples : lardata : lardata/DetectorInfo/DetectorProperties.h
 larexamples : lardata : lardata/DetectorInfo/ElecClock.h
 larexamples : lardata : lardata/DetectorInfoServices/DetectorClocksService.h
 larexamples : lardata : lardata/DetectorInfoServices/DetectorPropertiesService.h
+larexamples : lardata : lardata/RecoBaseProxy/ProxyBase.h
+larexamples : lardata : lardata/RecoBaseProxy/Track.h
+larexamples : lardata : lardata/Utilities/CollectionView.h
 larexamples : lardata : lardata/Utilities/GridContainerIndices.h
 larexamples : lardata : lardata/Utilities/GridContainers.h
 larexamples : lardata : lardata/Utilities/TensorIndices.h
+larexamples : lardata : lardata/Utilities/TupleLookupByTag.h
 larexamples : lardataobj : lardataobj/RecoBase/Cluster.h
 larexamples : lardataobj : lardataobj/RecoBase/Hit.h
+larexamples : lardataobj : lardataobj/RecoBase/MCSFitResult.h
 larexamples : lardataobj : lardataobj/RecoBase/Shower.h
 larexamples : lardataobj : lardataobj/RecoBase/SpacePoint.h
+larexamples : lardataobj : lardataobj/RecoBase/Track.h
+larexamples : lardataobj : lardataobj/RecoBase/TrackFitHitInfo.h
+larexamples : lardataobj : lardataobj/RecoBase/TrackTrajectory.h
+larexamples : lardataobj : lardataobj/RecoBase/TrackTrajectory.tcc
 larexamples : lardataobj : lardataobj/RecoBase/TrackingTypes.h
 larexamples : lardataobj : lardataobj/RecoBase/Trajectory.h
 larexamples : lardataobj : lardataobj/RecoBase/Trajectory.tcc
+larexamples : lardataobj : lardataobj/RecoBase/TrajectoryPointFlags.h
+larexamples : lardataobj : lardataobj/RecoBase/TrajectoryPointFlags.tcc
+larexamples : lardataobj : lardataobj/RecoBase/Vertex.h
+larexamples : lardataobj : lardataobj/RecoBase/VertexAssnMeta.h
 larexamples : lardataobj : lardataobj/Simulation/SimChannel.h
+larexamples : lardataobj : lardataobj/Utilities/BitMask.h
+larexamples : lardataobj : lardataobj/Utilities/BitMask.tcc
 larexamples : lardataobj : lardataobj/Utilities/DataIOmanip.h
+larexamples : lardataobj : lardataobj/Utilities/FlagSet.h
+larexamples : lardataobj : lardataobj/Utilities/FlagSet.tcc
 larexamples : larexamples : larexamples/Algorithms/RemoveIsolatedSpacePoints/PointIsolationAlg.h
 larexamples : larexamples : larexamples/Algorithms/RemoveIsolatedSpacePoints/SpacePartition.h
 larexamples : larexamples : larexamples/Algorithms/RemoveIsolatedSpacePoints/SpacePointIsolationAlg.h
@@ -872,6 +899,7 @@ larpandora : lardata : lardata/Utilities/Dereference.h
 larpandora : lardata : lardata/Utilities/GeometryUtilities.h
 larpandora : lardata : lardata/Utilities/PxUtils.h
 larpandora : lardata : lardata/Utilities/UtilException.h
+larpandora : lardataobj : lardataobj/AnalysisBase/BackTrackerMatchingData.h
 larpandora : lardataobj : lardataobj/AnalysisBase/CosmicTag.h
 larpandora : lardataobj : lardataobj/AnalysisBase/MVAOutput.h
 larpandora : lardataobj : lardataobj/AnalysisBase/T0.h
@@ -903,7 +931,6 @@ larpandora : lardataobj : lardataobj/Utilities/sparse_vector.h
 larpandora : larevt : larevt/CalibrationDBI/Interface/ChannelStatusProvider.h
 larpandora : larevt : larevt/CalibrationDBI/Interface/ChannelStatusService.h
 larpandora : larpandora : larpandora/LArPandoraEventBuilding/LArPandoraEvent.h
-larpandora : larpandora : larpandora/LArPandoraEventBuilding/LArPandoraSlices.h
 larpandora : larpandora : larpandora/LArPandoraInterface/ILArPandora.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandora.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraGeometry.h
@@ -933,6 +960,7 @@ larpandora : larreco : larreco/RecoAlg/ClusterRecoUtil/StandardClusterParamsAlg.
 larpandora : larsim : larsim/MCCheater/ParticleInventory.h
 larpandora : larsim : larsim/MCCheater/ParticleInventory.tcc
 larpandora : larsim : larsim/MCCheater/ParticleInventoryService.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingBeamParticleIdTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingClusterCharacterisationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingClusterCreationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingCosmicRayIdentificationAlg.h
@@ -944,6 +972,7 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingNe
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingNeutrinoIdTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingPfoCharacterisationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingPfoCreationAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingSliceIdBaseTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingVertexCreationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArContent.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArControlFlow/BeamParticleIdTool.h
@@ -954,6 +983,7 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArControlFlow/MultiPa
 larpandoracontent : larpandoracontent : larpandoracontent/LArControlFlow/NeutrinoIdTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArControlFlow/PostProcessingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArControlFlow/PreProcessingAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArControlFlow/SimpleNeutrinoIdTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArControlFlow/SlicingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArControlFlow/StitchingCosmicRayMergingTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCustomParticles/CustomParticleCreationAlgorithm.h
@@ -961,7 +991,9 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArCustomParticles/Pca
 larpandoracontent : larpandoracontent : larpandoracontent/LArCustomParticles/TrackParticleBuildingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArClusterHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArFileHelper.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArFormattingHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArGeometryHelper.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArInteractionTypeHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArMCParticleHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArMonitoringHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArPcaHelper.h
@@ -970,8 +1002,12 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArPointing
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArStitchingHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArSvmHelper.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArHelpers/LArVertexHelper.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/CosmicRayTaggingMonitoringTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/EventValidationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/MCParticleMonitoringAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/PfoValidationAlgorithm.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/ShowerTensorVisualizationTool.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/TransverseTensorVisualizationTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArMonitoring/VisualMonitoringAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArObjects/LArCaloHit.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArObjects/LArMCParticle.h
@@ -1036,7 +1072,6 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArShowe
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArShowerFragments/MopUpRemnantsTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArShowerFragments/ThreeDRemnantsAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArShowerMatching/ClearShowersTool.h
-larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArShowerMatching/ShowerTensorVisualizationTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArShowerMatching/SimpleShowersTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArShowerMatching/SplitShowersTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArShowerMatching/ThreeDShowersAlgorithm.h
@@ -1053,7 +1088,6 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArTrans
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/ThreeDTransverseTracksAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/TrackSplittingTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/TracksCrossingGapsTool.h
-larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/TransverseTensorVisualizationTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/UndershootTracksTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArTrackShowerId/BranchGrowingAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArTrackShowerId/ClusterCharacterisationBaseAlgorithm.h
@@ -1125,6 +1159,7 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArVertex/VertexSelect
 larreco : larcore : larcore/CoreUtils/ServiceUtil.h
 larreco : larcore : larcore/Geometry/Geometry.h
 larreco : larcorealg : larcorealg/CoreUtils/DereferenceIterator.h
+larreco : larcorealg : larcorealg/CoreUtils/NumericUtils.h
 larreco : larcorealg : larcorealg/CoreUtils/ProviderPack.h
 larreco : larcorealg : larcorealg/CoreUtils/RealComparisons.h
 larreco : larcorealg : larcorealg/CoreUtils/UncopiableAndUnmovableClass.h
@@ -1532,6 +1567,7 @@ larsim : larcorealg : larcorealg/Geometry/TPCGeo.h
 larsim : larcorealg : larcorealg/Geometry/WireGeo.h
 larsim : larcorealg : larcorealg/Geometry/geo.h
 larsim : larcorealg : larcorealg/Geometry/geo_vectors_utils.h
+larsim : larcorealg : larcorealg/Geometry/geo_vectors_utils_TVector.h
 larsim : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 larsim : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larsim : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
@@ -1575,6 +1611,7 @@ larsim : lardataobj : lardataobj/RecoBase/Wire.h
 larsim : lardataobj : lardataobj/Simulation/AuxDetSimChannel.h
 larsim : lardataobj : lardataobj/Simulation/BeamGateInfo.h
 larsim : lardataobj : lardataobj/Simulation/BeamTypes.h
+larsim : lardataobj : lardataobj/Simulation/GeneratedParticleInfo.h
 larsim : lardataobj : lardataobj/Simulation/OpDetBacktrackerRecord.h
 larsim : lardataobj : lardataobj/Simulation/SimChannel.h
 larsim : lardataobj : lardataobj/Simulation/SimPhotons.h
@@ -1593,6 +1630,13 @@ larsim : larevt : larevt/SpaceChargeServices/SpaceChargeService.h
 larsim : larsim : larsim/EventGenerator/MARLEY/ActiveVolumeVertexSampler.h
 larsim : larsim : larsim/EventGenerator/MARLEY/MARLEYHelper.h
 larsim : larsim : larsim/EventGenerator/NueAr40CCGenerator.h
+larsim : larsim : larsim/EventWeight/Base/MCEventWeight.h
+larsim : larsim : larsim/EventWeight/Base/WeightCalc.h
+larsim : larsim : larsim/EventWeight/Base/WeightCalcCreator.h
+larsim : larsim : larsim/EventWeight/Base/WeightCalcFactory.h
+larsim : larsim : larsim/EventWeight/Base/WeightManager.h
+larsim : larsim : larsim/EventWeight/Base/Weight_t.h
+larsim : larsim : larsim/EventWeight/Base/classes.h
 larsim : larsim : larsim/LArG4/AuxDetReadout.h
 larsim : larsim : larsim/LArG4/AuxDetReadoutGeometry.h
 larsim : larsim : larsim/LArG4/ConfigurablePhysicsList.hh

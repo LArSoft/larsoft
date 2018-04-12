@@ -1,6 +1,6 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v06_73_00
+parent	larsoft	v06_74_00
 defaultqual	e15
 
 # larsoft itself has no inc, or fcl directories
@@ -10,26 +10,25 @@ fcldir      -
 bindir      product_dir
 
 product         version
-lareventdisplay v06_19_00
-larexamples     v06_13_00
-larana          v06_19_00
-larreco         v06_58_00
-larpandora      v06_26_00
-larwirecell     v06_12_00
+lareventdisplay v06_19_01
+larexamples     v06_13_01
+larana          v06_19_01
+larreco         v06_59_00
+larpandora      v06_26_01
+larwirecell     v06_12_01
 larsoft_data    v1_02_01
+larsoftobj      v1_43_00
 ifdh_art        v2_05_05
 
 cetbuildtools	v7_02_01   -   only_for_build
 end_product_list
   
 # e15 - with gcc 6.4.0 and -std=c++14
-qualifier  lareventdisplay larexamples larreco   larana	   larpandora larwirecell ifdh_art      larsoft_data notes
-e15:debug  e15:debug       e15:debug   e15:debug e15:debug e15:debug  e15:debug   s65:e15:debug -nq-
-e15:opt	   e15:opt         e15:opt     e15:opt   e15:opt   e15:opt    e15:opt     s65:e15:opt   -nq-
-e15:prof   e15:prof        e15:prof    e15:prof  e15:prof  e15:prof   e15:prof    s65:e15:prof  -nq-
-c2:debug   c2:debug        c2:debug    c2:debug  c2:debug  c2:debug   c2:debug    s65:c2:debug  -nq-
-c2:opt	   c2:opt          c2:opt      c2:opt    c2:opt    c2:opt     c2:opt      s65:c2:opt    -nq-
-c2:prof    c2:prof         c2:prof     c2:prof   c2:prof   c2:prof    c2:prof     s65:c2:prof   -nq-
+qualifier  lareventdisplay larexamples larreco   larana	   larpandora larwirecell larsoftobj ifdh_art      larsoft_data notes
+e15:debug  e15:debug       e15:debug   e15:debug e15:debug e15:debug  e15:debug   e15:debug  s65:e15:debug -nq-
+e15:prof   e15:prof        e15:prof    e15:prof  e15:prof  e15:prof   e15:prof    e15:prof   s65:e15:prof  -nq-
+c2:debug   c2:debug        c2:debug    c2:debug  c2:debug  c2:debug   c2:debug    c2:debug   s65:c2:debug  -nq-
+c2:prof    c2:prof         c2:prof     c2:prof   c2:prof   c2:prof    c2:prof     c2:prof    s65:c2:prof   -nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA
