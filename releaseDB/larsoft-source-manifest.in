@@ -1,6 +1,5 @@
 ups          v6_0_7		ups-6.0.7-source.tar.bz2
 upd          v5_0_1		upd-5.0.1-noarch.tar.bz2
-cmake		v3_3_2		cmake-3.3.2-source.tar.bz2
 cmake		v3_9_0		cmake-3.9.0-source.tar.bz2
 cmake		v3_9_2		cmake-3.9.2-source.tar.bz2
 cmake		v3_9_5		cmake-3.9.5-source.tar.bz2
@@ -32,7 +31,7 @@ log4cpp      v1_1_3a		log4cpp-1.1.3a-source.tar.bz2
 mysql_client v5_5_58		mysql_client-5.5.58-source.tar.bz2
 postgresql   v9_6_6a		postgresql-9.6.6a-source.tar.bz2
 pythia       v6_4_28j		pythia-6.4.28j-source.tar.bz2
-geant4       v4_10_3_p01c	geant4-4.10.3.p01c-source.tar.bz2
+geant4       v4_10_3_p03b	geant4-4.10.3.p03b-source.tar.bz2
 g4abla       v3_0		g4abla-3.0-noarch.tar.bz2
 g4emlow      v6_50		g4emlow-6.50-noarch.tar.bz2
 g4neutron    v4_5		g4neutron-4.5-noarch.tar.bz2
