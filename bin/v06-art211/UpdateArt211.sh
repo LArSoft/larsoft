@@ -70,7 +70,11 @@ while true; do
 done
 
 #TOP=${1}
-TOP_LIST=${@}
+if [ -z ${@} ]; then
+  TOP_LIST=`pwd`
+else
+  TOP_LIST=${@}
+fi
 
 get_this_dir
 
@@ -89,6 +93,7 @@ if [[ -n "${file}" ]]; then
   fi
 else
   for TOP in ${TOP_LIST}; do
+    echo "checking ${TOP}"
     for F in `find "${TOP:-.}" \( -name "*.c*" -o -name "*.C*" -o -name "*.icc" -o -name "*.h*" -o -name "*.H*" \) -print`; do
       one_file "$F"
     done
