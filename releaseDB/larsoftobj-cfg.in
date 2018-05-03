@@ -17,6 +17,11 @@ unset build_label
 
 build_noarch mrb @MRB_VERSION@
 
+# only needed because we don't have a nutools build
+do_build dk2nudata @DK2NUDATA_VERSION@ ${basequal}
+
+ensure_cetbuildtools v7_03_02
+
 build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}
 build_cet larcoreobj @LARCOREOBJ_VERSION@ ${basequal}
 build_cet -n larcorealg @LARCOREALG_VERSION@ ${basequal}
