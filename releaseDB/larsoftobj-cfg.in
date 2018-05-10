@@ -17,11 +17,10 @@ unset build_label
 
 build_noarch mrb @MRB_VERSION@
 
-do_build cmake v3_9_5
+# only needed because we don't have a nutools build
+do_build dk2nudata @DK2NUDATA_VERSION@ ${basequal}
 
-# new cetpkgsupport - temporary
-ensure_cetpkgsupport @CETPKGSUPPORT_VERSION@
-ensure_cetbuildtools v5_14_04 v6_01_00 v6_01_01 v7_02_01
+ensure_cetbuildtools v7_03_02
 
 build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}
 build_cet larcoreobj @LARCOREOBJ_VERSION@ ${basequal}

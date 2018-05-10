@@ -1,0 +1,13 @@
+
+find <dir> -regex ".*\.\(h\|hh\|cc\|cpp\|cxx\)" | xargs perl -wapi $ART_DIR/tools/migration/art-2.11-migration.pl
+
+
+/home/garren/scratch/larsoft/v06_75_00_01/srcs/lardataobj/lardataobj/RawData/OpDetPulse.cxx: In member function ‘int raw::OpDetPulse::Integral(short unsigned int, short unsigned int)’:
+/home/garren/scratch/larsoft/v06_75_00_01/srcs/lardataobj/lardataobj/RawData/OpDetPulse.cxx:55:13: error: ‘cet’ has not been declared
+       throw cet::exception("OpDetPulse")
+             ^~~
+/home/garren/scratch/larsoft/v06_75_00_01/srcs/lardataobj/lardataobj/RawData/OpDetPulse.cxx:58:13: error: ‘cet’ has not been declared
+       throw cet::exception("OpDetPulse")
+             ^~~
+
+Add the missing header: #include "cetlib_except/exception.h"
