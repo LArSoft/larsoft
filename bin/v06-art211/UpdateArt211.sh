@@ -27,10 +27,6 @@ function one_file() {
   (( ${fix_whitespace:-0} )) && ed "$F" < fix-whitespace.ed > /dev/null 2>&1
   # Fix includes 
   perl -wapi\~ -f ${thisdir}/fix_headers_art211.pl "${F}" >/dev/null 2>&1 && rm -f "${F}~"
-  # Look for LOG_DEBUG
-  have_debug=`grep LOG_DEBUG "${F}" | grep  \<\< | grep -v \/\/ | wc -l`
-  (( ${have_debug:-0} )) && perl ${thisdir}/fix_log_debug_art211.pl "${F}" >/dev/null 2>&1 && mv "${F}".new "${F}"
-  ##sed -i'' -e 's%LOG_DEBUG%mf::LogDebug%' "${F}" 
 }
 
 function cmake_file() {
