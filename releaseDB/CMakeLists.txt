@@ -24,7 +24,7 @@ set( SQUAL s68 )
 create_product_variables( larutils    v1_22_05 )
 create_product_variables( larbatch    v01_39_01 )
 
-create_product_variables( larcoreobj  v1_23_00_01 )
+create_product_variables( larcoreobj  v1_23_00_02 )
 create_product_variables( larcorealg  v1_20_00_01 )
 create_product_variables( lardataobj  v1_32_00_01 )
 create_product_variables( larsoftobj  v1_44_00_01 )
