@@ -19,7 +19,7 @@ create_product_variables( larsoft ${version} )
 
 # define qualifiers
 set( BASEQUAL e15 )
-set( SQUAL s65 )
+set( SQUAL s68 )
 
 create_product_variables( larutils    v1_22_06 )
 create_product_variables( larbatch    v01_40_00 )
@@ -41,21 +41,22 @@ create_product_variables( larexamples v06_13_07 )
 create_product_variables( lareventdisplay v06_19_08 )
 create_product_variables( larpandoracontent v03_12_00 )
 
-create_product_variables( art           v2_10_03 )
-create_product_variables( canvas        v3_02_02 )
-create_product_variables( artdaq_core   v3_01_06 )
-create_product_variables( gallery       v1_07_02 )
-create_product_variables( nusimdata     v1_12_02 )
-create_product_variables( nutools       v2_21_04 )
-create_product_variables( nudist        v2_21_04 )
-create_product_variables( ifdhc_config  v2_3_2 )
+create_product_variables( art           v2_11_02 )
+create_product_variables( canvas        v3_03_02 )
+create_product_variables( artdaq_core   v3_02_03 )
+create_product_variables( gallery       v1_08_02 )
+create_product_variables( dk2nudata     v01_06_01b )
+create_product_variables( nusimdata     v1_13_01 )
+create_product_variables( nutools       v2_23_01 )
+create_product_variables( nudist        v2_23_01 )
+create_product_variables( ifdhc_config  v2_3_3 )
 create_product_variables( genie_xsec    v2_12_10 )
-create_product_variables( marley        v1_0_0d )
-create_product_variables( pandora       v03_07_00c )
-create_product_variables( wirecell      v0_7_0 )
-create_product_variables( eigen         v3_3_3 )
-create_product_variables( jsoncpp       v1_7_7b )
-create_product_variables( jsonnet       v0_9_3b )
+create_product_variables( marley        v1_0_0e )
+create_product_variables( pandora       v03_07_00d )
+create_product_variables( wirecell      v0_6_2d )
+create_product_variables( eigen         v3_3_4a )
+create_product_variables( jsoncpp       v1_7_7c )
+create_product_variables( jsonnet       v0_9_3c )
 create_product_variables( protobuf      v3_3_1a )
 create_product_variables( tensorflow    v1_3_0c )
 create_product_variables( larsoft_data  v1_02_01 )
@@ -66,30 +67,14 @@ create_product_variables( mrb           v1_15_01 )
 create_product_variables( cetpkgsupport v1_14_01 )
 
 # these files should be copied to scisoft for each release
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-buildcfg.in
-  ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-cfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-cfg-${LARSOFT_DOT_VERSION} @ONLY )
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
-  ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larbase-buildcfg.in
-  ${CMAKE_CURRENT_BINARY_DIR}/larbase-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larbase-cfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larbase-cfg-${LARSOFT_DOT_VERSION} @ONLY )
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
-  ${CMAKE_CURRENT_BINARY_DIR}/larbase-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-buildcfg.in
-  ${CMAKE_CURRENT_BINARY_DIR}/larsoft-buildcfg-${LARSOFT_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-cfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-cfg-${LARSOFT_DOT_VERSION} @ONLY )
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-source-manifest.in
-  ${CMAKE_CURRENT_BINARY_DIR}/larsoft-${LARSOFT_DOT_VERSION}-source_MANIFEST.txt @ONLY )
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoftobj-buildcfg.in
-  ${CMAKE_CURRENT_BINARY_DIR}/larsoftobj-buildcfg-${LARSOFTOBJ_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoftobj-cfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoftobj-cfg-${LARSOFTOBJ_DOT_VERSION} @ONLY )
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoftobj-source-manifest.in
-  ${CMAKE_CURRENT_BINARY_DIR}/larsoftobj-${LARSOFTOBJ_DOT_VERSION}-source_MANIFEST.txt @ONLY )
 CONFIGURE_FILE ( ${CMAKE_CURRENT_SOURCE_DIR}/larsoftobj.html.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoftobj-${LARSOFTOBJ_VERSION}.html @ONLY )
 CONFIGURE_FILE ( ${CMAKE_CURRENT_SOURCE_DIR}/larsoft.html.in

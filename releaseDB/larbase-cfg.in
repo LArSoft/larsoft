@@ -5,11 +5,11 @@ basequal=${1}
 # specify version to bootstrap and setup ups
 check_ups v6_0_7
 
-build_bundle nu-@NUDIST_DOT_VERSION@ ${basequal}
+build_bundle nulite-@NUDIST_DOT_VERSION@ ${basequal}
 status=$?
 if (( ${status} != 0)); then
   cat 1>&2 <<EOF
-Build of nu-@NUDIST_DOT_VERSION@ bundle failed with status ${status}
+Build of nulite-@NUDIST_DOT_VERSION@ bundle failed with status ${status}
 EOF
   return ${status}
 fi
@@ -32,6 +32,5 @@ build_noarch mrb @MRB_VERSION@
 
 # new cetpkgsupport - temporary
 #ensure_cetpkgsupport @CETPKGSUPPORT_VERSION@
-
 
 return 0
