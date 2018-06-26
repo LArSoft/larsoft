@@ -74,7 +74,6 @@ larana : lardata : lardata/DetectorInfoServices/DetectorClocksService.h
 larana : lardata : lardata/DetectorInfoServices/DetectorPropertiesService.h
 larana : lardata : lardata/DetectorInfoServices/LArPropertiesService.h
 larana : lardata : lardata/DetectorInfoServices/ServicePack.h
-larana : lardata : lardata/RecoObjects/Cluster3D.h
 larana : lardata : lardata/Utilities/AssociationUtil.h
 larana : lardataalg : lardataalg/DetectorInfo/ClockConstants.h
 larana : lardataalg : lardataalg/DetectorInfo/DetectorClocks.h
@@ -137,7 +136,9 @@ larana : lardataobj : lardataobj/Utilities/VectorMap.h
 larana : lardataobj : lardataobj/Utilities/sparse_vector.h
 larana : larreco : larreco/Calorimetry/CalorimetryAlg.h
 larana : larreco : larreco/Deprecated/BezierTrack.h
+larana : larreco : larreco/RecoAlg/Cluster3DAlgs/Cluster3D.h
 larana : larreco : larreco/RecoAlg/Cluster3DAlgs/PrincipalComponentsAlg.h
+larana : larreco : larreco/RecoAlg/Cluster3DAlgs/Voronoi/DCEL.h
 larana : larreco : larreco/RecoAlg/SpacePointAlg.h
 larana : larsim : larsim/MCCheater/BackTracker.h
 larana : larsim : larsim/MCCheater/BackTracker.tcc
@@ -359,7 +360,6 @@ lardata : lardata : lardata/RecoBaseProxy/ProxyBase/withCollectionProxy.h
 lardata : lardata : lardata/RecoBaseProxy/ProxyBase/withParallelData.h
 lardata : lardata : lardata/RecoBaseProxy/ProxyBase/withZeroOrOne.h
 lardata : lardata : lardata/RecoBaseProxy/Track.h
-lardata : lardata : lardata/RecoObjects/Cluster3D.h
 lardata : lardata : lardata/RecoObjects/InteractGeneral.h
 lardata : lardata : lardata/RecoObjects/InteractPlane.h
 lardata : lardata : lardata/RecoObjects/Interactor.h
@@ -1052,6 +1052,8 @@ larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraGeometry.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraHelper.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraInput.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraOutput.h
+larpandora : larpandora : larpandora/LArPandoraObjects/PFParticleMetadata.h
+larpandora : larpandora : larpandora/LArPandoraObjects/classes.h
 larpandora : larpandora : larpandora/RootGraphics/RootGraphicsEnablingService.h
 larpandora : larpandoracontent : larpandoracontent/LArContent.h
 larpandora : larpandoracontent : larpandoracontent/LArControlFlow/MasterAlgorithm.h
@@ -1079,6 +1081,7 @@ larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingBe
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingClusterCharacterisationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingClusterCreationAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingCosmicRayIdentificationAlg.h
+larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingCosmicRayRemovalAlgorithm.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingCosmicRayShowerMatchingAlg.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingCosmicRayTaggingTool.h
 larpandoracontent : larpandoracontent : larpandoracontent/LArCheating/CheatingEventSlicingTool.h
@@ -1308,7 +1311,6 @@ larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
 larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
-larreco : lardata : lardata/ArtDataHelper/ChargedSpacePointCreator.h
 larreco : lardata : lardata/ArtDataHelper/HitCreator.h
 larreco : lardata : lardata/ArtDataHelper/MVAReader.h
 larreco : lardata : lardata/ArtDataHelper/MVAWrapperBase.h
@@ -1318,7 +1320,6 @@ larreco : lardata : lardata/DetectorInfoServices/DetectorClocksService.h
 larreco : lardata : lardata/DetectorInfoServices/DetectorPropertiesService.h
 larreco : lardata : lardata/DetectorInfoServices/LArPropertiesService.h
 larreco : lardata : lardata/DetectorInfoServices/ServicePack.h
-larreco : lardata : lardata/RecoObjects/Cluster3D.h
 larreco : lardata : lardata/RecoObjects/Interactor.h
 larreco : lardata : lardata/RecoObjects/KETrack.h
 larreco : lardata : lardata/RecoObjects/KFTrackState.h
@@ -1362,6 +1363,7 @@ larreco : lardata : lardata/Utilities/MakeIndex.h
 larreco : lardata : lardata/Utilities/PxHitConverter.h
 larreco : lardata : lardata/Utilities/PxUtils.h
 larreco : lardata : lardata/Utilities/RangeForWrapper.h
+larreco : lardata : lardata/Utilities/SignalShaping.h
 larreco : lardata : lardata/Utilities/SimpleFits.h
 larreco : lardata : lardata/Utilities/StatCollector.h
 larreco : lardata : lardata/Utilities/UtilException.h
@@ -1401,7 +1403,6 @@ larreco : lardataobj : lardataobj/RecoBase/OpFlash.h
 larreco : lardataobj : lardataobj/RecoBase/OpHit.h
 larreco : lardataobj : lardataobj/RecoBase/PCAxis.h
 larreco : lardataobj : lardataobj/RecoBase/PFParticle.h
-larreco : lardataobj : lardataobj/RecoBase/PointCharge.h
 larreco : lardataobj : lardataobj/RecoBase/Seed.h
 larreco : lardataobj : lardataobj/RecoBase/Shower.h
 larreco : lardataobj : lardataobj/RecoBase/SpacePoint.h
@@ -1489,7 +1490,7 @@ larreco : larreco : larreco/HitFinder/HitAnaAlg.h
 larreco : larreco : larreco/HitFinder/HitFilterAlg.h
 larreco : larreco : larreco/HitFinder/HitFinderTools/ICandidateHitFinder.h
 larreco : larreco : larreco/HitFinder/HitFinderTools/IPeakFitter.h
-larreco : larreco : larreco/HitFinder/HitFinderTools/IWaveformAlgs.h
+larreco : larreco : larreco/HitFinder/HitFinderTools/IWaveformTool.h
 larreco : larreco : larreco/HitFinder/RFFHitFinderAlg.h
 larreco : larreco : larreco/HitFinder/RFFHitFitter.h
 larreco : larreco : larreco/HitFinder/RegionAboveThresholdFinder.h
@@ -1555,16 +1556,24 @@ larreco : larreco : larreco/RecoAlg/CMTool/CMToolBase/CMatchManager.h
 larreco : larreco : larreco/RecoAlg/CMTool/CMToolBase/CMergeBookKeeper.h
 larreco : larreco : larreco/RecoAlg/CMTool/CMToolBase/CMergeManager.h
 larreco : larreco : larreco/RecoAlg/CMTool/CMToolBase/CPriorityAlgoBase.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/Cluster3D.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/ClusterParamsBuilder.h
-larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/Hit3DBuilderAlg.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/ConvexHull/ConvexHull.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/HoughSeedFinderAlg.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/IClusterAlg.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/IClusterModAlg.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/IHit3DBuilder.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/PCASeedFinderAlg.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/ParallelHitsSeedFinderAlg.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/PrincipalComponentsAlg.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/SeedFinderAlgBase.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/SkeletonAlg.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/Voronoi/BeachLine.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/Voronoi/DCEL.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/Voronoi/EventUtilities.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/Voronoi/IEvent.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/Voronoi/SweepEvent.h
+larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/Voronoi/Voronoi.h
 larreco : larreco : larreco/RecoAlg/Cluster3DAlgs/kdTree.h
 larreco : larreco : larreco/RecoAlg/ClusterCrawlerAlg.h
 larreco : larreco : larreco/RecoAlg/ClusterMatchAlg.h
