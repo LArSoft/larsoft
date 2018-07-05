@@ -68,22 +68,11 @@
 ./checkPrerequisites</li>
     </ul></li>
   </ul></li>
-  <li><a type="application/x-sh" download href="http://scisoft.fnal.gov/scisoft/bundles/tools/pullProducts">pullProducts</a>
-  <ul>
-    <li>Will pull and expand source code tarballs and the build script preparatory to a build.</li>
-    <li>Note that there are no source code tarballs for art or larsoft.  
-        Instead, the build script pulls the art source code directly from the repository.</li>
-    <li>USAGE:
-    <ul>
-      <li>Download the script.</li>
-      <li><pre>chmod +x pullProducts
-./pullProducts &lt;product_topdir&gt; source larsoft-@LARSOFT_VERSION@</pre></li>
-    </ul></li>
-  </ul></li>
   <li><a type="application/x-sh" download
   href="http://scisoft.fnal.gov/scisoft/bundles/tools/buildFW">buildFW</a>
   <ul>
     <li>Build all packages from source. </li>
+    <li>BuildFW will download source code tarballs and existing binary distributions as needed. </li>
     <li>BuildFW uses buildcfg scriptlets which are downloaded as needed from scisoft</li>
     <li>BuildFW will pull source living in Fermi redmine (cpp0x, art, etc.) direct from the repository.</li>
     <li>USAGE:
