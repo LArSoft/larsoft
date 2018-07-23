@@ -25,6 +25,8 @@ end_product_list
   
 # e15 - with gcc 6.4.0 and -std=c++14
 qualifier  lareventdisplay larexamples larreco   larana	   larpandora larwirecell larsoftobj ifdh_art      larsoft_data notes
+e17:debug  e17:debug       e17:debug   e17:debug e17:debug e17:debug  e17:debug   e17:debug  s68:e17:debug -nq-
+e17:prof   e17:prof        e17:prof    e17:prof  e17:prof  e17:prof   e17:prof    e17:prof   s68:e17:prof  -nq-
 e15:debug  e15:debug       e15:debug   e15:debug e15:debug e15:debug  e15:debug   e15:debug  s68:e15:debug -nq-
 e15:prof   e15:prof        e15:prof    e15:prof  e15:prof  e15:prof   e15:prof    e15:prof   s68:e15:prof  -nq-
 c2:debug   c2:debug        c2:debug    c2:debug  c2:debug  c2:debug   c2:debug    c2:debug   s68:c2:debug  -nq-
