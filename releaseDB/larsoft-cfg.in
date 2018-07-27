@@ -27,12 +27,14 @@ ensure_cetbuildtools v7_03_02
 
 build_cet larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}
 
+# larcore tests disabled because of Jenkins build slave problems
 build_cet -n larcore @LARCORE_VERSION@ ${basequal}
 build_cet lardata @LARDATA_VERSION@ ${basequal}
 build_cet larevt @LAREVT_VERSION@ ${basequal}
 build_cet larsim @LARSIM_VERSION@ ${basequal}
 build_cet larreco @LARRECO_VERSION@ ${basequal}
-build_cet larana @LARANA_VERSION@ ${basequal}
+# the single larana test likes to hang on Jenkins macOS build slaves
+build_cet -n larana @LARANA_VERSION@ ${basequal}
 build_cet larpandora @LARPANDORA_VERSION@ ${basequal}
 build_cet larwirecell @LARWIRECELL_VERSION@ ${basequal}
 build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}
