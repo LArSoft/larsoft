@@ -95,6 +95,7 @@ The following products are part of the full larsoft suite:
 <tr><td colspan="3"><b>Code:</b></td></tr>
 <tr><td>&nbsp;&nbsp;  art     </td>  <td> @ART_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  nutools      </td>  <td> @NUTOOLS_VERSION@	</td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  artg4tk     </td>  <td> @ARTG4TK_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  marley     </td>  <td> @MARLEY_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  pandora     </td>  <td> @PANDORA_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  tensorflow     </td>  <td> @TENSORFLOW_VERSION@ </td>  <td>@BASEQUAL@:@PYQUAL@</td></tr>
@@ -110,6 +111,7 @@ The following products are part of the full larsoft suite:
 <tr><td>&nbsp;&nbsp;  lardataalg     </td>  <td> @LARDATAALG_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  lardata     </td>  <td> @LARDATA_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larevt     </td>  <td> @LAREVT_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  larg4     </td>  <td> @LARG4_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larsim     </td>  <td> @LARSIM_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larreco     </td>  <td> @LARRECO_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larana     </td>  <td> @LARANA_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
