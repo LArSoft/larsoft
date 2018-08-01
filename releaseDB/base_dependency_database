@@ -147,7 +147,7 @@ larana : larsim : larsim/MCCheater/ParticleInventory.h
 larana : larsim : larsim/MCCheater/ParticleInventory.tcc
 larana : larsim : larsim/MCCheater/ParticleInventoryService.h
 larana : larsim : larsim/MCSTReco/MCTrackCollectionAnaAlg.h
-larana : larsim : larsim/PhotonPropagation/PhotonLibrary.h
+larana : larsim : larsim/PhotonPropagation/IPhotonLibrary.h
 larana : larsim : larsim/PhotonPropagation/PhotonVisibilityService.h
 larana : larsim : larsim/Simulation/LArG4Parameters.h
 larana : larsim : larsim/Simulation/LArVoxelData.h
@@ -396,6 +396,7 @@ lardata : lardata : lardata/RecoObjects/Surface.h
 lardata : lardata : lardata/RecoObjects/TrackState.h
 lardata : lardata : lardata/RecoObjects/TrackStatePropagator.h
 lardata : lardata : lardata/RecoObjects/TrackingPlaneHelper.h
+lardata : lardata : lardata/Utilities/ChiSquareAccumulator.h
 lardata : lardata : lardata/Utilities/CollectionView.h
 lardata : lardata : lardata/Utilities/CountersMap.h
 lardata : lardata : lardata/Utilities/DatabaseUtil.h
@@ -555,6 +556,7 @@ lardataobj : lardataobj : lardataobj/RawData/DAQHeader.h
 lardataobj : lardataobj : lardataobj/RawData/ExternalTrigger.h
 lardataobj : lardataobj : lardataobj/RawData/OpDetPulse.h
 lardataobj : lardataobj : lardataobj/RawData/OpDetWaveform.h
+lardataobj : lardataobj : lardataobj/RawData/RDTimeStamp.h
 lardataobj : lardataobj : lardataobj/RawData/RawDigit.h
 lardataobj : lardataobj : lardataobj/RawData/TriggerData.h
 lardataobj : lardataobj : lardataobj/RawData/classes.h
@@ -572,6 +574,7 @@ lardataobj : lardataobj : lardataobj/RecoBase/PFParticle.h
 lardataobj : lardataobj : lardataobj/RecoBase/PointCharge.h
 lardataobj : lardataobj : lardataobj/RecoBase/Seed.h
 lardataobj : lardataobj : lardataobj/RecoBase/Shower.h
+lardataobj : lardataobj : lardataobj/RecoBase/Slice.h
 lardataobj : lardataobj : lardataobj/RecoBase/SpacePoint.h
 lardataobj : lardataobj : lardataobj/RecoBase/Track.h
 lardataobj : lardataobj : lardataobj/RecoBase/TrackFitHitInfo.h
@@ -594,6 +597,7 @@ lardataobj : lardataobj : lardataobj/Simulation/BeamTypes.h
 lardataobj : lardataobj : lardataobj/Simulation/GeneratedParticleInfo.h
 lardataobj : lardataobj : lardataobj/Simulation/OpDetBacktrackerRecord.h
 lardataobj : lardataobj : lardataobj/Simulation/SimChannel.h
+lardataobj : lardataobj : lardataobj/Simulation/SimDriftedElectronCluster.h
 lardataobj : lardataobj : lardataobj/Simulation/SimEnergyDeposit.h
 lardataobj : lardataobj : lardataobj/Simulation/SimPhotons.h
 lardataobj : lardataobj : lardataobj/Simulation/SupernovaTruth.h
@@ -604,6 +608,7 @@ lardataobj : lardataobj : lardataobj/Utilities/BitMask.tcc
 lardataobj : lardataobj : lardataobj/Utilities/DataIOmanip.h
 lardataobj : lardataobj : lardataobj/Utilities/FlagSet.h
 lardataobj : lardataobj : lardataobj/Utilities/FlagSet.tcc
+lardataobj : lardataobj : lardataobj/Utilities/LazyVector.h
 lardataobj : lardataobj : lardataobj/Utilities/sparse_vector.h
 lareventdisplay : larcore : larcore/CoreUtils/ServiceUtil.h
 lareventdisplay : larcore : larcore/Geometry/Geometry.h
@@ -968,6 +973,21 @@ larexamples : larexamples : test/Algorithms/RemoveIsolatedSpacePoints/SpacePoint
 larexamples : larexamples : test/Services/ShowerCalibrationGalore/Providers/CreateTestShowerCalibrationFromPID.h
 larexamples : larexamples : test/Services/ShowerCalibrationGalore/Providers/ShowerCalibrationGaloreTests.h
 larexamples : larsim : larsim/Simulation/LArG4Parameters.h
+larg4 : larcorealg : larcorealg/CoreUtils/DumpUtils.h
+larg4 : larcorealg : larcorealg/Geometry/geo_vectors_utils.h
+larg4 : larcorealg : larcorealg/Geometry/geo_vectors_utils_TVector.h
+larg4 : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
+larg4 : lardataobj : lardataobj/Simulation/GeneratedParticleInfo.h
+larg4 : lardataobj : lardataobj/Simulation/SimEnergyDeposit.h
+larg4 : lardataobj : lardataobj/Simulation/sim.h
+larg4 : larg4 : larg4/Analysis/CheckSimEnergyDeposit_module.h
+larg4 : larg4 : larg4/Services/LArG4Detector_service.h
+larg4 : larg4 : larg4/Services/SimEnergyDepositSD.h
+larg4 : larg4 : larg4/pluginActions/MCTruthEventAction_service.h
+larg4 : larg4 : larg4/pluginActions/ParticleListAction_service.h
+larg4 : larsim : larsim/LArG4/ParticleFilters.h
+larg4 : larsim : larsim/MCDumpers/MCDumperUtils.h
+larg4 : larsim : larsim/MCDumpers/MCDumpers.h
 larpandora : larcore : larcore/CoreUtils/ServiceUtil.h
 larpandora : larcore : larcore/Geometry/Geometry.h
 larpandora : larcorealg : larcorealg/CoreUtils/DereferenceIterator.h
@@ -1311,6 +1331,7 @@ larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
 larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 larreco : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
+larreco : lardata : lardata/ArtDataHelper/ChargedSpacePointCreator.h
 larreco : lardata : lardata/ArtDataHelper/HitCreator.h
 larreco : lardata : lardata/ArtDataHelper/MVAReader.h
 larreco : lardata : lardata/ArtDataHelper/MVAWrapperBase.h
@@ -1403,6 +1424,7 @@ larreco : lardataobj : lardataobj/RecoBase/OpFlash.h
 larreco : lardataobj : lardataobj/RecoBase/OpHit.h
 larreco : lardataobj : lardataobj/RecoBase/PCAxis.h
 larreco : lardataobj : lardataobj/RecoBase/PFParticle.h
+larreco : lardataobj : lardataobj/RecoBase/PointCharge.h
 larreco : lardataobj : lardataobj/RecoBase/Seed.h
 larreco : lardataobj : lardataobj/RecoBase/Shower.h
 larreco : lardataobj : lardataobj/RecoBase/SpacePoint.h
@@ -1658,6 +1680,7 @@ larreco : larreco : larreco/ShowerFinder/ShowerReco3D/ShowerRecoManager.h
 larreco : larreco : larreco/SpacePointSolver/HashTuple.h
 larreco : larreco : larreco/SpacePointSolver/QuadExpr.h
 larreco : larreco : larreco/SpacePointSolver/Solver.h
+larreco : larreco : larreco/SpacePointSolver/TripletFinder.h
 larreco : larreco : larreco/TrackFinder/TrackMaker.h
 larreco : larsim : larsim/MCCheater/BackTracker.h
 larreco : larsim : larsim/MCCheater/BackTracker.tcc
@@ -1745,6 +1768,7 @@ larsim : lardataobj : lardataobj/Simulation/BeamTypes.h
 larsim : lardataobj : lardataobj/Simulation/GeneratedParticleInfo.h
 larsim : lardataobj : lardataobj/Simulation/OpDetBacktrackerRecord.h
 larsim : lardataobj : lardataobj/Simulation/SimChannel.h
+larsim : lardataobj : lardataobj/Simulation/SimDriftedElectronCluster.h
 larsim : lardataobj : lardataobj/Simulation/SimEnergyDeposit.h
 larsim : lardataobj : lardataobj/Simulation/SimPhotons.h
 larsim : lardataobj : lardataobj/Simulation/SupernovaTruth.h
@@ -1754,6 +1778,7 @@ larsim : lardataobj : lardataobj/Utilities/BitMask.tcc
 larsim : lardataobj : lardataobj/Utilities/DataIOmanip.h
 larsim : lardataobj : lardataobj/Utilities/FlagSet.h
 larsim : lardataobj : lardataobj/Utilities/FlagSet.tcc
+larsim : lardataobj : lardataobj/Utilities/LazyVector.h
 larsim : lardataobj : lardataobj/Utilities/SumSecondFunction.h
 larsim : lardataobj : lardataobj/Utilities/VectorMap.h
 larsim : lardataobj : lardataobj/Utilities/sparse_vector.h
@@ -1824,7 +1849,9 @@ larsim : larsim : larsim/MCSTReco/MCShowerRecoAlg.h
 larsim : larsim : larsim/MCSTReco/MCShowerRecoPart.h
 larsim : larsim : larsim/MCSTReco/MCTrackCollectionAnaAlg.h
 larsim : larsim : larsim/MCSTReco/MCTrackRecoAlg.h
+larsim : larsim : larsim/PhotonPropagation/IPhotonLibrary.h
 larsim : larsim : larsim/PhotonPropagation/PhotonLibrary.h
+larsim : larsim : larsim/PhotonPropagation/PhotonLibraryHybrid.h
 larsim : larsim : larsim/PhotonPropagation/PhotonVisibilityService.h
 larsim : larsim : larsim/Simulation/LArG4Parameters.h
 larsim : larsim : larsim/Simulation/LArVoxelCalculator.h
