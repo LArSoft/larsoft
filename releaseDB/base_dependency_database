@@ -1075,6 +1075,8 @@ larpandora : lardataobj : lardataobj/Utilities/sparse_vector.h
 larpandora : larevt : larevt/CalibrationDBI/Interface/ChannelStatusProvider.h
 larpandora : larevt : larevt/CalibrationDBI/Interface/ChannelStatusService.h
 larpandora : larpandora : larpandora/LArPandoraEventBuilding/LArPandoraEvent.h
+larpandora : larpandora : larpandora/LArPandoraEventBuilding/NeutrinoIdBaseTool.h
+larpandora : larpandora : larpandora/LArPandoraEventBuilding/Slice.h
 larpandora : larpandora : larpandora/LArPandoraInterface/ILArPandora.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandora.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraGeometry.h
