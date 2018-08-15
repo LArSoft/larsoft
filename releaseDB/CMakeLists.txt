@@ -25,7 +25,7 @@ create_product_variables( larutils    v1_22_10 )
 create_product_variables( larbatch    v01_43_00 )
 
 create_product_variables( larcoreobj  v07_00_00 )
-create_product_variables( larcorealg  v07_00_01 )
+create_product_variables( larcorealg  v07_01_00 )
 create_product_variables( lardataobj  v07_01_01 )
 create_product_variables( lardataalg  v07_00_01 )
 create_product_variables( larsoftobj  v07_01_01 )
