@@ -22,7 +22,7 @@ do_build jsonnet @JSONNET_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}
 # Ubuntu builds will need protobuf here
 if [ "${basequal}" = "e15" ] || [ "${basequal}" = "e17" ]; then # cannot build for c2 yet
-  do_build protobuf v3_5_2 ${basequal}
+  do_build protobuf @PROTOBUF_VERSION@ ${basequal}
   do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}
 fi
 
