@@ -1806,7 +1806,7 @@ larsim : larsim : larsim/EventWeight/Base/WeightCalcFactory.h
 larsim : larsim : larsim/EventWeight/Base/WeightManager.h
 larsim : larsim : larsim/EventWeight/Base/Weight_t.h
 larsim : larsim : larsim/EventWeight/Base/classes.h
-larsim : larsim : larsim/IonizationScintillation/ISCalculationSeparate.h
+larsim : larsim : larsim/IonizationScintillation/ISCalcSeparate.h
 larsim : larsim : larsim/LArG4/AuxDetReadout.h
 larsim : larsim : larsim/LArG4/AuxDetReadoutGeometry.h
 larsim : larsim : larsim/LArG4/ConfigurablePhysicsList.hh
