@@ -2,6 +2,7 @@ use strict;
 
 use vars qw(%subdir_list);
 use vars qw(%header_list);
+use vars qw(%class_list);
 
 BEGIN { %header_list = (
 "EVGDrivers/GEVGDriver.h" => "Framework/EventGen/GEVGDriver.h",
@@ -214,7 +215,7 @@ BEGIN { %header_list = (
 "NeutronOsc/LinkDef.h" => "Physics/NNBarOscillation/LinkDef.h",
 "NeutronOsc/NOscDummyInteractionListGenerator.h" => "Physics/NNBarOscillation/NOscDummyInteractionListGenerator.h",
 "NeutronOsc/NOscDummyPXSec.h" => "Physics/NNBarOscillation/NOscDummyPXSec.h",
-"NeutronOsc/NeutronOscMode.h" => "Physics/NNBarOscillation/NeutronOscMode.h",
+"NeutronOsc/NeutronOscMode.h" => "Physics/NNBarOscillation/NNBarOscMode.h",
 "NeutronOsc/NeutronOscPrimaryVtxGenerator.h" => "Physics/NNBarOscillation/NeutronOscPrimaryVtxGenerator.h",
 "NeutronOsc/NeutronOscUtils.h" => "Physics/NNBarOscillation/NeutronOscUtils.h",
 "Nuclear/EffectiveSF.h" => "Physics/NuclearState/EffectiveSF.h",
@@ -473,6 +474,15 @@ BEGIN { %header_list = (
 "Utils/AppInit.h" => "Framework/Utils/AppInit.h"
 		       ); }
 
+BEGIN { %class_list = (
+"NeutronOscMode.h" => "NNBarOscMode.h",
+"NeutronOscMode_t" => "NNBarOscMode_t"
+		       ); }
+
 foreach my $inc (sort keys %header_list) {
   s&^(\s*#include\s+["<])\Q$inc\E(.*)&${1}$header_list{$inc}${2}& and last;
+}
+
+foreach my $clss (sort keys %class_list) {
+  s&\b\Q${clss}\E\b([^\.]|$)&$class_list{$clss}${1}${2}&g;
 }
