@@ -1791,6 +1791,7 @@ larsim : lardataobj : lardataobj/MCBase/MCLimits.h
 larsim : lardataobj : lardataobj/MCBase/MCShower.h
 larsim : lardataobj : lardataobj/MCBase/MCStep.h
 larsim : lardataobj : lardataobj/MCBase/MCTrack.h
+larsim : lardataobj : lardataobj/RawData/OpDetWaveform.h
 larsim : lardataobj : lardataobj/RawData/RawDigit.h
 larsim : lardataobj : lardataobj/RawData/raw.h
 larsim : lardataobj : lardataobj/RecoBase/Cluster.h
