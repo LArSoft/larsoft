@@ -25,10 +25,10 @@ cetbuildtools	v7_04_00   -   only_for_build
 end_product_list
   
 qualifier  lareventdisplay larexamples larreco   larana	   larg4      larpandora larwirecell larsoftobj ifdh_art      larsoft_data notes
-e17:debug  e17:debug       e17:debug   e17:debug e17:debug e17:debug  e17:debug  e17:debug   e17:debug  s70:e17:debug -nq-
-e17:prof   e17:prof        e17:prof    e17:prof  e17:prof  e17:prof   e17:prof   e17:prof    e17:prof   s70:e17:prof  -nq-
-c2:debug   c2:debug        c2:debug    c2:debug  c2:debug  c2:debug  c2:debug   c2:debug    c2:debug   s70:c2:debug  -nq-
-c2:prof    c2:prof         c2:prof     c2:prof   c2:prof   c2:prof   c2:prof    c2:prof     c2:prof    s70:c2:prof   -nq-
+e17:debug  e17:debug       e17:debug   e17:debug e17:debug e17:debug  e17:debug  e17:debug   e17:debug  s69:e17:debug -nq-
+e17:prof   e17:prof        e17:prof    e17:prof  e17:prof  e17:prof   e17:prof   e17:prof    e17:prof   s69:e17:prof  -nq-
+c2:debug   c2:debug        c2:debug    c2:debug  c2:debug  c2:debug  c2:debug   c2:debug    c2:debug   s69:c2:debug  -nq-
+c2:prof    c2:prof         c2:prof     c2:prof   c2:prof   c2:prof   c2:prof    c2:prof     c2:prof    s69:c2:prof   -nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA
