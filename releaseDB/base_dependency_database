@@ -1953,6 +1953,7 @@ larwirecell : lardataalg : lardataalg/DetectorInfo/DetectorProperties.h
 larwirecell : lardataobj : lardataobj/RawData/RawDigit.h
 larwirecell : lardataobj : lardataobj/RawData/raw.h
 larwirecell : lardataobj : lardataobj/RecoBase/Wire.h
+larwirecell : lardataobj : lardataobj/Simulation/SimChannel.h
 larwirecell : lardataobj : lardataobj/Simulation/SimEnergyDeposit.h
 larwirecell : lardataobj : lardataobj/Utilities/sparse_vector.h
 larwirecell : larevt : larevt/CalibrationDBI/IOVData/CalibrationExtraInfo.h
@@ -1967,6 +1968,7 @@ larwirecell : larwirecell : larwirecell/Components/CookedFrameSink.h
 larwirecell : larwirecell : larwirecell/Components/FrameSaver.h
 larwirecell : larwirecell : larwirecell/Components/MultiChannelNoiseDB.h
 larwirecell : larwirecell : larwirecell/Components/RawFrameSource.h
+larwirecell : larwirecell : larwirecell/Components/SimChannelSink.h
 larwirecell : larwirecell : larwirecell/Components/SimDepoSource.h
 larwirecell : larwirecell : larwirecell/Interfaces/IArtEventVisitor.h
 larwirecell : larwirecell : larwirecell/Interfaces/MainTool.h
