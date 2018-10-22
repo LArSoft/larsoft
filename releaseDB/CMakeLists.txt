@@ -21,8 +21,9 @@ create_product_variables( larsoft ${version} )
 set( BASEQUAL e10 )
 set( SQUAL s59 )
 
-create_product_variables( larutils        v1_22_07 )
-create_product_variables( larbatch        v01_40_01 )
+## remove larbatch and larutils from this distribution
+##create_product_variables( larutils        v1_22_07 )
+##create_product_variables( larbatch        v01_40_01 )
 
 create_product_variables( larcoreobj      v1_06_02_03 )
 create_product_variables( lardataobj      v1_11_00_06 )
@@ -32,7 +33,7 @@ create_product_variables( lardata         v06_14_04_06 )
 create_product_variables( larevt          v06_07_09_08 )
 create_product_variables( larsim          v06_13_01_10 )
 create_product_variables( larreco         v06_20_00_14 )
-create_product_variables( larana          v06_03_18_14 )
+create_product_variables( larana          v06_03_18_15 )
 create_product_variables( larpandora      v06_08_00_14 )
 create_product_variables( larwirecell     v06_00_13_10 )
 create_product_variables( larexamples     v06_01_15_10 )
@@ -55,9 +56,9 @@ create_product_variables( wirecell      v0_5_2  )
 create_product_variables( eigen         v3_2_9a )
 create_product_variables( jsoncpp       v1_7_2 )
 create_product_variables( larsoft_data  v1_01_01 )
-create_product_variables( git           v2_13_3  )
+create_product_variables( git           v2_15_1  )
 create_product_variables( gitflow       v1_11_0  )
-create_product_variables( mrb           v1_14_00 )
+create_product_variables( mrb           v1_16_02 )
 
 # these files should be copied to scisoft for each release
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-buildcfg.in
