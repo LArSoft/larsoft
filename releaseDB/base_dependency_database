@@ -1547,11 +1547,9 @@ larreco : larreco : larreco/Genfit/GFTrackCand.h
 larreco : larreco : larreco/Genfit/GFWireHitPolicy.h
 larreco : larreco : larreco/Genfit/GFWirepointHitPolicy.h
 larreco : larreco : larreco/Genfit/GeaneMCApplication.h
-larreco : larreco : larreco/Genfit/GeaneTrackRep2.h
 larreco : larreco : larreco/Genfit/PointHit.h
 larreco : larreco : larreco/Genfit/RKTrackRep.h
 larreco : larreco : larreco/Genfit/SlTrackRep.h
-larreco : larreco : larreco/Genfit/TGeant3/TGeant3.h
 larreco : larreco : larreco/HitFinder/GaussianEliminationAlg.h
 larreco : larreco : larreco/HitFinder/HitAnaAlg.h
 larreco : larreco : larreco/HitFinder/HitFilterAlg.h
