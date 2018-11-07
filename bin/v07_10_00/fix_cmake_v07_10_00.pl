@@ -1,6 +1,5 @@
 use strict;
 
-
-#s/\blardata_DetectorInfo\b/lardataalg_DetectorInfo/g;
-#s/\$\{LARDATA_DETECTORINFO\}/\$\{LARDATAALG_DETECTORINFO\}/g;
+s/\blarpandoraobj\b//g;
+s/\$\{LARPANDORAOBJ\}//g;
 
