@@ -1,2 +1,5 @@
 *~
 *.pyc
+*.bak
+*.log
+*.root
