@@ -20,7 +20,7 @@ EOF
   return ${status}
 fi
 
-ensure_cetbuildtools v5_06_01 v5_06_07 v5_14_04 v7_02_01
+ensure_cetbuildtools v5_06_01 v5_06_07 v5_14_04 v7_02_01 v7_04_00
 
 build_cet -n larcore @LARCORE_VERSION@ ${basequal}
 build_cet lardata @LARDATA_VERSION@ ${basequal}
