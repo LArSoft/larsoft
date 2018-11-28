@@ -66,7 +66,7 @@ create_product_variables( nusystematics v00_01_03 )
 create_product_variables( larsoft_data  v1_02_01 )
 create_product_variables( git           v2_15_1  )
 create_product_variables( gitflow       v1_11_0  )
-create_product_variables( mrb           v2_00_00 )
+create_product_variables( mrb           v2_00_01 )
 # temporary
 #create_product_variables( cetpkgsupport v1_14_01 )
 
