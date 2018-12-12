@@ -1,6 +1,6 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v07_13_02
+parent	larsoft	v08_00_00_rc2
 defaultqual	e17
 
 # larsoft itself has no inc, or fcl directories
@@ -10,25 +10,25 @@ fcldir      -
 bindir      product_dir
 
 product         version
-lareventdisplay v07_02_02
-larexamples     v07_00_19
-larana          v07_04_02
-larreco         v07_10_02
-larg4           v07_05_00
-larpandora      v07_06_01
-larwirecell     v07_05_02
+lareventdisplay v08_00_00_rc2
+larexamples     v08_00_00_rc2
+larana          v08_00_00_rc2
+larreco         v08_00_00_rc2
+larg4           v08_00_00_rc2
+larpandora      v08_00_00_rc2
+larwirecell     v08_00_00_rc2
 larsoft_data    v1_02_01
-larsoftobj      v07_08_00
+larsoftobj      v08_00_00_rc2
 ifdh_art        v2_06_13
 
 cetbuildtools	v7_04_00   -   only_for_build
 end_product_list
   
 qualifier  lareventdisplay larexamples larreco   larana	   larg4      larpandora larwirecell larsoftobj ifdh_art      larsoft_data notes
-e17:debug  e17:debug       e17:debug   e17:debug e17:debug e17:debug  e17:debug  e17:debug   e17:debug  s70:e17:debug -nq-
-e17:prof   e17:prof        e17:prof    e17:prof  e17:prof  e17:prof   e17:prof   e17:prof    e17:prof   s70:e17:prof  -nq-
-c2:debug   c2:debug        c2:debug    c2:debug  c2:debug  c2:debug  c2:debug   c2:debug    c2:debug   s70:c2:debug  -nq-
-c2:prof    c2:prof         c2:prof     c2:prof   c2:prof   c2:prof   c2:prof    c2:prof     c2:prof    s70:c2:prof   -nq-
+e17:debug  e17:debug       e17:debug   e17:debug e17:debug e17:debug  e17:debug  e17:debug   e17:debug  s69:e17:debug -nq-
+e17:prof   e17:prof        e17:prof    e17:prof  e17:prof  e17:prof   e17:prof   e17:prof    e17:prof   s69:e17:prof  -nq-
+c2:debug   c2:debug        c2:debug    c2:debug  c2:debug  c2:debug  c2:debug   c2:debug    c2:debug   s69:c2:debug  -nq-
+c2:prof    c2:prof         c2:prof     c2:prof   c2:prof   c2:prof   c2:prof    c2:prof     c2:prof    s69:c2:prof   -nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA
