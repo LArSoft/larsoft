@@ -102,8 +102,6 @@ The following products are part of the full larsoft suite:
 <tr><td>&nbsp;&nbsp;  wirecell     </td>  <td> @WIRECELL_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larpandoracontent     </td>  <td> @LARPANDORACONTENT_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larsoft_data </td>  <td> @LARSOFT_DATA_VERSION@	</td>  <td>&nbsp;</td></tr>	
-<tr><td>&nbsp;&nbsp;  larbatch     </td>  <td> @LARBATCH_VERSION@ </td>  <td>&nbsp;</td></tr>
-<tr><td>&nbsp;&nbsp;  larutils     </td>  <td> @LARUTILS_VERSION@ </td>  <td>&nbsp;</td></tr>
 <tr><td>&nbsp;&nbsp;  larcoreobj   </td>  <td> @LARCOREOBJ_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larcorealg   </td>  <td> @LARCOREALG_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larcore     </td>  <td> @LARCORE_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
@@ -120,8 +118,6 @@ The following products are part of the full larsoft suite:
 <tr><td>&nbsp;&nbsp;  larexamples     </td>  <td> @LAREXAMPLES_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  lareventdisplay     </td>  <td> @LAREVENTDISPLAY_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larsoft     </td>  <td> @LARSOFT_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
-<tr><td colspan="3"><b>Utilities:</b></td></tr>
-<tr><td>&nbsp;&nbsp;  mrb          </td>  <td> @MRB_VERSION@ </td>  <td>&nbsp;</td></tr>
 </table>
 </center>
 

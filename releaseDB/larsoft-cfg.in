@@ -42,7 +42,7 @@ build_cet larwirecell @LARWIRECELL_VERSION@ ${basequal}
 build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}
 build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}
 build_cet larsoft @LARSOFT_VERSION@ ${basequal}
-build_cet_null larbatch @LARBATCH_VERSION@
-build_cet_null larutils @LARUTILS_VERSION@
+#build_cet_null larbatch @LARBATCH_VERSION@
+#build_cet_null larutils @LARUTILS_VERSION@
 
 return 0
