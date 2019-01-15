@@ -423,7 +423,6 @@ lardata : lardata : lardata/Utilities/Range.h
 lardata : lardata : lardata/Utilities/RangeForWrapper.h
 lardata : lardata : lardata/Utilities/SignalShaping.h
 lardata : lardata : lardata/Utilities/SimpleFits.h
-lardata : lardata : lardata/Utilities/StatCollector.h
 lardata : lardata : lardata/Utilities/TensorIndices.h
 lardata : lardata : lardata/Utilities/TupleLookupByTag.h
 lardata : lardata : lardata/Utilities/UniqueRangeSet.h
@@ -440,6 +439,9 @@ lardata : lardataalg : lardataalg/DetectorInfo/DetectorPropertiesStandard.h
 lardata : lardataalg : lardataalg/DetectorInfo/ElecClock.h
 lardata : lardataalg : lardataalg/DetectorInfo/LArProperties.h
 lardata : lardataalg : lardataalg/DetectorInfo/LArPropertiesStandard.h
+lardata : lardataalg : lardataalg/Dumpers/DumperBase.h
+lardata : lardataalg : lardataalg/Dumpers/RawData/OpDetWaveform.h
+lardata : lardataalg : lardataalg/Utilities/StatCollector.h
 lardata : lardataobj : lardataobj/AnalysisBase/MVAOutput.h
 lardata : lardataobj : lardataobj/RawData/DAQHeader.h
 lardata : lardataobj : lardataobj/RawData/ExternalTrigger.h
@@ -524,6 +526,13 @@ lardataalg : lardataalg : lardataalg/DetectorInfo/LArPropertiesStandardTestHelpe
 lardataalg : lardataalg : lardataalg/DetectorInfo/RunHistory.h
 lardataalg : lardataalg : lardataalg/DetectorInfo/RunHistoryStandard.h
 lardataalg : lardataalg : lardataalg/MCDumpers/MCDumperUtils.h
+lardataalg : lardataalg : lardataalg/Utilities/StatCollector.h
+lardataalg : lardataalg : lardataalg/Utilities/constexpr_math.h
+lardataalg : lardataalg : lardataalg/Utilities/quantities.h
+lardataalg : lardataalg : lardataalg/Utilities/quantities/datasize.h
+lardataalg : lardataalg : lardataalg/Utilities/quantities/frequency.h
+lardataalg : lardataalg : lardataalg/Utilities/quantities/spacetime.h
+lardataobj : larcorealg : larcorealg/Geometry/geo_vectors_utils.h
 lardataobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h
 lardataobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/RawTypes.h
 lardataobj : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_types.h
@@ -575,6 +584,7 @@ lardataobj : lardataobj : lardataobj/RecoBase/OpFlash.h
 lardataobj : lardataobj : lardataobj/RecoBase/OpHit.h
 lardataobj : lardataobj : lardataobj/RecoBase/PCAxis.h
 lardataobj : lardataobj : lardataobj/RecoBase/PFParticle.h
+lardataobj : lardataobj : lardataobj/RecoBase/PFParticleMetadata.h
 lardataobj : lardataobj : lardataobj/RecoBase/PointCharge.h
 lardataobj : lardataobj : lardataobj/RecoBase/Seed.h
 lardataobj : lardataobj : lardataobj/RecoBase/Shower.h
@@ -595,6 +605,7 @@ lardataobj : lardataobj : lardataobj/RecoBase/Vertex.h
 lardataobj : lardataobj : lardataobj/RecoBase/VertexAssnMeta.h
 lardataobj : lardataobj : lardataobj/RecoBase/Wire.h
 lardataobj : lardataobj : lardataobj/RecoBase/classes.h
+lardataobj : lardataobj : lardataobj/Simulation/AuxDetHit.h
 lardataobj : lardataobj : lardataobj/Simulation/AuxDetSimChannel.h
 lardataobj : lardataobj : lardataobj/Simulation/BeamGateInfo.h
 lardataobj : lardataobj : lardataobj/Simulation/BeamTypes.h
@@ -684,7 +695,6 @@ lareventdisplay : lardata : lardata/Utilities/Dereference.h
 lareventdisplay : lardata : lardata/Utilities/GeometryUtilities.h
 lareventdisplay : lardata : lardata/Utilities/PxHitConverter.h
 lareventdisplay : lardata : lardata/Utilities/PxUtils.h
-lareventdisplay : lardata : lardata/Utilities/StatCollector.h
 lareventdisplay : lardata : lardata/Utilities/TupleLookupByTag.h
 lareventdisplay : lardata : lardata/Utilities/UtilException.h
 lareventdisplay : lardata : lardata/Utilities/filterRangeFor.h
@@ -694,6 +704,7 @@ lareventdisplay : lardataalg : lardataalg/DetectorInfo/DetectorClocksException.h
 lareventdisplay : lardataalg : lardataalg/DetectorInfo/DetectorProperties.h
 lareventdisplay : lardataalg : lardataalg/DetectorInfo/ElecClock.h
 lareventdisplay : lardataalg : lardataalg/DetectorInfo/LArProperties.h
+lareventdisplay : lardataalg : lardataalg/Utilities/StatCollector.h
 lareventdisplay : lardataobj : lardataobj/AnalysisBase/Calorimetry.h
 lareventdisplay : lardataobj : lardataobj/AnalysisBase/CosmicTag.h
 lareventdisplay : lardataobj : lardataobj/AnalysisBase/MVAOutput.h
@@ -1019,17 +1030,19 @@ larg4 : larcoreobj : larcoreobj/SimpleTypesAndConstants/geo_vectors.h
 larg4 : larcoreobj : larcoreobj/SimpleTypesAndConstants/readout_types.h
 larg4 : lardataalg : lardataalg/MCDumpers/MCDumperUtils.h
 larg4 : lardataalg : lardataalg/MCDumpers/MCDumpers.h
-larg4 : lardataobj : lardataobj/Simulation/AuxDetSimChannel.h
+larg4 : lardataobj : lardataobj/Simulation/AuxDetHit.h
 larg4 : lardataobj : lardataobj/Simulation/GeneratedParticleInfo.h
 larg4 : lardataobj : lardataobj/Simulation/SimEnergyDeposit.h
 larg4 : lardataobj : lardataobj/Simulation/sim.h
+larg4 : larg4 : larg4/Analysis/CheckAuxDetHit_module.h
+larg4 : larg4 : larg4/Analysis/CheckMCParticle_module.h
 larg4 : larg4 : larg4/Analysis/CheckSimEnergyDeposit_module.h
 larg4 : larg4 : larg4/Services/AuxDetSD.h
 larg4 : larg4 : larg4/Services/LArG4Detector_service.h
 larg4 : larg4 : larg4/Services/SimEnergyDepositSD.h
 larg4 : larg4 : larg4/pluginActions/MCTruthEventAction_service.h
 larg4 : larg4 : larg4/pluginActions/ParticleListAction_service.h
-larg4 : larsim : larsim/LArG4/ParticleFilters.h
+larg4 : larg4 : larg4/pluginActions/thePositionInVolumeFilter.h
 larpandora : larcore : larcore/CoreUtils/ServiceUtil.h
 larpandora : larcore : larcore/Geometry/Geometry.h
 larpandora : larcorealg : larcorealg/CoreUtils/DereferenceIterator.h
@@ -1084,8 +1097,10 @@ larpandora : lardataobj : lardataobj/RecoBase/Cluster.h
 larpandora : lardataobj : lardataobj/RecoBase/Hit.h
 larpandora : lardataobj : lardataobj/RecoBase/PCAxis.h
 larpandora : lardataobj : lardataobj/RecoBase/PFParticle.h
+larpandora : lardataobj : lardataobj/RecoBase/PFParticleMetadata.h
 larpandora : lardataobj : lardataobj/RecoBase/Seed.h
 larpandora : lardataobj : lardataobj/RecoBase/Shower.h
+larpandora : lardataobj : lardataobj/RecoBase/Slice.h
 larpandora : lardataobj : lardataobj/RecoBase/SpacePoint.h
 larpandora : lardataobj : lardataobj/RecoBase/Track.h
 larpandora : lardataobj : lardataobj/RecoBase/TrackHitMeta.h
@@ -1116,8 +1131,6 @@ larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraGeometry.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraHelper.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraInput.h
 larpandora : larpandora : larpandora/LArPandoraInterface/LArPandoraOutput.h
-larpandora : larpandora : larpandora/LArPandoraObjects/PFParticleMetadata.h
-larpandora : larpandora : larpandora/LArPandoraObjects/classes.h
 larpandora : larpandora : larpandora/RootGraphics/RootGraphicsEnablingService.h
 larpandora : larpandoracontent : larpandoracontent/LArContent.h
 larpandora : larpandoracontent : larpandoracontent/LArControlFlow/MasterAlgorithm.h
@@ -1430,7 +1443,6 @@ larreco : lardata : lardata/Utilities/PxUtils.h
 larreco : lardata : lardata/Utilities/RangeForWrapper.h
 larreco : lardata : lardata/Utilities/SignalShaping.h
 larreco : lardata : lardata/Utilities/SimpleFits.h
-larreco : lardata : lardata/Utilities/StatCollector.h
 larreco : lardata : lardata/Utilities/UtilException.h
 larreco : lardataalg : lardataalg/DetectorInfo/ClockConstants.h
 larreco : lardataalg : lardataalg/DetectorInfo/DetectorClocks.h
@@ -1438,6 +1450,7 @@ larreco : lardataalg : lardataalg/DetectorInfo/DetectorClocksException.h
 larreco : lardataalg : lardataalg/DetectorInfo/DetectorProperties.h
 larreco : lardataalg : lardataalg/DetectorInfo/ElecClock.h
 larreco : lardataalg : lardataalg/DetectorInfo/LArProperties.h
+larreco : lardataalg : lardataalg/Utilities/StatCollector.h
 larreco : lardataobj : lardataobj/AnalysisBase/BackTrackerMatchingData.h
 larreco : lardataobj : lardataobj/AnalysisBase/Calorimetry.h
 larreco : lardataobj : lardataobj/AnalysisBase/CosmicTag.h
@@ -1505,6 +1518,10 @@ larreco : larevt : larevt/CalibrationDBI/Interface/ElectronLifetimeService.h
 larreco : larevt : larevt/Filters/ChannelFilter.h
 larreco : larevt : larevt/SpaceCharge/SpaceCharge.h
 larreco : larevt : larevt/SpaceChargeServices/SpaceChargeService.h
+larreco : larreco : larreco/Calibrator/IPhotonCalibrator.h
+larreco : larreco : larreco/Calibrator/IPhotonCalibratorService.h
+larreco : larreco : larreco/Calibrator/PhotonCalibratorServiceStandard.h
+larreco : larreco : larreco/Calibrator/PhotonCalibratorStandard.h
 larreco : larreco : larreco/Calorimetry/CalorimetryAlg.h
 larreco : larreco : larreco/Calorimetry/LinearEnergyAlg.h
 larreco : larreco : larreco/Calorimetry/TrackCalorimetryAlg.h
@@ -1693,6 +1710,7 @@ larreco : larreco : larreco/RecoAlg/StitchAlg.h
 larreco : larreco : larreco/RecoAlg/TCAlg/DataStructs.h
 larreco : larreco : larreco/RecoAlg/TCAlg/DebugStruct.h
 larreco : larreco : larreco/RecoAlg/TCAlg/PFPUtils.h
+larreco : larreco : larreco/RecoAlg/TCAlg/StepUtils.h
 larreco : larreco : larreco/RecoAlg/TCAlg/TCCR.h
 larreco : larreco : larreco/RecoAlg/TCAlg/TCDebugTools/showertree.h
 larreco : larreco : larreco/RecoAlg/TCAlg/TCHist.h
@@ -1741,6 +1759,7 @@ larsim : larcore : larcore/CoreUtils/ServiceUtil.h
 larsim : larcore : larcore/Geometry/Geometry.h
 larsim : larcorealg : larcorealg/CoreUtils/DereferenceIterator.h
 larsim : larcorealg : larcorealg/CoreUtils/DumpUtils.h
+larsim : larcorealg : larcorealg/CoreUtils/ParticleFilters.h
 larsim : larcorealg : larcorealg/CoreUtils/ProviderPack.h
 larsim : larcorealg : larcorealg/CoreUtils/RealComparisons.h
 larsim : larcorealg : larcorealg/CoreUtils/UncopiableAndUnmovableClass.h
@@ -1875,7 +1894,6 @@ larsim : larsim : larsim/LArG4/OpFastScintillation.hh
 larsim : larsim : larsim/LArG4/OpParamAction.h
 larsim : larsim : larsim/LArG4/OpParamSD.h
 larsim : larsim : larsim/LArG4/OpticalPhysics.hh
-larsim : larsim : larsim/LArG4/ParticleFilters.h
 larsim : larsim : larsim/LArG4/ParticleListAction.h
 larsim : larsim : larsim/LArG4/PhysicsList.h
 larsim : larsim : larsim/LArG4/VisualizationAction.h
@@ -1962,7 +1980,9 @@ larwirecell : larevt : larevt/CalibrationDBI/Interface/DetPedestalService.h
 larwirecell : larevt : larevt/CalibrationDBI/Interface/ElectronicsCalibProvider.h
 larwirecell : larevt : larevt/CalibrationDBI/Interface/ElectronicsCalibService.h
 larwirecell : larwirecell : larwirecell/Components/ChannelNoiseDB.h
+larwirecell : larwirecell : larwirecell/Components/ChannelSelectorDB.h
 larwirecell : larwirecell : larwirecell/Components/CookedFrameSink.h
+larwirecell : larwirecell : larwirecell/Components/CookedFrameSource.h
 larwirecell : larwirecell : larwirecell/Components/FrameSaver.h
 larwirecell : larwirecell : larwirecell/Components/MultiChannelNoiseDB.h
 larwirecell : larwirecell : larwirecell/Components/RawFrameSource.h
