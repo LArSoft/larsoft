@@ -22,7 +22,7 @@ set( BASEQUAL e17 )
 set( SQUAL s78 )
 
 create_product_variables( larutils    v1_23_13 )
-create_product_variables( larbatch    v01_48_01 )
+create_product_variables( larbatch    v01_49_00 )
 
 create_product_variables( larcoreobj  v08_02_02 )
 create_product_variables( larcorealg  v08_05_00 )
