@@ -93,6 +93,9 @@ sub die_while_processing_options {
 
 sub replace_in_files {
     my ($files_str_ref, $old_pattern, $new_pattern, $dry) = @_;
+    if ($files_str_ref =~ /^\s*$/) {
+        return;
+    }
     my $matched_files_str = `grep -l "$old_pattern" $files_str_ref`;
     my @matched_files = split /^/m, $matched_files_str;
     foreach(@matched_files) {
@@ -114,7 +117,7 @@ foreach my $old_inc (sort keys %header_list) {
   print "Checking for files using $old_inc\n";
   my $new_inc = $header_list{$old_inc};
   # This pattern also removes trailing whitespace
-  my $old_pattern = '^\\(#include\\s\\+[\\"<]\\)' . $old_inc . '\\([\\">]\\)[^\\s]*$';
+  my $old_pattern = '^\\s*\\(#include\\s\\+[\\"<]\\)' . $old_inc . '\\([\\">]\\)';
   my $new_pattern = '\\1' . $new_inc . '\\2';
   replace_in_files($cpp_files_str, $old_pattern, $new_pattern, $dry_run);
 }
@@ -131,7 +134,7 @@ if ($cmake_files_str !~ /^\s*$/) {
     replace_in_files($cmake_files_str, $old_pattern, $new_lib, $dry_run);
   }
 
-  # Check if the find_ups_product(art) line needs to be added.
+  # Check if the find_ups_product(art_root_io) line needs to be added.
   my $old_find_pattern = '^\\s*\\(find_ups_product\\|FIND_UPS_PRODUCT\\)\\s*(\\s*art\\>.*$';
   my $matched_find_files_str = `grep -li "$old_find_pattern" $cmake_files_str`;
   if ($matched_find_files_str !~ /^\s*$/) {
@@ -139,6 +142,11 @@ if ($cmake_files_str !~ /^\s*$/) {
       print "======================================================\n";
       my @matches_find_files = split /^/m, $matched_find_files_str;
       foreach (@matches_find_files) {
+        # Skip over the file if the 'find_ups_product(art_root_io)'
+        # commands is already include.
+        if (system("grep -qli '^\\s*find_ups_product(\\s*art_root_io\\>.*\$' $_") == 0) {
+          next;
+        }
         if ($dry_run) {
           print "  Would change file $_";
         }
