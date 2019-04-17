@@ -1,0 +1,172 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+use vars qw(%header_list);
+use vars qw(%cmake_library_list);
+use vars qw(%scons_library_list);
+
+BEGIN {
+  %header_list = (
+    "art/Framework/Services/Optional/TFileService.h" => "art_root_io/TFileService.h",
+    "art/Framework/Services/Optional/TFileDirectory.h" => "art_root_io/TFileDirectory.h",
+    "art/Framework/IO/Root/checkDictionaries.h" => "art_root_io/checkDictionaries.h",
+    "art/Framework/IO/Root/detail/DummyProductCache.h" => "art_root_io/detail/DummyProductCache.h",
+    "art/Framework/IO/Root/detail/getObjectRequireDict.h" => "art_root_io/detail/getObjectRequireDict.h",
+    "art/Framework/IO/Root/detail/KeptProvenance.h" => "art_root_io/detail/KeptProvenance.h",
+    "art/Framework/IO/Root/detail/rootOutputConfigurationTools.h" => "art_root_io/detail/rootOutputConfigurationTools.h",
+    "art/Framework/IO/Root/DropMetaData.h" => "art_root_io/DropMetaData.h",
+    "art/Framework/IO/Root/GetFileFormatEra.h" => "art_root_io/GetFileFormatEra.h",
+    "art/Framework/IO/Root/GetFileFormatVersion.h" => "art_root_io/GetFileFormatVersion.h",
+    "art/Framework/IO/Root/RootDB/SQLErrMsg.h" => "art_root_io/RootDB/SQLErrMsg.h",
+    "art/Framework/IO/Root/RootDB/SQLite3Wrapper.h" => "art_root_io/RootDB/SQLite3Wrapper.h",
+    "art/Framework/IO/Root/RootDB/tkeyvfs.h" => "art_root_io/RootDB/tkeyvfs.h",
+    "art/Framework/IO/Root/RootDB/TKeyVFSOpenPolicy.h" => "art_root_io/RootDB/TKeyVFSOpenPolicy.h",
+    "art/Framework/IO/Root/RootFileBlock.h" => "art_root_io/RootFileBlock.h",
+    "art/Framework/IO/Root/RootInput.h" => "art_root_io/RootInput.h",
+    "art/Framework/IO/Root/RootOutputTree.h" => "art_root_io/RootOutputTree.h",
+  );
+  %cmake_library_list = (
+    # Bare link-line variables
+    "art_Framework_Services_Optional" => 'art_root_io_tfile_support \${ROOT_CORE}',
+    "art_Framework_Services_Optional_TFileService_service" => "art_root_io_TFileService_service",
+    "art_Framework_IO_Root" => "art_root_io",
+    "art_Framework_IO_Root_detail_sources" => "art_root_io_detail",
+    "art_Framework_IO_Root_RootDB" => "art_root_io_RootDB",
+    "art_Framework_IO_Root_RootInput_source" => "art_root_io_RootInput_source",
+    "art_Framework_IO_RootVersion" => "art_root_io",
+    # CMake link-line variables
+    "ART_FRAMEWORK_SERVICES_OPTIONAL" => 'ART_ROOT_IO_TFILE_SUPPORT} \${ROOT_CORE',
+    "ART_FRAMEWORK_SERVICES_OPTIONAL_TFILESERVICE_SERVICE" => "ART_ROOT_IO_TFILESERVICE_SERVICE",
+    "ART_FRAMEWORK_IO_ROOT" => "ART_ROOT_IO",
+    "ART_FRAMEWORK_IO_ROOT_DETAIL_SOURCES" => "ART_ROOT_IO_DETAIL",
+    "ART_FRAMEWORK_IO_ROOT_ROOTDB" => "ART_ROOT_IO_ROOTDB",
+    "ART_FRAMEWORK_IO_ROOT_ROOTINPUT_SOURCE" => "ART_ROOT_IO_ROOTINPUT_SOURCE",
+    "ART_FRAMEWORK_IO_ROOTVERSION" => "ART_ROOT_IO"
+  );
+  %scons_library_list = (
+    # We do not additionally supply ${ROOT_CORE} along with
+    # art_root_io_tfile_support as Mu2e already links against it.
+    "art_Framework_Services_Optional" => "art_root_io_tfile_support",
+    "art_Framework_Services_Optional_TFileService_service" => "art_root_io_TFileService_service",
+    "art_Framework_IO_Root" => "art_root_io",
+    "art_Framework_IO_Root_detail_sources" => "art_root_io_detail",
+    "art_Framework_IO_Root_RootDB" => "art_root_io_RootDB",
+    "art_Framework_IO_Root_RootInput_source" => "art_root_io_RootInput_source",
+    "art_Framework_IO_RootVersion" => "art_root_io",
+  );
+}
+
+use Getopt::Long qw(:config no_ignore_case bundling);
+
+my $top_level_dir;
+my $dry_run;
+GetOptions("help|h|?" => \&help_message,
+           "top-level-dir|d=s" => \$top_level_dir,
+           "dry-run|n" => \$dry_run)
+    or die_while_processing_options();
+
+if (!defined $top_level_dir) {
+    print("The 'top-level-dir|d' command-line option is required:\n  ");
+    usage();
+    exit(1);
+}
+
+sub usage {
+    print("Usage: art-3.02-migration -d <top-level directory> [--dry-run]\n");
+}
+
+sub help_message {
+    print("\n");
+    usage();
+    print("\nOptions:\n\n");
+    print("  -d [--top-level-dir] arg   Top-level directory to apply migration script.\n");
+    print("  -n [--dry-run]             Show what files would be changed.\n\n");
+    exit(0);
+}
+
+sub die_while_processing_options {
+    usage();
+    print("Type 'art-3.02-migration --help' for more information.\n");
+    exit(1);
+}
+
+sub replace_in_files {
+    my ($files_str_ref, $old_pattern, $new_pattern, $dry) = @_;
+    if ($files_str_ref =~ /^\s*$/) {
+        return;
+    }
+    my $matched_files_str = `grep -l "$old_pattern" $files_str_ref`;
+    my @matched_files = split /^/m, $matched_files_str;
+    foreach(@matched_files) {
+      if ($dry) {
+        print "  Would change file $_";
+      }
+      else {
+        print "  Updating file $_";
+        `sed -i.backup "s|$old_pattern|$new_pattern|g" $_`;
+      }
+    }
+}
+
+# Replace C++ header dependencies
+print "Checking header dependencies\n";
+print "============================\n";
+my $cpp_files_str = `find $top_level_dir \\( \\( -name .svn -o -name .git -o -name CVS \\) -prune \\) -o \\( -name '*.c' -o -name '*.cxx' -o -name '*.cc' -o -name '*.cpp' -o -name '*.C' -o -name '*.h' -o -name '*.hxx' -o -name '*.hh' -o -name '*.hpp' -o -name '*.[it]cc' -o -name '*.H*' \\) -printf "%p "`;
+foreach my $old_inc (sort keys %header_list) {
+  print "Checking for files using $old_inc\n";
+  my $new_inc = $header_list{$old_inc};
+  # This pattern also removes trailing whitespace
+  my $old_pattern = '^\\s*\\(#include\\s\\+[\\"<]\\)' . $old_inc . '\\([\\">]\\)';
+  my $new_pattern = '\\1' . $new_inc . '\\2';
+  replace_in_files($cpp_files_str, $old_pattern, $new_pattern, $dry_run);
+}
+
+# Fix CMake files
+my $cmake_files_str = `find $top_level_dir \\( \\( -name .svn -o -name .git -o -name CVS \\) -prune \\) -o \\( -name 'CMakeLists.txt' -o -name '*.cmake' \\) -printf "%p "`;
+if ($cmake_files_str !~ /^\s*$/) {
+  print "\nChecking library dependencies (CMake)\n";
+  print "=====================================\n";
+  foreach my $old_lib (sort keys %cmake_library_list) {
+    print "Checking for uses of $old_lib\n";
+    my $old_pattern = $old_lib . "\\>";
+    my $new_lib = $cmake_library_list{$old_lib};
+    replace_in_files($cmake_files_str, $old_pattern, $new_lib, $dry_run);
+  }
+
+  # Check if the find_ups_product(art_root_io) line needs to be added.
+  my $old_find_pattern = '^\\s*\\(find_ups_product\\|FIND_UPS_PRODUCT\\)\\s*(\\s*art\\>.*$';
+  my $matched_find_files_str = `grep -li "$old_find_pattern" $cmake_files_str`;
+  if ($matched_find_files_str !~ /^\s*$/) {
+      print "\nChecking if 'find_ups_product(art_root_io)' is needed\n";
+      print "======================================================\n";
+      my @matches_find_files = split /^/m, $matched_find_files_str;
+      foreach (@matches_find_files) {
+        # Skip over the file if the 'find_ups_product(art_root_io)'
+        # commands is already include.
+        if (system("grep -qli '^\\s*find_ups_product(\\s*art_root_io\\>.*\$' $_") == 0) {
+          next;
+        }
+        if ($dry_run) {
+          print "  Would change file $_";
+        }
+        else {
+          print "  Updating file $_";
+          `sed -i.backup -e '/$old_find_pattern/a\\' -e 'find_ups_product(art_root_io)' $_`;
+        }
+      }
+  }
+}
+
+# Replace Library link lines (Scons)
+my $scons_files_str = `find $top_level_dir -name 'SConscript' -printf "%p "`;
+if ($scons_files_str !~ /^\s*$/) {
+  print "\nChecking library dependencies (SCons)\n";
+  print "=====================================\n";
+  foreach my $old_lib (sort keys %scons_library_list) {
+    print "Checking for uses of $old_lib\n";
+    my $old_pattern=$old_lib . "\\>";
+    my $new_lib = $scons_library_list{$old_lib};
+    replace_in_files($scons_files_str, $old_pattern, $new_lib, $dry_run);
+  }
+}
