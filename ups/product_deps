@@ -19,16 +19,16 @@ larpandora      v08_05_08
 larwirecell     v08_03_06
 larsoft_data    v1_02_01
 larsoftobj      v08_10_01
-ifdh_art        v2_08_00
+ifdh_art        v2_08_01
 
 cetbuildtools	v7_11_00   -   only_for_build
 end_product_list
   
 qualifier  lareventdisplay larexamples larreco   larana	   larg4      larpandora larwirecell larsoftobj ifdh_art      larsoft_data notes
-e17:debug  e17:debug       e17:debug   e17:debug e17:debug e17:debug  e17:debug  e17:debug   e17:debug  s81:e17:debug -nq-
-e17:prof   e17:prof        e17:prof    e17:prof  e17:prof  e17:prof   e17:prof   e17:prof    e17:prof   s81:e17:prof  -nq-
-c2:debug   c2:debug        c2:debug    c2:debug  c2:debug  c2:debug  c2:debug   c2:debug    c2:debug   s81:c2:debug  -nq-
-c2:prof    c2:prof         c2:prof     c2:prof   c2:prof   c2:prof   c2:prof    c2:prof     c2:prof    s81:c2:prof   -nq-
+e17:debug  e17:debug       e17:debug   e17:debug e17:debug e17:debug  e17:debug  e17:debug   e17:debug  s82:e17:debug -nq-
+e17:prof   e17:prof        e17:prof    e17:prof  e17:prof  e17:prof   e17:prof   e17:prof    e17:prof   s82:e17:prof  -nq-
+c2:debug   c2:debug        c2:debug    c2:debug  c2:debug  c2:debug  c2:debug   c2:debug    c2:debug   s82:c2:debug  -nq-
+c2:prof    c2:prof         c2:prof     c2:prof   c2:prof   c2:prof   c2:prof    c2:prof     c2:prof    s82:c2:prof   -nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA
