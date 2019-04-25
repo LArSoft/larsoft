@@ -43,9 +43,9 @@
       <li>chmod +x pullProducts</li>
       <li>Scientific Linux 6.x: <pre>./pullProducts &lt;product-directory&gt; slf6 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>Scientific Linux 7.x: <pre>./pullProducts &lt;product-directory&gt; slf7 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
-      <li>Ubuntu LTS 16: <pre>./pullProducts &lt;product-directory&gt; u16 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
-      <li>Sierra (SIP disabled): <pre>./pullProducts &lt;product-directory&gt; d16 larsoftobj-@LARSOFTOBJ_VERSION@ c2 &lt;prof|debug&gt;</pre></li>
+      <li>Mojave (SIP disabled): <pre>./pullProducts &lt;product-directory&gt; d18 larsoftobj-@LARSOFTOBJ_VERSION@ c2 &lt;prof|debug&gt;</pre></li>
       <li>High Sierra (SIP disabled): <pre>./pullProducts &lt;product-directory&gt; d17 larsoftobj-@LARSOFTOBJ_VERSION@ c2 &lt;prof|debug&gt;</pre></li>
+      <li>Ubuntu LTS 16 (on request): <pre>./pullProducts &lt;product-directory&gt; u16 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
     </ul></li>
   </ul></li>
   <li>See <a href="https://cdcvs.fnal.gov/redmine/projects/cet-is-public/wiki/AboutQualifiers">About Qualifiers</a> for qualifier descriptions.</li>
