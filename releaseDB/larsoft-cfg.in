@@ -1,6 +1,7 @@
 # build larsoft
 
 basequal=${1}
+[[ "${build_label}" == py3 ]] && pyqual=:${build_label}
 
 # specify version to bootstrap and setup ups
 check_ups v6_0_7
@@ -23,25 +24,22 @@ EOF
   return ${status}
 fi
 
-ensure_cetbuildtools v7_03_02
-
-build_cet larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}
+build_cet larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}${pyqual}
 
 # larcore tests disabled because of Jenkins build slave problems
-build_cet artg4tk @ARTG4TK_VERSION@ ${basequal}
-build_cet -n larcore @LARCORE_VERSION@ ${basequal}
-build_cet lardata @LARDATA_VERSION@ ${basequal}
-build_cet larevt @LAREVT_VERSION@ ${basequal}
-build_cet larsim @LARSIM_VERSION@ ${basequal}
-build_cet larg4 @LARG4_VERSION@ ${basequal}
-build_cet larreco @LARRECO_VERSION@ ${basequal}
+build_cet -n larcore @LARCORE_VERSION@ ${basequal}${pyqual}
+build_cet lardata @LARDATA_VERSION@ ${basequal}${pyqual}
+build_cet larevt @LAREVT_VERSION@ ${basequal}${pyqual}
+build_cet larsim @LARSIM_VERSION@ ${basequal}${pyqual}
+build_cet larg4 @LARG4_VERSION@ ${basequal}${pyqual}
+build_cet larreco @LARRECO_VERSION@ ${basequal}${pyqual}
 # the single larana test likes to hang on Jenkins macOS build slaves
-build_cet -n larana @LARANA_VERSION@ ${basequal}
-build_cet larpandora @LARPANDORA_VERSION@ ${basequal}
-build_cet larwirecell @LARWIRECELL_VERSION@ ${basequal}
-build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}
-build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}
-build_cet larsoft @LARSOFT_VERSION@ ${basequal}
+build_cet -n larana @LARANA_VERSION@ ${basequal}${pyqual}
+build_cet larpandora @LARPANDORA_VERSION@ ${basequal}${pyqual}
+build_cet larwirecell @LARWIRECELL_VERSION@ ${basequal}${pyqual}
+build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}${pyqual}
+build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}${pyqual}
+build_cet larsoft @LARSOFT_VERSION@ ${basequal}${pyqual}
 build_cet_null larbatch @LARBATCH_VERSION@
 build_cet_null larutils @LARUTILS_VERSION@
 

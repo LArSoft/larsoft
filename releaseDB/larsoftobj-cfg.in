@@ -1,6 +1,7 @@
 # build larsoftobj distribution
 
 basequal=${1}
+[[ "${build_label}" == py3 ]] && pyqual=:${build_label}
 
 # specify version to bootstrap and setup ups
 check_ups v6_0_7
@@ -18,13 +19,13 @@ unset build_label
 build_noarch mrb @MRB_VERSION@
 
 # only needed because we don't have a nutools build
-do_build dk2nudata @DK2NUDATA_VERSION@ ${basequal}
+do_build dk2nudata @DK2NUDATA_VERSION@ ${basequal}${pyqual}
 
-build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}
-build_cet larcoreobj @LARCOREOBJ_VERSION@ ${basequal}
-build_cet -n larcorealg @LARCOREALG_VERSION@ ${basequal}
-build_cet lardataobj @LARDATAOBJ_VERSION@ ${basequal}
-build_cet lardataalg @LARDATAALG_VERSION@ ${basequal}
-build_cet larsoftobj @LARSOFTOBJ_VERSION@ ${basequal}
+build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}${pyqual}
+build_cet larcoreobj @LARCOREOBJ_VERSION@ ${basequal}${pyqual}
+build_cet -n larcorealg @LARCOREALG_VERSION@ ${basequal}${pyqual}
+build_cet lardataobj @LARDATAOBJ_VERSION@ ${basequal}${pyqual}
+build_cet lardataalg @LARDATAALG_VERSION@ ${basequal}${pyqual}
+build_cet larsoftobj @LARSOFTOBJ_VERSION@ ${basequal}${pyqual}
 
 return 0

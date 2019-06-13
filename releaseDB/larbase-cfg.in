@@ -1,6 +1,7 @@
 # build everything except larsoft itself
 
 basequal=${1}
+[[ "${build_label}" == py3 ]] && pyqual=:${build_label}
 
 # specify version to bootstrap and setup ups
 check_ups v6_0_7
@@ -14,16 +15,16 @@ EOF
   return ${status}
 fi
 
-do_build marley @MARLEY_VERSION@ ${basequal}
-do_build pandora @PANDORA_VERSION@ ${basequal}
+do_build marley @MARLEY_VERSION@ ${basequal}${pyqual}
+do_build pandora @PANDORA_VERSION@ ${basequal}${pyqual}
 build_noarch eigen @EIGEN_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build jsonnet @JSONNET_VERSION@ ${basequal}
-do_build wirecell @WIRECELL_VERSION@ ${basequal}
+do_build wirecell @WIRECELL_VERSION@ ${basequal}${pyqual}
 # Ubuntu builds will need protobuf here
 if [ "${basequal}" = "e15" ] || [ "${basequal}" = "e17" ]; then # cannot build for c2 yet
   do_build protobuf @PROTOBUF_VERSION@ ${basequal}
-  do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}
+  do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}${pyqual}
 fi
 
 # add to manifest if no build - larsoft_data, mrb
@@ -34,7 +35,8 @@ build_noarch mrb @MRB_VERSION@
 # new cetpkgsupport - temporary
 #ensure_cetpkgsupport @CETPKGSUPPORT_VERSION@
 
-build_cet systematicstools @SYSTEMATICSTOOLS_VERSION@ ${basequal}
-build_cet nusystematics @NUSYSTEMATICS_VERSION@ ${basequal}
+build_cet systematicstools @SYSTEMATICSTOOLS_VERSION@ ${basequal}${pyqual}
+build_cet nusystematics @NUSYSTEMATICS_VERSION@ ${basequal}${pyqual}
+build_cet artg4tk @ARTG4TK_VERSION@ ${basequal}${pyqual}
 
 return 0
