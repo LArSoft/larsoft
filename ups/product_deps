@@ -11,11 +11,11 @@ bindir      product_dir
 
 product         version
 lareventdisplay v08_08_02
-larexamples     v08_02_09
+larexamples     v08_02_10
 larana          v08_10_02
 larreco         v08_15_02
 larg4           v08_03_08
-larpandora      v08_07_05
+larpandora      v08_07_06
 larwirecell     v08_05_08
 larsoft_data    v1_02_01
 larsoftobj      v08_15_03
