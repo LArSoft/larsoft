@@ -30,7 +30,6 @@ ensure_cetbuildtools v7_03_02
 build_cet larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}${pyqual}
 
 # larcore tests disabled because of Jenkins build slave problems
-build_cet artg4tk @ARTG4TK_VERSION@ ${basequal}${pyqual}
 build_cet -n larcore @LARCORE_VERSION@ ${basequal}${pyqual}
 build_cet lardata @LARDATA_VERSION@ ${basequal}${pyqual}
 build_cet larevt @LAREVT_VERSION@ ${basequal}${pyqual}
