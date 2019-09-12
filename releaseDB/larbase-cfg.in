@@ -36,6 +36,7 @@ build_noarch mrb @MRB_VERSION@
 # new cetpkgsupport - temporary
 #ensure_cetpkgsupport @CETPKGSUPPORT_VERSION@
 
+build_cet gallery @GALLERY_VERSION@ ${basequal}${pyqual}
 build_cet systematicstools @SYSTEMATICSTOOLS_VERSION@ ${basequal}${pyqual}
 build_cet nusystematics @NUSYSTEMATICS_VERSION@ ${basequal}${pyqual}
 build_cet artg4tk @ARTG4TK_VERSION@ ${basequal}${pyqual}
