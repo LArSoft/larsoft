@@ -65,7 +65,8 @@ create_product_variables( tensorflow    v1_3_0e )
 create_product_variables( systematicstools v00_04_02 )
 create_product_variables( nusystematics v00_06_03 )
 create_product_variables( larsoft_data  v1_02_01 )
-create_product_variables( mrb           v3_02_01 )
+create_product_variables( mrb           v3_03_01 )
+create_product_variables( hub           v2_12_4 )
 # temporary
 #create_product_variables( cetpkgsupport v1_14_01 )
 

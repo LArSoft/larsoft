@@ -15,6 +15,7 @@ EOF
 fi
 [[ "${build_label}" == py3 ]] && pyqual=:${build_label}
 
+do_build hub @HUB_VERSION@
 build_noarch mrb @MRB_VERSION@
 
 # only needed because we don't have a nutools build

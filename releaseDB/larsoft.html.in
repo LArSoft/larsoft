@@ -121,6 +121,7 @@ The following products are part of the full larsoft suite:
 <tr><td>&nbsp;&nbsp;  lareventdisplay     </td>  <td> @LAREVENTDISPLAY_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larsoft     </td>  <td> @LARSOFT_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td colspan="3"><b>Utilities:</b></td></tr>
+<tr><td>&nbsp;&nbsp;  hub          </td>  <td> @HUB_VERSION@ </td>  <td>&nbsp;</td></tr>
 <tr><td>&nbsp;&nbsp;  mrb          </td>  <td> @MRB_VERSION@ </td>  <td>&nbsp;</td></tr>
 </table>
 </center>
