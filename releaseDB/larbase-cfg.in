@@ -14,6 +14,12 @@ EOF
   return ${status}
 fi
 
+if [[ -z "${version_set}" ]]; then
+  echo "ERROR: version set must be specified for artdaq_core"
+  return 1
+fi
+build_cet -p artdaq-core artdaq_core @ARTDAQ_CORE_VERSION@ ${basequal}${pyqual}:@version_set@
+
 do_build marley @MARLEY_VERSION@ ${basequal}
 do_build pandora @PANDORA_VERSION@ ${basequal}
 do_build hdf5 @HDF5_VERSION@ ${basequal}
