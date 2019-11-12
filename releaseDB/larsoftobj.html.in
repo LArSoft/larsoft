@@ -60,7 +60,7 @@ The following products are part of the larsoftobj suite.
 Note that gallery is provided as a convenience to the user and is part of the larsoftobj umbrella.
 </td></tr>
 <tr><td colspan="3"><b>Code:</b></td></tr>
-<tr><td>&nbsp;&nbsp;  canvas     </td>  <td> @CANVAS_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  canvas_root_io     </td>  <td> @CANVAS_ROOT_IO_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  nusimdata      </td>  <td> @NUSIMDATA_VERSION@	</td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larcoreobj   </td>  <td> @LARCOREOBJ_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larcorealg   </td>  <td> @LARCOREALG_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
