@@ -18,7 +18,6 @@ fi
 do_build hub @HUB_VERSION@
 build_noarch mrb @MRB_VERSION@
 
-# only needed because we don't have a nutools build
 do_build dk2nudata @DK2NUDATA_VERSION@ ${basequal}${pyqual}
 
 build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}${pyqual}
