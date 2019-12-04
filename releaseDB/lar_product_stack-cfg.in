@@ -5,11 +5,11 @@ basequal=${1}
 # specify version to bootstrap and setup ups
 check_ups v6_0_8
 
-build_bundle nulite_base-@NUDIST_DOT_VERSION@ ${basequal}
+build_bundle nulite_base-@NULITE_DOT_VERSION@ ${basequal}
 status=$?
 if (( ${status} != 0)); then
   cat 1>&2 <<EOF
-Build of nulite_base-@NUDIST_DOT_VERSION@ bundle failed with status ${status}
+Build of nulite_base-@NULITE_DOT_VERSION@ bundle failed with status ${status}
 EOF
   return ${status}
 fi
@@ -19,6 +19,7 @@ fi
 do_build marley @MARLEY_VERSION@ ${basequal}${pyqual}
 do_build pandora @PANDORA_VERSION@ ${basequal}${pyqual}
 do_build hdf5 @HDF5_VERSION@ ${basequal}
+do_build glpk @GLPK_VERSION@
 build_noarch eigen @EIGEN_VERSION@
 build_noarch guideline_sl @GUIDELINE_SL_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
