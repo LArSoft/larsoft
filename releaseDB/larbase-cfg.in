@@ -18,7 +18,10 @@ fi
 
 do_build marley @MARLEY_VERSION@ ${basequal}${pyqual}
 do_build pandora @PANDORA_VERSION@ ${basequal}${pyqual}
+do_build hdf5 @HDF5_VERSION@ ${basequal}
+do_build glpk @GLPK_VERSION@
 build_noarch eigen @EIGEN_VERSION@
+build_noarch guideline_sl @GUIDELINE_SL_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build jsonnet @JSONNET_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}${pyqual}
