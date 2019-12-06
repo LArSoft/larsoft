@@ -43,7 +43,8 @@ build_cet larwirecell @LARWIRECELL_VERSION@ ${basequal}${pyqual}
 build_cet larexamples @LAREXAMPLES_VERSION@ ${basequal}${pyqual}
 build_cet lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}${pyqual}
 build_cet larsoft @LARSOFT_VERSION@ ${basequal}${pyqual}
-build_cet_null larbatch @LARBATCH_VERSION@
-build_cet_null larutils @LARUTILS_VERSION@
+# do not distribute larbatch or larutils with a release candidate
+#build_cet_null larbatch @LARBATCH_VERSION@
+#build_cet_null larutils @LARUTILS_VERSION@
 
 return 0
