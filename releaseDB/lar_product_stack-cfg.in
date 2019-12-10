@@ -26,7 +26,7 @@ do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build jsonnet @JSONNET_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}${pyqual}
 # Ubuntu builds will need protobuf here
-if [ "${basequal}" = "e15" ] || [ "${basequal}" = "e17" ]; then # cannot build for c2 yet
+if [[ "${basequal}" = e1[579] ]]; then # cannot build for clang
   do_build protobuf @PROTOBUF_VERSION@ ${basequal}
   do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}${pyqual}
 fi
