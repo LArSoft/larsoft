@@ -1,7 +1,7 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v08_38_01
-defaultqual	e17
+parent	larsoft	v08_39_00
+defaultqual	e19
 
 # larsoft itself has no inc, or fcl directories
 # the lib directory just contains larsoftConfig.cmake and larsoftConfigVersion.cmake
@@ -10,15 +10,15 @@ fcldir      -
 bindir      product_dir
 
 product         version
-lareventdisplay v08_10_01
-larexamples     v08_04_01
-larana          v08_14_01
-larreco         v08_25_01
-larg4           v08_08_01
-larpandora      v08_09_01
-larwirecell     v08_10_01
+lareventdisplay v08_11_00
+larexamples     v08_05_00
+larana          v08_15_00
+larreco         v08_26_00
+larg4           v08_09_00
+larpandora      v08_10_00
+larwirecell     v08_11_00
 larsoft_data    v1_02_01
-larsoftobj      v08_23_01
+larsoftobj      v08_24_00
 
 cetbuildtools	v7_14_00   -   only_for_build
 end_product_list
@@ -28,18 +28,10 @@ e19:py3:debug  e19:py3:debug   e19:py3:debug  e19:py3:debug e19:py3:debug e19:py
 e19:py3:prof   e19:py3:prof    e19:py3:prof   e19:py3:prof  e19:py3:prof  e19:py3:prof   e19:py3:prof   e19:py3:prof   e19:py3:prof  -nq-
 e19:debug      e19:debug       e19:debug      e19:debug     e19:debug     e19:debug      e19:debug      e19:debug      e19:debug     -nq-
 e19:prof       e19:prof        e19:prof       e19:prof      e19:prof      e19:prof       e19:prof       e19:prof       e19:prof      -nq-
-e17:py3:debug  e17:py3:debug   e17:py3:debug  e17:py3:debug e17:py3:debug e17:py3:debug  e17:py3:debug  e17:py3:debug  e17:py3:debug -nq-
-e17:py3:prof   e17:py3:prof    e17:py3:prof   e17:py3:prof  e17:py3:prof  e17:py3:prof   e17:py3:prof   e17:py3:prof   e17:py3:prof  -nq-
-e17:debug      e17:debug       e17:debug      e17:debug     e17:debug     e17:debug      e17:debug      e17:debug      e17:debug     -nq-
-e17:prof       e17:prof        e17:prof       e17:prof      e17:prof      e17:prof       e17:prof       e17:prof       e17:prof      -nq-
 c7:py3:debug   c7:py3:debug    c7:py3:debug   c7:py3:debug  c7:py3:debug  c7:py3:debug   c7:py3:debug   c7:py3:debug   c7:py3:debug  -nq-
 c7:py3:prof    c7:py3:prof     c7:py3:prof    c7:py3:prof   c7:py3:prof   c7:py3:prof    c7:py3:prof    c7:py3:prof    c7:py3:prof   -nq-
 c7:debug       c7:debug        c7:debug       c7:debug      c7:debug      c7:debug       c7:debug       c7:debug       c7:debug      -nq-
 c7:prof        c7:prof         c7:prof        c7:prof       c7:prof       c7:prof        c7:prof        c7:prof        c7:prof       -nq-
-c2:py3:debug   c2:py3:debug    c2:py3:debug   c2:py3:debug  c2:py3:debug  c2:py3:debug   c2:py3:debug   c2:py3:debug   c2:py3:debug  -nq-
-c2:py3:prof    c2:py3:prof     c2:py3:prof    c2:py3:prof   c2:py3:prof   c2:py3:prof    c2:py3:prof    c2:py3:prof    c2:py3:prof   -nq-
-c2:debug       c2:debug        c2:debug       c2:debug      c2:debug      c2:debug       c2:debug       c2:debug       c2:debug      -nq-
-c2:prof        c2:prof         c2:prof        c2:prof       c2:prof       c2:prof        c2:prof        c2:prof        c2:prof       -nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA
