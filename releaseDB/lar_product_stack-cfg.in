@@ -16,7 +16,6 @@ fi
 
 [[ "${build_label}" == py3 ]] && pyqual=:${build_label}
 
-do_build geant4reweight @GEANT4REWEIGHT_VERSION@ ${basequal}${pyqual}
 do_build marley @MARLEY_VERSION@ ${basequal}${pyqual}
 do_build pandora @PANDORA_VERSION@ ${basequal}${pyqual}
 do_build hdf5 @HDF5_VERSION@ ${basequal}
