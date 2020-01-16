@@ -17,7 +17,7 @@ endmacro( create_product_variables)
 create_product_variables( larsoft ${version} )
 
 # define qualifiers
-set( BASEQUAL e17 )
+set( BASEQUAL e19 )
 set( SQUAL s93 )
 
 create_product_variables( larutils    v1_25_04 )
