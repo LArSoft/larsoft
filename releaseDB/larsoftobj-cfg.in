@@ -13,7 +13,7 @@ Build of gallery-@GALLERY_DOT_VERSION@ bundle failed with status ${status}
 EOF
   return ${status}
 fi
-[[ "${build_label}" == py3 ]] && pyqual=:${build_label}
+[[ "${build_label}" == py2 ]] && pyqual=:${build_label}
 
 do_build hub @HUB_VERSION@
 build_noarch mrb @MRB_VERSION@

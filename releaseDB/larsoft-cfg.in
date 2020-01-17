@@ -23,7 +23,7 @@ EOF
   return ${status}
 fi
 
-[[ "${build_label}" == py3 ]] && pyqual=:${build_label}
+[[ "${build_label}" == py2 ]] && pyqual=:${build_label}
 
 ensure_cetbuildtools v7_03_02
 

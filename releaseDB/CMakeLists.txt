@@ -14,11 +14,11 @@ macro( create_product_variables productname productversion )
    #message(STATUS "${PRODUCTNAME_UC} version is ${${PRODUCTNAME_UC}_VERSION}")
 endmacro( create_product_variables)
 
-create_product_variables( larsoft ${version} )
-
 # define qualifiers
 set( BASEQUAL e19 )
 set( version_set s94 )
+
+create_product_variables( larsoft     v08_41_00_rc0 )
 
 create_product_variables( larutils    v1_25_04 )
 create_product_variables( larbatch    v01_51_12 )
