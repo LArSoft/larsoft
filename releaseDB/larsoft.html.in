@@ -40,10 +40,10 @@
     <ul>
       <li>Download the script.</li>
       <li>chmod +x pullProducts</li>
-      <li>Scientific Linux 6.x: <pre>./pullProducts &lt;product-directory&gt; slf6 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
-      <li>Scientific Linux 7.x: <pre>./pullProducts &lt;product-directory&gt; slf7 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
-      <li>Mojave (SIP disabled): <pre>./pullProducts &lt;product-directory&gt; d18 larsoft-@version@ @SQUAL@-c2 &lt;prof|debug&gt;</pre></li>
-      <li>Ubuntu LTS 18 (best effort): <pre>./pullProducts &lt;product-directory&gt; u18 larsoft-@version@ @SQUAL@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
+      <li>Scientific Linux 6.x: <pre>./pullProducts &lt;product-directory&gt; slf6 larsoft-@version@ @version_set@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
+      <li>Scientific Linux 7.x: <pre>./pullProducts &lt;product-directory&gt; slf7 larsoft-@version@ @version_set@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
+      <li>Mojave (SIP disabled): <pre>./pullProducts &lt;product-directory&gt; d18 larsoft-@version@ @version_set@-c2 &lt;prof|debug&gt;</pre></li>
+      <li>Ubuntu LTS 18 (best effort): <pre>./pullProducts &lt;product-directory&gt; u18 larsoft-@version@ @version_set@-@BASEQUAL@ &lt;prof|debug&gt;</pre></li>
     </ul></li>
   </ul></li>
   <li>See <a href="https://cdcvs.fnal.gov/redmine/projects/cet-is-public/wiki/AboutQualifiers">About Qualifiers</a> for qualifier descriptions.</li>
@@ -76,7 +76,7 @@
     <li>BuildFW will pull source living in Fermi redmine (cpp0x, art, etc.) direct from the repository.</li>
     <li>USAGE:
     <ul>
-      <li><pre>./buildFW [-ft] -b @BASEQUAL@ -s @SQUAL@ &lt;product-directory&gt; &lt;debug|prof|opt&gt; larsoft-@LARSOFT_VERSION@</pre></li>
+      <li><pre>./buildFW [-ft] -b @BASEQUAL@ -s @version_set@ &lt;product-directory&gt; &lt;debug|prof|opt&gt; larsoft-@LARSOFT_VERSION@</pre></li>
       <li>See buildFW -h for more info.</li>
     </ul></li>
   </ul></li>
@@ -95,7 +95,6 @@ The following products are part of the full larsoft suite:
 <tr><td>&nbsp;&nbsp;  art     </td>  <td> @ART_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  nutools      </td>  <td> @NUTOOLS_VERSION@	</td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  artg4tk    </td>  <td> @ARTG4TK_VERSION@ </td> <td>@BASEQUAL@</td></tr>
-<tr><td>&nbsp;&nbsp;  geant4reweight </td>  <td> @GEANT4REWEIGHT_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  glpk       </td>  <td> @GLPK_VERSION@ </td>  <td>&nbsp;</td></tr>
 <tr><td>&nbsp;&nbsp;  marley     </td>  <td> @MARLEY_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  pandora   </td>  <td> @PANDORA_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
