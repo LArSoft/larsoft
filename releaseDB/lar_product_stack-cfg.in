@@ -28,10 +28,9 @@ do_build jsonnet @JSONNET_VERSION@ ${basequal}
 do_build protobuf @PROTOBUF_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}${pyqual}
 # Ubuntu builds will need protobuf here
-# disable until Jenkins problem is sorted
-#if [[ "${basequal}" == e1[579] ]]; then # cannot build for clang
-#  do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}${pyqual}
-#fi
+if [[ "${basequal}" == e1[579] ]]; then # cannot build for clang
+  do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}${pyqual}
+fi
 
 # add to manifest if no build - larsoft_data
 build_noarch ifdhc_config @IFDHC_CONFIG_VERSION@
