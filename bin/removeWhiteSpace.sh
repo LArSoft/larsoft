@@ -8,7 +8,7 @@ usage()
 
 file_list=$@
 
-if [ -z ${file_list} ]; then
+if [ -z "${file_list}" ]; then
   usage
   exit 1
 fi
