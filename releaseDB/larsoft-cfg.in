@@ -44,7 +44,7 @@ build_cet -G LArSoft larexamples @LAREXAMPLES_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larsoft @LARSOFT_VERSION@ ${basequal}${pyqual}
 # do not distribute larbatch or larutils with a release candidate
-build_cet_null -G LArSoft larbatch @LARBATCH_VERSION@
-build_cet_null -G LArSoft larutils @LARUTILS_VERSION@
+build_cet -f NULL -G LArSoft larbatch @LARBATCH_VERSION@
+build_cet -f NULL -G LArSoft larutils @LARUTILS_VERSION@
 
 return 0
