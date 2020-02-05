@@ -1,0 +1,15 @@
+name: Move new or reopened pull requests into new or reopened
+
+on:
+  pull_request:
+    types: [new, reopened]
+
+jobs:
+  automate-project-columns:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: alex-page/github-project-automation-plus@v0.1.0
+        with:
+          project: LArSoft pull requests
+          column: new or reopened
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
