@@ -26,10 +26,16 @@ build_noarch guideline_sl @GUIDELINE_SL_VERSION@
 build_noarch h5cpp @H5CPP_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build jsonnet @JSONNET_VERSION@ ${basequal}
-do_build protobuf @PROTOBUF_VERSION@ ${basequal}
+# protobuf does not build with clang on SLF6
+# when wirecell needs the protobuf dependency, it should move inside this block
+if [[ "${basequal}" == e19 ]]; then
+  do_build protobuf @PROTOBUF_VERSION@ ${basequal}
+elif [[ "${flvr}" != "Linux64bit+2.6-2.12" ]]; then
+  do_build protobuf @PROTOBUF_VERSION@ ${basequal}
+fi
 do_build wirecell @WIRECELL_VERSION@ ${basequal}${pyqual}
 # Ubuntu builds will need protobuf here
-if [[ "${basequal}" == e1[579] ]]; then # cannot build for clang
+if [[ "${basequal}" == e19 ]]; then # cannot build for clang
   do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}${pyqual}
 fi
 
