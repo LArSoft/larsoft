@@ -2,7 +2,7 @@ name: Move new or reopened pull requests into new or reopened
 
 on:
   pull_request:
-    types: [new, reopened]
+    types: [opened, reopened]
 
 jobs:
   automate-project-columns:
