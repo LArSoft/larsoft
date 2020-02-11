@@ -18,7 +18,7 @@ endmacro( create_product_variables)
 set( BASEQUAL e19 )
 set( version_set s94 )
 
-create_product_variables( larsoft     v08_42_01 )
+create_product_variables( larsoft     v08_42_00 )
 
 create_product_variables( larutils    v1_25_06 )
 create_product_variables( larbatch    v01_52_00 )
