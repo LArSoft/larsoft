@@ -16,7 +16,7 @@ endmacro( create_product_variables)
 
 # define qualifiers
 set( BASEQUAL e19 )
-set( version_set s94 )
+set( version_set s95 )
 
 create_product_variables( larsoft     v08_43_00 )
 
