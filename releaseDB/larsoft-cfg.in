@@ -5,11 +5,11 @@ basequal=${1}
 # specify version to bootstrap and setup ups
 check_ups v6_0_8
 
-build_bundle larbase-@LARSOFT_DOT_VERSION@ ${basequal}
+build_bundle larbase-@LARDIST_DOT_VERSION@ ${basequal}
 status=$?
 if (( ${status} != 0)); then
   cat 1>&2 <<EOF
-Build of larbase-@LARSOFT_DOT_VERSION@ bundle failed with status ${status}
+Build of larbase-@LARDIST_DOT_VERSION@ bundle failed with status ${status}
 EOF
   return ${status}
 fi
