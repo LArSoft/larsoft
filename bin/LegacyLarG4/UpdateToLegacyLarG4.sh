@@ -8,7 +8,7 @@ usage: $prog [--one-file <file>] <top-dir>
 EOF
 }
 
-get_this_dir() 
+get_this_dir()
 {
     ( cd / ; /bin/pwd -P ) >/dev/null 2>&1
     if (( $? == 0 )); then
@@ -25,7 +25,7 @@ function one_file() {
   printf "$F ... "
   # Optionally fix whitespace
   (( ${fix_whitespace:-0} )) && ed "$F" < fix-whitespace.ed > /dev/null 2>&1
-  # Fix includes 
+  # Fix includes
   perl -wapi\~ -f ${thisdir}/fix_headers_larg4.pl "${F}" >/dev/null 2>&1 && rm -f "${F}~"
 }
 
@@ -34,7 +34,7 @@ function cmake_file() {
   printf "$F ... "
   # Optionally fix whitespace
   (( ${fix_whitespace:-0} )) && ed "$F" < fix-whitespace.ed > /dev/null 2>&1
-  # Fix CMakeLists.txt 
+  # Fix CMakeLists.txt
   perl -wapi\~ -f ${thisdir}/fix_cmake_larg4.pl "${F}" >/dev/null 2>&1 && rm -f "${F}~"
 }
 
