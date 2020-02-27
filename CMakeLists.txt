@@ -3,23 +3,17 @@
 #
 #  cd .../path/to/build/directory
 #  source .../path/to/larsoft/ups/setup_for_development <-d|-p>
-#  cmake [-DCMAKE_INSTALL_PREFIX=/install/path]
-#        -DCMAKE_BUILD_TYPE=$CETPKG_TYPE
-#        $CETPKG_SOURCE
-#  make
-#  make test
-#  make install
-#  make package (builds distribution tarfile)
+#  buildtool [-I /install/path] -bt[i] -jN
 # ======================================================================
 # LarSoft is an empty product
 # It sets up all of the larsoft ups products (lardata, larsim, larreco, etc.)
 # ======================================================================
 
 
-# use cmake 2.8 or later
-cmake_minimum_required (VERSION 2.8)
+# use cmake 3.14 or later
+cmake_minimum_required (VERSION 3.12...3.14 FATAL_ERROR)
 
-project(larsoft)
+project(larsoft LANGUAGES NONE)
 
 # cetbuildtools contains our cmake modules
 SET ( CETBUILDTOOLS_VERSION $ENV{CETBUILDTOOLS_VERSION} )
@@ -35,14 +29,13 @@ include(CetCMakeEnv)
 cet_cmake_env()
 
 # these are minimum required versions, not the actual product versions
-find_ups_product( cetbuildtools v4_11_00 )
-
-find_ups_product( lareventdisplay v4_00_00 )
-find_ups_product( larexamples     v4_00_00 )
-find_ups_product( larana          v4_00_00 )
-find_ups_product( larreco         v4_00_00 )
-find_ups_product( larpandora      v4_00_00 )
 find_ups_product( cetbuildtools )
+
+find_ups_product( lareventdisplay )
+find_ups_product( larexamples     )
+find_ups_product( larana          )
+find_ups_product( larreco         )
+find_ups_product( larpandora      )
 
 # useful scripts
 add_subdirectory(bin)
