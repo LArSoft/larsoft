@@ -14,6 +14,7 @@ lareventdisplay v08_12_04
 larexamples     v08_06_04
 larana          v08_16_04
 larreco         v08_28_01
+larrecodnn      v08_00_00
 larg4           v08_12_02
 larpandora      v08_11_04
 larwirecell     v08_12_04
@@ -23,15 +24,15 @@ larsoftobj      v08_27_00
 cetbuildtools	v7_15_01   -   only_for_build
 end_product_list
 
-qualifier      lareventdisplay larexamples    larreco       larana	  larg4          larpandora     larwirecell    larsoftobj    larsoft_data
-e19:py2:debug  e19:py2:debug   e19:py2:debug  e19:py2:debug e19:py2:debug e19:py2:debug  e19:py2:debug  e19:py2:debug  e19:py2:debug -nq-
-e19:py2:prof   e19:py2:prof    e19:py2:prof   e19:py2:prof  e19:py2:prof  e19:py2:prof   e19:py2:prof   e19:py2:prof   e19:py2:prof  -nq-
-e19:debug      e19:debug       e19:debug      e19:debug     e19:debug     e19:debug      e19:debug      e19:debug      e19:debug     -nq-
-e19:prof       e19:prof        e19:prof       e19:prof      e19:prof      e19:prof       e19:prof       e19:prof       e19:prof      -nq-
-c7:py2:debug   c7:py2:debug    c7:py2:debug   c7:py2:debug  c7:py2:debug  c7:py2:debug   c7:py2:debug   c7:py2:debug   c7:py2:debug  -nq-
-c7:py2:prof    c7:py2:prof     c7:py2:prof    c7:py2:prof   c7:py2:prof   c7:py2:prof    c7:py2:prof    c7:py2:prof    c7:py2:prof   -nq-
-c7:debug       c7:debug        c7:debug       c7:debug      c7:debug      c7:debug       c7:debug       c7:debug       c7:debug      -nq-
-c7:prof        c7:prof         c7:prof        c7:prof       c7:prof       c7:prof        c7:prof        c7:prof        c7:prof       -nq-
+qualifier      lareventdisplay larexamples    larreco       larrecodnn    larana	  larg4          larpandora     larwirecell    larsoftobj    larsoft_data
+e19:py2:debug  e19:py2:debug   e19:py2:debug  e19:py2:debug e19:py2:debug e19:py2:debug  e19:py2:debug  e19:py2:debug  e19:py2:debug e19:py2:debug -nq-
+e19:py2:prof   e19:py2:prof    e19:py2:prof   e19:py2:prof  e19:py2:prof  e19:py2:prof   e19:py2:prof   e19:py2:prof   e19:py2:prof  e19:py2:prof -nq-
+e19:debug      e19:debug       e19:debug      e19:debug     e19:debug     e19:debug      e19:debug      e19:debug      e19:debug    e19:debug     -nq-
+e19:prof       e19:prof        e19:prof       e19:prof      e19:prof      e19:prof       e19:prof       e19:prof       e19:prof     e19:prof     -nq-
+c7:py2:debug   c7:py2:debug    c7:py2:debug   c7:py2:debug  c7:py2:debug  c7:py2:debug   c7:py2:debug   c7:py2:debug   c7:py2:debug  c7:py2:debug  -nq-
+c7:py2:prof    c7:py2:prof     c7:py2:prof    c7:py2:prof   c7:py2:prof   c7:py2:prof    c7:py2:prof    c7:py2:prof    c7:py2:prof   c7:py2:prof  -nq-
+c7:debug       c7:debug        c7:debug       c7:debug      c7:debug      c7:debug       c7:debug       c7:debug       c7:debug      c7:debug      -nq-
+c7:prof        c7:prof         c7:prof        c7:prof       c7:prof       c7:prof        c7:prof        c7:prof        c7:prof       c7:prof      -nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA

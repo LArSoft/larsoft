@@ -37,6 +37,7 @@ build_cet -G LArSoft larevt @LAREVT_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larsim @LARSIM_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larg4 @LARG4_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larreco @LARRECO_VERSION@ ${basequal}${pyqual}
+build_cet -G LArSoft larrecodnn @LARRECODNN_VERSION@ ${basequal}${pyqual}
 # the single larana test likes to hang on Jenkins macOS build slaves
 build_cet -G LArSoft -n larana @LARANA_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larpandora @LARPANDORA_VERSION@ ${basequal}${pyqual}

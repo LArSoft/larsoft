@@ -35,6 +35,7 @@ find_ups_product( lareventdisplay )
 find_ups_product( larexamples     )
 find_ups_product( larana          )
 find_ups_product( larreco         )
+find_ups_product( larrecodnn      )
 find_ups_product( larpandora      )
 
 # useful scripts
