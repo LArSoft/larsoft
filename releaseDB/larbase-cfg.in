@@ -14,10 +14,17 @@ EOF
   return ${status}
 fi
 
-[[ "${build_label}" == py2 ]] && pyqual=:${build_label}
+if [[ "${build_label}" == py2 ]]; then
+  py2qual=:${build_label}
+  pyver=v2_7_15a
+  pyqual=p2715a
+else
+  pyver=v3_7_2
+  pyqual=p372
+fi
 
-do_build marley @MARLEY_VERSION@ ${basequal}${pyqual}
-do_build pandora @PANDORA_VERSION@ ${basequal}${pyqual}
+do_build marley @MARLEY_VERSION@ ${basequal}${py2qual}
+do_build pandora @PANDORA_VERSION@ ${basequal}${py2qual}
 do_build hdf5 @HDF5_VERSION@ ${basequal}
 do_build hep_hpc @HEP_HPC_VERSION@ ${basequal}
 do_build glpk @GLPK_VERSION@
@@ -26,6 +33,7 @@ build_noarch guideline_sl @GUIDELINE_SL_VERSION@
 build_noarch h5cpp @H5CPP_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build jsonnet @JSONNET_VERSION@ ${basequal}
+do_build opencv @OPENCV_VERSION@ ${basequal}:${pyqual}
 # protobuf does not build with clang on SLF6
 # when wirecell needs the protobuf dependency, it should move inside this block
 if [[ "${basequal}" == e19 ]]; then
@@ -33,9 +41,10 @@ if [[ "${basequal}" == e19 ]]; then
 elif [[ "${flvr}" != "Linux64bit+2.6-2.12" ]]; then
   do_build protobuf @PROTOBUF_VERSION@ ${basequal}
 fi
-do_build wirecell @WIRECELL_VERSION@ ${basequal}${pyqual}
+do_build wirecell @WIRECELL_VERSION@ ${basequal}${py2qual}
 if [[ "${basequal}" == e19 ]]; then # cannot build for clang
-  do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}${pyqual}
+  do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}${py2qual}
+  do_build trtis_clients @TRTIS_CLIENTS_VERSION@ ${basequal}
 fi
 
 # add to manifest if no build - larsoft_data, mrb
@@ -47,10 +56,9 @@ build_noarch mrb @MRB_VERSION@
 # new cetpkgsupport - temporary
 #ensure_cetpkgsupport @CETPKGSUPPORT_VERSION@
 
-build_cet gallery @GALLERY_VERSION@ ${basequal}${pyqual}
-build_cet systematicstools @SYSTEMATICSTOOLS_VERSION@ ${basequal}${pyqual}
-build_cet nusystematics @NUSYSTEMATICS_VERSION@ ${basequal}${pyqual}
-build_cet artg4tk @ARTG4TK_VERSION@ ${basequal}${pyqual}
-#build_cet geant4reweight @GEANT4REWEIGHT_VERSION@ ${basequal}${pyqual}:@version_set@
+build_cet gallery @GALLERY_VERSION@ ${basequal}${py2qual}
+build_cet systematicstools @SYSTEMATICSTOOLS_VERSION@ ${basequal}${py2qual}
+build_cet nusystematics @NUSYSTEMATICS_VERSION@ ${basequal}${py2qual}
+build_cet artg4tk @ARTG4TK_VERSION@ ${basequal}${py2qual}
 
 return 0
