@@ -13,7 +13,7 @@
 # use cmake 3.14 or later
 cmake_minimum_required (VERSION 3.12...3.14 FATAL_ERROR)
 
-project(larsoft LANGUAGES NONE)
+project(larsoft LANGUAGES CXX C)
 
 # cetbuildtools contains our cmake modules
 SET ( CETBUILDTOOLS_VERSION $ENV{CETBUILDTOOLS_VERSION} )
