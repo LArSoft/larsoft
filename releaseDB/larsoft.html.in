@@ -36,7 +36,7 @@
     <li>Will pull all products listed in the bundle manifest.</li>
     <li>This script will first check to see if a package is installed and will download the product only if not installed.</li>
     <li>Supported bundles: larsoft, nu, art</li>
-    <li>USAGE: 
+    <li>USAGE:
     <ul>
       <li>Download the script.</li>
       <li>chmod +x pullProducts</li>
@@ -101,7 +101,7 @@ The following products are part of the full larsoft suite:
 <tr><td>&nbsp;&nbsp;  tensorflow     </td>  <td> @TENSORFLOW_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  wirecell     </td>  <td> @WIRECELL_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larpandoracontent     </td>  <td> @LARPANDORACONTENT_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
-<tr><td>&nbsp;&nbsp;  larsoft_data </td>  <td> @LARSOFT_DATA_VERSION@	</td>  <td>&nbsp;</td></tr>	
+<tr><td>&nbsp;&nbsp;  larsoft_data </td>  <td> @LARSOFT_DATA_VERSION@	</td>  <td>&nbsp;</td></tr>
 <tr><td>&nbsp;&nbsp;  larbatch     </td>  <td> @LARBATCH_VERSION@ </td>  <td>&nbsp;</td></tr>
 <tr><td>&nbsp;&nbsp;  larutils     </td>  <td> @LARUTILS_VERSION@ </td>  <td>&nbsp;</td></tr>
 <tr><td>&nbsp;&nbsp;  larcoreobj   </td>  <td> @LARCOREOBJ_VERSION@ </td>  <td>@BASEQUAL@</td></tr>

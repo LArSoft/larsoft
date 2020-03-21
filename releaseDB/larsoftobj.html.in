@@ -30,14 +30,14 @@
   <li>To check available distributions, use <a href="http://scisoft.fnal.gov/scisoft/bundles/tools/getManifestList">getManifestList</a>: <br>
        getManifestList [bundle name] [bundle version]</li>
 </ul>
-  
+
 <h2 id="scripts-binary">Download scripts for binary distributions.</h2>
 <ul>
   <li><a type="application/x-sh" download href="http://scisoft.fnal.gov/scisoft/bundles/tools/pullProducts">pullProducts</a>
   <ul>
     <li>Will pull all products listed in the bundle manifest.</li>
     <li>This script will first check to see if a package is installed and will download the product only if not installed.</li>
-    <li>USAGE: 
+    <li>USAGE:
     <ul>
       <li>Download the script.</li>
       <li>chmod +x pullProducts</li>
