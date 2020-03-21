@@ -44,9 +44,9 @@ fi
 do_build wirecell @WIRECELL_VERSION@ ${basequal}${py2qual}
 if [[ "${basequal}" == e19 ]]; then # cannot build for clang
   do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}${py2qual}
-  # trtis_clients is not supported for py2 at this time
-  if [[ "${pyqual}" == p372 ]]; then
-    do_build trtis_clients @TRTIS_CLIENTS_VERSION@ ${basequal}
+  # trtis_clients is not supported for slf6 at this time
+  if [[ "${flvr}" != "Linux64bit+2.6-2.12" ]]; then
+    do_build trtis_clients @TRTIS_CLIENTS_VERSION@ ${basequal}${py2qual}
   fi
 fi
 
