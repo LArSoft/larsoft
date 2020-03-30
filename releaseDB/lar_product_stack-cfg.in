@@ -51,6 +51,9 @@ if [[ "${basequal}" == e19 ]]; then # cannot build for clang
   fi
 fi
 
+# pygccxml
+do_build pygccxml @PYGCCXML_VERSION@ ${pyqual}
+
 # add to manifest if no build - larsoft_data
 build_noarch ifdhc_config @IFDHC_CONFIG_VERSION@
 build_noarch larsoft_data @LARSOFT_DATA_VERSION@
