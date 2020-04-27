@@ -41,6 +41,7 @@ if [[ "${basequal}" == e19 ]]; then
 elif [[ "${flvr}" != "Linux64bit+2.6-2.12" ]]; then
   do_build protobuf @PROTOBUF_VERSION@ ${basequal}
 fi
+do_build spdlog @SPDLOG_VERSION@ ${basequal}${py2qual}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}${py2qual}
 if [[ "${basequal}" == e19 ]]; then # cannot build for clang
   do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}${py2qual}
