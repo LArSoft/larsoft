@@ -43,7 +43,7 @@ create_product_variables( larwirecell v08_12_11 )
 create_product_variables( larexamples v08_06_13 )
 create_product_variables( lareventdisplay v08_12_13 )
 create_product_variables( larpandoracontent v03_15_16 )
-create_product_variables( webevd      v08_00_00 )
+create_product_variables( webevd      v08_00_01 )
 
 create_product_variables( art           v3_05_00 )
 create_product_variables( canvas_root_io v1_05_02 )
