@@ -14,6 +14,15 @@ EOF
   return ${status}
 fi
 
+build_bundle lar_product_stack-@LARSOFT_DOT_VERSION@ ${basequal}
+status=$?
+if (( ${status} != 0)); then
+  cat 1>&2 <<EOF
+Build of lar_product_stack-@LARSOFT_DOT_VERSION@ bundle failed with status ${status}
+EOF
+  return ${status}
+fi
+
 if [[ "${build_label}" == py2 ]]; then
   py2qual=:${build_label}
   pyver=v2_7_15a
@@ -23,39 +32,7 @@ else
   pyqual=p372
 fi
 
-do_build marley @MARLEY_VERSION@ ${basequal}${py2qual}
-do_build pandora @PANDORA_VERSION@ ${basequal}${py2qual}
-do_build hdf5 @HDF5_VERSION@ ${basequal}
-do_build hep_hpc @HEP_HPC_VERSION@ ${basequal}
-do_build glpk @GLPK_VERSION@
-build_noarch eigen @EIGEN_VERSION@
-build_noarch guideline_sl @GUIDELINE_SL_VERSION@
-build_noarch h5cpp @H5CPP_VERSION@
-do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
-do_build jsonnet @JSONNET_VERSION@ ${basequal}
-do_build opencv @OPENCV_VERSION@ ${basequal}:${pyqual}
-# protobuf does not build with clang on SLF6
-# when wirecell needs the protobuf dependency, it should move inside this block
-if [[ "${basequal}" == e19 ]]; then
-  do_build protobuf @PROTOBUF_VERSION@ ${basequal}
-elif [[ "${flvr}" != "Linux64bit+2.6-2.12" ]]; then
-  do_build protobuf @PROTOBUF_VERSION@ ${basequal}
-fi
-do_build spdlog @SPDLOG_VERSION@ ${basequal}
-do_build wirecell @WIRECELL_VERSION@ ${basequal}${py2qual}
-if [[ "${basequal}" == e19 ]]; then # cannot build for clang
-  do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}${py2qual}
-  # trtis_clients is not supported for slf6 at this time
-  if [[ "${flvr}" != "Linux64bit+2.6-2.12" ]]; then
-    do_build trtis_clients @TRTIS_CLIENTS_VERSION@ ${basequal}${py2qual}
-  fi
-fi
-
-# pygccxml
-do_build pygccxml @PYGCCXML_VERSION@ ${pyqual}
-
 # add to manifest if no build - larsoft_data, mrb
-build_noarch ifdhc_config @IFDHC_CONFIG_VERSION@
 build_noarch larsoft_data @LARSOFT_DATA_VERSION@
 do_build hub @HUB_VERSION@
 build_noarch mrb @MRB_VERSION@

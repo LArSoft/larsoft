@@ -35,6 +35,9 @@ build_noarch h5cpp @H5CPP_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build jsonnet @JSONNET_VERSION@ ${basequal}
 do_build opencv @OPENCV_VERSION@ ${basequal}:${pyqual}
+do_build sundials @SUNDIALS_VERSION@ ${basequal}
+do_build stan_math @STAN_MATH_VERSION@ ${basequal}
+do_build stan @STAN_VERSION@ ${basequal}
 # protobuf does not build with clang on SLF6
 # when wirecell needs the protobuf dependency, it should move inside this block
 if [[ "${basequal}" == e19 ]]; then
@@ -55,8 +58,7 @@ fi
 # pygccxml
 do_build pygccxml @PYGCCXML_VERSION@ ${pyqual}
 
-# add to manifest if no build - larsoft_data
+# add to manifest if no build 
 build_noarch ifdhc_config @IFDHC_CONFIG_VERSION@
-build_noarch larsoft_data @LARSOFT_DATA_VERSION@
 
 return 0
