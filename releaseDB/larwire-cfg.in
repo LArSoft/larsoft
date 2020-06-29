@@ -29,6 +29,7 @@ do_build wirecell @WIRECELL_VERSION@ ${basequal}${py2qual}
 ensure_cetbuildtools v7_03_02
 ensure_cetbuildtools v7_15_01
 
+build_cet canvas_root_io @CANVAS_ROOT_IO_VERSION@ ${basequal}${pyqual}
 build_cet art_root_io @ART_ROOT_IO_VERSION@ ${basequal}${pyqual}
 
 # not quite the entire larsoftobj distribution
