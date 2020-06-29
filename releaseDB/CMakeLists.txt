@@ -89,6 +89,8 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-cfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/lar_product_stack-cfg-${LARDIST_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larbase-cfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larbase-cfg-${LARDIST_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larwire-cfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/larwire-cfg-${LARWIRECELL_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-cfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-cfg-${LARDIST_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoftobj-cfg.in

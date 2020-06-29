@@ -20,8 +20,6 @@ build_noarch mrb @MRB_VERSION@
 
 do_build dk2nudata @DK2NUDATA_VERSION@ ${basequal}${pyqual}
 
-ensure_cetbuildtools v7_15_01
-
 build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larcoreobj @LARCOREOBJ_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft -n larcorealg @LARCOREALG_VERSION@ ${basequal}${pyqual}
