@@ -22,6 +22,9 @@ create_product_variables( larsoft v08_05_00_06d )
 set( BASEQUAL e17 )
 set( SQUAL s78 )
 
+create_product_variables( fftw v3_3_6_pl2 )
+create_product_variables( ppfx v02_11_01 )
+
 create_product_variables( larutils    v1_23_09 )
 create_product_variables( larbatch    v01_47_03 )
 

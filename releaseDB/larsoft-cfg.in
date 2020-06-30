@@ -25,6 +25,8 @@ fi
 
 ensure_cetbuildtools v7_03_02
 
+do_build fftw @FFTW_VERSION@
+build_cet ppfx @PPFX_VERSION@ ${basequal}
 build_cet -G LArSoft larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}
 
 # larcore tests disabled because of Jenkins build slave problems
