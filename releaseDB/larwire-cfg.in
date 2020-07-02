@@ -24,7 +24,7 @@ build_noarch h5cpp @H5CPP_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build jsonnet @JSONNET_VERSION@ ${basequal}
 do_build spdlog @SPDLOG_VERSION@ ${basequal}
-do_build wirecell @WIRECELL_VERSION@ ${basequal}${py2qual}
+do_build wirecell @WIRECELL_VERSION@ ${basequal}${pyqual}
 
 build_cet canvas_root_io @CANVAS_ROOT_IO_VERSION@ ${basequal}${pyqual}
 build_cet art_root_io @ART_ROOT_IO_VERSION@ ${basequal}${pyqual}

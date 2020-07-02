@@ -81,6 +81,9 @@ create_product_variables( nusystematics v00_10_05 )
 create_product_variables( larsoft_data  v1_02_01 )
 create_product_variables( mrb           v4_01_00 )
 create_product_variables( hub           v2_12_4 )
+# needed for larwire
+create_product_variables( libwda v2_28_0 )
+create_product_variables( art_root_io v1_03_01 )
 # temporary
 #create_product_variables( cetpkgsupport v1_14_01 )
 
