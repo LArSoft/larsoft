@@ -32,6 +32,7 @@ build_cet -G LArSoft -n larcore @LARCORE_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft lardata @LARDATA_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larevt @LAREVT_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larsim @LARSIM_VERSION@ ${basequal}${pyqual}
+build_cet -G LArSoft larsimrad @LARSIMRAD_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larg4 @LARG4_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larreco @LARRECO_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larrecodnn @LARRECODNN_VERSION@ ${basequal}${pyqual}
