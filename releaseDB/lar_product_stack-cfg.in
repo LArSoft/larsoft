@@ -38,6 +38,7 @@ do_build opencv @OPENCV_VERSION@ ${basequal}:${pyqual}
 do_build sundials @SUNDIALS_VERSION@ ${basequal}
 do_build stan_math @STAN_MATH_VERSION@ ${basequal}
 do_build stan @STAN_VERSION@ ${basequal}
+do_build bxdecay0 @BXDECAY0_VERSION@ ${basequal}
 # protobuf does not build with clang on SLF6
 # when wirecell needs the protobuf dependency, it should move inside this block
 if [[ "${basequal}" == e19 ]]; then
