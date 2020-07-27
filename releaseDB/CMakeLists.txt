@@ -15,14 +15,14 @@ macro( create_product_variables productname productversion )
    #message(STATUS "${PRODUCTNAME_UC} version is ${${PRODUCTNAME_UC}_VERSION}")
 endmacro( create_product_variables)
 
-create_product_variables( larsoft v08_05_00_06d )
+create_product_variables( larsoft v08_05_00_06e )
 
 
 # define qualifiers
 set( BASEQUAL e17 )
 set( SQUAL s78 )
 
-create_product_variables( ppfx v02_11_01 )
+create_product_variables( ppfx v02_11_02 )
 
 create_product_variables( larutils    v1_23_09 )
 create_product_variables( larbatch    v01_47_03 )
@@ -36,13 +36,13 @@ create_product_variables( larcore     v08_01_00_02 )
 create_product_variables( lardata     v08_02_00_04c )
 create_product_variables( larevt      v08_01_00_05d )
 create_product_variables( larg4       v08_01_00_05d )
-create_product_variables( larsim      v08_02_00_05d )
-create_product_variables( larreco     v08_04_00_05d )
-create_product_variables( larana      v08_01_00_05d )
-create_product_variables( larpandora  v08_03_00_05d )
+create_product_variables( larsim      v08_02_00_05e )
+create_product_variables( larreco     v08_04_00_05e )
+create_product_variables( larana      v08_01_00_05e )
+create_product_variables( larpandora  v08_03_00_05e )
 create_product_variables( larwirecell v08_02_00_06d )
-create_product_variables( larexamples v08_01_00_05d )
-create_product_variables( lareventdisplay v08_02_00_05d )
+create_product_variables( larexamples v08_01_00_05e )
+create_product_variables( lareventdisplay v08_02_00_05e )
 create_product_variables( larpandoracontent v03_14_04 )
 
 create_product_variables( art           v3_01_02 )
