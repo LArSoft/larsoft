@@ -25,9 +25,6 @@ fi
 
 [[ "${build_label}" == py2 ]] && pyqual=:${build_label}
 
-ensure_cetbuildtools v7_03_02
-ensure_cetbuildtools v7_15_01
-
 build_cet -G LArSoft larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}${pyqual}
 
 # larcore tests disabled because of Jenkins build slave problems
@@ -35,6 +32,7 @@ build_cet -G LArSoft -n larcore @LARCORE_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft lardata @LARDATA_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larevt @LAREVT_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larsim @LARSIM_VERSION@ ${basequal}${pyqual}
+build_cet -G LArSoft larsimrad @LARSIMRAD_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larg4 @LARG4_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larreco @LARRECO_VERSION@ ${basequal}${pyqual}
 build_cet -G LArSoft larrecodnn @LARRECODNN_VERSION@ ${basequal}${pyqual}

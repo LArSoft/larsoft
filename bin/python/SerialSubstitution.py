@@ -1,10 +1,14 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 #
 # Run with `--help` for usage instructions
+# 
+# Changes:
+# 20200714 (petrillo@slac.stanford.edu) [v2.0]
+#   updated to Python 3
 #
 
 __doc__     = "Performs hard-coded substitutions on all files in a directory."
-__version__ = '1.0'
+__version__ = '2.0'
 
 import sys, os
 import logging
@@ -81,7 +85,7 @@ class RegExSubstitutionClass(SubstitutionClass):
 		SubstitutionClass.__init__(self)
 		self.regex = re.compile(match)
 		self.repl = replacement
-		self.exceptions = map(re.compile, exceptions)
+		self.exceptions = list(map(re.compile, exceptions))
 	# __init__()
 	
 	def __str__(self): return self.regex.pattern
@@ -101,7 +105,7 @@ class RegExDeleteLineClass(SubstitutionClass):
 	def __init__(self, match, exceptions = []):
 		SubstitutionClass.__init__(self)
 		self.regex = re.compile(match)
-		self.exceptions = map(re.compile, exceptions)
+		self.exceptions = list(map(re.compile, exceptions))
 	# __init__()
 	
 	def __str__(self): return self.regex.pattern
@@ -151,7 +155,7 @@ class WarningClass(SubstitutionClass):
 			self.pattern = match
 			self.regex = re.compile(match)
 		self.msg = message
-		self.exceptions = map(re.compile, exceptions)
+		self.exceptions = list(map(re.compile, exceptions))
 	# __init__()
 	
 	def __str__(self): return self.pattern
@@ -281,7 +285,7 @@ class ProcessorClass:
 			msg = "    pattern '%s' matched" % subst
 			if context is not None: msg += " at %s" % context
 			msg += ":"
-			if isinstance(new_line, basestring):
+			if isinstance(new_line, str):
 				msg += "\n    OLD| " + self.Color(line.rstrip('\n'), 'old')
 				msg += "\n    NEW| %s" % self.Color(new_line.rstrip('\n'), 'new')
 			elif not new_line:
@@ -295,7 +299,7 @@ class ProcessorClass:
 			
 			# if the result if not a single line, we interrupt here;
 			# no particular reason, but we don't need a more complex behaviour
-			if not isinstance(new_line, basestring): return new_line
+			if not isinstance(new_line, str): return new_line
 			
 			line = new_line
 		# for
@@ -324,7 +328,7 @@ class ProcessorClass:
 				Content.append(line)
 				continue
 			# if no change
-			if isinstance(new_line, basestring):
+			if isinstance(new_line, str):
 				Content.append(new_line)
 			elif new_line: # expects a list or None
 				Content.extend(new_line)

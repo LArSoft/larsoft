@@ -1,0 +1,46 @@
+# build larsoft
+
+basequal=${1}
+
+# specify version to bootstrap and setup ups
+check_ups v6_0_8
+
+build_bundle art-@ART_DOT_VERSION@ ${basequal}
+status=$?
+if (( ${status} != 0)); then
+  cat 1>&2 <<EOF
+Build of art-@ART_DOT_VERSION@ bundle failed with status ${status}
+EOF
+  return ${status}
+fi
+
+[[ "${build_label}" == py2 ]] && pyqual=:${build_label}
+
+# "third party" products
+do_build libwda @LIBWDA_VERSION@
+do_build hdf5 @HDF5_VERSION@ ${basequal}
+build_noarch eigen @EIGEN_VERSION@
+build_noarch h5cpp @H5CPP_VERSION@
+do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
+do_build jsonnet @JSONNET_VERSION@ ${basequal}
+do_build spdlog @SPDLOG_VERSION@ ${basequal}
+do_build wirecell @WIRECELL_VERSION@ ${basequal}${pyqual}
+
+build_cet canvas_root_io @CANVAS_ROOT_IO_VERSION@ ${basequal}${pyqual}
+build_cet art_root_io @ART_ROOT_IO_VERSION@ ${basequal}${pyqual}
+
+# not quite the entire larsoftobj distribution
+do_build dk2nudata @DK2NUDATA_VERSION@ ${basequal}${pyqual}
+build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}${pyqual}
+build_cet -G LArSoft larcoreobj @LARCOREOBJ_VERSION@ ${basequal}${pyqual}
+build_cet -G LArSoft -n larcorealg @LARCOREALG_VERSION@ ${basequal}${pyqual}
+build_cet -G LArSoft lardataobj @LARDATAOBJ_VERSION@ ${basequal}${pyqual}
+build_cet -G LArSoft lardataalg @LARDATAALG_VERSION@ ${basequal}${pyqual}
+
+# larcore tests disabled because of Jenkins build slave problems
+build_cet -G LArSoft -n larcore @LARCORE_VERSION@ ${basequal}${pyqual}
+build_cet -G LArSoft lardata @LARDATA_VERSION@ ${basequal}${pyqual}
+build_cet -G LArSoft larevt @LAREVT_VERSION@ ${basequal}${pyqual}
+build_cet -G LArSoft larwirecell @LARWIRECELL_VERSION@ ${basequal}${pyqual}
+
+return 0
