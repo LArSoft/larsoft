@@ -48,7 +48,7 @@ if (( ${build_slf_extras:-0} )); then # only build for SL
   build_cet -G LArSoft webevd @WEBEVD_VERSION@ ${basequal}${pyqual}
 fi
 # do not distribute larbatch or larutils with a release candidate
-#build_cet -f NULL -G LArSoft larbatch @LARBATCH_VERSION@
-#build_cet -f NULL -G LArSoft larutils @LARUTILS_VERSION@
+build_cet -f NULL -G LArSoft larbatch @LARBATCH_VERSION@
+build_cet -f NULL -G LArSoft larutils @LARUTILS_VERSION@
 
 return 0
