@@ -20,8 +20,8 @@ Note that the document was written with doxygen 1.8.13 as reference.
 
 The format is [Markdown format], that you can convert it to something else with:
     
-    pandoc -s -S --toc -o README.html README.md
-    pandoc -s -S --toc -o README.pdf README.md
+    pandoc -s -S --toc -o UsingDoxygen.html UsingDoxygen.md
+    pandoc -s -S --toc -o UsingDoxygen.pdf UsingDoxygen.md
     
 et cetera.
 Note that this file is about doxygen, and it is also processed by `doxygen`.
