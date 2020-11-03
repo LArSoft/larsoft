@@ -48,8 +48,6 @@ if [[ "${basequal}" == e19 ]]; then # cannot build for clang
 fi
 
 if [[ "${basequal}" == e19 ]]; then
-  # pybind11 is build time only
-  do_build -m pybind11 @PYBIND11_VERSION@ 
   do_build libtorch @LIBTORCH_VERSION@ ${basequal}:eigen
 fi
 
