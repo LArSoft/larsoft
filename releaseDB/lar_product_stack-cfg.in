@@ -39,22 +39,20 @@ do_build sundials @SUNDIALS_VERSION@ ${basequal}
 do_build stan_math @STAN_MATH_VERSION@ ${basequal}
 do_build stan @STAN_VERSION@ ${basequal}
 do_build bxdecay0 @BXDECAY0_VERSION@ ${basequal}
-# protobuf does not build with clang on SLF6
-# when wirecell needs the protobuf dependency, it should move inside this block
-if [[ "${basequal}" == e19 ]]; then
-  do_build protobuf @PROTOBUF_VERSION@ ${basequal}
-elif [[ "${flvr}" != "Linux64bit+2.6-2.12" ]]; then
-  do_build protobuf @PROTOBUF_VERSION@ ${basequal}
-fi
+do_build protobuf @PROTOBUF_VERSION@ ${basequal}
 do_build spdlog @SPDLOG_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}${py2qual}
 if [[ "${basequal}" == e19 ]]; then # cannot build for clang
   do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}${py2qual}
-  # trtis_clients is not supported for slf6 at this time
-  if [[ "${flvr}" != "Linux64bit+2.6-2.12" ]]; then
-    do_build trtis_clients @TRTIS_CLIENTS_VERSION@ ${basequal}${py2qual}
-  fi
+  do_build trtis_clients @TRTIS_CLIENTS_VERSION@ ${basequal}${py2qual}
 fi
+
+if [[ "${basequal}" == e19 ]]; then
+  # pybind11 is build time only
+  do_build -m pybind11 @PYBIND11_VERSION@ 
+  do_build libtorch @LIBTORCH_VERSION@ ${basequal}:eigen
+fi
+
 
 # pygccxml
 do_build pygccxml @PYGCCXML_VERSION@ ${pyqual}
