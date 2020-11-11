@@ -48,7 +48,11 @@ if [[ "${basequal}" == e19 ]]; then # cannot build for clang
 fi
 
 if [[ "${basequal}" == e19 ]]; then
-  do_build libtorch @LIBTORCH_VERSION@ ${basequal}:eigen
+  # avoid Ubuntu
+  echo "check to see if we can build libtorch on ${flvr}"
+  if [[ "${flvr}" != "Linux64bit+4.15-2.27" ]]; then
+    do_build libtorch @LIBTORCH_VERSION@ ${basequal}:eigen
+  fi
 fi
 
 
