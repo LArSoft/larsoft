@@ -41,9 +41,7 @@
     <ul>
       <li>Download the script.</li>
       <li>chmod +x pullProducts</li>
-      <li>Scientific Linux 6.x: <pre>./pullProducts &lt;product-directory&gt; slf6 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
       <li>Scientific Linux 7.x: <pre>./pullProducts &lt;product-directory&gt; slf7 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
-      <li>Mojave (SIP disabled): <pre>./pullProducts &lt;product-directory&gt; d18 larsoftobj-@LARSOFTOBJ_VERSION@ c2 &lt;prof|debug&gt;</pre></li>
       <li>Ubuntu LTS 18 (best effort): <pre>./pullProducts &lt;product-directory&gt; u18 larsoftobj-@LARSOFTOBJ_VERSION@ @BASEQUAL@ &lt;prof|debug&gt;</pre></li>
     </ul></li>
   </ul></li>
