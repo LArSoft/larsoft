@@ -13,10 +13,8 @@ product         version
 lareventdisplay v09_00_12
 larexamples     v09_00_11
 larana          v09_00_12
-larreco         v09_04_02
 larrecodnn      v09_02_03
 larsimrad	v09_00_11
-larg4           v09_01_03
 larpandora      v09_03_03
 larwirecell     v09_01_05
 larsoft_data    v1_02_01
@@ -25,15 +23,15 @@ larsoftobj      v09_03_00
 cetbuildtools	v7_15_01   -   only_for_build
 end_product_list
 
-qualifier      lareventdisplay larexamples    larreco       larrecodnn    larana	 larg4          larpandora     larwirecell   larsimrad     larsoftobj    larsoft_data
-e19:py2:debug  e19:py2:debug   e19:py2:debug  e19:py2:debug e19:py2:debug e19:py2:debug  e19:py2:debug  e19:py2:debug  e19:py2:debug e19:py2:debug e19:py2:debug -nq-
-e19:py2:prof   e19:py2:prof    e19:py2:prof   e19:py2:prof  e19:py2:prof  e19:py2:prof   e19:py2:prof   e19:py2:prof   e19:py2:prof  e19:py2:prof  e19:py2:prof  -nq-
-e19:debug      e19:debug       e19:debug      e19:debug     e19:debug     e19:debug      e19:debug      e19:debug      e19:debug     e19:debug     e19:debug     -nq-
-e19:prof       e19:prof        e19:prof       e19:prof      e19:prof      e19:prof       e19:prof       e19:prof       e19:prof      e19:prof      e19:prof      -nq-
-c7:py2:debug   c7:py2:debug    c7:py2:debug   c7:py2:debug  c7:py2:debug  c7:py2:debug   c7:py2:debug   c7:py2:debug   c7:py2:debug  c7:py2:debug  c7:py2:debug  -nq-
-c7:py2:prof    c7:py2:prof     c7:py2:prof    c7:py2:prof   c7:py2:prof   c7:py2:prof    c7:py2:prof    c7:py2:prof    c7:py2:prof   c7:py2:prof   c7:py2:prof   -nq-
-c7:debug       c7:debug        c7:debug       c7:debug      c7:debug      c7:debug       c7:debug       c7:debug       c7:debug      c7:debug      c7:debug      -nq-
-c7:prof        c7:prof         c7:prof        c7:prof       c7:prof       c7:prof        c7:prof        c7:prof        c7:prof       c7:prof       c7:prof       -nq-
+qualifier      lareventdisplay larexamples    larrecodnn    larana         larpandora     larwirecell   larsimrad     larsoftobj    larsoft_data
+e19:py2:debug  e19:py2:debug   e19:py2:debug  e19:py2:debug e19:py2:debug  e19:py2:debug  e19:py2:debug e19:py2:debug e19:py2:debug -nq-
+e19:py2:prof   e19:py2:prof    e19:py2:prof   e19:py2:prof  e19:py2:prof   e19:py2:prof   e19:py2:prof  e19:py2:prof  e19:py2:prof  -nq-
+e19:debug      e19:debug       e19:debug      e19:debug     e19:debug      e19:debug      e19:debug     e19:debug     e19:debug     -nq-
+e19:prof       e19:prof        e19:prof       e19:prof      e19:prof       e19:prof       e19:prof      e19:prof      e19:prof      -nq-
+c7:py2:debug   c7:py2:debug    c7:py2:debug   c7:py2:debug  c7:py2:debug   c7:py2:debug   c7:py2:debug  c7:py2:debug  c7:py2:debug  -nq-
+c7:py2:prof    c7:py2:prof     c7:py2:prof    c7:py2:prof   c7:py2:prof    c7:py2:prof    c7:py2:prof   c7:py2:prof   c7:py2:prof   -nq-
+c7:debug       c7:debug        c7:debug       c7:debug      c7:debug       c7:debug       c7:debug      c7:debug      c7:debug      -nq-
+c7:prof        c7:prof         c7:prof        c7:prof       c7:prof        c7:prof        c7:prof       c7:prof       c7:prof       -nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA
