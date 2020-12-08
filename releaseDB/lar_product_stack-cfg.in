@@ -19,8 +19,8 @@ if [[ "${build_label}" == py2 ]]; then
   pyver=v2_7_15a
   pyqual=p2715a
 else
-  pyver=v3_7_2
-  pyqual=p372
+  pyver=v3_8_3b
+  pyqual=p383b
 fi
 
 
@@ -42,19 +42,9 @@ do_build bxdecay0 @BXDECAY0_VERSION@ ${basequal}
 do_build protobuf @PROTOBUF_VERSION@ ${basequal}
 do_build spdlog @SPDLOG_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}${py2qual}
-if [[ "${basequal}" == e19 ]]; then # cannot build for clang
-  do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}${py2qual}
-  do_build trtis_clients @TRTIS_CLIENTS_VERSION@ ${basequal}${py2qual}
-fi
-
-if [[ "${basequal}" == e19 ]]; then
-  # avoid Ubuntu
-  echo "check to see if we can build libtorch on ${flvr}"
-  if [[ "${flvr}" != "Linux64bit+4.15-2.27" ]]; then
-    do_build libtorch @LIBTORCH_VERSION@ ${basequal}:eigen
-  fi
-fi
-
+#if [[ "${basequal}" == e19 ]] || [[ "${basequal}" == e20 ]]; then # cannot build for clang
+#  do_build trtis_clients @TRTIS_CLIENTS_VERSION@ ${basequal}${py2qual}
+#fi
 
 # pygccxml
 do_build pygccxml @PYGCCXML_VERSION@ ${pyqual}
