@@ -11,5 +11,4 @@ BEGIN { %header_list = (
 
 foreach my $inc (sort keys %header_list) {
   s&^(\s*#include\s+["<])\Q$inc\E(.*)&${1}$header_list{$inc}${2}& and last;
-  s&^(\s*#include\s+["<]GENIE/)\Q$inc\E(.*)&${1}$header_list{$inc}${2}& and last;
 }
