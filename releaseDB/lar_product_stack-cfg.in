@@ -42,9 +42,9 @@ do_build bxdecay0 @BXDECAY0_VERSION@ ${basequal}
 do_build protobuf @PROTOBUF_VERSION@ ${basequal}
 do_build spdlog @SPDLOG_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}${py2qual}
-#if [[ "${basequal}" == e19 ]] || [[ "${basequal}" == e20 ]]; then # cannot build for clang
-#  do_build trtis_clients @TRTIS_CLIENTS_VERSION@ ${basequal}${py2qual}
-#fi
+if [[ "${basequal}" == e19 ]] || [[ "${basequal}" == e20 ]]; then # cannot build for clang
+  do_build trtis_clients @TRTIS_CLIENTS_VERSION@ ${basequal}${py2qual}
+fi
 
 # pygccxml
 do_build pygccxml @PYGCCXML_VERSION@ ${pyqual}
