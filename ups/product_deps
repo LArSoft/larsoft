@@ -1,6 +1,6 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v09_13_00
+parent	larsoft	v09_20_00_rc0
 defaultqual	e19
 
 # larsoft itself has no inc, or fcl directories
@@ -20,18 +20,16 @@ larwirecell     v09_01_10
 larsoft_data    v1_02_01
 larsoftobj      v09_04_00
 
-cetbuildtools	v7_15_01   -   only_for_build
+cetbuildtools	v7_17_01   -   only_for_build
 end_product_list
 
-qualifier      lareventdisplay larexamples    larrecodnn    larana         larpandora     larwirecell   larsimrad     larsoftobj    larsoft_data
-e19:py2:debug  e19:py2:debug   e19:py2:debug  e19:py2:debug e19:py2:debug  e19:py2:debug  e19:py2:debug e19:py2:debug e19:py2:debug -nq-
-e19:py2:prof   e19:py2:prof    e19:py2:prof   e19:py2:prof  e19:py2:prof   e19:py2:prof   e19:py2:prof  e19:py2:prof  e19:py2:prof  -nq-
-e19:debug      e19:debug       e19:debug      e19:debug     e19:debug      e19:debug      e19:debug     e19:debug     e19:debug     -nq-
-e19:prof       e19:prof        e19:prof       e19:prof      e19:prof       e19:prof       e19:prof      e19:prof      e19:prof      -nq-
-c7:py2:debug   c7:py2:debug    c7:py2:debug   c7:py2:debug  c7:py2:debug   c7:py2:debug   c7:py2:debug  c7:py2:debug  c7:py2:debug  -nq-
-c7:py2:prof    c7:py2:prof     c7:py2:prof    c7:py2:prof   c7:py2:prof    c7:py2:prof    c7:py2:prof   c7:py2:prof   c7:py2:prof   -nq-
-c7:debug       c7:debug        c7:debug       c7:debug      c7:debug       c7:debug       c7:debug      c7:debug      c7:debug      -nq-
-c7:prof        c7:prof         c7:prof        c7:prof       c7:prof        c7:prof        c7:prof       c7:prof       c7:prof       -nq-
+qualifier  lareventdisplay larexamples larrecodnn larana larpandora larwirecell larsimrad larsoftobj larsoft_data
+e20:debug  e20:debug   e20:debug  e20:debug e20:debug  e20:debug  e20:debug e20:debug e20:debug -nq-
+e20:prof   e20:prof    e20:prof   e20:prof  e20:prof   e20:prof   e20:prof  e20:prof  e20:prof  -nq-
+e19:debug  e19:debug   e19:debug  e19:debug e19:debug  e19:debug  e19:debug e19:debug e19:debug -nq-
+e19:prof   e19:prof    e19:prof   e19:prof  e19:prof   e19:prof   e19:prof  e19:prof  e19:prof  -nq-
+c7:debug   c7:debug    c7:debug   c7:debug  c7:debug   c7:debug   c7:debug  c7:debug  c7:debug  -nq-
+c7:prof    c7:prof     c7:prof    c7:prof   c7:prof    c7:prof    c7:prof   c7:prof   c7:prof   -nq-
 end_qualifier_list
 
 # table file fragment to set FW_DATA
