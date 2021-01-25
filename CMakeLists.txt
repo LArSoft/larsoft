@@ -22,8 +22,6 @@ include(CetCMakeEnv)
 cet_cmake_env()
 
 # these are minimum required versions, not the actual product versions
-find_ups_product( cetbuildtools )
-
 find_ups_product( lareventdisplay )
 find_ups_product( larexamples     )
 find_ups_product( larana          )
