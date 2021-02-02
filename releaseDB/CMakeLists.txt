@@ -22,7 +22,7 @@ set(stack_suffix) # Reset when no longer needed
 create_product_variables( larsoft     v09_20_00_rc1 )
 create_product_variables( lardist     ${LARSOFT_VERSION}${stack_suffix} )
 
-create_product_variables( larutils    v1_27_03 )
+create_product_variables( larutils    v1_27_04 )
 create_product_variables( larbatch    v01_54_01 )
 
 create_product_variables( larcoreobj  v09_20_00_rc0 )
