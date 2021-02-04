@@ -46,7 +46,9 @@ create_product_variables( lareventdisplay v09_01_00 )
 create_product_variables( webevd      v09_03_00 )
 create_product_variables( larpandoracontent v03_22_05 )
 
+set(art_suffix c)  # Reset when no longer needed
 create_product_variables( art           v3_06_03 )
+create_product_variables( artdist       ${ART_VERSION}${art_suffix} )
 create_product_variables( canvas_root_io v1_07_02 )
 create_product_variables( gallery       v1_16_02 )
 create_product_variables( dk2nudata     v01_08_00i )

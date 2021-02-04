@@ -5,11 +5,11 @@ basequal=${1}
 # specify version to bootstrap and setup ups
 check_ups v6_0_8
 
-build_bundle art-@ART_DOT_VERSION@ ${basequal}
+build_bundle art-@ARTDIST_DOT_VERSION@ ${basequal}
 status=$?
 if (( ${status} != 0)); then
   cat 1>&2 <<EOF
-Build of art-@ART_DOT_VERSION@ bundle failed with status ${status}
+Build of art-@ARTDIST_DOT_VERSION@ bundle failed with status ${status}
 EOF
   return ${status}
 fi
@@ -18,7 +18,7 @@ fi
 
 # "third party" products
 do_build libwda @LIBWDA_VERSION@
-do_build hdf5 @HDF5_VERSION@ ${basequal}
+build_type=prof do_build hdf5 @HDF5_VERSION@ ${basequal}
 build_noarch eigen @EIGEN_VERSION@
 build_noarch h5cpp @H5CPP_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
