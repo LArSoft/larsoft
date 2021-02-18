@@ -57,7 +57,9 @@ do_build spdlog @SPDLOG_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}${py2qual}
 if [[ "${basequal}" == e19 ]] || [[ "${basequal}" == e20 ]]; then # Cannot build for clang
   do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}${py2qual}
-  do_build trtis_clients @TRTIS_CLIENTS_VERSION@ ${basequal}${py2qual}
+  if [[ "${flvr}" != "Linux64bit+5.4-2.31" ]]; then
+    do_build trtis_clients @TRTIS_CLIENTS_VERSION@ ${basequal}${py2qual}
+  fi
 fi
 
 # pygccxml
