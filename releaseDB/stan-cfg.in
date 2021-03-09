@@ -10,18 +10,21 @@ for cv in v3_18_2 v3_19_6; do
   do_build cmake ${cv}
 done
 
-if version_greater v3_03_00 v$(print_version | sed -e 's&^.*[ \t]\{1,\}&&' -e 's&\.&_&g' ); then
-  echo "Need buildFW 3.03.00 or better." 1>&2
+if version_greater v5_02_00 v$(print_version | sed -e 's&^.*[ \t]\{1,\}&&' -e 's&\.&_&g' ); then
+  echo "Need buildFW 5.02.00 or better." 1>&2
   return 1
 else
   function bf_build_compilers() {
-  maybe_build_gcc
-  local cv
-  for cv in v3_12_2 v3_13_1 v3_13_2 v3_14_3; do
-    do_build cmake ${cv}
-  done
+    # Attempt to pull required_items.
+    (( bf_build_base )) || ! maybe_pull_gcc && \
+      { local no_binary_download=1
+        maybe_build_gcc; }
+    (( bf_build_base )) || ! maybe_pull_other_compilers && \
+      { local no_binary_download=1
+        maybe_build_other_compilers v3_32_03_00 \
+        v3_8_3b; }
   }
-  bf_build_compilers; unset bf_build_compilers
+  bf_build_compilers; unset bf_build_base bf_build_compilers
 fi
 
 build_noarch eigen @EIGEN_VERSION@
