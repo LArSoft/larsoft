@@ -76,9 +76,12 @@ create_product_variables( jsonnet       v0_12_1a )
 create_product_variables( libtorch      v1_6_0a )
 create_product_variables( opencv        v4_2_0a )
 create_product_variables( protobuf      v3_12_3 )
-create_product_variables( sundials v5_6_1 )
-create_product_variables( stan_math v3_4_0 )
-create_product_variables( stan v2_25_0 )
+#create_product_variables( sundials v5_6_1 )
+#create_product_variables( stan_math v3_4_0 )
+#create_product_variables( stan v2_25_0 )
+create_product_variables( sundials v3_2_1a )
+create_product_variables( stan_math v2_18_0a )
+create_product_variables( stan v2_18_0b )
 create_product_variables( tensorflow    v1_12_0d )
 create_product_variables( trtis_clients v19_11c )
 create_product_variables( systematicstools v00_08_01 )
@@ -107,6 +110,8 @@ CONFIGURE_FILE ( ${CMAKE_CURRENT_SOURCE_DIR}/larsoftobj.html.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoftobj-${LARSOFTOBJ_VERSION}.html @ONLY )
 CONFIGURE_FILE ( ${CMAKE_CURRENT_SOURCE_DIR}/larsoft.html.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-${LARDIST_VERSION}.html @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/stan-cfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/stan-cfg-${STAN_DOT_VERSION} @ONLY )
 
 # install releaseDB
 INSTALL( FILES base_dependency_database
