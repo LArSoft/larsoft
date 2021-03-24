@@ -19,11 +19,11 @@ set( BASEQUAL e19 )
 set( version_set s106 )
 
 set(stack_suffix) # Reset when no longer needed
-create_product_variables( larsoft     v09_18_00 )
+create_product_variables( larsoft     v09_19_00 )
 create_product_variables( lardist     ${LARSOFT_VERSION}${stack_suffix} )
 
 create_product_variables( larutils    v1_27_04 )
-create_product_variables( larbatch    v01_54_01 )
+create_product_variables( larbatch    v01_55_00 )
 
 create_product_variables( larcoreobj  v09_02_00 )
 create_product_variables( larcorealg  v09_01_01 )
@@ -38,7 +38,7 @@ create_product_variables( larsim      v09_10_03 )
 create_product_variables( larsimrad   v09_01_04 )
 create_product_variables( larreco     v09_06_00 )
 create_product_variables( larrecodnn  v09_06_03 )
-create_product_variables( larana      v09_01_04 )
+create_product_variables( larana      v09_02_00 )
 create_product_variables( larpandora  v09_05_05 )
 create_product_variables( larwirecell v09_02_03 )
 create_product_variables( larexamples v09_01_04 )
