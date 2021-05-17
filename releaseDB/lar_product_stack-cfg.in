@@ -14,14 +14,8 @@ EOF
   return ${status}
 fi
 
-if [[ "${build_label}" == py2 ]]; then
-  py2qual=:${build_label}
-  pyver=v2_7_15a
-  pyqual=p2715a
-else
-  pyver=v3_8_3b
-  pyqual=p383b
-fi
+pyver=v3_8_3b
+pyqual=p383b
 
 save_build_type=${build_type}
 build_type=prof
@@ -35,8 +29,8 @@ EOF
 fi
 build_type=${save_build_type}
 
-do_build marley @MARLEY_VERSION@ ${basequal}${py2qual}
-do_build pandora @PANDORA_VERSION@ ${basequal}${py2qual}
+do_build marley @MARLEY_VERSION@ ${basequal}
+do_build pandora @PANDORA_VERSION@ ${basequal}
 #do_build hdf5 @HDF5_VERSION@ ${basequal}
 #do_build hep_hpc @HEP_HPC_VERSION@ ${basequal}
 do_build glpk @GLPK_VERSION@
@@ -52,12 +46,10 @@ do_build stan @STAN_VERSION@ ${basequal}
 do_build bxdecay0 @BXDECAY0_VERSION@ ${basequal}
 do_build protobuf @PROTOBUF_VERSION@ ${basequal}
 do_build spdlog @SPDLOG_VERSION@ ${basequal}
-do_build wirecell @WIRECELL_VERSION@ ${basequal}${py2qual}
-if [[ "${basequal}" == e19 ]] || [[ "${basequal}" == e20 ]]; then # Cannot build for clang
-  do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}${py2qual}
-  if [[ "${flvr}" != "Linux64bit+5.4-2.31" ]]; then
-    do_build trtis_clients @TRTIS_CLIENTS_VERSION@ ${basequal}${py2qual}
-  fi
+do_build wirecell @WIRECELL_VERSION@ ${basequal}
+do_build tensorflow @TENSORFLOW_VERSION@ ${basequal}
+if [[ "${flvr}" != "Linux64bit+5.4-2.31" ]]; then
+  do_build triton @TRITON_VERSION@ ${basequal}
 fi
 
 # pygccxml

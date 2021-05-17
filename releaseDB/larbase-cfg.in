@@ -23,14 +23,8 @@ EOF
   return ${status}
 fi
 
-if [[ "${build_label}" == py2 ]]; then
-  py2qual=:${build_label}
-  pyver=v2_7_15a
-  pyqual=p2715a
-else
-  pyver=v3_8_3b
-  pyqual=p383b
-fi
+pyver=v3_8_3b
+pyqual=p383b
 
 # add to manifest if no build - larsoft_data, mrb
 build_noarch larsoft_data @LARSOFT_DATA_VERSION@
@@ -40,9 +34,9 @@ build_noarch mrb @MRB_VERSION@
 # new cetpkgsupport - temporary
 #ensure_cetpkgsupport @CETPKGSUPPORT_VERSION@
 
-build_cet gallery @GALLERY_VERSION@ ${basequal}${py2qual}
-build_cet systematicstools @SYSTEMATICSTOOLS_VERSION@ ${basequal}${py2qual}
-build_cet nusystematics @NUSYSTEMATICS_VERSION@ ${basequal}${py2qual}
-build_cet artg4tk @ARTG4TK_VERSION@ ${basequal}${py2qual}
+build_cet gallery @GALLERY_VERSION@ ${basequal}
+build_cet systematicstools @SYSTEMATICSTOOLS_VERSION@ ${basequal}
+build_cet nusystematics @NUSYSTEMATICS_VERSION@ ${basequal}
+build_cet artg4tk @ARTG4TK_VERSION@ ${basequal}
 
 return 0
