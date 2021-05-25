@@ -19,11 +19,11 @@ pyqual=p383b
 
 save_build_type=${build_type}
 build_type=prof
-build_bundle hep_hpc_toolkit-@HEP_HPC_DOT_VERSION@ ${basequal} 
+build_bundle hep_hpc_toolkit-@HEP_HPC_TOOLKIT_DOT_VERSION@ ${basequal} 
 status=$?
 if (( ${status} != 0)); then
   cat 1>&2 <<EOF
-Build of hep_hpc_toolkit-@HEP_HPC_DOT_VERSION@ bundle failed with status ${status}
+Build of hep_hpc_toolkit-@HEP_HPC_TOOLKIT_DOT_VERSION@ bundle failed with status ${status}
 EOF
   return ${status}
 fi
