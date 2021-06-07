@@ -1,3 +1,6 @@
+
+# if the CETBUILDTOOLS_VERSION environmental variable is defined, use cetbuildtools
+if(DEFINED ENV{CETBUILDTOOLS_VERSION})
 # variables to be used in cmake templates
 macro( create_product_variables productname productversion )
    string(TOUPPER ${productname} PRODUCTNAME_UC )
@@ -116,3 +119,4 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/stan-cfg.in
 INSTALL( FILES base_dependency_database
                README
          DESTINATION "${product}/${version}/releaseDB" )
+endif()

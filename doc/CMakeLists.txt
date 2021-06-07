@@ -1,2 +1,2 @@
 # install the documentation
-install_source(EXTRAS LArSoftLogo-tiny.png)
+#install_source(EXTRAS LArSoftLogo-tiny.png)

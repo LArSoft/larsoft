@@ -9,14 +9,16 @@
 # It sets up all of the larsoft ups products (lardata, larsim, larreco, etc.)
 # ======================================================================
 
-cmake_minimum_required (VERSION 3.12...3.18 FATAL_ERROR)
+cmake_minimum_required (VERSION 3.19 FATAL_ERROR)
 
 project(larsoft LANGUAGES CXX C)
 
-# cetbuildtools contains our cmake modules
-find_package(cetbuildtools REQUIRED)
+set(fcl_dir job)
+set(gdml_dir gdml)
 
-list(APPEND CMAKE_MODULE_PATH $ENV{CANVAS_ROOT_IO_DIR}/Modules $ENV{ART_DIR}/Modules)
+find_package(cetmodules REQUIRED)
+find_package(canvas_root_io)
+find_package(art)
 
 include(CetCMakeEnv)
 cet_cmake_env()
@@ -39,7 +41,26 @@ add_subdirectory(doc)
 add_subdirectory(releaseDB)
 
 # ups - table and config files
+if(WANT_UPS)
 add_subdirectory(ups)
+endif()
 
 # packaging utility
 include(UseCPack)
+
+
+include(CetCMakeEnv)
+cet_cmake_env()
+
+# useful scripts
+add_subdirectory(bin)
+
+# documentation
+add_subdirectory(doc)
+
+# release database
+add_subdirectory(releaseDB)
+
+# generate packageConfig
+add_subdirectory(cmakeConfig)
+
