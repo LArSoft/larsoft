@@ -45,22 +45,6 @@ if(WANT_UPS)
 add_subdirectory(ups)
 endif()
 
-# packaging utility
-#include(UseCPack)
-
-
-include(CetCMakeEnv)
-cet_cmake_env()
-
-# useful scripts
-add_subdirectory(bin)
-
-# documentation
-add_subdirectory(doc)
-
-# release database
-add_subdirectory(releaseDB)
-
 # generate packageConfig
 add_subdirectory(cmakeConfig)
 
