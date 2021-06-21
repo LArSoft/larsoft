@@ -46,7 +46,7 @@ add_subdirectory(ups)
 endif()
 
 # packaging utility
-include(UseCPack)
+#include(UseCPack)
 
 
 include(CetCMakeEnv)
