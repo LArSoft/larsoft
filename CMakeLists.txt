@@ -15,6 +15,7 @@ project(larsoft VERSION 09.24.02 LANGUAGES CXX C)
 
 set(fcl_dir job)
 set(gdml_dir gdml)
+set(larsoft_bin_dir "${CMAKE_INSTALL_PREFIX}/bin")
 
 find_package(cetmodules REQUIRED)
 find_package(canvas_root_io)
