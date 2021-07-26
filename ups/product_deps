@@ -1,7 +1,7 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent	larsoft	v09_24_02
-defaultqual	e19
+parent	larsoft	v09_27_00
+defaultqual	e20
 
 # larsoft itself has no inc, or fcl directories
 # the lib directory just contains larsoftConfig.cmake and larsoftConfigVersion.cmake
@@ -10,15 +10,15 @@ fcldir      -
 bindir      product_dir
 
 product         version
-lareventdisplay v09_01_10
-larexamples     v09_01_10
-larana          v09_02_06
-larrecodnn      v09_07_01
-larsimrad	v09_01_10
-larpandora      v09_06_02
-larwirecell     v09_02_08
+lareventdisplay v09_01_14
+larexamples     v09_01_13
+larana          v09_02_10
+larrecodnn      v09_08_00
+larsimrad	v09_01_13
+larpandora      v09_07_00
+larwirecell     v09_02_10
 larsoft_data    v1_02_01
-larsoftobj      v09_05_04
+larsoftobj      v09_06_01
 
 cetbuildtools	v8_09_00   -   only_for_build
 end_product_list
