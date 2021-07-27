@@ -23,8 +23,8 @@ EOF
   return ${status}
 fi
 
-pyver=v3_8_3b
-pyqual=p383b
+pyver=v3_9_2
+pyqual=p392
 
 # add to manifest if no build - larsoft_data, mrb
 build_noarch larsoft_data @LARSOFT_DATA_VERSION@
