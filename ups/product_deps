@@ -20,7 +20,7 @@ larwirecell     v09_02_10
 larsoft_data    v1_02_01
 larsoftobj      v09_06_01
 
-cetbuildtools	v8_09_00   -   only_for_build
+cetbuildtools	v8_11_02   -   only_for_build
 end_product_list
 
 qualifier  lareventdisplay larexamples larrecodnn larana larpandora larwirecell larsimrad larsoftobj larsoft_data
