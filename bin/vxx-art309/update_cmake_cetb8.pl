@@ -9,6 +9,7 @@ BEGIN { %dir_list = (
         "art_Framework_Services_Optional_RandomNumberGenerator_service" => "art::Framework_Services_Optional_RandomNumberGenerator_service",
         "art_Framework_IO_ProductMix" => "art::Framework_IO_ProductMix",
         "art_Utilities" => "art::Utilities",
+        "MF_MessageLogger"  => "messagefacility::MF_MessageLogger",
         "canvas" => "canvas::canvas",
         "cetlib" => "cetlib::cetlib",
         "cetlib_except" => "cetlib_except::cetlib_except"
@@ -43,6 +44,7 @@ foreach my $lib (sort keys %dir_list) {
         s&\$\{MF_MESSAGELOGGER\}&messagefacility::MF_MessageLogger&;
         s&\$\{FHICLCPP\}&fhiclcpp::fhiclcpp&;
         s&\$\{CETLIB\}&cetlib::cetlib&;
+        s&\$\{CETLIB_EXCEPT\}&cetlib_except::cetlib_except&;
         s&\$\{BOOST_DATE_TIME\}&Boost::date_time&;
         s&\$\{BOOST_FILESYSTEM\}&Boost::filesystem&;
         s&\$\{BOOST_THREAD\}&Boost::thread&;
