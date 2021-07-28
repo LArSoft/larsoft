@@ -48,4 +48,13 @@ foreach my $lib (sort keys %dir_list) {
         s&\$\{BOOST_THREAD\}&Boost::thread&;
         s&\$\{BOOST_REGEX\}&Boost::regex&;
         s&\$\{ROOT_CORE\}&ROOT::Core&;
+        s&\$\{ROOT_RIO\}&ROOT::Rio&;
+        s&\$\{ROOT_EG\}&ROOT::EG&;
+        s&\$\{ROOT_GEOM\}&ROOT::Geom&;
+        s&\$\{ROOT_XMLIO\}&ROOT::XMLIO&;
+        s&\$\{ROOT_GDML\}&ROOT::Gdml&;
+        s&\$\{ROOT_MATHMORE\}&ROOT::MathMore&;
+        s&\$\{ROOT_TREE\}&ROOT::Tree&;
+        s&\$\{ROOT_PHYSICS\}&ROOT::Physics&;
+        s&\$\{ROOT_HIST\}&ROOT::Hist&;
 
