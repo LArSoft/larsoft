@@ -13,7 +13,7 @@ BEGIN { %dir_list = (
         "canvas" => "canvas::canvas",
         "cetlib" => "cetlib::cetlib",
         "cetlib_except" => "cetlib_except::cetlib_except"
-		       ); }
+                       ); }
 
 foreach my $lib (sort keys %dir_list) {
    next if m&add_subdirectory&i;
@@ -30,33 +30,31 @@ foreach my $lib (sort keys %dir_list) {
   s&\b\Q${lib}\E\b([^\.]|$)&$dir_list{$lib}${1}${2}&g and last;
 }
 
-##        "" => "",
-#s&\$\{SIMULATIONBASE\}&nusimdata_SimulationBase&g;
-        s&\$\{ART_FRAMEWORK_SERVICES_REGISTRY\}&art::Framework_Services_Registry&;
-        s&\$\{ART_FRAMEWORK_CORE\}&art::Framework_Core&;
-        s&\$\{ART_FRAMEWORK_IO_SOURCES\}&art::Framework_IO_Sources&;
-        s&\$\{ART_PERSISTENCY_COMMON\}&art::Persistency_Common&;
-        s&\$\{ART_ROOT_IO\}&art_root_io::art_root_io&;
-        s&\$\{ART_ROOT_IO_TFILE_SUPPORT\}&art_root_io::tfile_support&;
-        s&\$\{ART_ROOT_IO_TFILESERVICE_SERVICE\}&art_root_io::TFileService_service&;
-        s&\$\{ART_ROOT_IO_ROOTINPUT_SOURCE\}&art_root_io::RootInput_source&;
-        s&\$\{ART_FRAMEWORK_PRINCIPAL\}&art::Framework_Principal&;
-        s&\$\{MF_MESSAGELOGGER\}&messagefacility::MF_MessageLogger&;
-        s&\$\{FHICLCPP\}&fhiclcpp::fhiclcpp&;
-        s&\$\{CETLIB\}&cetlib::cetlib&;
-        s&\$\{CETLIB_EXCEPT\}&cetlib_except::cetlib_except&;
-        s&\$\{BOOST_DATE_TIME\}&Boost::date_time&;
-        s&\$\{BOOST_FILESYSTEM\}&Boost::filesystem&;
-        s&\$\{BOOST_THREAD\}&Boost::thread&;
-        s&\$\{BOOST_REGEX\}&Boost::regex&;
-        s&\$\{ROOT_CORE\}&ROOT::Core&;
-        s&\$\{ROOT_RIO\}&ROOT::Rio&;
-        s&\$\{ROOT_EG\}&ROOT::EG&;
-        s&\$\{ROOT_GEOM\}&ROOT::Geom&;
-        s&\$\{ROOT_XMLIO\}&ROOT::XMLIO&;
-        s&\$\{ROOT_GDML\}&ROOT::Gdml&;
-        s&\$\{ROOT_MATHMORE\}&ROOT::MathMore&;
-        s&\$\{ROOT_TREE\}&ROOT::Tree&;
-        s&\$\{ROOT_PHYSICS\}&ROOT::Physics&;
-        s&\$\{ROOT_HIST\}&ROOT::Hist&;
-
+s&\$\{ART_FRAMEWORK_CORE\}&art::Framework_Core&;
+s&\$\{ART_FRAMEWORK_IO_SOURCES\}&art::Framework_IO_Sources&;
+s&\$\{ART_FRAMEWORK_PRINCIPAL\}&art::Framework_Principal&;
+s&\$\{ART_FRAMEWORK_SERVICES_REGISTRY\}&art::Framework_Services_Registry&;
+s&\$\{ART_PERSISTENCY_COMMON\}&art::Persistency_Common&;
+s&\$\{ART_ROOT_IO\}&art_root_io::art_root_io&;
+s&\$\{ART_ROOT_IO_ROOTINPUT_SOURCE\}&art_root_io::RootInput_source&;
+s&\$\{ART_ROOT_IO_TFILESERVICE_SERVICE\}&art_root_io::TFileService_service&;
+s&\$\{ART_ROOT_IO_TFILE_SUPPORT\}&art_root_io::tfile_support&;
+s&\$\{BOOST_DATE_TIME\}&Boost::date_time&;
+s&\$\{BOOST_FILESYSTEM\}&Boost::filesystem&;
+s&\$\{BOOST_REGEX\}&Boost::regex&;
+s&\$\{BOOST_SYSTEM\}&&; # No longer needed
+s&\$\{BOOST_THREAD\}&Boost::thread&;
+s&\$\{CETLIB\}&cetlib::cetlib&;
+s&\$\{CETLIB_EXCEPT\}&cetlib_except::cetlib_except&;
+s&\$\{FHICLCPP\}&fhiclcpp::fhiclcpp fhiclcpp::types&;
+s&\$\{MF_MESSAGELOGGER\}&messagefacility::MF_MessageLogger&;
+s&\$\{ROOT_CORE\}&ROOT::Core&;
+s&\$\{ROOT_EG\}&ROOT::EG&;
+s&\$\{ROOT_GDML\}&ROOT::Gdml&;
+s&\$\{ROOT_GEOM\}&ROOT::Geom&;
+s&\$\{ROOT_HIST\}&ROOT::Hist&;
+s&\$\{ROOT_MATHMORE\}&ROOT::MathMore&;
+s&\$\{ROOT_PHYSICS\}&ROOT::Physics&;
+s&\$\{ROOT_RIO\}&ROOT::RIO&;
+s&\$\{ROOT_TREE\}&ROOT::Tree&;
+s&\$\{ROOT_XMLIO\}&ROOT::XMLIO&;
