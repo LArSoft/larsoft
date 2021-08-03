@@ -86,7 +86,7 @@ create_product_variables( stan v2_26_1 )
 create_product_variables( systematicstools v01_00_03 )
 create_product_variables( nusystematics v01_00_02 )
 create_product_variables( larsoft_data  v1_02_01 )
-create_product_variables( mrb           v5_12_02 )
+create_product_variables( mrb v5_14_01 )
 create_product_variables( hub           v2_14_2 )
 # needed for larwire
 create_product_variables( libwda v2_29_1 )
