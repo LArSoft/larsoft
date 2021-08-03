@@ -23,30 +23,25 @@ EOF
   return ${status}
 fi
 
-[[ "${build_label}" == py2 ]] && pyqual=:${build_label}
-
-build_cet -G LArSoft larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}${pyqual}
+build_cet -G LArSoft larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}
 
 # larcore tests disabled because of Jenkins build slave problems
-build_cet -G LArSoft -n larcore @LARCORE_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft lardata @LARDATA_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larevt @LAREVT_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larg4 @LARG4_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larsim @LARSIM_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larsimrad @LARSIMRAD_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larreco @LARRECO_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larrecodnn @LARRECODNN_VERSION@ ${basequal}${pyqual}
+build_cet -G LArSoft -n larcore @LARCORE_VERSION@ ${basequal}
+build_cet -G LArSoft lardata @LARDATA_VERSION@ ${basequal}
+build_cet -G LArSoft larevt @LAREVT_VERSION@ ${basequal}
+build_cet -G LArSoft larg4 @LARG4_VERSION@ ${basequal}
+build_cet -G LArSoft larsim @LARSIM_VERSION@ ${basequal}
+build_cet -G LArSoft larsimrad @LARSIMRAD_VERSION@ ${basequal}
+build_cet -G LArSoft larreco @LARRECO_VERSION@ ${basequal}
+build_cet -G LArSoft larrecodnn @LARRECODNN_VERSION@ ${basequal}
 # the single larana test likes to hang on Jenkins macOS build slaves
-build_cet -G LArSoft -n larana @LARANA_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larpandora @LARPANDORA_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larwirecell @LARWIRECELL_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larexamples @LAREXAMPLES_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larsoft @LARSOFT_VERSION@ ${basequal}${pyqual}
-# webevd is not supported on macOS
-if (( ${build_slf_extras:-0} )); then # only build for SL
-  build_cet -G LArSoft webevd @WEBEVD_VERSION@ ${basequal}${pyqual}
-fi
+build_cet -G LArSoft -n larana @LARANA_VERSION@ ${basequal}
+build_cet -G LArSoft larpandora @LARPANDORA_VERSION@ ${basequal}
+build_cet -G LArSoft larwirecell @LARWIRECELL_VERSION@ ${basequal}
+build_cet -G LArSoft larexamples @LAREXAMPLES_VERSION@ ${basequal}
+build_cet -G LArSoft lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}
+build_cet -G LArSoft larsoft @LARSOFT_VERSION@ ${basequal}
+build_cet -G LArSoft webevd @WEBEVD_VERSION@ ${basequal}
 # do not distribute larbatch or larutils with a release candidate
 build_cet -f NULL -G LArSoft larbatch @LARBATCH_VERSION@
 build_cet -f NULL -G LArSoft larutils @LARUTILS_VERSION@
