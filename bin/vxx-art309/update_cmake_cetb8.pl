@@ -13,6 +13,8 @@ BEGIN { %dir_list = (
         "canvas" => "canvas::canvas",
         "cetlib" => "cetlib::cetlib",
         "cetlib_except" => "cetlib_except::cetlib_except",
+        "lardata_Utilities_LArPropertiesServiceArgoNeuT_service" => "ArgoneutUtilities_LArPropertiesServiceArgoNeuT_service",
+        "lardata_Utilities_DetectorPropertiesServiceArgoNeuT_service" => "ArgoneutUtilities_DetectorPropertiesServiceArgoNeuT_service",
         "nusimdata_SimulationBase" => "nusimdata::SimulationBase"
                        ); }
 
@@ -27,6 +29,7 @@ foreach my $lib (sort keys %dir_list) {
    next if m&cetlib::cetlib&i;
    next if m&canvas::canvas&i;
    next if m&cetlib_except::cetlib_except&i;
+   next if m&messagefacility::MF&i;
   #s&\b\Q${lib}\E([^\.\s]*\b)([^\.]|$)&$dir_list{$lib}${1}${2}&g and last;
   s&\b\Q${lib}\E\b([^\.]|$)&$dir_list{$lib}${1}${2}&g and last;
 }
