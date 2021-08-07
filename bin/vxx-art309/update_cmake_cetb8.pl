@@ -12,7 +12,8 @@ BEGIN { %dir_list = (
         "MF_MessageLogger"  => "messagefacility::MF_MessageLogger",
         "canvas" => "canvas::canvas",
         "cetlib" => "cetlib::cetlib",
-        "cetlib_except" => "cetlib_except::cetlib_except"
+        "cetlib_except" => "cetlib_except::cetlib_except",
+        "nusimdata_SimulationBase" => "nusimdata::SimulationBase"
                        ); }
 
 foreach my $lib (sort keys %dir_list) {
