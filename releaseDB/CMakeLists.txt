@@ -89,7 +89,7 @@ create_product_variables( dk2nudata     v01_10_00d )
 create_product_variables( nusimdata     v1_24_04 )
 create_product_variables( nutools       v3_11_04 )
 # the SciSoft bundle containing nutools is named nulite
-create_product_variables( nulite        v3_11_04 )
+create_product_variables( nulite v3_11_04a )
 create_product_variables( ifdhc_config  v2_5_14 )
 create_product_variables( genie_xsec    v3_00_04a )
 create_product_variables( glpk          v4_65 )
