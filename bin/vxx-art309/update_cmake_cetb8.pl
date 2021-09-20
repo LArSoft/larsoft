@@ -68,6 +68,7 @@ s&\$\{ROOT_EGPYTHIA6\}&ROOT::EGPythia6&;
 s&\$\{ROOTSYS\}/lib/libEGPythia6.so&ROOT::EGPythia6&;
 s&\$\{LIBWDA\}&LIBWDA&;
 s&\$\{PQ\}&PQ&;
+s&\$\{CRY\}&CRY&;
 s&\$\{CLHEP\}&CLHEP&;
 s&\$\{GSL\}&GSL&;
 s&\$\{XML2\}&XML2&;
