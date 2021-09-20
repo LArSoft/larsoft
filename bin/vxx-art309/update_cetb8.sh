@@ -77,7 +77,6 @@ get_this_dir
 TMP=`mktemp -t update_sources.sh.XXXXXX`
 trap "rm $TMP* 2>/dev/null" EXIT
 
-set -x
 if [[ -n "${file}" ]]; then
   if ! [[ -r "${file}" ]]; then
     echo "ERROR: ${file} does not exist or is not readable." 1>&2
@@ -95,4 +94,3 @@ else
   done
   echo
 fi
-set +x
