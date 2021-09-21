@@ -15,12 +15,14 @@ BEGIN { %dir_list = (
         "cetlib_except" => "cetlib_except::cetlib_except",
         "lardata_Utilities_LArPropertiesServiceArgoNeuT_service" => "ArgoneutUtilities_LArPropertiesServiceArgoNeuT_service",
         "lardata_Utilities_DetectorPropertiesServiceArgoNeuT_service" => "ArgoneutUtilities_DetectorPropertiesServiceArgoNeuT_service",
+        "GeometryTestLib" => "larcorealg::GeometryTestLib",
         "nusimdata_SimulationBase" => "nusimdata::SimulationBase"
                        ); }
 
 foreach my $lib (sort keys %dir_list) {
    next if m&add_subdirectory&i;
    next if m&find_ups_product&i;
+   next if m&cet_find_library&i;
    next if m&simple_plugin&i;
    next if m&create_version_variables&i;
    next if m&SUBDIRNAME&i;
@@ -41,6 +43,7 @@ s&\$\{ART_FRAMEWORK_IO_SOURCES\}&art::Framework_IO_Sources&;
 s&\$\{ART_FRAMEWORK_PRINCIPAL\}&art::Framework_Principal&;
 s&\$\{ART_FRAMEWORK_SERVICES_REGISTRY\}&art::Framework_Services_Registry&;
 s&\$\{ART_PERSISTENCY_COMMON\}&art::Persistency_Common&;
+s&\$\{ART_UTILITIES\}&art::Utilities&;
 s&\$\{ART_ROOT_IO\}&art_root_io::art_root_io&;
 s&\$\{ART_ROOT_IO_ROOTINPUT_SOURCE\}&art_root_io::RootInput_source&;
 s&\$\{ART_ROOT_IO_TFILESERVICE_SERVICE\}&art_root_io::TFileService_service&;
@@ -88,7 +91,7 @@ s&\$\{ROOTSYS\}/lib/libEGPythia6.so&ROOT::EGPythia6&;
 s&\$\{LIBWDA\}&LIBWDA&;
 s&\$\{PQ\}&PQ&;
 s&\$\{CRY\}&CRY&;
-s&\$\{CLHEP\}&CLHEP&;
+s&\$\{CLHEP\}&CLHEP::CLHEP&;
 s&\$\{GSL\}&GSL&;
 s&\$\{XML2\}&XML2&;
 s&\$\{IFDH\}&IFDH&;
@@ -96,6 +99,7 @@ s&\$\{IFDH_SERVICE\}&IFDH_SERVICE&;
 s&\$\{LOG4CPP\}&LOG4CPP&;
 s&\$\{PYTHIA6\}&PYTHIA6&;
 s&\$\{LHAPDF\}&LHAPDF&;
+s&\$\{SQLITE\}&SQLITE&;
 s&\$\{G4FR\}&G4FR&;
 s&\$\{G4GMOCREN\}&G4GMOCREN&;
 s&\$\{G4RAYTRACER\}&G4RAYTRACER&;
