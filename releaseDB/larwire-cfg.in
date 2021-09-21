@@ -14,8 +14,6 @@ EOF
   return ${status}
 fi
 
-[[ "${build_label}" == py2 ]] && pyqual=:${build_label}
-
 # "third party" products
 do_build libwda @LIBWDA_VERSION@
 build_type=prof do_build hdf5 @HDF5_VERSION@ ${basequal}
@@ -24,23 +22,23 @@ build_noarch h5cpp @H5CPP_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build jsonnet @JSONNET_VERSION@ ${basequal}
 do_build spdlog @SPDLOG_VERSION@ ${basequal}
-do_build wirecell @WIRECELL_VERSION@ ${basequal}${pyqual}
+do_build wirecell @WIRECELL_VERSION@ ${basequal}
 
-build_cet canvas_root_io @CANVAS_ROOT_IO_VERSION@ ${basequal}${pyqual}
-build_cet art_root_io @ART_ROOT_IO_VERSION@ ${basequal}${pyqual}
+build_cet canvas_root_io @CANVAS_ROOT_IO_VERSION@ ${basequal}
+build_cet art_root_io @ART_ROOT_IO_VERSION@ ${basequal}
 
 # not quite the entire larsoftobj distribution
-do_build dk2nudata @DK2NUDATA_VERSION@ ${basequal}${pyqual}
-build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larcoreobj @LARCOREOBJ_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft -n larcorealg @LARCOREALG_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft lardataobj @LARDATAOBJ_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft lardataalg @LARDATAALG_VERSION@ ${basequal}${pyqual}
+do_build dk2nudata @DK2NUDATA_VERSION@ ${basequal}
+build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}
+build_cet -G LArSoft larcoreobj @LARCOREOBJ_VERSION@ ${basequal}
+build_cet -G LArSoft -n larcorealg @LARCOREALG_VERSION@ ${basequal}
+build_cet -G LArSoft lardataobj @LARDATAOBJ_VERSION@ ${basequal}
+build_cet -G LArSoft lardataalg @LARDATAALG_VERSION@ ${basequal}
 
 # larcore tests disabled because of Jenkins build slave problems
-build_cet -G LArSoft -n larcore @LARCORE_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft lardata @LARDATA_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larevt @LAREVT_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larwirecell @LARWIRECELL_VERSION@ ${basequal}${pyqual}
+build_cet -G LArSoft -n larcore @LARCORE_VERSION@ ${basequal}
+build_cet -G LArSoft lardata @LARDATA_VERSION@ ${basequal}
+build_cet -G LArSoft larevt @LAREVT_VERSION@ ${basequal}
+build_cet -G LArSoft larwirecell @LARWIRECELL_VERSION@ ${basequal}
 
 return 0

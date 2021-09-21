@@ -9,9 +9,9 @@
 # It sets up all of the larsoft ups products (lardata, larsim, larreco, etc.)
 # ======================================================================
 
-cmake_minimum_required (VERSION 3.12...3.18 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.19 FATAL_ERROR)
 
-project(larsoft LANGUAGES CXX C)
+project(larsoft VERSION 09.28.02.01 LANGUAGES CXX C)
 
 # cetbuildtools contains our cmake modules
 find_package(cetbuildtools REQUIRED)

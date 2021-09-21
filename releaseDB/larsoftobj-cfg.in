@@ -13,18 +13,23 @@ Build of gallery-@GALLERY_DOT_VERSION@ bundle failed with status ${status}
 EOF
   return ${status}
 fi
-[[ "${build_label}" == py2 ]] && pyqual=:${build_label}
+
+for _cps_cetmodules_ver in @CETMODULES_VERSION_LIST@; do
+  ensure_support_package -f NULL -- cetmodules ${_cps_cetmodules_ver}
+done
+ensure_cetbuildtools @CETBUILDTOOLS_VERSION_LIST@
+unset _cps_cetmodules_ver
 
 do_build hub @HUB_VERSION@
 build_noarch mrb @MRB_VERSION@
 
-do_build dk2nudata @DK2NUDATA_VERSION@ ${basequal}${pyqual}
+do_build dk2nudata @DK2NUDATA_VERSION@ ${basequal}
 
-build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larcoreobj @LARCOREOBJ_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft -n larcorealg @LARCOREALG_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft lardataobj @LARDATAOBJ_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft lardataalg @LARDATAALG_VERSION@ ${basequal}${pyqual}
-build_cet -G LArSoft larsoftobj @LARSOFTOBJ_VERSION@ ${basequal}${pyqual}
+build_cet nusimdata  @NUSIMDATA_VERSION@ ${basequal}
+build_cet -G LArSoft larcoreobj @LARCOREOBJ_VERSION@ ${basequal}
+build_cet -G LArSoft -n larcorealg @LARCOREALG_VERSION@ ${basequal}
+build_cet -G LArSoft lardataobj @LARDATAOBJ_VERSION@ ${basequal}
+build_cet -G LArSoft lardataalg @LARDATAALG_VERSION@ ${basequal}
+build_cet -G LArSoft larsoftobj @LARSOFTOBJ_VERSION@ ${basequal}
 
 return 0
