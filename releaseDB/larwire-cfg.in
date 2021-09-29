@@ -20,7 +20,7 @@ build_type=prof do_build hdf5 @HDF5_VERSION@ ${basequal}
 build_noarch eigen @EIGEN_VERSION@
 build_noarch h5cpp @H5CPP_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
-do_build jsonnet @JSONNET_VERSION@ ${basequal}
+do_build gojsonnet @GOJSONNET_VERSION@ ${basequal}
 do_build spdlog @SPDLOG_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}
 
