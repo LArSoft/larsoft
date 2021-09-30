@@ -35,6 +35,7 @@ build_noarch eigen @EIGEN_VERSION@
 build_noarch guideline_sl @GUIDELINE_SL_VERSION@
 build_noarch h5cpp @H5CPP_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
+do_build golang @GOLANG_VERSION@
 do_build gojsonnet @GOJSONNET_VERSION@ ${basequal}
 do_build opencv @OPENCV_VERSION@ ${basequal}:${pyqual}
 do_build sundials @SUNDIALS_VERSION@ ${basequal}
