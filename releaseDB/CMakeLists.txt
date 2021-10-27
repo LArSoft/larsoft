@@ -53,7 +53,7 @@ set( BASEQUAL e20 )
 set( version_set s112 )
 
 set(stack_suffix) # Reset when no longer needed
-create_product_variables( larsoft v09_34_01 )
+create_product_variables( larsoft v09_35_00 )
 create_product_variables( lardist     ${LARSOFT_VERSION}${stack_suffix} )
 
 create_product_variables( larutils    v1_28_02 )
