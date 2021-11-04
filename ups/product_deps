@@ -12,8 +12,8 @@ bindir      product_dir
 product         version
 lareventdisplay v09_02_05
 larexamples     v09_02_05
-larana          v09_03_05
-larrecodnn      v09_09_05
+larana          v09_03_06
+larrecodnn      v09_09_06
 larsimrad	v09_03_04
 larpandora      v09_09_05
 larwirecell     v09_04_03
