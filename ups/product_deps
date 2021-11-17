@@ -12,7 +12,7 @@ bindir      product_dir
 product         version
 lareventdisplay v09_02_06_01
 larexamples     v09_02_06_01
-larana          v09_03_07_01
+larana          v09_03_07_02
 larrecodnn      v09_09_07_01
 larsimrad	v09_03_05_01
 larpandora      v09_10_00_01
