@@ -11,12 +11,10 @@
 
 cmake_minimum_required(VERSION 3.19 FATAL_ERROR)
 
-project(larsoft VERSION 09.38.00 LANGUAGES CXX C)
+project(larsoft VERSION 09.39.00 LANGUAGES CXX C)
 
 # cetbuildtools contains our cmake modules
 find_package(cetbuildtools REQUIRED)
-
-list(APPEND CMAKE_MODULE_PATH $ENV{CANVAS_ROOT_IO_DIR}/Modules $ENV{ART_DIR}/Modules)
 
 include(CetCMakeEnv)
 cet_cmake_env()
