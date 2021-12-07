@@ -132,7 +132,7 @@ create_product_variables( art_root_io v1_08_03 )
 
 # CMake, cetbuildtools, and cetmodules are special: 
 #  define as many versions as necessary.
-#create_version_variables(cmake LIST v3_17_3 v3_18_2 v3_19_6 v3_20_0)
+create_version_variables(cmake LIST v3_17_3 v3_18_2 v3_19_6 v3_20_0 v3_22_0)
 create_version_variables(cetbuildtools LIST v8_18_00 v8_18_01 v8_18_04 v8_18_05 v8_18_09)
 create_version_variables(cetmodules LIST v2_29_00 v2_29_01 v2_29_02 v2_29_06 v2_29_07 v2_29_09 v2_29_12)
 
