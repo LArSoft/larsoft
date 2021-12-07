@@ -10,17 +10,17 @@ fcldir      -
 bindir      product_dir
 
 product         version
-lareventdisplay v09_02_09
-larexamples     v09_02_09
-larana          v09_03_10
-larrecodnn      v09_09_10
-larsimrad	v09_03_08
-larpandora      v09_10_03
-larwirecell     v09_04_06
+lareventdisplay v09_03_00
+larexamples     v09_03_00
+larana          v09_04_00
+larrecodnn      v09_10_00
+larsimrad	v09_04_00
+larpandora      v09_11_00
+larwirecell     v09_05_00
 larsoft_data    v1_02_01
-larsoftobj      v09_13_00
+larsoftobj      v09_14_00
 
-cetbuildtools	v8_18_05   -   only_for_build
+cetbuildtools	v8_18_09   -   only_for_build
 end_product_list
 
 qualifier  lareventdisplay larexamples larrecodnn larana larpandora larwirecell larsimrad larsoftobj larsoft_data
