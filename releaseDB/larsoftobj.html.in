@@ -63,6 +63,7 @@ Note that gallery is provided as a convenience to the user and is part of the la
 <tr><td>&nbsp;&nbsp;  larcorealg   </td>  <td> @LARCOREALG_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  lardataobj     </td>  <td> @LARDATAOBJ_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  lardataalg     </td>  <td> @LARDATAALG_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  larvecutils     </td>  <td> @LARVECUTILS_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  gallery     </td>  <td> @GALLERY_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larsoftobj     </td>  <td> @LARSOFTOBJ_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td colspan="3"><b>Utilities:</b></td></tr>

@@ -34,6 +34,7 @@ build_cet -G LArSoft larcoreobj @LARCOREOBJ_VERSION@ ${basequal}
 build_cet -G LArSoft -n larcorealg @LARCOREALG_VERSION@ ${basequal}
 build_cet -G LArSoft lardataobj @LARDATAOBJ_VERSION@ ${basequal}
 build_cet -G LArSoft lardataalg @LARDATAALG_VERSION@ ${basequal}
+build_cet -G LArSoft larvecutils @LARVECUTILS_VERSION@ ${basequal}
 build_cet -G LArSoft larsoftobj @LARSOFTOBJ_VERSION@ ${basequal}
 
 return 0
