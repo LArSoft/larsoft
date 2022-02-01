@@ -90,7 +90,7 @@ create_product_variables( dk2nudata     v01_10_00d )
 create_product_variables( nusimdata v1_25_02 )
 create_product_variables( nutools v3_12_02 )
 # the SciSoft bundle containing nutools is named nulite
-create_product_variables( nulite v3_12_02b )
+create_product_variables( nulite v3_12_02c )
 create_product_variables( ifdhc_config v2_6_1a )
 create_product_variables( genie_xsec    v3_00_04a )
 create_product_variables( genie_phyopt v3_00_06 )
@@ -123,10 +123,10 @@ create_product_variables( stan v2_26_1 )
 create_product_variables( systematicstools v01_00_03 )
 create_product_variables( nusystematics v01_00_07 )
 create_product_variables( larsoft_data  v1_02_01 )
-create_product_variables( mrb v5_19_07 )
+create_product_variables( mrb v5_19_11 )
 create_product_variables( hub           v2_14_2 )
 # needed for larwire
-create_product_variables( libwda v2_29_1 )
+create_product_variables( libwda v2_30_0 )
 create_product_variables( art_root_io v1_08_03 )
 # temporary
 #create_product_variables( cetpkgsupport v1_14_01 )
@@ -134,8 +134,8 @@ create_product_variables( art_root_io v1_08_03 )
 # CMake, cetbuildtools, and cetmodules are special: 
 #  define as many versions as necessary.
 create_version_variables(cmake LIST v3_17_3 v3_18_2 v3_19_6 v3_20_0 v3_21_4 v3_22_0)
-create_version_variables(cetbuildtools LIST v8_18_00 v8_18_01 v8_18_04 v8_18_05 v8_18_09)
-create_version_variables(cetmodules LIST v2_29_00 v2_29_01 v2_29_02 v2_29_05 v2_29_06 v2_29_07 v2_29_09 v2_29_12 v2_29_14)
+create_version_variables(cetbuildtools LIST v8_18_01 v8_18_04 v8_18_05 v8_18_09 v8_19_02)
+create_version_variables(cetmodules LIST v2_29_00 v2_29_06 v2_29_12 v2_29_14 v2_31_01)
 
 # these files should be copied to scisoft for each release
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-cfg.in
