@@ -135,7 +135,7 @@ create_product_variables( art_root_io v1_08_03 )
 #  define as many versions as necessary.
 create_version_variables(cmake LIST v3_17_3 v3_18_2 v3_19_6 v3_20_0 v3_21_4 v3_22_0)
 create_version_variables(cetbuildtools LIST v8_18_01 v8_18_04 v8_18_05 v8_18_09 v8_19_02)
-create_version_variables(cetmodules LIST v2_29_00 v2_29_06 v2_29_12 v2_29_14 v2_31_01)
+create_version_variables(cetmodules LIST v2_29_00 v2_29_02 v2_29_05 v2_29_06 v2_29_12 v2_29_14 v2_31_01)
 
 # these files should be copied to scisoft for each release
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-cfg.in
