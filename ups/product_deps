@@ -10,12 +10,12 @@ fcldir      -
 bindir      product_dir
 
 product         version
-lareventdisplay v09_03_05
-larexamples     v09_03_05
-larana          v09_05_02
-larrecodnn      v09_10_06
-larsimrad	v09_04_05
-larpandora      v09_12_03
+lareventdisplay v09_03_06
+larexamples     v09_03_06
+larana          v09_05_03
+larrecodnn      v09_10_07
+larsimrad	v09_04_06
+larpandora      v09_12_04
 larwirecell     v09_06_01
 larsoft_data    v1_02_01
 larsoftobj      v09_16_01
