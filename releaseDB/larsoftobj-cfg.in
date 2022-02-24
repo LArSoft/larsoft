@@ -25,6 +25,7 @@ ensure_cetbuildtools @CETBUILDTOOLS_VERSION_LIST@
 unset _cps_cetmodules_ver
 
 do_build hub @HUB_VERSION@
+do_build gh @GH_VERSION@
 build_noarch mrb @MRB_VERSION@
 
 do_build dk2nudata @DK2NUDATA_VERSION@ ${basequal}

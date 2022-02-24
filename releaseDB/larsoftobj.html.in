@@ -68,6 +68,7 @@ Note that gallery is provided as a convenience to the user and is part of the la
 <tr><td>&nbsp;&nbsp;  larsoftobj     </td>  <td> @LARSOFTOBJ_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td colspan="3"><b>Utilities:</b></td></tr>
 <tr><td>&nbsp;&nbsp;  hub          </td>  <td> @HUB_VERSION@ </td>  <td>&nbsp;</td></tr>
+<tr><td>&nbsp;&nbsp;  gh          </td>  <td> @GH_VERSION@ </td>  <td>&nbsp;</td></tr>
 <tr><td>&nbsp;&nbsp;  mrb          </td>  <td> @MRB_VERSION@ </td>  <td>&nbsp;</td></tr>
 </table>
 </center>
