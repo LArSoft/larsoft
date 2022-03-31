@@ -48,7 +48,6 @@ pyqual=p392
 build_noarch larsoft_data @LARSOFT_DATA_VERSION@
 do_build hub @HUB_VERSION@
 do_build gh @GH_VERSION@
-#build_noarch mrb @MRB_VERSION@
 build_cet -G art-framework-suite mrb @MRB_VERSION@
 
 # new cetpkgsupport - temporary
