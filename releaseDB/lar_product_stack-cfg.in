@@ -28,6 +28,7 @@ fi
 
 do_build marley @MARLEY_VERSION@ ${basequal}
 do_build pandora @PANDORA_VERSION@ ${basequal}
+do_build rstartree @RSTARTREE_VERSION@
 #do_build hdf5 @HDF5_VERSION@ ${basequal}
 #do_build hep_hpc @HEP_HPC_VERSION@ ${basequal}
 do_build glpk @GLPK_VERSION@
