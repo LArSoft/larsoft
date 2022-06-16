@@ -47,6 +47,7 @@ pyqual=p392
 # add to manifest if no build - larsoft_data, mrb
 build_noarch larsoft_data @LARSOFT_DATA_VERSION@
 do_build hub @HUB_VERSION@
+do_build git @GIT_VERSION@
 do_build gh @GH_VERSION@
 build_cet -G art-framework-suite mrb @MRB_VERSION@
 
