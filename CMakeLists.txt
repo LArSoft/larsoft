@@ -9,23 +9,23 @@
 # It sets up all of the larsoft ups products (lardata, larsim, larreco, etc.)
 # ======================================================================
 
-cmake_minimum_required(VERSION 3.19 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.20 FATAL_ERROR)
 
+find_package(cetmodules REQUIRED)
 project(larsoft VERSION 09.53.02 LANGUAGES CXX C)
 
 # cetbuildtools contains our cmake modules
-find_package(cetbuildtools REQUIRED)
 
 include(CetCMakeEnv)
 cet_cmake_env()
 
 # these are minimum required versions, not the actual product versions
-find_ups_product( lareventdisplay )
-find_ups_product( larexamples     )
-find_ups_product( larana          )
-find_ups_product( larreco         )
-find_ups_product( larrecodnn      )
-find_ups_product( larpandora      )
+find_package( lareventdisplay REQUIRED )
+find_package( larexamples     REQUIRED )
+find_package( larana          REQUIRED )
+find_package( larreco         REQUIRED )
+find_package( larrecodnn      REQUIRED )
+find_package( larpandora      REQUIRED )
 
 # useful scripts
 add_subdirectory(bin)
@@ -37,7 +37,6 @@ add_subdirectory(doc)
 add_subdirectory(releaseDB)
 
 # ups - table and config files
-add_subdirectory(ups)
 
 # packaging utility
-include(UseCPack)
+cet_cmake_config()
