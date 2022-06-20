@@ -161,4 +161,4 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/stan-cfg.in
 # install releaseDB
 INSTALL( FILES base_dependency_database
                README
-         DESTINATION "${product}/${version}/releaseDB" )
+         DESTINATION "releaseDB" )
