@@ -20,12 +20,12 @@ include(CetCMakeEnv)
 cet_cmake_env()
 
 # these are minimum required versions, not the actual product versions
-find_package( lareventdisplay REQUIRED )
-find_package( larexamples     REQUIRED )
-find_package( larana          REQUIRED )
-find_package( larreco         REQUIRED )
-find_package( larrecodnn      REQUIRED )
-find_package( larpandora      REQUIRED )
+find_package( lareventdisplay REQUIRED EXPORT )
+find_package( larexamples     REQUIRED EXPORT )
+find_package( larana          REQUIRED EXPORT )
+find_package( larreco         REQUIRED EXPORT )
+find_package( larrecodnn      REQUIRED EXPORT )
+find_package( larpandora      REQUIRED EXPORT )
 
 # useful scripts
 add_subdirectory(bin)
