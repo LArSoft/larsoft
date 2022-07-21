@@ -97,7 +97,6 @@ The following products are part of the full larsoft suite:
 <tr><td>&nbsp;&nbsp;  marley     </td>  <td> @MARLEY_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  bxdecay0   </td>  <td> @BXDECAY0_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  pandora   </td>  <td> @PANDORA_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
-<tr><td>&nbsp;&nbsp;  tensorflow     </td>  <td> @TENSORFLOW_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  spdlog     </td>  <td> @SPDLOG_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  wirecell     </td>  <td> @WIRECELL_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larpandoracontent     </td>  <td> @LARPANDORACONTENT_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
