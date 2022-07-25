@@ -56,7 +56,7 @@ do_build pygccxml @PYGCCXML_VERSION@ ${pyqual}
 
 # add to manifest if no build 
 build_noarch ifdhc_config @IFDHC_CONFIG_VERSION@
-build_noarch genie_phyopt @GENIE_PHYOPT_VERSION@ dkstandard-resfixfix 
-build_noarch genie_phyopt @GENIE_PHYOPT_VERSION@ dkcharmtau-resfixfix
+#build_noarch genie_phyopt @GENIE_PHYOPT_VERSION@ dkstandard-resfixfix 
+#build_noarch genie_phyopt @GENIE_PHYOPT_VERSION@ dkcharmtau-resfixfix
 
 return 0
