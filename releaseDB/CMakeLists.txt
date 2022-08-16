@@ -53,7 +53,7 @@ set( BASEQUAL e20 )
 set( version_set s112 )
 
 set(stack_suffix) # Reset when no longer needed
-create_product_variables( larsoft v09_56_00 )
+create_product_variables( larsoft v09_57_00 )
 create_product_variables( lardist     ${LARSOFT_VERSION}${stack_suffix} )
 
 create_product_variables( larutils v1_29_01 )
@@ -106,7 +106,7 @@ create_product_variables( h5cpp         v1_10_4_6c )
 create_product_variables( hep_hpc       v0_14_01 )
 create_product_variables( hep_hpc_toolkit ${HEP_HPC_VERSION}_03 )
 create_product_variables( spdlog v1_8_2a )
-create_product_variables( wirecell v0_20_0a )
+create_product_variables( wirecell v0_22_0 )
 create_product_variables( eigen v3_4_0 )
 create_product_variables( jsoncpp       v1_7_7e )
 create_product_variables( golang v1_17 )
