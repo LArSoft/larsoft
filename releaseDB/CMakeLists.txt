@@ -78,7 +78,7 @@ create_product_variables( larpandora v09_13_07 )
 create_product_variables( larwirecell v09_09_00 )
 create_product_variables( larexamples v09_04_07 )
 create_product_variables( lareventdisplay v09_04_08 )
-create_product_variables( webevd v09_09_03 )
+create_product_variables( webevd v09_09_04 )
 create_product_variables( larpandoracontent v04_00_00 )
 
 set(art_suffix)  # Reset when no longer needed
