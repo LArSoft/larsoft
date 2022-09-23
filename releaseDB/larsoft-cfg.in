@@ -37,7 +37,7 @@ build_cet -G LArSoft -n larcore @LARCORE_VERSION@ ${basequal}
 build_cet -G LArSoft lardata @LARDATA_VERSION@ ${basequal}
 build_cet -G LArSoft larevt @LAREVT_VERSION@ ${basequal}
 build_cet -G LArSoft larg4 @LARG4_VERSION@ ${basequal}
-build_cet -G LArSoft larfinder @LARFINDER_VERSION@ ${basequal}
+build_cet -f NULL -G LArSoft larfinder @LARFINDER_VERSION@
 build_cet -G LArSoft larsim @LARSIM_VERSION@ ${basequal}
 build_cet -G LArSoft larsimrad @LARSIMRAD_VERSION@ ${basequal}
 build_cet -G LArSoft larsimdnn @LARSIMDNN_VERSION@ ${basequal}
