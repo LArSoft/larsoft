@@ -111,8 +111,10 @@ The following products are part of the full larsoft suite:
 <tr><td>&nbsp;&nbsp;  lardata     </td>  <td> @LARDATA_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larevt     </td>  <td> @LAREVT_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larg4     </td>  <td> @LARG4_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  larfinder     </td>  <td> @LARFINDER_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larsim     </td>  <td> @LARSIM_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larsimrad   </td>  <td> @LARSIMRAD_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
+<tr><td>&nbsp;&nbsp;  larsimdnn   </td>  <td> @LARSIMDNN_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larreco     </td>  <td> @LARRECO_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larrecodnn  </td>  <td> @LARRECODNN_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
 <tr><td>&nbsp;&nbsp;  larana     </td>  <td> @LARANA_VERSION@ </td>  <td>@BASEQUAL@</td></tr>
