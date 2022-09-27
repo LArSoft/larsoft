@@ -15,7 +15,8 @@ fi
 
 for fl in ${file_list}; do
   #echo "remove trailing whitespace from ${fl}"
-  sed -i 's/[ \t]*$//g' ${fl}
+  #sed -i 's/[ \t]*$//g' ${fl}
+  sed -Ei'' -e 's&[[:space:]]+$&&' ${fl}
 done
 
 exit 0
