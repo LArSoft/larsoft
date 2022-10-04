@@ -57,6 +57,6 @@ build_cet -G art-framework-suite mrb @MRB_VERSION@
 build_cet gallery @GALLERY_VERSION@ ${basequal}
 build_cet  -G LArSoft systematicstools @SYSTEMATICSTOOLS_VERSION@ ${basequal}
 build_cet  -G LArSoft nusystematics @NUSYSTEMATICS_VERSION@ ${basequal}
-build_cet artg4tk @ARTG4TK_VERSION@ ${basequal}
+build_cet -G art-framework-suite -p art-g4tk artg4tk @ARTG4TK_VERSION@ ${basequal}
 
 return 0
