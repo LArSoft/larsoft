@@ -50,7 +50,7 @@ build_cet -G LArSoft larwirecell @LARWIRECELL_VERSION@ ${basequal}
 build_cet -G LArSoft larexamples @LAREXAMPLES_VERSION@ ${basequal}
 build_cet -G LArSoft lareventdisplay @LAREVENTDISPLAY_VERSION@ ${basequal}
 build_cet -G LArSoft larsoft @LARSOFT_VERSION@ ${basequal}
-build_cet -G LArSoft webevd @WEBEVD_VERSION@ ${basequal}
+##build_cet -G LArSoft webevd @WEBEVD_VERSION@ ${basequal}
 # do not distribute larbatch or larutils with a release candidate
 build_cet -f NULL -G LArSoft larbatch @LARBATCH_VERSION@
 build_cet -f NULL -G LArSoft larutils @LARUTILS_VERSION@
