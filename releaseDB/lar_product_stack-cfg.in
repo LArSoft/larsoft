@@ -58,5 +58,9 @@ do_build pygccxml @PYGCCXML_VERSION@ ${pyqual}
 build_noarch ifdhc_config @IFDHC_CONFIG_VERSION@
 #build_noarch genie_phyopt @GENIE_PHYOPT_VERSION@ dkstandard-resfixfix 
 #build_noarch genie_phyopt @GENIE_PHYOPT_VERSION@ dkcharmtau-resfixfix
+#  extra genie_xsec distributions for larsoft
+build_noarch genie_xsec v3_02_00 G1810a0211a-k250-e1000
+build_noarch genie_xsec v3_02_00 G1810a0211b-k250-e1000
+
 
 return 0
