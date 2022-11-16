@@ -248,18 +248,18 @@ incdir	-
 #   entry to match for a given product.
 #
 ####################################
-product		version		qual	flags		<table_format=2>
-larana		v09_09_00	-
-lareventdisplay	v09_07_00	-
-larexamples	v09_05_02	-
-larpandora	v09_15_00	-
-larrecodnn	v09_16_00	-
-larsimdnn	v09_02_02	-
-larsimrad	v09_06_02	-
-larsoft_data	v1_02_02	-
-larsoftobj	v09_26_00	-
-larwirecell	v09_10_02	-
-cetmodules	v3_20_00	-	only_for_build
+product         version      qual   flags		<table_format=2>
+larana          v09_09_01    -
+lareventdisplay v09_07_01    -
+larexamples     v09_05_03    -
+larpandora      v09_15_01    -
+larrecodnn      v09_17_00    -
+larsimdnn       v09_02_03    -
+larsimrad       v09_06_03    -
+larsoft_data    v1_02_02     -
+larsoftobj      v09_26_00    -
+larwirecell     v09_10_03    -
+cetmodules      v3_20_00     -      only_for_build
 end_product_list
 ####################################
 
