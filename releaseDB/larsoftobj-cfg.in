@@ -10,7 +10,7 @@ basequal=${1}
   fi
 
 # specify version to bootstrap and setup ups
-check_ups v6_0_8
+check_ups @UPS_VERSION@
 
 build_bundle gallery-@GALLERY_DOT_VERSION@ ${basequal}
 status=$?

@@ -134,6 +134,7 @@ create_product_variables( libwda v2_30_0a )
 create_product_variables( art_root_io v1_08_05 )
 # temporary
 #create_product_variables( cetpkgsupport v1_14_01 )
+create_version_variables(ups v6_1_0)
 
 # CMake, cetbuildtools, and cetmodules are special: 
 #  define as many versions as necessary.

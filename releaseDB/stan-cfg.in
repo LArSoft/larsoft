@@ -3,7 +3,7 @@
 basequal=${1}
 
 # specify version to bootstrap and setup ups
-check_ups v6_0_8
+check_ups @UPS_VERSION@
 
 # infrastructure
 for cv in v3_18_2 v3_19_6; do
