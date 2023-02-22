@@ -54,6 +54,9 @@ do_build wirecell @WIRECELL_VERSION@ ${basequal}
 # pygccxml
 do_build pygccxml @PYGCCXML_VERSION@ ${pyqual}
 
+# pycurl
+do_build pycurl @PYCURL_VERSION@ ${pyqual}
+
 # add to manifest if no build 
 build_noarch ifdhc_config @IFDHC_CONFIG_VERSION@
 #build_noarch genie_phyopt @GENIE_PHYOPT_VERSION@ dkstandard-resfixfix
