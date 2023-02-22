@@ -249,16 +249,16 @@ incdir	-
 #
 ####################################
 product         version      qual   flags		<table_format=2>
-larana          v09_11_07    -
-lareventdisplay v09_08_06    -
-larexamples     v09_06_04    -
-larpandora      v09_18_00    -
-larrecodnn      v09_17_09    -
-larsimdnn       v09_02_10    -
-larsimrad       v09_06_10    -
+larana          v09_12_00    -
+lareventdisplay v09_08_07    -
+larexamples     v09_06_05    -
+larpandora      v09_18_01    -
+larrecodnn      v09_17_10    -
+larsimdnn       v09_02_11    -
+larsimrad       v09_06_11    -
 larsoft_data    v1_02_02     -
-larsoftobj      v09_28_00    -
-larwirecell     v09_11_01    -
+larsoftobj      v09_28_01    -
+larwirecell     v09_11_02    -
 cetmodules      v3_20_00     -      only_for_build
 end_product_list
 ####################################
