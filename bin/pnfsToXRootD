@@ -125,7 +125,7 @@ function ConvertPNFStoXRootD() {
   # this pattern was tested on 20171208 on URLs from:
   # /pnfs/uboone
   # /pnfs/sbnd
-  echo "root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr${URL#/pnfs}"
+  echo "root://fndcadoor.fnal.gov:1094/pnfs/fnal.gov/usr${URL#/pnfs}"
   
 } # ConvertPNFStoXRootD()
 
