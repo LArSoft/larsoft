@@ -17,20 +17,11 @@ fi
 pyver=v3_9_13
 pyqual=p3913
 
-#build_bundle hep_hpc_toolkit-@HEP_HPC_TOOLKIT_DOT_VERSION@ ${basequal} 
-#status=$?
-#$if (( ${status} != 0)); then
-#  cat 1>&2 <<EOF
-#Build of hep_hpc_toolkit-@HEP_HPC_TOOLKIT_DOT_VERSION@ bundle failed with status ${status}
-#EOF
-#  return ${status}
-#fi
-
 do_build marley @MARLEY_VERSION@ ${basequal}
 do_build pandora @PANDORA_VERSION@ ${basequal}
 do_build rstartree @RSTARTREE_VERSION@
 do_build hdf5 @HDF5_VERSION@ ${basequal}
-#do_build hep_hpc @HEP_HPC_VERSION@ ${basequal}
+do_build hep_hpc @HEP_HPC_VERSION@ ${basequal}
 do_build glpk @GLPK_VERSION@
 build_noarch eigen @EIGEN_VERSION@
 build_noarch guideline_sl @GUIDELINE_SL_VERSION@
