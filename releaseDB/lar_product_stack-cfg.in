@@ -31,9 +31,9 @@ do_build golang @GOLANG_VERSION@
 do_build gojsonnet @GOJSONNET_VERSION@ ${basequal}
 # opencv no longer builds for c7
 [ "$basequal" = c7 ] || do_build opencv @OPENCV_VERSION@ ${basequal}:${pyqual}
-do_build sundials @SUNDIALS_VERSION@ ${basequal}
-do_build stan_math @STAN_MATH_VERSION@ ${basequal}
-do_build stan @STAN_VERSION@ ${basequal}
+do_build sundials @SUNDIALS_VERSION@
+do_build stan_math @STAN_MATH_VERSION@
+do_build stan @STAN_VERSION@
 do_build bxdecay0 @BXDECAY0_VERSION@ ${basequal}
 do_build protobuf @PROTOBUF_VERSION@ ${basequal}
 do_build spdlog @SPDLOG_VERSION@ ${basequal}
