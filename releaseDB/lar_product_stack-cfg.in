@@ -29,8 +29,6 @@ build_noarch h5cpp @H5CPP_VERSION@
 do_build jsoncpp @JSONCPP_VERSION@ ${basequal}
 do_build golang @GOLANG_VERSION@
 do_build gojsonnet @GOJSONNET_VERSION@ ${basequal}
-# opencv no longer builds for c7
-[ "$basequal" = c7 ] || do_build opencv @OPENCV_VERSION@ ${basequal}:${pyqual}
 do_build sundials @SUNDIALS_VERSION@
 do_build stan_math @STAN_MATH_VERSION@
 do_build stan @STAN_VERSION@
