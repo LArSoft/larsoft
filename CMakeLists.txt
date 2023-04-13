@@ -17,7 +17,7 @@ project(larsoft LANGUAGES CXX C)
 # cetbuildtools contains our cmake modules
 
 include(CetCMakeEnv)
-set(${PROJECT_NAME}_CMAKE_PROJECT_VERSION_STRING 09.80.00-rc0)
+set(${PROJECT_NAME}_CMAKE_PROJECT_VERSION_STRING 09.80.00-rc1)
 cet_cmake_env()
 
 # these are minimum required versions, not the actual product versions
