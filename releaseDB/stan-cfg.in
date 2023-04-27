@@ -28,9 +28,9 @@ else
 fi
 
 build_noarch eigen @EIGEN_VERSION@
-do_build sundials @SUNDIALS_VERSION@ ${basequal}
-do_build stan_math @STAN_MATH_VERSION@ ${basequal}
-do_build stan @STAN_VERSION@ ${basequal}
+do_build sundials @SUNDIALS_VERSION@
+do_build stan_math @STAN_MATH_VERSION@
+do_build stan @STAN_VERSION@
 
 return 0
 
