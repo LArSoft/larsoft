@@ -50,7 +50,10 @@ endfunction()
 
 # define qualifiers
 set( BASEQUAL e20 )
-set( version_set s117 )
+# Define version set for art suite.
+set( version_set s120 )
+# for use in html
+set( supported_quals_string "e20|c7")
 
 set(stack_suffix) # Reset when no longer needed
 create_product_variables( larsoft v09_74_00 )
