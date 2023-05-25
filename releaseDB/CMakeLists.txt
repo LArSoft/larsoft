@@ -139,7 +139,7 @@ create_version_variables(ups v6_1_1)
 #  define as many versions as necessary.
 create_version_variables(cmake LIST v3_20_0 v3_21_4 v3_22_0 v3_22_2 v3_24_1 v3_25_2)
 create_version_variables(cetbuildtools LIST v8_20_00)
-create_version_variables(cetmodules LIST v3_16_00 v3_20_00)
+create_version_variables(cetmodules LIST v3_06_01 v3_16_00 v3_20_00)
 
 # these files should be copied to scisoft for each release
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/lar_product_stack-cfg.in
