@@ -6,7 +6,7 @@
 
 The sources for documentation are:
 - [LArSoft collaboration home page][LArSoft.org] (http://www.larsoft.org) offers an introduction to concepts of liquid argon TPCs and LArSoft
-- [wiki] in Redmine (https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki) offers guidelines, documents procedures, and much more
+- [github documentation] (https://larsoft.github.io/) offers guidelines, documents procedures, and much more
 - [reference manual][doxygen] (http://nusoft.fnal.gov/larsoft/doxsvn/html) is a reference guide for the use of specific code objects, but it contains also some complete examples.
 
 This page is generated from the doxygen documentation in the source code of the latest distributed LArSoft UPS products and some of their dependencies.
