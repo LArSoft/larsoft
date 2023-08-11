@@ -3,7 +3,7 @@
 basequal=${1}
 
 # specify version to bootstrap and setup ups
-check_ups v6_0_8
+check_ups v6_1_1
 
 build_bundle nulite_base-@NUDIST_DOT_VERSION@ ${basequal}
 status=$?
