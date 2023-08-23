@@ -56,7 +56,7 @@ set( version_set s120a )
 set( supported_quals_string "e20|c7")
 
 set(stack_suffix ) # Reset when no longer needed
-create_product_variables( larsoft v09_78_01 )
+create_product_variables( larsoft v09_78_02 )
 create_product_variables( lardist     ${LARSOFT_VERSION}${stack_suffix} )
 
 create_product_variables( larutils v1_29_03 )
@@ -80,7 +80,7 @@ create_product_variables( larreco v09_22_01 )
 create_product_variables( larrecodnn v09_21_07 )
 create_product_variables( larana v09_14_06 )
 create_product_variables( larpandora v09_21_06 )
-create_product_variables( larwirecell v09_15_01 )
+create_product_variables( larwirecell v09_16_00 )
 create_product_variables( larexamples v09_08_05 )
 create_product_variables( lareventdisplay v09_10_06 )
 create_product_variables( larpandoracontent v04_05_00 )
