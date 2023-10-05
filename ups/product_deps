@@ -87,7 +87,7 @@
 #>  define_pythonpath
 ####################################
 parent		larsoft
-defaultqual	e20
+defaultqual	e26
 ####################################
 
 ####################################
@@ -249,16 +249,16 @@ incdir	-
 #
 ####################################
 product         version      qual   flags		<table_format=2>
-larana          v09_14_08    -
-lareventdisplay v09_10_08    -
-larexamples     v09_08_07    -
-larpandora      v09_21_09    -
-larrecodnn      v09_21_09    -
-larsimdnn       v09_05_07    -
-larsimrad       v09_08_07    -
+larana          v09_14_09    -
+lareventdisplay v09_10_09    -
+larexamples     v09_08_08    -
+larpandora      v09_21_10    -
+larrecodnn      v09_21_10    -
+larsimdnn       v09_05_08    -
+larsimrad       v09_08_08    -
 larsoft_data    v1_02_02     -
-larsoftobj      v09_32_01    -
-larwirecell     v09_16_03    -
+larsoftobj      v09_33_00    -
+larwirecell     v09_16_04    -
 cetmodules      v3_20_00     -      only_for_build
 end_product_list
 ####################################
@@ -317,12 +317,8 @@ end_product_list
 qualifier	lareventdisplay	larexamples	larrecodnn	larana		larpandora	larwirecell	larsimrad	larsimdnn	larsoftobj	larsoft_data
 c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	-nq-
 c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	-nq-
-c7:debug	c7:debug	c7:debug	c7:debug	c7:debug	c7:debug	c7:debug	c7:debug	c7:debug	c7:debug	-nq-
-c7:prof		c7:prof		c7:prof		c7:prof		c7:prof		c7:prof		c7:prof		c7:prof		c7:prof		c7:prof		-nq-
 e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	-nq-
 e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	-nq-
-e20:debug	e20:debug	e20:debug	e20:debug	e20:debug	e20:debug	e20:debug	e20:debug	e20:debug	e20:debug	-nq-
-e20:prof	e20:prof	e20:prof	e20:prof	e20:prof	e20:prof	e20:prof	e20:prof	e20:prof	e20:prof	-nq-
 end_qualifier_list
 ####################################
 
