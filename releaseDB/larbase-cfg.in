@@ -38,7 +38,7 @@ for _cps_cetmodules_ver in @CETMODULES_VERSION_LIST@; do
   ##ensure_support_package -f NULL -- cetmodules ${_cps_cetmodules_ver}
   ensure_support_package -- cetmodules ${_cps_cetmodules_ver}
 done
-ensure_cetbuildtools @CETBUILDTOOLS_VERSION_LIST@
+##ensure_cetbuildtools @CETBUILDTOOLS_VERSION_LIST@
 unset _cps_cetmodules_ver
 
 pyver=v3_9_2
