@@ -31,4 +31,10 @@ This page is generated from the doxygen documentation in the source code of the 
 [doxygen]:
   https://code-doc.larsoft.org/docs/latest/html/
 
+@section LArSoft Copyright
+
+- [LArSoft LICENSE](https://github.com/LArSoft/larsoft/blob/master/LICENSE)
+- LArSoft is licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+
  */
