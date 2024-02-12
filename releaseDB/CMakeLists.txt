@@ -128,6 +128,7 @@ create_product_variables( mrb v6_09_05 )
 create_product_variables( hub           v2_14_2 )
 create_product_variables( gh v2_14_4 )
 create_product_variables( git v2_40_1 )
+create_product_variables( delaunator v0_4_0 )
 # needed for larwire
 create_product_variables( libwda v2_30_0a )
 create_product_variables( art_root_io v1_11_03 )
