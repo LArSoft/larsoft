@@ -18,7 +18,6 @@ pyver=v3_9_15
 pyqual=p3915
 
 do_build marley @MARLEY_VERSION@ ${basequal}
-do_build torch_scatter @TORCH_SCATTER_VERSION@ ${basequal}
 do_build pandora @PANDORA_VERSION@ ${basequal}
 do_build rstartree @RSTARTREE_VERSION@
 do_build hdf5 @HDF5_VERSION@ ${basequal}
