@@ -14,8 +14,8 @@ EOF
   return ${status}
 fi
 
-pyver=v3_9_13
-pyqual=p3913
+pyver=v3_9_15
+pyqual=p3915
 
 do_build marley @MARLEY_VERSION@ ${basequal}
 do_build pandora @PANDORA_VERSION@ ${basequal}
