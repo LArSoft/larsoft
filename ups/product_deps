@@ -259,7 +259,7 @@ larsimrad       v10_00_00rc0    -
 larsoft_data    v1_02_02     -
 larsoftobj      v10_00_00rc0    -
 larwirecell     v10_00_00rc0    -
-cetmodules      v3_20_00     -      only_for_build
+cetmodules      v3_24_01     -      only_for_build
 end_product_list
 ####################################
 

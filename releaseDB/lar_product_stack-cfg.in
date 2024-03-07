@@ -14,8 +14,8 @@ EOF
   return ${status}
 fi
 
-pyver=v3_9_13
-pyqual=p3913
+pyver=v3_9_15
+pyqual=p3915
 
 do_build marley @MARLEY_VERSION@ ${basequal}
 do_build pandora @PANDORA_VERSION@ ${basequal}
@@ -49,5 +49,6 @@ do_build pycurl @PYCURL_VERSION@ ${pyqual}
 
 # add to manifest if no build 
 build_noarch ifdhc_config @IFDHC_CONFIG_VERSION@
+build_noarch delaunator @DELAUNATOR_VERSION@
 
 return 0
