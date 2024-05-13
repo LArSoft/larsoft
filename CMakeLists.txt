@@ -15,7 +15,7 @@ find_package(cetmodules REQUIRED)
 project(larsoft LANGUAGES CXX C)
 
 include(CetCMakeEnv)
-set(${PROJECT_NAME}_CMAKE_PROJECT_VERSION_STRING 10.00.00-rc1)
+set(${PROJECT_NAME}_CMAKE_PROJECT_VERSION_STRING 10.00.00-rc2)
 cet_cmake_env()
 
 # these are minimum required versions, not the actual product versions
