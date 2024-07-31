@@ -15,6 +15,15 @@ check_ups @UPS_VERSION@
 SPHINX_PULL_ONLY=1
 build_bundle canvas_product_stack-@CANVAS_PRODUCT_STACK_DOT_VERSION@ ${basequal} || return
 
+# infrastructure
+for cv in @CMAKE_VERSION_LIST@; do
+  do_build cmake ${cv}
+done
+for _cps_cetmodules_ver in @CETMODULES_VERSION_LIST@; do
+  ensure_support_package -- cetmodules ${_cps_cetmodules_ver}
+done
+unset _cps_cetmodules_ver
+
 build_cet -f NULL -G LArSoft larbatch @LARBATCH_VERSION@
 
 return 0
