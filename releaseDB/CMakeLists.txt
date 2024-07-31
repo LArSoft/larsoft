@@ -89,6 +89,7 @@ set(art_suffix)  # Reset when no longer needed
 create_product_variables( art v3_14_04 )
 create_product_variables( artdist       ${ART_VERSION}${art_suffix} )
 create_product_variables( canvas_root_io v1_13_06 )
+create_product_variables( canvas_product_stack v3_16_04a)
 create_product_variables( gallery v1_22_06 )
 create_product_variables( dk2nudata v01_10_01h )
 create_product_variables( nusimdata v1_28_06 )
@@ -151,6 +152,8 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larwire-cfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larwire-cfg-${LARWIRECELL_DOT_VERSION} @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larsoft-cfg.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-cfg-${LARDIST_DOT_VERSION} @ONLY )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/larbatch-cfg.in
+  ${CMAKE_CURRENT_BINARY_DIR}/larbatch-cfg-${LARBATCH_DOT_VERSION} @ONLY )
 CONFIGURE_FILE ( ${CMAKE_CURRENT_SOURCE_DIR}/larsoft.html.in
   ${CMAKE_CURRENT_BINARY_DIR}/larsoft-${LARDIST_VERSION}.html @ONLY )
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/stan-cfg.in
