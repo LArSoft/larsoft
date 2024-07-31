@@ -1,0 +1,21 @@
+# just build larbatch
+
+basequal=${1}
+
+#require_buildfw_version 6.00.00 || return
+  if version_greater \
+   6.00.00     v$(print_version | sed -e 's&^.*[ \t]\{1,\}&&' -e 's&\.&_&g' ); then
+    echo "Need buildFW 6.00.00 or better." 1>&2
+    return 1
+  fi
+
+# specify version to bootstrap and setup ups
+check_ups @UPS_VERSION@
+
+SPHINX_PULL_ONLY=1
+build_bundle canvas_product_stack-@CANVAS_PRODUCT_STACK_DOT_VERSION@ ${basequal} || return
+
+build_cet -f NULL -G LArSoft larbatch @LARBATCH_VERSION@
+
+return 0
+
