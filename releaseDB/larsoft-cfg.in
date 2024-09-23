@@ -25,6 +25,16 @@ fi
 
 ensure_cetbuildtools v7_03_02
 
+save_build_type=${build_type}
+if [ x${build_type} = xdebug ]; then
+  build_type=prof
+fi
+do_build pybind11 @PYBIND11_VERSION@
+do_build protobuf @PROTOBUF_VERSION@ ${basequal}
+do_build openblas @OPENBLAS_VERSION@ ${basequal}
+do_build libtorch @LIBTORCH_VERSION@ ${basequal}
+build_type=${save_build_type}
+
 build_cet ppfx @PPFX_VERSION@ ${basequal}
 build_cet -G LArSoft larpandoracontent @LARPANDORACONTENT_VERSION@ ${basequal}
 

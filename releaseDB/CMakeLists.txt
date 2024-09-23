@@ -15,11 +15,16 @@ macro( create_product_variables productname productversion )
    #message(STATUS "${PRODUCTNAME_UC} version is ${${PRODUCTNAME_UC}_VERSION}")
 endmacro( create_product_variables)
 
-create_product_variables( larsoft v08_05_00_26 )
+create_product_variables( larsoft v08_05_00_27 )
 
 # define qualifiers
 set( BASEQUAL e17 )
 set( SQUAL s78 )
+
+create_product_variables( pybind11 v2_2_4 )
+create_product_variables( protobuf v3_5_2 )
+create_product_variables( openblas v0_3_5 )
+create_product_variables( libtorch v1_0_1b )
 
 create_product_variables( ppfx v02_11_07 )
 
@@ -38,11 +43,11 @@ create_product_variables( larg4       v08_01_00_16 )
 create_product_variables( larsim      v08_02_00_22 )
 create_product_variables( larreco     v08_04_00_24 )
 create_product_variables( larana      v08_01_00_24 )
-create_product_variables( larpandora  v08_03_00_25 )
+create_product_variables( larpandora  v08_03_00_26 )
 create_product_variables( larwirecell v08_02_00_17 )
 create_product_variables( larexamples v08_01_00_22 )
 create_product_variables( lareventdisplay v08_02_00_24 )
-create_product_variables( larpandoracontent v03_14_04_01 )
+create_product_variables( larpandoracontent v03_14_04_03 )
 
 create_product_variables( art           v3_01_02 )
 create_product_variables( canvas        v3_05_01 )
