@@ -166,6 +166,7 @@ function ConvertURLs() {
     [[ $res != 0 ]] && let ++nErrors
   done
   PrintSummary "$nURLS" "$nErrors"
+  [[ "$nErrors" == 0 ]]  # return value
 } # ConvertURLs()
 
 
@@ -180,6 +181,7 @@ function ConvertURLsFromSTDIN() {
     [[ $res != 0 ]] && let ++nErrors
   done
   PrintSummary "$nURLS" "$nErrors"
+  [[ "$nErrors" == 0 ]]  # return value
 } # ConvertURLsFromSTDIN()
 
 
