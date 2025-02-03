@@ -24,9 +24,9 @@
 <h2>Known Issues</h2>
 
 <ul>
-<li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArSoft_release_list">Release Notes</a></li>
+<li> <a href="https://larsoft.github.io/LArSoftWiki/releases/LArSoft_release_list">Release Notes</a></li>
 <li> <a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/issues">all issues</a></li>
-<li><a href="https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/_Supported_platforms_">Supported Platforms</a></li>
+  <li><a href="https://larsoft.github.io/LArSoftWiki/Supported_platforms">Supported Platforms</a></li>
 </ul>
 
 <h2 id="scripts-binary">Download scripts for binary distributions.</h2>
@@ -70,7 +70,7 @@
     <li>Build all packages from source. </li>
     <li>BuildFW will download source code tarballs and existing binary distributions as needed. </li>
     <li>BuildFW uses buildcfg scriptlets which are downloaded as needed from scisoft</li>
-    <li>BuildFW will pull source living in Fermi redmine (cpp0x, art, etc.) direct from the repository.</li>
+    <li>BuildFW will pull source living in github (cpp0x, art, etc.) direct from the repository.</li>
     <li>USAGE:
     <ul>
       <li><pre>./buildFW [-ft] -b &lt;@supported_quals_string@&gt; -s @version_set@ &lt;product-directory&gt; &lt;debug|prof|opt&gt; larsoft-@LARSOFT_VERSION@</pre></li>
