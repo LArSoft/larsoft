@@ -258,7 +258,7 @@ larsimdnn       v10_00_07    -
 larsimrad       v10_00_08    -
 larsoft_data    v1_02_02     -
 larsoftobj      v10_00_04    -
-larwirecell     v10_01_04    -
+larwirecell     v10_01_05    -
 cetmodules      v3_24_01     -      only_for_build
 end_product_list
 ####################################
