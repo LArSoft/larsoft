@@ -249,10 +249,10 @@ incdir	-
 #
 ####################################
 product         version      qual   flags		<table_format=2>
-larana          v10_00_09    -
+larana          v10_00_10    -
 lareventdisplay v10_00_09    -
 larexamples     v10_00_08    -
-larpandora      v10_00_12    -
+larpandora      v10_00_13    -
 larrecodnn      v10_01_04    -
 larsimdnn       v10_00_07    -
 larsimrad       v10_00_08    -
