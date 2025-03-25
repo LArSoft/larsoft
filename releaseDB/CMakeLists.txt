@@ -60,7 +60,7 @@ create_product_variables( larsoft v10_04_07 )
 create_product_variables( lardist     ${LARSOFT_VERSION}${stack_suffix} )
 
 create_product_variables( larutils v1_29_08 )
-create_product_variables( larbatch v01_60_02 )
+create_product_variables( larbatch v01_61_00 )
 
 create_product_variables( larcoreobj v10_00_00 )
 create_product_variables( larcorealg v10_00_02 )
