@@ -12,9 +12,10 @@
 cmake_minimum_required(VERSION 3.20 FATAL_ERROR)
 
 find_package(cetmodules REQUIRED)
-project(larsoft VERSION 10.04.07 LANGUAGES CXX C)
+project(larsoft LANGUAGES CXX C)
 
 include(CetCMakeEnv)
+set(${PROJECT_NAME}_CMAKE_PROJECT_VERSION_STRING 10.21.00-rc0)
 cet_cmake_env()
 
 # these are minimum required versions, not the actual product versions
