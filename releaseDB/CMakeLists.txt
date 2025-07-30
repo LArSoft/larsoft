@@ -56,7 +56,7 @@ set( version_set s131 )
 set( supported_quals_string "e26|c14")
 
 set(stack_suffix ) # Reset when no longer needed
-create_product_variables( larsoft v10_06_00_01 )
+create_product_variables( larsoft v10_06_00_02 )
 create_product_variables( lardist     ${LARSOFT_VERSION}${stack_suffix} )
 
 create_product_variables( larutils v1_29_09 )
@@ -80,7 +80,7 @@ create_product_variables( larreco v10_01_12 )
 create_product_variables( larrecodnn v10_01_10 )
 create_product_variables( larana v10_00_16 )
 create_product_variables( larpandora v10_00_19 )
-create_product_variables( larwirecell v10_01_10_01 )
+create_product_variables( larwirecell v10_01_10_02 )
 create_product_variables( larexamples v10_00_12 )
 create_product_variables( lareventdisplay v10_00_15 )
 create_product_variables( larpandoracontent v04_15_01 )
@@ -111,7 +111,7 @@ create_product_variables( h5cpp         v1_10_4_6c )
 create_product_variables( hep_hpc v0_14_02 )
 #create_product_variables( hep_hpc_toolkit ${HEP_HPC_VERSION}_03 )
 create_product_variables( spdlog v1_9_2 )
-create_product_variables( wirecell v0_30_5 )
+create_product_variables( wirecell v0_30_6 )
 create_product_variables( eigen v23_08_01_66e8f )
 create_product_variables( jsoncpp v1_9_5a )
 create_product_variables( golang v1_17 )
@@ -134,7 +134,7 @@ create_product_variables( art_root_io v1_13_06 )
 #create_product_variables( cetpkgsupport v1_14_01 )
 create_version_variables(ups v6_1_1)
 
-# CMake, cetbuildtools, and cetmodules are special: 
+# CMake, cetbuildtools, and cetmodules are special:
 #  define as many versions as necessary.
 create_version_variables(cmake LIST v3_20_0 v3_21_4 v3_22_0 v3_22_2 v3_24_1 v3_25_2)
 create_version_variables(cetbuildtools LIST v8_20_00)
