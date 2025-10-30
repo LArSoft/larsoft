@@ -33,10 +33,6 @@ do_build bxdecay0 @BXDECAY0_VERSION@ ${basequal}
 do_build protobuf @PROTOBUF_VERSION@ ${basequal}
 do_build spdlog @SPDLOG_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}
-#do_build grpc @GRPC_VERSION@ ${basequal}
-#if [[ "${flvr}" != "Linux64bit+5.4-2.31" ]]; then
-#  do_build triton @TRITON_VERSION@ ${basequal}
-#fi
 
 # pygccxml
 do_build pygccxml @PYGCCXML_VERSION@ ${pyqual}
