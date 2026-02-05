@@ -44,4 +44,10 @@ do_build pycurl @PYCURL_VERSION@ ${pyqual}
 build_noarch ifdhc_config @IFDHC_CONFIG_VERSION@
 build_noarch delaunator @DELAUNATOR_VERSION@
 
+# genie_phyopt for use with pythia8
+build_noarch genie_phyopt @GENIE_PHYOPT_VERSION@ dkcharm:pythia8
+build_noarch genie_phyopt @GENIE_PHYOPT_VERSION@ dkcharmtau:pythia8
+build_noarch genie_phyopt @GENIE_PHYOPT_VERSION@ pythia8
+build_noarch genie_phyopt @GENIE_PHYOPT_VERSION@ prodmsg
+
 return 0
