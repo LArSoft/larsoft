@@ -252,9 +252,9 @@ product         version      qual   flags		<table_format=2>
 larana          v10_01_09    -
 lareventdisplay v10_00_36    -
 larexamples     v10_00_29    -
-larpandora      v10_01_12    -
-larrecodnn      v10_02_06    -
-larsimdnn       v10_01_07    -
+larpandora      v10_01_13    -
+larrecodnn      v10_02_07    -
+larsimdnn       v10_01_08    -
 larsimrad       v10_00_29    -
 larsoft_data    v1_02_02     -
 larsoftobj      v10_06_00    -
