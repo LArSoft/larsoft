@@ -253,12 +253,12 @@ larana          v10_02_04    -
 lareventdisplay v10_01_04    -
 larexamples     v10_01_02    -
 larpandora      v10_02_07    -
-larrecodnn      v10_03_04    -
+larrecodnn      v10_03_05    -
 larsimdnn       v10_02_02    -
-larsimrad       v10_01_02    -
+larsimrad       v10_01_03    -
 larsoft_data    v1_02_02     -
 larsoftobj      v10_06_01    -
-larwirecell     v10_03_04    -
+larwirecell     v10_03_05    -
 cetmodules      v3_27_04     -      only_for_build
 end_product_list
 ####################################
