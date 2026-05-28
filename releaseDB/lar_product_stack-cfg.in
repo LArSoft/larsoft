@@ -31,6 +31,7 @@ do_build golang @GOLANG_VERSION@
 do_build gojsonnet @GOJSONNET_VERSION@ ${basequal}
 do_build bxdecay0 @BXDECAY0_VERSION@ ${basequal}
 do_build protobuf @PROTOBUF_VERSION@ ${basequal}
+do_build fmt @FMT_VERSION@ ${basequal}
 do_build spdlog @SPDLOG_VERSION@ ${basequal}
 do_build wirecell @WIRECELL_VERSION@ ${basequal}
 
