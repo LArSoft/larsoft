@@ -33,8 +33,8 @@ do_build bxdecay0 @BXDECAY0_VERSION@ ${basequal}
 do_build protobuf @PROTOBUF_VERSION@ ${basequal}
 do_build fmt @FMT_VERSION@ ${basequal}
 do_build spdlog @SPDLOG_VERSION@ ${basequal}
-if [[ ${build_type} == debug ]]; then
-  echo "skipping debug build of wirecell"
+if [[ ${basequal} == e28 ]]; then
+  echo "skipping e28 build of wirecell"
 else
 do_build wirecell @WIRECELL_VERSION@ ${basequal}
 fi
