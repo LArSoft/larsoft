@@ -249,16 +249,16 @@ incdir	-
 #
 ####################################
 product         version      qual   flags		<table_format=2>
-larana          v10_02_07    -
-lareventdisplay v10_01_07    -
-larexamples     v10_02_02    -
-larpandora      v10_04_00    -
-larrecodnn      v10_04_00    -
-larsimdnn       v10_02_05    -
-larsimrad       v10_01_06    -
+larana          v10_02_08    -
+lareventdisplay v10_01_08    -
+larexamples     v10_02_03    -
+larpandora      v10_05_00    -
+larrecodnn      v10_05_00    -
+larsimdnn       v10_02_06    -
+larsimrad       v10_01_07    -
 larsoft_data    v1_02_02     -
-larsoftobj      v10_06_02    -
-larwirecell     v10_03_09    -
+larsoftobj      v10_06_03    -
+larwirecell     v10_04_00    -
 cetmodules      v3_27_04     -      only_for_build
 end_product_list
 ####################################
@@ -319,6 +319,8 @@ c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	
 c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	-nq-
 e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	-nq-
 e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	-nq-
+e28:debug	e28:debug	e28:debug	e28:debug	e28:debug	e28:debug	e28:debug	e28:debug	e28:debug	e28:debug	-nq-
+e28:prof	e28:prof	e28:prof	e28:prof	e28:prof	e28:prof	e28:prof	e28:prof	e28:prof	e28:prof	-nq-
 end_qualifier_list
 ####################################
 
