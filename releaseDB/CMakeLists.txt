@@ -53,7 +53,7 @@ set( BASEQUAL e26 )
 # Define version set for art suite.
 set( version_set s131 )
 # for use in html
-set( supported_quals_string "e26|c14")
+set( supported_quals_string "e26|e28|c14")
 
 set(stack_suffix ) # Reset when no longer needed
 create_product_variables( larsoft v10_24_00 )
