@@ -87,7 +87,7 @@
 #>  define_pythonpath
 ####################################
 parent		larsoft
-defaultqual	e26
+defaultqual	e28
 ####################################
 
 ####################################
@@ -249,16 +249,16 @@ incdir	-
 #
 ####################################
 product         version      qual   flags		<table_format=2>
-larana          v10_05_01    -
-lareventdisplay v10_01_17    -
-larexamples     v10_02_12    -
-larpandora      v10_09_01    -
-larrecodnn      v10_05_09    -
-larsimdnn       v10_02_15    -
-larsimrad       v10_01_16    -
+larana          v11_00_00    -
+lareventdisplay v11_00_00    -
+larexamples     v11_00_00    -
+larpandora      v11_00_00    -
+larrecodnn      v11_00_00    -
+larsimdnn       v11_00_00    -
+larsimrad       v11_00_00    -
 larsoft_data    v1_02_02     -
-larsoftobj      v10_08_00    -
-larwirecell     v10_04_09    -
+larsoftobj      v11_00_00    -
+larwirecell     v11_00_00    -
 cetmodules      v3_27_04     -      only_for_build
 end_product_list
 ####################################
@@ -315,10 +315,6 @@ end_product_list
 #
 ####################################
 qualifier	lareventdisplay	larexamples	larrecodnn	larana		larpandora	larwirecell	larsimrad	larsimdnn	larsoftobj	larsoft_data
-c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	c14:debug	-nq-
-c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	c14:prof	-nq-
-e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	e26:debug	-nq-
-e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	e26:prof	-nq-
 e28:debug	e28:debug	e28:debug	e28:debug	e28:debug	e28:debug	e28:debug	e28:debug	e28:debug	e28:debug	-nq-
 e28:prof	e28:prof	e28:prof	e28:prof	e28:prof	e28:prof	e28:prof	e28:prof	e28:prof	e28:prof	-nq-
 end_qualifier_list
